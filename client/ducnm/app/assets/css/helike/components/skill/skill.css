@@ -1,0 +1,89 @@
+.wsbx--skill {
+  padding: 60px 35px 100px 20px; }
+  .wsbx--skill p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 13px;
+    line-height: 25px;
+    font-family: 'Open Sans', sans-serif; }
+  .wsbx--skill .wsbx--skill--title {
+    color: #fff;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 31px;
+    font-family: 'Oswald', sans-serif; }
+  .wsbx--skill .skillbar .skillbar__body {
+    background-color: #59586e; }
+  .wsbx--skill.bg-img {
+    background: url("images-path-global/tabs/helike-tabs.jpg") no-repeat 0 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    .wsbx--skill.bg-img .skillbar__body {
+      background: url("images-path-global/skill/bacground-transparent.png"); }
+  .wsbx--skill.bg-white p {
+    color: #666; }
+  .wsbx--skill.bg-white .wsbx--skill--title {
+    color: #34334f; }
+  .wsbx--skill.bg-white.wsbx--skill--style--1 .skillbar .skillbar__title, .wsbx--skill.bg-white.wsbx--skill--style--1 .skillbar .skillbar__percent, .wsbx--skill.bg-white.wsbx--skill--style--2 .skillbar .skillbar__title, .wsbx--skill.bg-white.wsbx--skill--style--2 .skillbar .skillbar__percent {
+    color: #34334f; }
+  .wsbx--skill.bg-white.wsbx--skill--style--1 .skillbar .skillbar__body, .wsbx--skill.bg-white.wsbx--skill--style--2 .skillbar .skillbar__body {
+    background-color: #ebebeb; }
+  .wsbx--skill.wsbx--skill--style--1 .wsbx--skill--ranger {
+    padding-top: 75px; }
+  .wsbx--skill.wsbx--skill--style--1 .skillbar {
+    margin-bottom: 30px; }
+    .wsbx--skill.wsbx--skill--style--1 .skillbar .skillbar__title, .wsbx--skill.wsbx--skill--style--1 .skillbar .skillbar__percent {
+      font-size: 18px;
+      color: #fff; }
+    .wsbx--skill.wsbx--skill--style--1 .skillbar .skillbar__percent {
+      top: -30px;
+      bottom: auto;
+      right: 0; }
+    .wsbx--skill.wsbx--skill--style--1 .skillbar .skillbar__body {
+      height: 4px; }
+      .wsbx--skill.wsbx--skill--style--1 .skillbar .skillbar__body.height {
+        height: 8px; }
+    .wsbx--skill.wsbx--skill--style--1 .skillbar .skillbar__bar {
+      background-color: #fda600; }
+  .wsbx--skill.wsbx--skill--style--2 {
+    padding: 60px 35px 85px; }
+    .wsbx--skill.wsbx--skill--style--2 p {
+      margin-bottom: 50px; }
+    .wsbx--skill.wsbx--skill--style--2 .wsbx--skill--title {
+      text-align: center; }
+    .wsbx--skill.wsbx--skill--style--2 .skillbar {
+      margin-bottom: 24px; }
+      .wsbx--skill.wsbx--skill--style--2 .skillbar .skillbar__title, .wsbx--skill.wsbx--skill--style--2 .skillbar .skillbar__percent {
+        color: #fff; }
+      .wsbx--skill.wsbx--skill--style--2 .skillbar .skillbar__title {
+        color: #34334f;
+        font-size: 16px;
+        position: absolute;
+        left: 11px;
+        top: 3px; }
+      .wsbx--skill.wsbx--skill--style--2 .skillbar .skillbar__percent {
+        top: 1px; }
+      .wsbx--skill.wsbx--skill--style--2 .skillbar .skillbar__body {
+        height: 26px; }
+      .wsbx--skill.wsbx--skill--style--2 .skillbar .skillbar__bar {
+        background-color: #fda600; }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .wsbx--skill.wsbx--skill--style--1 {
+    padding: 20px !important; }
+    .wsbx--skill.wsbx--skill--style--1 .wsbx--skill--ranger .skill-chart {
+      display: none; } }
+
+@media only screen and (max-width: 767px) {
+  .wsbx--skill {
+    padding: 10px; }
+    .wsbx--skill .wsbx--skill--title {
+      font-size: 12px; }
+    .wsbx--skill p {
+      font-size: 10px; }
+    .wsbx--skill.wsbx--skill--style--2 {
+      padding: 10px; }
+  .skill-chart {
+    display: none; } }

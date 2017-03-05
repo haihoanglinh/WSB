@@ -1,0 +1,678 @@
+/* popup styles */
+.popup-container,
+.popup-help-container {
+  display: block;
+  position: relative;
+
+  &.popup-tooltip {
+    @include align(middle);
+    padding-left: 4px;
+    z-index: 999;
+    &.actionable-tooltip{
+      .popup{
+        width: 200px;
+        top: 58px;
+      }
+    }
+    .popup{
+      -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2)!important;
+      -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2)!important;
+      box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2)!important;
+    }
+    .popup .arrow.arrow-left{
+      top: 30px;
+    }
+    .panel .panel-heading{
+      padding: 10px 15px;
+      padding-left: 15px;
+      .close{
+        display: none;
+      }
+    }
+    .panel .panel-body{
+      padding: 15px;
+    }
+    .panel .panel-heading:after {
+      left: 15px;
+      right: 15px;
+    }
+
+    .popup {
+      font-size: 14px;
+      box-shadow: none;
+      top: 50px;
+      left: 100%;
+      transform: translate(0, -50%);
+      text-align: left;
+      color: $text-color;
+      white-space: normal;
+      font-weight: 400;
+      margin: 0 0 0 8px;
+    }
+
+    .arrow {
+      background: none;
+    }
+
+    .panel,
+    .panel-heading,
+    .panel-body {
+      display: block;
+    }
+  }
+
+  .popup,
+  .popup-help {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    width: 292px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .popup {
+    @include box-shadow;
+  }
+
+  &.app-menu-holder {
+    .popup {
+      @include media('>=desktop') {
+        width: 290px;
+      }
+    }
+  }
+}
+
+.popup-container {
+  &.active-popup {
+    position: static;
+
+    .popup {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      width: 90vw;
+    }
+  }
+}
+
+.popup,
+.popup-help {
+  font-size: 12px;
+  line-height: 1.5;
+
+  .title {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+
+  .arrow {
+    &.arrow-left {
+      top: 50%;
+      left: -14px;
+      transform: rotate(-90deg);
+      margin-top: -5px;
+    }
+  }
+
+  .opener-popup {
+    font-size: 16px;
+  }
+
+  .panel {
+    margin-bottom: 0;
+  }
+
+  .panel-heading,
+  .panel-body {
+    position: relative;
+    z-index: 2;
+  }
+
+  .btn-container {
+    margin: 0;
+  }
+
+  .text-right & {
+    text-align: left;
+  }
+
+  .scrollable {
+    height: 175px;
+    overflow-y: auto;
+    margin: 0 -10px;
+    padding: 0 10px;
+  }
+}
+
+.popup {
+  &.settings-block {
+    .title {
+      margin-bottom: 17px;
+    }
+  }
+}
+
+.popup-tooltip {
+  .opener-popup {
+    font-size: 13px;
+    font-weight: 400;
+    color: #c1c7cf;
+  }
+
+  &.popup-active {
+    .opener-popup {
+      color: $brand-warning;
+    }
+  }
+}
+
+.modal-header,
+.popup,
+.popup-help {
+  .close {
+    @include align(middle);
+    @include hide-text;
+    @include size(20px, 20px);
+    border-radius: $border-radius-base;
+    box-shadow: 0 0 1px $popover-shadow-color;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translate(0, -50%);
+    opacity: 1;
+
+    &:hover {
+      box-shadow: 0 0 1px darken($popover-shadow-color, 50%);
+
+      &:before,
+      &:after {
+        height: 2px;
+      }
+    }
+
+    &:before,
+    &:after {
+      content: "";
+      width: 12px;
+      height: 1px;
+      background: $alt-text-color;
+        position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    &:after {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+  }
+
+  .btn {
+    .close {
+      float: none;
+      position: relative;
+      top: 0;
+      right: 0;
+      box-shadow: none;
+      width: 10px;
+      height: 10px;
+      margin: 0 3px -1px 0;
+      vertical-align: bottom;
+    }
+  }
+}
+
+.users-block {
+  .close {
+    right: 15px;
+  }
+}
+
+.popup {
+  .app-menu {
+    .panel {
+      .panel-body {
+        @include media('>=widescreen') {
+          padding-top: 20px;
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.popup-help-container {
+  .popup-help {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin: 0 0 0 25px;
+    width: 290px;
+    transform: none;
+  }
+
+  &.step02,
+  &.step03,
+  &.step05,
+  &.step06  {
+    .popup-help {
+      left: auto;
+      right: 100%;
+      margin: 0 25px 0 0;
+    }
+  }
+
+  &.step04 {
+    .popup-help {
+      margin: 5px 0 0 -98px;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+
+    .arrow {
+      left: auto;
+      right: 39px;
+    }
+  }
+
+  &.step07 {
+    .popup-help {
+      top: -24px;
+      text-align: left;
+      margin-left: 40px;
+    }
+  }
+}
+
+.popup-help {
+  display: none;
+
+  .title {
+    margin-bottom: 0 !important;
+  }
+
+  .panel-body {
+    p {
+      margin: 0 0 18px;
+    }
+  }
+
+  .arrow {
+    background: none;
+
+    &.arrow-left {
+      top: 49px;
+      left: -15px;
+    }
+
+    &.arrow-right {
+      top: 18px;
+      left: auto;
+      right: -15px;
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.popup-help-active {
+
+  > .popup-overlay {
+    display: block;
+  }
+
+  .under-overlay {
+    position: relative;
+    z-index: 4;
+  }
+
+  .dropdown-menu,
+  .popup {
+    &.under-overlay {
+      position: absolute;
+    }
+  }
+
+  .opener-popup,
+  .btn-link,
+  .btn {
+    cursor: pointer;
+    pointer-events: all;
+  }
+
+  .icon {
+    fill: $brand-white;
+  }
+
+  &.step01 {
+    .popup-help.step01 {
+      display: block;
+      margin-left: 10px;
+    }
+  }
+
+  &.step02 {
+    .popup-help.step02 {
+      display: block;
+    }
+  }
+
+  &.step03 {
+    .popup {
+      display: block !important;
+    }
+
+    .popup-help.step03 {
+      display: block;
+    }
+  }
+
+  &.step04 {
+    .popup-help.step04 {
+      display: block;
+      top: 37px;
+    }
+  }
+
+  &.step05 {
+    .dropdown-menu {
+      display: block !important;
+    }
+
+    .popup-help.step05 {
+      display: block;
+    }
+  }
+
+  &.step06 {
+    .dropdown-menu {
+      display: block !important;
+    }
+
+    .popup-help.step06 {
+      display: block;
+    }
+  }
+
+  &.step07 {
+    .popup-help.step07 {
+      display: block;
+      left: 83%;
+      .arrow.arrow-left{
+        top: 40px;
+      }
+    }
+  }
+  @include media('<=1200px'){
+    &.step01{
+      .popup-help.step01,.popup-help.step02,.popup-help.step03,.popup-help.step04,.popup-help.step05,.popup-help.step06,.popup-help.step07{
+        display: none;
+      }
+      .popup-overlay{
+        display: none;
+      }
+    }
+  }
+}
+
+.popup-overlay {
+  @include absolute;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 3;
+  display: none;
+}
+
+.popup-search {
+  font-size: 14px;
+}
+
+.popup-hover-container {
+  position: relative;
+
+  .popup {
+    padding: 16px 0 0;
+    // display: block !important;
+    display: none;
+    position: absolute;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    width: 292px;
+  }
+
+  .popup-holder {
+    @include box-shadow;
+    border-radius: $border-radius-base;
+  }
+
+  .panel {
+    .arrow {
+      background: url(../images/sprite.png) no-repeat 1px -1px;
+      left: 12px;
+    }
+  }
+}
+
+.popup,
+.popup-help,
+.popup-search,
+.modal-content {
+  .text-right & {
+    text-align: left;
+  }
+}
+
+.btn-container {
+  .btn {
+    padding: 2px 3px 0;
+    min-width: 22px;
+    box-shadow: none;
+    border: none;
+  }
+
+  .btn + .btn {
+    margin-left: 2px;
+  }
+}
+
+.popup-categories {
+  .popup {
+    width: 297px;
+    left: auto;
+    right: -4px;
+    transform: none;
+    margin: 9px 0 0;
+    border-radius: $btn-border-radius-base;
+
+    .arrow {
+      left: auto;
+      right: 23px;
+    }
+  }
+
+  .btn-group {
+    padding: 4px 2px 0;
+    border: 1px solid $input-border;
+    margin-bottom: 8px;
+
+    .btn-sm {
+      font-size: 14px;
+    }
+
+    .btn {
+      border-radius: 0;
+      margin: 0 2px 4px;
+      padding: 1px 4px 0 5px;
+
+      .close {
+        margin-top: -1px;
+        margin-bottom: 1px;
+      }
+    }
+  }
+
+  .popup .panel .panel-body {
+    padding: 8px 7px;
+  }
+}
+
+.popup-opener {
+  outline: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: none !important;
+    outline: none;
+  }
+
+  &:hover {
+    .icon {
+      fill: darken($nav-color, 25%)
+    }
+  }
+}
+
+.bootstrap-timepicker {
+  position: relative;
+}
+.bootstrap-timepicker.pull-right .bootstrap-timepicker-widget.dropdown-menu {
+  left: auto;
+  right: 0;
+}
+.bootstrap-timepicker.pull-right .bootstrap-timepicker-widget.dropdown-menu:before {
+  left: auto;
+  right: 12px;
+}
+.bootstrap-timepicker.pull-right .bootstrap-timepicker-widget.dropdown-menu:after {
+  left: auto;
+  right: 13px;
+}
+.bootstrap-timepicker .input-group-addon {
+  cursor: pointer;
+}
+.bootstrap-timepicker .input-group-addon i {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.bootstrap-timepicker-widget.dropdown-menu {
+  padding: 4px;
+}
+.bootstrap-timepicker-widget.dropdown-menu.open {
+  display: inline-block;
+  z-index: 9999!important;
+}
+.bootstrap-timepicker-widget.dropdown-menu:before {
+  border-bottom: 7px solid rgba(0, 0, 0, 0.2);
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  content: "";
+  display: inline-block;
+  position: absolute;
+}
+.bootstrap-timepicker-widget.dropdown-menu:after {
+  border-bottom: 6px solid #FFFFFF;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  content: "";
+  display: inline-block;
+  position: absolute;
+}
+.bootstrap-timepicker-widget.timepicker-orient-left:before {
+  left: 6px;
+}
+.bootstrap-timepicker-widget.timepicker-orient-left:after {
+  left: 7px;
+}
+.bootstrap-timepicker-widget.timepicker-orient-right:before {
+  right: 6px;
+}
+.bootstrap-timepicker-widget.timepicker-orient-right:after {
+  right: 7px;
+}
+.bootstrap-timepicker-widget.timepicker-orient-top:before {
+  top: -7px;
+}
+.bootstrap-timepicker-widget.timepicker-orient-top:after {
+  top: -6px;
+}
+.bootstrap-timepicker-widget.timepicker-orient-bottom:before {
+  bottom: -7px;
+  border-bottom: 0;
+  border-top: 7px solid #999;
+}
+.bootstrap-timepicker-widget.timepicker-orient-bottom:after {
+  bottom: -6px;
+  border-bottom: 0;
+  border-top: 6px solid #ffffff;
+}
+.bootstrap-timepicker-widget a.btn,
+.bootstrap-timepicker-widget input {
+  border-radius: 4px;
+}
+.bootstrap-timepicker-widget table {
+  width: 100%;
+  margin: 0;
+}
+.bootstrap-timepicker-widget table td {
+  text-align: center;
+  height: 30px;
+  margin: 0;
+  padding: 2px;
+}
+.bootstrap-timepicker-widget table td:not(.separator) {
+  min-width: 30px;
+}
+.bootstrap-timepicker-widget table td span {
+  width: 100%;
+}
+.bootstrap-timepicker-widget table td a {
+  border: 1px transparent solid;
+  width: 100%;
+  display: inline-block;
+  margin: 0;
+  padding: 4px 0;
+  outline: 0;
+  color: #333;
+}
+.bootstrap-timepicker-widget table td a:hover {
+  text-decoration: none;
+  background-color: #eee;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border-color: #ddd;
+}
+.bootstrap-timepicker-widget table td a i {
+  margin-top: 2px;
+  font-size: 18px;
+}
+.bootstrap-timepicker-widget table td input {
+  width: 25px;
+  margin: 0;
+  text-align: center;
+}
+.bootstrap-timepicker-widget .modal-content {
+  padding: 4px;
+}
+@media (min-width: 767px) {
+  .bootstrap-timepicker-widget.modal {
+    width: 200px;
+    margin-left: -100px;
+  }
+}
+@media (max-width: 767px) {
+  .bootstrap-timepicker {
+    width: 100%;
+  }
+  .bootstrap-timepicker .dropdown-menu {
+    width: 100%;
+  }
+}

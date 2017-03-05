@@ -1,0 +1,2169 @@
+/*
+btn close
+*/
+/*
+input
+*/
+/*
+Mixin add tag
+*/
+.btn-orange {
+  color: #fff;
+  background-color: #f16a1e;
+  border-color: #e75c0e; }
+  .btn-orange:focus, .btn-orange.focus {
+    color: #fff;
+    background-color: #cf530d;
+    border-color: #6f2c07; }
+  .btn-orange:hover {
+    color: #fff;
+    background-color: #cf530d;
+    border-color: #ae450b; }
+  .btn-orange:active, .btn-orange.active,
+  .open > .btn-orange.dropdown-toggle {
+    color: #fff;
+    background-color: #cf530d;
+    border-color: #ae450b; }
+    .btn-orange:active:hover, .btn-orange:active:focus, .btn-orange:active.focus, .btn-orange.active:hover, .btn-orange.active:focus, .btn-orange.active.focus,
+    .open > .btn-orange.dropdown-toggle:hover,
+    .open > .btn-orange.dropdown-toggle:focus,
+    .open > .btn-orange.dropdown-toggle.focus {
+      color: #fff;
+      background-color: #ae450b;
+      border-color: #6f2c07; }
+  .btn-orange:active, .btn-orange.active,
+  .open > .btn-orange.dropdown-toggle {
+    background-image: none; }
+  .btn-orange.disabled, .btn-orange.disabled:hover, .btn-orange.disabled:focus, .btn-orange.disabled.focus, .btn-orange.disabled:active, .btn-orange.disabled.active, .btn-orange[disabled], .btn-orange[disabled]:hover, .btn-orange[disabled]:focus, .btn-orange[disabled].focus, .btn-orange[disabled]:active, .btn-orange[disabled].active,
+  fieldset[disabled] .btn-orange,
+  fieldset[disabled] .btn-orange:hover,
+  fieldset[disabled] .btn-orange:focus,
+  fieldset[disabled] .btn-orange.focus,
+  fieldset[disabled] .btn-orange:active,
+  fieldset[disabled] .btn-orange.active {
+    background-color: #f16a1e;
+    border-color: #e75c0e; }
+  .btn-orange .badge {
+    color: #f16a1e;
+    background-color: #fff; }
+
+.btn-red {
+  color: #fff;
+  background-color: #ec5858;
+  border-color: #f2f2f2; }
+  .btn-red:focus, .btn-red.focus {
+    color: #fff;
+    background-color: #e72a2a;
+    border-color: #b3b3b3; }
+  .btn-red:hover {
+    color: #fff;
+    background-color: #e72a2a;
+    border-color: #d4d4d4; }
+  .btn-red:active, .btn-red.active,
+  .open > .btn-red.dropdown-toggle {
+    color: #fff;
+    background-color: #e72a2a;
+    border-color: #d4d4d4; }
+    .btn-red:active:hover, .btn-red:active:focus, .btn-red:active.focus, .btn-red.active:hover, .btn-red.active:focus, .btn-red.active.focus,
+    .open > .btn-red.dropdown-toggle:hover,
+    .open > .btn-red.dropdown-toggle:focus,
+    .open > .btn-red.dropdown-toggle.focus {
+      color: #fff;
+      background-color: #d51818;
+      border-color: #b3b3b3; }
+  .btn-red:active, .btn-red.active,
+  .open > .btn-red.dropdown-toggle {
+    background-image: none; }
+  .btn-red.disabled, .btn-red.disabled:hover, .btn-red.disabled:focus, .btn-red.disabled.focus, .btn-red.disabled:active, .btn-red.disabled.active, .btn-red[disabled], .btn-red[disabled]:hover, .btn-red[disabled]:focus, .btn-red[disabled].focus, .btn-red[disabled]:active, .btn-red[disabled].active,
+  fieldset[disabled] .btn-red,
+  fieldset[disabled] .btn-red:hover,
+  fieldset[disabled] .btn-red:focus,
+  fieldset[disabled] .btn-red.focus,
+  fieldset[disabled] .btn-red:active,
+  fieldset[disabled] .btn-red.active {
+    background-color: #ec5858;
+    border-color: #f2f2f2; }
+  .btn-red .badge {
+    color: #ec5858;
+    background-color: #fff; }
+
+.semibold {
+  font-weight: 700; }
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.margin-clear {
+  margin: 0 !important; }
+
+.padding-right-clear {
+  padding-right: 0 !important; }
+
+.padding-left-clear {
+  padding-left: 0 !important; }
+
+.ellipsis {
+  white-space: nowrap;
+  /* 1 */
+  text-overflow: ellipsis;
+  /* 2 */
+  overflow: hidden; }
+
+.btn + .btn {
+  margin-left: 6px; }
+
+.block-rounded {
+  border-radius: 4px;
+  overflow: hidden; }
+
+.text-dark {
+  color: #414851; }
+
+/*
+Import css team app
+*/
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+.team-icon {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  /*  border: 1px solid #cfd7de;*/
+  position: relative;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 0px 1px #cfd7de;
+  -moz-box-shadow: 0px 0px 0px 1px #cfd7de;
+  box-shadow: 0px 0px 0px 1px #cfd7de; }
+  .team-icon i {
+    display: inline-block;
+    margin: auto;
+    vertical-align: middle; }
+
+.hobby-animal {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -40px -20px;
+  width: 20px;
+  height: 20px; }
+  .hobby-animal.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -40px 0px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-beach {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -20px -40px;
+  width: 20px;
+  height: 20px; }
+  .hobby-beach.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: 0px -40px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-bicycle {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -60px 0px;
+  width: 20px;
+  height: 20px; }
+  .hobby-bicycle.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -40px -40px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-billiards {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -60px -40px;
+  width: 20px;
+  height: 20px; }
+  .hobby-billiards.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -60px -20px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-boating {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -20px -60px;
+  width: 20px;
+  height: 20px; }
+  .hobby-boating.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: 0px -60px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-bowling {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -60px -60px;
+  width: 20px;
+  height: 20px; }
+  .hobby-bowling.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -40px -60px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-camping {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -80px -20px;
+  width: 20px;
+  height: 20px; }
+  .hobby-camping.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -80px 0px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-card {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -80px -60px;
+  width: 20px;
+  height: 20px; }
+  .hobby-card.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -80px -40px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-cars {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -20px -80px;
+  width: 20px;
+  height: 20px; }
+  .hobby-cars.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: 0px -80px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-church {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -60px -80px;
+  width: 20px;
+  height: 20px; }
+  .hobby-church.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -40px -80px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-computer {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -100px 0px;
+  width: 20px;
+  height: 20px; }
+  .hobby-computer.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -80px -80px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-cooking {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -100px -40px;
+  width: 20px;
+  height: 20px; }
+  .hobby-cooking.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -100px -20px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-craft {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -100px -80px;
+  width: 20px;
+  height: 20px; }
+  .hobby-craft.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -100px -60px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-dancing {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -20px -100px;
+  width: 20px;
+  height: 20px; }
+  .hobby-dancing.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: 0px -100px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-dating {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -60px -100px;
+  width: 20px;
+  height: 20px; }
+  .hobby-dating.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -40px -100px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-eating {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -100px -100px;
+  width: 20px;
+  height: 20px; }
+  .hobby-eating.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -80px -100px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-entertain {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -120px -20px;
+  width: 20px;
+  height: 20px; }
+  .hobby-entertain.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -120px 0px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-family {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -120px -100px;
+  width: 20px;
+  height: 20px; }
+  .hobby-family.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -120px -80px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-fishing {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -20px -120px;
+  width: 20px;
+  height: 20px; }
+  .hobby-fishing.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: 0px -120px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-gardening {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -60px -120px;
+  width: 20px;
+  height: 20px; }
+  .hobby-gardening.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -40px -120px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-golf {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -100px -120px;
+  width: 20px;
+  height: 20px; }
+  .hobby-golf.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -80px -120px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-hiking {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -140px 0px;
+  width: 20px;
+  height: 20px; }
+  .hobby-hiking.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -120px -120px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-horse {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: 0px 0px;
+  width: 20px;
+  height: 20px; }
+  .hobby-horse.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -140px -20px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-housework {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -20px 0px;
+  width: 20px;
+  height: 20px; }
+  .hobby-housework.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -140px -60px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-hunting {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -140px -120px;
+  width: 20px;
+  height: 20px; }
+  .hobby-hunting.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -140px -100px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-motorcycling {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -20px -140px;
+  width: 20px;
+  height: 20px; }
+  .hobby-motorcycling.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: 0px -140px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-movie {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -60px -140px;
+  width: 20px;
+  height: 20px; }
+  .hobby-movie.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -40px -140px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-music {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -100px -140px;
+  width: 20px;
+  height: 20px; }
+  .hobby-music.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -80px -140px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-painting {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -140px -140px;
+  width: 20px;
+  height: 20px; }
+  .hobby-painting.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -120px -140px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-playing {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -160px -20px;
+  width: 20px;
+  height: 20px; }
+  .hobby-playing.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -160px 0px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-reading {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -160px -60px;
+  width: 20px;
+  height: 20px; }
+  .hobby-reading.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -160px -40px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-relax {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -160px -100px;
+  width: 20px;
+  height: 20px; }
+  .hobby-relax.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -160px -80px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-renting {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -160px -140px;
+  width: 20px;
+  height: 20px; }
+  .hobby-renting.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -160px -120px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-running {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -20px -160px;
+  width: 20px;
+  height: 20px; }
+  .hobby-running.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: 0px -160px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-shopping {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -60px -160px;
+  width: 20px;
+  height: 20px; }
+  .hobby-shopping.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -40px -160px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-skiing {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -100px -160px;
+  width: 20px;
+  height: 20px; }
+  .hobby-skiing.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -80px -160px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-sleeping {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -140px -160px;
+  width: 20px;
+  height: 20px; }
+  .hobby-sleeping.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -120px -160px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-social {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -180px 0px;
+  width: 20px;
+  height: 20px; }
+  .hobby-social.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -160px -160px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-sport {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -180px -40px;
+  width: 20px;
+  height: 20px; }
+  .hobby-sport.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -180px -20px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-swimming {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -180px -80px;
+  width: 20px;
+  height: 20px; }
+  .hobby-swimming.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -180px -60px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-tennis {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -180px -120px;
+  width: 20px;
+  height: 20px; }
+  .hobby-tennis.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -180px -100px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-theater {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -180px -160px;
+  width: 20px;
+  height: 20px; }
+  .hobby-theater.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -180px -140px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-travel {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -20px -180px;
+  width: 20px;
+  height: 20px; }
+  .hobby-travel.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: 0px -180px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-excercise {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -120px -60px;
+  width: 20px;
+  height: 20px; }
+  .hobby-excercise.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -120px -40px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-tv {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -60px -180px;
+  width: 20px;
+  height: 20px; }
+  .hobby-tv.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -40px -180px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-volunteer {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -100px -180px;
+  width: 20px;
+  height: 20px; }
+  .hobby-volunteer.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -80px -180px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-walking {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -140px -180px;
+  width: 20px;
+  height: 20px; }
+  .hobby-walking.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -120px -180px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-watching-sport {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -180px -180px;
+  width: 20px;
+  height: 20px; }
+  .hobby-watching-sport.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -160px -180px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-writing {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: 0px -20px;
+  width: 20px;
+  height: 20px; }
+  .hobby-writing.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -140px -80px;
+    width: 20px;
+    height: 20px; }
+
+.hobby-sewing {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -140px -40px;
+  width: 20px;
+  height: 20px; }
+  .hobby-sewing.active {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -20px -20px;
+    width: 20px;
+    height: 20px; }
+
+.icon-hyperlink {
+  display: inline-block;
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -36px -200px;
+  width: 18px;
+  height: 12px; }
+
+.icon-map-pin {
+  display: inline-block;
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -200px 0px;
+  width: 16px;
+  height: 18px; }
+  .icon-map-pin:hover {
+    background-image: url(../images/team/team_spritesheet.png);
+    background-position: -200px -18px;
+    width: 16px;
+    height: 18px; }
+
+.member-type-icon {
+  display: inline-block; }
+
+.mt-realtor {
+  background-image: url(../images/team/member_types_spritesheet.png);
+  background-position: -83px 0px;
+  width: 20px;
+  height: 20px; }
+  .mt-realtor.active {
+    background-image: url(../images/team/member_types_spritesheet.png);
+    background-position: 0px -77px;
+    width: 20px;
+    height: 20px; }
+
+.mt-appraisers {
+  background-image: url(../images/team/member_types_spritesheet.png);
+  background-position: -63px -20px;
+  width: 20px;
+  height: 20px; }
+  .mt-appraisers.active {
+    background-image: url(../images/team/member_types_spritesheet.png);
+    background-position: -63px 0px;
+    width: 20px;
+    height: 20px; }
+
+.mt-builder {
+  background-image: url(../images/team/member_types_spritesheet.png);
+  background-position: -34px -116px;
+  width: 20px;
+  height: 15px; }
+  .mt-builder.active {
+    background-image: url(../images/team/member_types_spritesheet.png);
+    background-position: -84px -97px;
+    width: 20px;
+    height: 15px; }
+
+.mt-carpentry {
+  background-image: url(../images/team/member_types_spritesheet.png);
+  background-position: -103px -76px;
+  width: 20px;
+  height: 19px; }
+  .mt-carpentry.active {
+    background-image: url(../images/team/member_types_spritesheet.png);
+    background-position: -103px -19px;
+    width: 20px;
+    height: 19px; }
+
+.mt-cleaning {
+  background-image: url(../images/team/member_types_spritesheet.png);
+  background-position: -103px 0px;
+  width: 20px;
+  height: 19px; }
+  .mt-cleaning.active {
+    background-image: url(../images/team/member_types_spritesheet.png);
+    background-position: 0px -97px;
+    width: 20px;
+    height: 19px; }
+
+.mt-concrete {
+  background-image: url(../images/team/member_types_spritesheet.png);
+  background-position: 0px -41px;
+  width: 25px;
+  height: 16px; }
+  .mt-concrete.active {
+    background-image: url(../images/team/member_types_spritesheet.png);
+    background-position: -25px -41px;
+    width: 25px;
+    height: 16px; }
+
+.mt-contractor {
+  background-image: url(../images/team/member_types_spritesheet.png);
+  background-position: -142px -40px;
+  width: 16px;
+  height: 20px; }
+  .mt-contractor.active {
+    background-image: url(../images/team/member_types_spritesheet.png);
+    background-position: -142px -20px;
+    width: 16px;
+    height: 20px; }
+
+.mt-decks {
+  background-image: url(../images/team/member_types_spritesheet.png);
+  background-position: -103px -38px;
+  width: 20px;
+  height: 19px; }
+  .mt-decks.active {
+    background-image: url(../images/team/member_types_spritesheet.png);
+    background-position: -103px -57px;
+    width: 20px;
+    height: 19px; }
+
+.mt-doors {
+  background-image: url(../images/team/member_types_spritesheet.png);
+  background-position: -158px -20px;
+  width: 12px;
+  height: 20px; }
+  .mt-doors.active {
+    background-image: url(../images/team/member_types_spritesheet.png);
+    background-position: -158px 0px;
+    width: 12px;
+    height: 20px; }
+
+.mt-electrical {
+  background-image: url(../images/team/member_types_spritesheet.png);
+  background-position: -158px -40px;
+  width: 11px;
+  height: 20px; }
+  .mt-electrical.active {
+    background-image: url(../images/team/member_types_spritesheet.png);
+    background-position: -158px -60px;
+    width: 11px;
+    height: 20px; }
+
+.mt-fencing {
+  background-image: url(../images/team/member_types_spritesheet.png);
+  background-position: -123px -78px;
+  width: 18px;
+  height: 18px; }
+  .mt-fencing.active {
+    background-image: url(../images/team/member_types_spritesheet.png);
+    background-position: -123px -96px;
+    width: 18px;
+    height: 18px; }
+
+.mt-fireplaces {
+  background-image: url(../images/team/member_types_spritesheet.png);
+  background-position: -104px -97px;
+  width: 15px;
+  height: 14px; }
+  .mt-fireplaces.active {
+    background-image: url(../images/team/member_types_spritesheet.png);
+    background-position: -84px -116px;
+    width: 15px;
+    height: 14px; }
+
+.mt-flooring {
+  background-image: url(../images/team/member_types_spritesheet.png);
+  background-position: -13px -135px;
+  width: 15px;
+  height: 16px; }
+  .mt-flooring.active {
+    background-image: url(../images/team/member_types_spritesheet.png);
+    background-position: -28px -135px;
+    width: 15px;
+    height: 16px; }
+
+.mt-funiture {
+  background-image: url(../images/team/member_types_spritesheet.png);
+  background-position: -43px -135px;
+  width: 15px;
+  height: 16px; }
+  .mt-funiture.active {
+    background-image: url(../images/team/member_types_spritesheet.png);
+    background-position: -88px -77px;
+    width: 15px;
+    height: 16px; }
+
+.mt-handymen {
+  background-image: url(../images/team/member_types_spritesheet.png);
+  background-position: -54px -116px;
+  width: 15px;
+  height: 14px; }
+  .mt-handymen.active {
+    background-image: url(../images/team/member_types_spritesheet.png);
+    background-position: -69px -116px;
+    width: 15px;
+    height: 14px; }
+
+.mt-heating {
+  background-image: url(../images/team/member_types_spritesheet.png);
+  background-position: 0px -57px;
+  width: 20px;
+  height: 20px; }
+  .mt-heating.active {
+    background-image: url(../images/team/member_types_spritesheet.png);
+    background-position: -83px -40px;
+    width: 20px;
+    height: 20px; }
+
+.mt-inspector {
+  background-image: url(../images/team/member_types_spritesheet.png);
+  background-position: 0px -116px;
+  width: 17px;
+  height: 19px; }
+  .mt-inspector.active {
+    background-image: url(../images/team/member_types_spritesheet.png);
+    background-position: -17px -116px;
+    width: 17px;
+    height: 19px; }
+
+.mt-interior {
+  background-image: url(../images/team/member_types_spritesheet.png);
+  background-position: -142px -116px;
+  width: 13px;
+  height: 19px; }
+  .mt-interior.active {
+    background-image: url(../images/team/member_types_spritesheet.png);
+    background-position: 0px -135px;
+    width: 13px;
+    height: 19px; }
+
+.mt-janitorial {
+  background-image: url(../images/team/member_types_spritesheet.png);
+  background-position: -123px 0px;
+  width: 19px;
+  height: 20px; }
+  .mt-janitorial.active {
+    background-image: url(../images/team/member_types_spritesheet.png);
+    background-position: -123px -20px;
+    width: 19px;
+    height: 20px; }
+
+.mt-landscaping {
+  background-image: url(../images/team/member_types_spritesheet.png);
+  background-position: -20px -77px;
+  width: 23px;
+  height: 17px; }
+  .mt-landscaping.active {
+    background-image: url(../images/team/member_types_spritesheet.png);
+    background-position: -43px -77px;
+    width: 23px;
+    height: 17px; }
+
+.mt-lawn {
+  background-image: url(../images/team/member_types_spritesheet.png);
+  background-position: -66px -77px;
+  width: 22px;
+  height: 16px; }
+  .mt-lawn.active {
+    background-image: url(../images/team/member_types_spritesheet.png);
+    background-position: -20px -97px;
+    width: 22px;
+    height: 16px; }
+
+.mt-locksmith {
+  background-image: url(../images/team/member_types_spritesheet.png);
+  background-position: -142px -60px;
+  width: 16px;
+  height: 20px; }
+  .mt-locksmith.active {
+    background-image: url(../images/team/member_types_spritesheet.png);
+    background-position: -142px 0px;
+    width: 16px;
+    height: 20px; }
+
+.mt-mortgage {
+  background-image: url(../images/team/member_types_spritesheet.png);
+  background-position: 0px -21px;
+  width: 21px;
+  height: 20px; }
+  .mt-mortgage.active {
+    background-image: url(../images/team/member_types_spritesheet.png);
+    background-position: -21px -21px;
+    width: 21px;
+    height: 20px; }
+
+.mt-moving {
+  background-image: url(../images/team/member_types_spritesheet.png);
+  background-position: -63px -97px;
+  width: 21px;
+  height: 15px; }
+  .mt-moving.active {
+    background-image: url(../images/team/member_types_spritesheet.png);
+    background-position: -42px -97px;
+    width: 21px;
+    height: 15px; }
+
+.mt-painting {
+  background-image: url(../images/team/member_types_spritesheet.png);
+  background-position: -123px -59px;
+  width: 18px;
+  height: 19px; }
+  .mt-painting.active {
+    background-image: url(../images/team/member_types_spritesheet.png);
+    background-position: -123px -40px;
+    width: 18px;
+    height: 19px; }
+
+.mt-inspector {
+  background-image: url(../images/team/member_types_spritesheet.png);
+  background-position: 0px -116px;
+  width: 17px;
+  height: 19px; }
+  .mt-inspector.active {
+    background-image: url(../images/team/member_types_spritesheet.png);
+    background-position: -17px -116px;
+    width: 17px;
+    height: 19px; }
+
+.mt-pest {
+  background-image: url(../images/team/member_types_spritesheet.png);
+  background-position: -21px 0px;
+  width: 21px;
+  height: 21px; }
+  .mt-pest.active {
+    background-image: url(../images/team/member_types_spritesheet.png);
+    background-position: 0px 0px;
+    width: 21px;
+    height: 21px; }
+
+.mt-plumbing {
+  background-image: url(../images/team/member_types_spritesheet.png);
+  background-position: -83px -60px;
+  width: 20px;
+  height: 16px; }
+  .mt-plumbing.active {
+    background-image: url(../images/team/member_types_spritesheet.png);
+    background-position: -63px -40px;
+    width: 20px;
+    height: 16px; }
+
+.mt-pool {
+  background-image: url(../images/team/member_types_spritesheet.png);
+  background-position: -83px -20px;
+  width: 20px;
+  height: 20px; }
+  .mt-pool.active {
+    background-image: url(../images/team/member_types_spritesheet.png);
+    background-position: -20px -57px;
+    width: 20px;
+    height: 20px; }
+
+.mt-property {
+  background-image: url(../images/team/member_types_spritesheet.png);
+  background-position: -42px -20px;
+  width: 21px;
+  height: 20px; }
+  .mt-property.active {
+    background-image: url(../images/team/member_types_spritesheet.png);
+    background-position: -42px 0px;
+    width: 21px;
+    height: 20px; }
+
+.mt-roofing {
+  background-image: url(../images/team/member_types_spritesheet.png);
+  background-position: -99px -116px;
+  width: 20px;
+  height: 8px; }
+  .mt-roofing.active {
+    background-image: url(../images/team/member_types_spritesheet.png);
+    background-position: -119px -116px;
+    width: 20px;
+    height: 8px; }
+
+.mt-staging {
+  background-image: url(../images/team/member_types_spritesheet.png);
+  background-position: -40px -57px;
+  width: 20px;
+  height: 20px; }
+  .mt-staging.active {
+    background-image: url(../images/team/member_types_spritesheet.png);
+    background-position: -60px -57px;
+    width: 20px;
+    height: 20px; }
+
+.mt-window {
+  background-image: url(../images/team/member_types_spritesheet.png);
+  background-position: -142px -98px;
+  width: 15px;
+  height: 18px; }
+  .mt-window.active {
+    background-image: url(../images/team/member_types_spritesheet.png);
+    background-position: -142px -80px;
+    width: 15px;
+    height: 18px; }
+
+.btn-invite > i {
+  margin-right: 5px; }
+
+.icon-user-plus-black {
+  display: inline-block;
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -18px -200px;
+  width: 18px;
+  height: 13px;
+  vertical-align: middle; }
+
+.icon-user-plus-white {
+  display: inline-block;
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: 0px -200px;
+  width: 18px;
+  height: 13px; }
+
+.switcher.active .icon-map-pin {
+  background-image: url(../images/team/team_spritesheet.png);
+  background-position: -200px -18px;
+  width: 16px;
+  height: 18px; }
+
+.switcher.active .fa-folder:before {
+  content: "\f07c"; }
+
+.team-categories {
+  margin-top: 15px;
+  margin-bottom: 15px !important; }
+  .team-categories .category-item {
+    overflow: hidden;
+    padding: 4px 5px; }
+    .team-categories .category-item .pull-left {
+      width: 80%; }
+      .team-categories .category-item .pull-left .cat-name {
+        overflow: hidden;
+        max-width: -webkit-calc(100% - 35px);
+        max-width: calc(100% - 35px);
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: inline-block; }
+    .team-categories .category-item .cat-num-count {
+      vertical-align: middle; }
+    .team-categories .category-item .pull-right {
+      width: 20%;
+      text-align: right; }
+    .team-categories .category-item.selected {
+      color: #eb6b22; }
+    .team-categories .category-item .cat-img {
+      margin-right: 5px;
+      display: inline-block;
+      vertical-align: middle;
+      width: 25px;
+      height: 25px;
+      text-align: center; }
+    .team-categories .category-item .cat-name {
+      vertical-align: middle; }
+    .team-categories .category-item:hover {
+      cursor: pointer;
+      color: #eb6b22; }
+
+.list-view .team-icon {
+  border: transparent;
+  box-shadow: none; }
+
+@media (min-width: 1024px) {
+  .grid-view > .row > .col-sm-4.col-md-3 {
+    width: 25% !important; } }
+
+.table-document > tbody > tr > td {
+  border: 0 !important;
+  padding: 10px 5px; }
+
+.team-grid-item {
+  text-align: center;
+  margin: 18px 0; }
+  .team-grid-item .people-media {
+    position: relative;
+    margin-bottom: 15px; }
+    .team-grid-item .people-media .people-avatar {
+      width: 60px;
+      height: 60px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%;
+      display: inline-block; }
+    .team-grid-item .people-media .team-icon {
+      position: absolute;
+      left: 50%;
+      z-index: 1;
+      background: #fff;
+      margin-left: 10px;
+      bottom: 0px;
+      line-height: 25px; }
+  .team-grid-item .people-name {
+    color: #414851;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; }
+  .team-grid-item span.label {
+    width: 74px;
+    font-size: 10px;
+    padding: 0.4em;
+    display: inline-block; }
+
+.profile-modal .profile-left-col {
+  width: 124px;
+  float: left; }
+  .profile-modal .profile-left-col .people-profile-pic {
+    position: relative; }
+    .profile-modal .profile-left-col .people-profile-pic .team-icon {
+      position: absolute;
+      left: 50%;
+      z-index: 1;
+      background: #fff;
+      margin-left: 10px;
+      bottom: 0px;
+      line-height: 32px;
+      width: 35px;
+      height: 35px; }
+
+.profile-modal .profile-right-col {
+  width: 520px;
+  float: left;
+  position: relative; }
+  .profile-modal .profile-right-col .profile-buttons-holder {
+    position: absolute;
+    right: 0;
+    top: 0; }
+    .profile-modal .profile-right-col .profile-buttons-holder .dropdown {
+      margin-left: 6px; }
+  .profile-modal .profile-right-col .profile-name {
+    color: #414851;
+    font-size: 32px;
+    font-weight: 500; }
+  .profile-modal .profile-right-col .profile-job {
+    color: #8d939a;
+    font-size: 18px;
+    font-weight: normal;
+    display: block;
+    margin-bottom: 6px; }
+  .profile-modal .profile-right-col .profile-address {
+    font-size: 16px;
+    width: 100%;
+    overflow: hidden;
+    resize: none; }
+  .profile-modal .profile-right-col .profile-contact {
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+    margin-bottom: 25px; }
+    .profile-modal .profile-right-col .profile-contact li {
+      display: inline-block;
+      margin-right: 15px; }
+      .profile-modal .profile-right-col .profile-contact li .input-editable {
+        width: 120px; }
+      .profile-modal .profile-right-col .profile-contact li > i {
+        margin-right: 3px; }
+  .profile-modal .profile-right-col .profile-tags {
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+    margin-bottom: 20px; }
+    .profile-modal .profile-right-col .profile-tags li {
+      display: inline-block;
+      margin-right: 10px; }
+      .profile-modal .profile-right-col .profile-tags li a {
+        color: #f16a1e; }
+        .profile-modal .profile-right-col .profile-tags li a > i {
+          margin-right: 2px; }
+  .profile-modal .profile-right-col .profile-social {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 20px; }
+    .profile-modal .profile-right-col .profile-social li {
+      display: inline-block; }
+      .profile-modal .profile-right-col .profile-social li > a {
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        text-align: center;
+        line-height: 25px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        border-radius: 3px;
+        color: #fff; }
+        .profile-modal .profile-right-col .profile-social li > a.facebook-link {
+          background-color: #3b5998; }
+        .profile-modal .profile-right-col .profile-social li > a.twitter-link {
+          background-color: #00aced; }
+        .profile-modal .profile-right-col .profile-social li > a.rss-link {
+          background-color: #ec7430; }
+        .profile-modal .profile-right-col .profile-social li > a.stumbleupon-link {
+          background-color: #eb3e22; }
+
+.profile-modal .people-profile .people-profile-pic img {
+  width: 96px;
+  height: 96px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%; }
+
+.profile-modal .member-type-list {
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: 20px; }
+  .profile-modal .member-type-list .cat-item {
+    padding: 5px 0; }
+  .profile-modal .member-type-list .col-sm-4, .profile-modal .member-type-list .col-xs-6 {
+    padding-left: 10px;
+    padding-right: 10px; }
+  .profile-modal .member-type-list .cat-img {
+    background-color: #c6c9cc;
+    width: 16px;
+    height: 16px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle; }
+  .profile-modal .member-type-list .cat-name {
+    vertical-align: middle;
+    max-width: -webkit-calc(100% - 25px);
+    max-width: calc(100% - 25px);
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  @media (max-width: 767px) {
+    .profile-modal .member-type-list.cols-3 {
+      display: none; } }
+  @media (min-width: 768px) {
+    .profile-modal .member-type-list.cols-2 {
+      display: none; } }
+
+.profile-modal .service-areas-list {
+  padding: 0;
+  list-style: none;
+  margin-bottom: 20px; }
+  .profile-modal .service-areas-list li {
+    display: inline-block;
+    margin-right: 15px;
+    color: #414851; }
+    .profile-modal .service-areas-list li > i {
+      color: #f16a1e;
+      margin-right: 5px; }
+
+.profile-modal .service-area-section .btn-plus {
+  top: -10px; }
+
+@media (max-width: 767px) {
+  .profile-modal .input-editable {
+    pointer-events: none; }
+  .profile-modal .profile-left-col {
+    width: 100%;
+    text-align: center; }
+    .profile-modal .profile-left-col .people-profile-pic {
+      margin-bottom: 10px; }
+  .profile-modal .profile-right-col {
+    width: 100%;
+    text-align: center; }
+    .profile-modal .profile-right-col .profile-name {
+      text-align: center; }
+    .profile-modal .profile-right-col .profile-address {
+      text-align: center; }
+    .profile-modal .profile-right-col .profile-contact {
+      margin-top: 20px; }
+      .profile-modal .profile-right-col .profile-contact li {
+        display: block;
+        margin-right: 0;
+        margin-top: 4px; } }
+
+.profile-modal .find-id {
+  margin-bottom: 25px; }
+  .profile-modal .find-id > label {
+    width: 75px;
+    font-weight: normal;
+    float: left;
+    vertical-align: middle;
+    line-height: 42px;
+    color: #414851; }
+  .profile-modal .find-id > .input-group {
+    width: -webkit-calc(100% - 75px);
+    width: calc(100% - 75px);
+    max-width: 225px;
+    float: left; }
+    .profile-modal .find-id > .input-group .input-group-addon {
+      font-size: 5px;
+      color: #9ea7b0;
+      border-left: 0;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px; }
+  .profile-modal .find-id .selected-id {
+    font-weight: 500;
+    float: right;
+    line-height: 42px;
+    color: #27292b; }
+
+.profile-modal .hobbies-list {
+  margin-bottom: 20px; }
+
+.profile-modal .hobby-item {
+  padding: 3px 0; }
+  .profile-modal .hobby-item > label {
+    display: inline-block;
+    width: 100%; }
+    .profile-modal .hobby-item > label .fake-input {
+      top: -2px; }
+    .profile-modal .hobby-item > label .hobby-icon {
+      float: right; }
+  .profile-modal .hobby-item .hobby-icon {
+    display: inline-block; }
+
+.speciality-select {
+  margin-bottom: 20px; }
+  .speciality-select > .col-sm-5.left {
+    padding-right: 0; }
+  .speciality-select > .col-sm-5.right {
+    padding-left: 0; }
+  .speciality-select > .col-sm-5 > h4 {
+    display: none; }
+  .speciality-select > .col-sm-5 > .filter {
+    display: none; }
+  .speciality-select > .col-sm-5 > select {
+    height: 135px !important;
+    overflow: auto; }
+    .speciality-select > .col-sm-5 > select.unselected {
+      color: #8d939a; }
+  .speciality-select .center-block {
+    margin-top: 25px !important; }
+    .speciality-select .center-block .btn {
+      padding: 8px;
+      min-width: 35px;
+      width: 35px;
+      height: 35px; }
+      .speciality-select .center-block .btn:first-child {
+        margin-bottom: 10px !important; }
+      .speciality-select .center-block .btn.col-sm-offset-4 {
+        margin-left: 30% !important; }
+  @media (max-width: 767px) {
+    .speciality-select > .col-sm-5.left {
+      padding-right: 15px; }
+    .speciality-select > .col-sm-5.right {
+      padding-left: 15px; }
+    .speciality-select .center-block {
+      margin-top: 10px !important;
+      text-align: center; }
+      .speciality-select .center-block .btn {
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg); }
+        .speciality-select .center-block .btn.col-sm-offset-4 {
+          margin-left: 0 !important; } }
+
+.team-grid-item.has-dropdown .dropdown-dialog {
+  top: 27px;
+  right: 65px; }
+  .team-grid-item.has-dropdown .dropdown-dialog.shift-left {
+    right: 50%;
+    margin-right: -150px; }
+    .team-grid-item.has-dropdown .dropdown-dialog.shift-left:before, .team-grid-item.has-dropdown .dropdown-dialog.shift-left:after {
+      right: 48%; }
+
+.list-view-item.has-dropdown .dropdown-dialog {
+  top: 27px;
+  right: 24px; }
+
+#team-map {
+  width: 100%;
+  min-height: 750px; }
+
+.team-people-marker {
+  background-color: #f16a1e;
+  padding: 5px 10px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  color: #fff;
+  position: relative; }
+  .team-people-marker:after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(241, 106, 30, 0);
+    border-top-color: #f16a1e;
+    border-width: 8px;
+    margin-left: -8px; }
+
+.profile-biography {
+  width: 100%;
+  overflow: hidden;
+  height: 110px !important;
+  resize: none; }
+
+.member-type-item.radio {
+  margin-bottom: 15px; }
+  .member-type-item.radio input[type="radio"] + .fake-input {
+    width: 16px;
+    height: 16px;
+    border-width: 1px; }
+  .member-type-item.radio input[type="radio"] + .fake-input:before {
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px; }
+  .member-type-item.radio label {
+    width: 100%; }
+  .member-type-item.radio .member-type-name {
+    vertical-align: middle;
+    max-width: 75%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block; }
+  .member-type-item.radio input[type="radio"]:checked + .fake-input + .member-type-name {
+    color: #f16a1e; }
+  .member-type-item.radio .mt-icon-holder {
+    float: right;
+    width: 25px; }
+    .member-type-item.radio .mt-icon-holder .member-type-icon {
+      margin: auto;
+      display: block; }
+  @media (max-width: 767px) {
+    .member-type-item.radio .mt-icon-holder {
+      float: left;
+      margin-right: 5px; } }
+
+#carousel-gallery.carousel-gallery-appteam {
+  width: 100%;
+  margin: 0;
+  padding: 3px;
+  border: 1px solid #d3d6d7; }
+
+#carousel-gallery.carousel-gallery-appteam .carousel-indicators {
+  margin: 4px 0 0 0;
+  overflow: auto;
+  white-space: nowrap;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  text-align: left;
+  overflow: hidden; }
+
+#carousel-gallery.carousel-gallery-appteam .carousel-indicators li {
+  background-color: transparent;
+  border: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  float: left;
+  height: auto;
+  margin: 0 !important;
+  width: auto;
+  height: 65px; }
+  #carousel-gallery.carousel-gallery-appteam .carousel-indicators li.active {
+    border: 2px solid #f16a1e; }
+    #carousel-gallery.carousel-gallery-appteam .carousel-indicators li.active img {
+      height: 61px; }
+  #carousel-gallery.carousel-gallery-appteam .carousel-indicators li img {
+    display: block;
+    height: 65px; }
+
+#carousel-gallery.carousel-gallery-appteam .carousel-outer {
+  position: relative; }
+
+#carousel-gallery.carousel-gallery-appteam .carousel-control .carousel-control-icon {
+  border-width: 2px; }
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  width: 100%; }
+
+.carousel-edit {
+  margin: 0;
+  padding: 3px;
+  border: 1px solid #d3d6d7; }
+  .carousel-edit .main-image {
+    background-color: #cfd7de;
+    height: 300px;
+    padding-top: 100px; }
+    .carousel-edit .main-image .upload-picture-icon {
+      margin-bottom: 20px; }
+    .carousel-edit .main-image span {
+      display: block;
+      margin: auto;
+      text-align: center; }
+  .carousel-edit .image-gallery {
+    padding: 0;
+    margin: 3px 0 0 0;
+    list-style: none;
+    overflow: hidden;
+    width: 100%; }
+    .carousel-edit .image-gallery li {
+      float: left;
+      width: 70px;
+      height: 65px;
+      background-color: #cfd7de; }
+      .carousel-edit .image-gallery li .picture-icon {
+        background-image: url(../images/team/icon_picture.png);
+        background-size: 55px;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        display: block;
+        background-position: center; }
+      .carousel-edit .image-gallery li.active {
+        border: 2px solid #f16a1e; }
+
+.btn-save {
+  display: none; }
+
+.input-editable {
+  height: auto; }
+
+.main-section:not(.editinfo) .input-editable {
+  border-color: transparent; }
+  .main-section:not(.editinfo) .input-editable:hover {
+    border: 1px solid #cfd7de; }
+  .main-section:not(.editinfo) .input-editable:focus {
+    border: 1px solid #f16a1e; }
+  .main-section:not(.editinfo) .input-editable.reverse:focus {
+    border: 1px solid #fff; }
+
+.main-section:not(.editinfo) .show-on-edit {
+  display: none; }
+
+.main-section:not(.editinfo) .profile-right-col .profile-name {
+  width: 60%; }
+
+.editinfo .hide-on-edit {
+  display: none !important; }
+
+.editinfo .btn-edit {
+  display: none; }
+
+.editinfo .btn-save {
+  display: inline-block; }
+
+.editinfo .profile-right-col .profile-name {
+  width: 100%;
+  margin-bottom: 6px; }
+
+.editinfo .input-editable {
+  padding: 6px 8px; }
+
+.editinfo .profile-right-col .profile-contact li {
+  position: relative; }
+  .editinfo .profile-right-col .profile-contact li i {
+    position: absolute;
+    left: 10px;
+    top: 10px; }
+  .editinfo .profile-right-col .profile-contact li .input-editable {
+    width: 160px;
+    padding-left: 30px; }
+  .editinfo .profile-right-col .profile-contact li:last-child {
+    margin-right: 0; }
+
+.editinfo .profile-biography {
+  padding: 15px;
+  margin-bottom: 15px; }
+
+.user-specialities {
+  padding: 0;
+  list-style: none;
+  font-size: 14px; }
+  .user-specialities li {
+    margin-bottom: 5px; }
+    .user-specialities li a {
+      color: #f16a1e; }
+      .user-specialities li a > i {
+        margin-right: 2px; }
+
+.adv-box {
+  border: 5px solid #ef6a1e;
+  padding: 25px;
+  margin-bottom: 10px; }
+  .adv-box .adv-title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 5px; }
+
+.adv-section .tab-title {
+  margin: 25px 0;
+  font-size: 28px;
+  text-align: center; }
+
+.adv-section .nav-tabs {
+  margin-top: 20px;
+  border: 0;
+  min-width: 645px; }
+  .adv-section .nav-tabs > li {
+    margin-right: 21px; }
+    .adv-section .nav-tabs > li:last-child {
+      margin-right: 0; }
+    .adv-section .nav-tabs > li > a {
+      width: 110px;
+      height: 42px;
+      background-color: #c1c7cf;
+      color: #fff !important;
+      text-align: center;
+      line-height: 42px;
+      padding: 0;
+      border-radius: 0;
+      border: 0; }
+    .adv-section .nav-tabs > li.active > a, .adv-section .nav-tabs > li:hover > a {
+      background-color: #f16a1e;
+      position: relative; }
+    .adv-section .nav-tabs > li.active > a:after {
+      top: 100%;
+      left: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(241, 106, 30, 0);
+      border-top-color: #f16a1e;
+      border-width: 10px;
+      margin-left: -10px; }
+
+.adv-box.style-1 {
+  text-align: center;
+  background-color: #ef6a1e;
+  padding: 15px 50px 35px;
+  color: #fff; }
+  .adv-box.style-1 .input-editable {
+    background-color: transparent;
+    width: 100%; }
+  .adv-box.style-1 .adv-title {
+    padding: 0;
+    margin-bottom: 0;
+    font-weight: 500; }
+  .adv-box.style-1 .adv-subtitle {
+    text-align: center;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 50px;
+    padding: 0;
+    margin-bottom: 10px; }
+  .adv-box.style-1 .adv-divider {
+    display: block;
+    margin: 0 auto;
+    width: 215px;
+    height: 1px;
+    background-color: #fff; }
+  .adv-box.style-1 .adv-description {
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 5px; }
+  .adv-box.style-1 .adv-action {
+    padding: 10px 30px;
+    background-color: #fff; }
+    .adv-box.style-1 .adv-action:hover {
+      color: #f16a1e; }
+
+.adv-box.style-2 {
+  padding: 0;
+  display: flex; }
+  .adv-box.style-2 .adv-discount {
+    flex: 0 0 220px;
+    background-color: #f16a1e;
+    padding: 30px; }
+    .adv-box.style-2 .adv-discount .adv-discount-text {
+      font-size: 50px;
+      font-weight: 900;
+      text-align: center;
+      resize: none;
+      max-width: 150px;
+      line-height: 60px; }
+  .adv-box.style-2 .adv-content {
+    padding: 22px;
+    color: #27292b; }
+  .adv-box.style-2 .adv-title {
+    text-align: left;
+    width: 100%;
+    font-size: 22px;
+    font-weight: 500; }
+  .adv-box.style-2 .adv-description {
+    width: 100%;
+    resize: none;
+    min-height: 50px; }
+  .adv-box.style-2 .adv-phone {
+    position: relative;
+    color: #f16a1e;
+    font-size: 22px; }
+    .adv-box.style-2 .adv-phone i {
+      position: absolute;
+      top: 2px;
+      left: 10px; }
+    .adv-box.style-2 .adv-phone .adv-phone-text {
+      padding-left: 35px;
+      width: 190px; }
+  .adv-box.style-2 .adv-action {
+    padding: 10px 30px;
+    float: right; }
+
+.adv-box.style-3 {
+  padding: 0; }
+  .adv-box.style-3 .adv-title {
+    width: 100%;
+    font-size: 30px;
+    font-weight: 900;
+    width: 100%;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 32px;
+    padding: 0; }
+  .adv-box.style-3 .adv-discount-text {
+    width: 100%;
+    font-size: 70px;
+    font-weight: 900;
+    text-align: center;
+    width: 100%;
+    line-height: 70px;
+    padding: 0; }
+  .adv-box.style-3 .adv-content {
+    padding: 20px; }
+    .adv-box.style-3 .adv-content .row {
+      margin-left: -5px;
+      margin-right: -5px; }
+      .adv-box.style-3 .adv-content .row div[class^="col"] {
+        padding-left: 5px;
+        padding-right: 5px; }
+    .adv-box.style-3 .adv-content .adv-description {
+      width: 100%;
+      height: 100px;
+      resize: none;
+      color: #27292b; }
+    .adv-box.style-3 .adv-content .adv-phone {
+      position: relative;
+      font-size: 22px; }
+      .adv-box.style-3 .adv-content .adv-phone i {
+        position: absolute;
+        top: 2px;
+        left: 10px;
+        color: #f16a1e; }
+      .adv-box.style-3 .adv-content .adv-phone .adv-phone-text {
+        padding-left: 35px;
+        width: 100%;
+        color: #27292b; }
+    .adv-box.style-3 .adv-content .adv-action {
+      padding: 10px 30px;
+      margin-top: 8px;
+      margin-left: 10px; }
+
+.adv-box.style-4 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0; }
+  .adv-box.style-4 .adv-photo-box {
+    flex: 1;
+    padding: 0;
+    height: auto; }
+  .adv-box.style-4 .adv-content {
+    flex: 1;
+    padding: 20px;
+    text-align: center; }
+    .adv-box.style-4 .adv-content .adv-title {
+      color: #27292b;
+      font-weight: 900;
+      text-align: center;
+      width: 100%;
+      font-size: 28px;
+      margin-bottom: 3px;
+      line-height: 28px;
+      padding: 0; }
+    .adv-box.style-4 .adv-content .adv-discount-text {
+      color: #27292b;
+      font-weight: 900;
+      text-align: center;
+      width: 100%;
+      padding: 0;
+      font-size: 52px;
+      line-height: 52px;
+      margin-bottom: 10px; }
+    .adv-box.style-4 .adv-content .adv-description {
+      width: 100%;
+      text-align: center;
+      min-height: 120px;
+      resize: none;
+      line-height: 21px;
+      padding: 6px 8px; }
+    .adv-box.style-4 .adv-content .adv-phone {
+      position: relative;
+      font-size: 22px;
+      width: 100%;
+      text-align: center; }
+      .adv-box.style-4 .adv-content .adv-phone i {
+        position: absolute;
+        top: 2px;
+        left: 70px;
+        color: #f16a1e; }
+      .adv-box.style-4 .adv-content .adv-phone .adv-phone-text {
+        padding-left: 96px;
+        width: 100%;
+        color: #27292b; }
+    .adv-box.style-4 .adv-content .adv-action {
+      padding: 10px 30px;
+      margin-top: 5px; }
+
+.adv-box.style-custom {
+  height: 420px;
+  background-color: #cfd7de;
+  border: none;
+  width: 100%;
+  text-align: center; }
+  .adv-box.style-custom .fa-picture-o {
+    color: #fff;
+    font-size: 55px; }
+  .adv-box.style-custom .upload-picture-icon {
+    margin-bottom: 15px;
+    margin-top: 100px; }
+  .adv-box.style-custom .adv-action {
+    padding: 10px 30px;
+    margin: 30px auto;
+    display: block; }
+
+.adv-box .adv-photo-box {
+  height: 230px;
+  background-position: center;
+  background-image: url(../images/team/adv_image.jpg);
+  background-size: cover;
+  position: relative;
+  padding: 45px 40px 35px; }
+  .adv-box .adv-photo-box .upload-photo-btn {
+    position: absolute;
+    top: 8px;
+    left: 8px; }
+
+.adv-box .upload-photo-btn {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  text-align: center;
+  line-height: 38px;
+  color: #fff; }
+
+@media (max-width: 767px) {
+  .adv-box.style-1 .adv-description {
+    min-height: 90px; }
+  .adv-box.style-2 .adv-description {
+    min-height: 90px; } }
+
+.upload-picture-icon {
+  background-image: url(../images/team/icon_picture.png);
+  display: block;
+  margin: auto;
+  padding: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  width: 70px;
+  height: 52px;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.editinfo .adv-box.style-1 .input-editable {
+  border-color: #fff; }
+
+.editinfo .adv-box.style-1 .adv-title {
+  margin-bottom: 5px; }
+
+.editinfo .adv-box.style-1 .adv-subtitle {
+  margin-bottom: 15px; }
+
+.editinfo .adv-box.style-1 .adv-description {
+  margin-bottom: 5px; }
+
+.editinfo .adv-box.style-2 .adv-phone .adv-phone-text {
+  padding: 2px 8px;
+  padding-left: 35px;
+  margin-top: 4px; }
+
+.input-editable.reverse {
+  border-color: #fff;
+  background-color: transparent;
+  color: #fff; }
+
+.toggle-adv-elm {
+  display: inline-block;
+  margin-left: 10px;
+  font-weight: 400;
+  color: #27292b; }
+  .toggle-adv-elm .adv-elm-name {
+    vertical-align: middle; }
+
+.background-select {
+  margin: 10px 0; }
+  .background-select span {
+    vertical-align: middle;
+    color: #27292b; }
+  .background-select .background-color {
+    width: 18px;
+    height: 18px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #f16a1e;
+    display: inline-block;
+    margin-right: 5px; }
+
+/*PERMISSION DIALOG*/
+.permission-section {
+  display: none; }
+
+.stat-section {
+  display: none; }
+
+.chart-container {
+  width: 270px;
+  height: 160px; }
+
+.chart-column-mark {
+  width: 4px;
+  height: 4px;
+  display: inline-block;
+  background: #fff;
+  border-radius: 50%;
+  top: 11px;
+  left: -1px;
+  position: relative; }
+
+.stat-panel {
+  margin-bottom: 35px; }
+  .stat-panel .stat-header h4 {
+    display: inline-block;
+    margin-bottom: 0;
+    color: #dadada;
+    font-weight: 400; }
+  .stat-panel .fa-info-circle {
+    float: right; }
+  .stat-panel .stat-body.stat-general {
+    text-align: center; }
+    .stat-panel .stat-body.stat-general span {
+      display: block; }
+    .stat-panel .stat-body.stat-general .hightlight-number {
+      font-size: 28px;
+      margin-top: 28px;
+      margin-bottom: 10px; }
+
+.ranks-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-top: 10px; }
+  .ranks-list li {
+    padding: 1px 6px;
+    margin: 4px 0;
+    overflow: hidden; }
+    .ranks-list li .name {
+      float: left;
+      color: #fff; }
+      .ranks-list li .name .rank {
+        color: #8d939a;
+        display: inline-block;
+        min-width: 15px; }
+      .ranks-list li .name .mt-icon-holder {
+        width: 25px;
+        height: 25px;
+        vertical-align: middle;
+        text-align: center;
+        display: inline-block; }
+    .ranks-list li .quantity {
+      float: right; }
+    .ranks-list li.active {
+      border: 1px solid #f16a1e;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      -ms-border-radius: 6px;
+      border-radius: 6px; }
+
+.popup-container .popup.popup-color-picker.bottom {
+  top: -400px; }
+  .popup-container .popup.popup-color-picker.bottom .arrow {
+    display: none; }

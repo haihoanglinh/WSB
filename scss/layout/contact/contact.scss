@@ -1,0 +1,543 @@
+/*
+Import css team app
+*/
+@import '../document/document_sprites';
+@import '../team/member_types_sprites';
+@import '../contact/member_types_sprites_w';
+@import 'member_types_sprites';
+@import 'main';
+
+@import 'modal';
+
+.app--contact{ 
+  .icon-file{
+    display: inline-block;
+  }
+
+  .icon-file-pdf{
+    @include sprite($file-pdf);
+  }
+
+  .icon-file-doc{
+    @include sprite($file-doc);
+  }
+
+  .icon-file-xls{
+    @include sprite($file-xls);
+  }
+
+  .icon-file-txt{
+    @include sprite($file-txt);
+  }
+
+  .icon-file-jpg{
+    @include sprite($file-jpg);
+  }
+
+  .icon-file-zip{
+    @include sprite($file-zip);
+  }
+
+
+  .member-type-icon{
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .mt-realtor.green{
+    @include sprite($mt-realtor-green);
+  }
+
+  .mt-appraisers.green{
+    @include sprite($mt-appraisers-green);
+  }
+
+  .mt-builder.green{
+    @include sprite($mt-builder-green);
+  }
+
+  .mt-carpentry.green{
+    @include sprite($mt-carpentry-green);
+  }
+
+  .mt-cleaning.green{
+    @include sprite($mt-cleaning-green);
+  }
+
+  .mt-concrete.green{
+    @include sprite($mt-concrete-green);
+  }
+
+  .mt-contractor.green{
+    @include sprite($mt-contractor-green);
+  }
+
+  .mt-decks.green{
+    @include sprite($mt-decks-green);
+  }
+
+  .mt-doors.green{
+    @include sprite($mt-doors-green);
+  }
+
+  .mt-electrical.green{
+    @include sprite($mt-electrical-green);
+  }
+
+  .mt-fencing.green{
+    @include sprite($mt-fencing-green);
+  }
+
+  .mt-fireplaces.green{
+    @include sprite($mt-fireplaces-green);
+  }
+
+  .mt-flooring.green{
+    @include sprite($mt-flooring-green);
+  }
+
+  .mt-funiture.green{
+    @include sprite($mt-funituring-green);
+  }
+
+  .mt-handymen.green{
+    @include sprite($mt-handymen-green);
+  }
+
+  .mt-heating.green{
+    @include sprite($mt-heating-green);
+  }
+
+  .mt-inspector.green{
+    @include sprite($mt-inspector-green);
+  }
+
+  .mt-interior.green{
+    @include sprite($mt-interior-green);
+  }
+
+  .mt-janitorial.green{
+    @include sprite($mt-janitorial-green);
+  }
+
+  .mt-landscaping.green{
+    @include sprite($mt-landscaping-green);
+  }
+
+  .mt-lawn.green{
+    @include sprite($mt-lawn-green);
+  }
+
+  .mt-locksmith.green{
+    @include sprite($mt-locksmith-green);
+  }
+
+  .mt-mortgage.green{
+    @include sprite($mt-mortgage-green);
+  }
+
+  .mt-moving.green{
+    @include sprite($mt-moving-green);
+  }
+
+  .mt-painting.green{
+    @include sprite($mt-painting-green);
+  }
+
+  .mt-inspector.green{
+    @include sprite($mt-inspector-green);
+  }
+
+  .mt-pest.green{
+    @include sprite($mt-pest-green);
+  }
+
+  .mt-plumbing.green{
+    @include sprite($mt-plumbing-green);
+  }
+
+  .mt-pool.green{
+    @include sprite($mt-pool-green);
+  }
+
+  .mt-property.green{
+    @include sprite($mt-property-green);
+  }
+
+  .mt-roofing.green{
+    @include sprite($mt-roofing-green);
+  }
+
+  .mt-staging.green{
+    @include sprite($mt-staging-green);
+  }
+
+  .mt-window.green{
+    @include sprite($mt-window-green);
+  }
+
+  .mt-realtor{
+    @include sprite($mt-realtor);
+    &.active{
+      @include sprite($mt-realtor-active);
+    }
+  }
+
+  .mt-appraisers{
+    @include sprite($mt-appraisers);
+    &.active{
+      @include sprite($mt-appraisers-active);
+    }
+  }
+
+  .mt-builder{
+    @include sprite($mt-builder);
+    &.active{
+      @include sprite($mt-builder-active);
+    }
+  }
+
+  .mt-carpentry{
+    @include sprite($mt-carpentry);
+    &.active{
+      @include sprite($mt-carpentry-active);
+    }
+  }
+
+  .mt-cleaning{
+    @include sprite($mt-cleaning);
+    &.active{
+      @include sprite($mt-cleaning-active);
+    }
+  }
+
+  .mt-concrete{
+    @include sprite($mt-concrete);
+    &.active{
+      @include sprite($mt-concrete-active);
+    }
+  }
+
+  .mt-contractor{
+    @include sprite($mt-contractor);
+    &.active{
+      @include sprite($mt-contractor-active);
+    }
+  }
+
+  .mt-decks{
+    @include sprite($mt-decks);
+    &.active{
+      @include sprite($mt-decks-active);
+    }
+  }
+
+  .mt-doors{
+    @include sprite($mt-doors);
+    &.active{
+      @include sprite($mt-doors-active);
+    }
+  }
+
+  .mt-electrical{
+    @include sprite($mt-electrical);
+    &.active{
+      @include sprite($mt-electrical-active);
+    }
+  }
+
+  .mt-fencing{
+    @include sprite($mt-fencing);
+    &.active{
+      @include sprite($mt-fencing-active);
+    }
+  }
+
+  .mt-fireplaces{
+    @include sprite($mt-fireplaces);
+    &.active{
+      @include sprite($mt-fireplaces-active);
+    }
+  }
+
+  .mt-flooring{
+    @include sprite($mt-flooring);
+    &.active{
+      @include sprite($mt-flooring-active);
+    }
+  }
+
+  .mt-funiture{
+    @include sprite($mt-funituring);
+    &.active{
+      @include sprite($mt-funiture-active);
+    }
+  }
+
+  .mt-handymen{
+    @include sprite($mt-handymen);
+    &.active{
+      @include sprite($mt-handymen-active);
+    }
+  }
+
+  .mt-heating{
+    @include sprite($mt-heating);
+    &.active{
+      @include sprite($mt-heating-active);
+    }
+  }
+
+  .mt-inspector{
+    @include sprite($mt-inspector);
+    &.active{
+      @include sprite($mt-inspector-active);
+    }
+  }
+
+  .mt-interior{
+    @include sprite($mt-interior);
+    &.active{
+      @include sprite($mt-interior-active);
+    }
+  }
+
+  .mt-janitorial{
+    @include sprite($mt-janitorial);
+    &.active{
+      @include sprite($mt-janitorial-active);
+    }
+  }
+
+  .mt-landscaping{
+    @include sprite($mt-landscaping);
+    &.active{
+      @include sprite($mt-landscaping-active);
+    }
+  }
+
+  .mt-lawn{
+    @include sprite($mt-lawn);
+    &.active{
+      @include sprite($mt-lawn-active);
+    }
+  }
+
+  .mt-locksmith{
+    @include sprite($mt-locksmith);
+    &.active{
+      @include sprite($mt-locksmith-active);
+    }
+  }
+
+  .mt-mortgage{
+    @include sprite($mt-mortgage);
+    &.active{
+      @include sprite($mt-mortgage-active);
+    }
+  }
+
+  .mt-moving{
+    @include sprite($mt-moving);
+    &.active{
+      @include sprite($mt-moving-active);
+    }
+  }
+
+  .mt-painting{
+    @include sprite($mt-painting);
+    &.active{
+      @include sprite($mt-painting-active);
+    }
+  }
+
+  .mt-inspector{
+    @include sprite($mt-inspector);
+    &.active{
+      @include sprite($mt-inspector-active);
+    }
+  }
+
+  .mt-pest{
+    @include sprite($mt-pest);
+    &.active{
+      @include sprite($mt-pest-active);
+    }
+  }
+
+  .mt-plumbing{
+    @include sprite($mt-plumbing);
+    &.active{
+      @include sprite($mt-plumbing-active);
+    }
+  }
+
+  .mt-pool{
+    @include sprite($mt-pool);
+    &.active{
+      @include sprite($mt-pool-active);
+    }
+  }
+
+  .mt-property{
+    @include sprite($mt-property);
+    &.active{
+      @include sprite($mt-property-active);
+    }
+  }
+
+  .mt-roofing{
+    @include sprite($mt-roofing);
+    &.active{
+      @include sprite($mt-roofing-active);
+    }
+  }
+
+  .mt-staging{
+    @include sprite($mt-staging);
+    &.active{
+      @include sprite($mt-staging-active);
+    }
+  }
+
+  .mt-window{
+    @include sprite($mt-window);
+    &.active{
+      @include sprite($mt-window-active);
+    }
+  }
+
+
+
+  .mt-realtor.white{
+    @include sprite($mt-realtor-white);
+  }
+
+  .mt-appraisers.white{
+    @include sprite($mt-appraisers-white);
+  }
+
+  .mt-builder.white{
+    @include sprite($mt-builder-white);
+  }
+
+  .mt-carpentry.white{
+    @include sprite($mt-carpentry-white);
+  }
+
+  .mt-cleaning.white{
+    @include sprite($mt-cleaning-white);
+  }
+
+  .mt-concrete.white{
+    @include sprite($mt-concrete-white);
+  }
+
+  .mt-contractor.white{
+    @include sprite($mt-contractor-white);
+  }
+
+  .mt-decks.white{
+    @include sprite($mt-decks-white);
+  }
+
+  .mt-doors.white{
+    @include sprite($mt-doors-white);
+  }
+
+  .mt-electrical.white{
+    @include sprite($mt-electrical-white);
+  }
+
+  .mt-fencing.white{
+    @include sprite($mt-fencing-white);
+  }
+
+  .mt-fireplaces.white{
+    @include sprite($mt-fireplaces-white);
+  }
+
+  .mt-flooring.white{
+    @include sprite($mt-flooring-white);
+  }
+
+  .mt-funiture.white{
+    @include sprite($mt-funituring-white);
+  }
+
+  .mt-handymen.white{
+    @include sprite($mt-handymen-white);
+  }
+
+  .mt-heating.white{
+    @include sprite($mt-heating-white);
+  }
+
+  .mt-inspector.white{
+    @include sprite($mt-inspector-white);
+  }
+
+  .mt-interior.white{
+    @include sprite($mt-interior-white);
+  }
+
+  .mt-janitorial.white{
+    @include sprite($mt-janitorial-white);
+  }
+
+  .mt-landscaping.white{
+    @include sprite($mt-landscaping-white);
+  }
+
+  .mt-lawn.white{
+    @include sprite($mt-lawn-white);
+  }
+
+  .mt-locksmith.white{
+    @include sprite($mt-locksmith-white);
+  }
+
+  .mt-mortgage.white{
+    @include sprite($mt-mortgage-white);
+  }
+
+  .mt-moving.white{
+    @include sprite($mt-moving-white);
+  }
+
+  .mt-painting.white{
+    @include sprite($mt-painting-white);
+  }
+
+  .mt-inspector.white{
+    @include sprite($mt-inspector-white);
+  }
+
+  .mt-pest.white{
+    @include sprite($mt-pest-white);
+  }
+
+  .mt-plumbing.white{
+    @include sprite($mt-plumbing-white);
+  }
+
+  .mt-pool.white{
+    @include sprite($mt-pool-white);
+  }
+
+  .mt-property.white{
+    @include sprite($mt-property-white);
+  }
+
+  .mt-roofing.white{
+    @include sprite($mt-roofing-white);
+  }
+
+  .mt-staging.white{
+    @include sprite($mt-staging-white);
+  }
+
+  .mt-window.white{
+    @include sprite($mt-window-white);
+  }
+}

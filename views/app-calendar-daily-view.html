@@ -1,0 +1,2168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- set the encoding of your site -->
+    <meta charset="utf-8">
+    <!-- set the viewport width and initial-scale on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Calendar daily view</title>
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+    <!-- Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <!-- Boostrap select -->
+    <link rel="stylesheet" href="../bower_components/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <!-- include the datepicker -->
+    <link rel="stylesheet" href="../bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+    <!-- include the colorpicker css -->
+    <link rel="stylesheet" href="../bower_components/mjolnic-bootstrap-colorpicker/dist/css/bootstrap-colorpicker.css">
+    <!-- include bootstrap WYSIWYG -->
+    <link rel="stylesheet" href="../bower_components/summernote/dist/summernote.css">
+    <!-- include the site stylesheet -->
+    <link rel="stylesheet" href="../css/main.css">
+    <script type="text/javascript" src="../js/svg-sprites.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('svg-icon-placeholder').innerHTML += SVG_SPRITES['sprite'];
+        }, false);
+    </script>
+</head>
+<body class="app--blog app--calendar blog-page">
+
+<div id="svg-icon-placeholder" style="display: none;"></div>
+<!-- main container of all the page elements -->
+<div class="wrapper">
+
+<!-- header of the page -->
+<header id="header" class="well well-dark header-relative">
+<nav class="navbar navbar-default main-nav-container">
+<div class="container-fluid">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+
+    <!-- page logo -->
+    <div class="navbar-brand logo">
+        <a href="app-control-panel.html"><img src="../images/logo.svg" alt="WebsiteBox" width="89" height="37"></a>
+    </div>
+</div>
+<!--Box search for app-->
+<div class="box-search">
+    <div class="search-row">
+        <input type="text" class="form-control input-search input-control" placeholder="Search">
+        <a href="#" class="icon-search"><i class="fa fa-search"></i></a>
+
+        <div class="box-search-details">
+            <div class="result-document">
+                <div class="result-title">
+                    <p class="title">
+                        <span>
+                            <img src="../images/calendar.png">
+                        </span>
+                        Calendar</p>
+                </div>
+                <div class="result-content">
+                    <div class="row-info">
+                        <p class="pull-left">Test the new Websitebox</p>
+
+                        <p class="pull-right">daily</p>
+                    </div>
+                    <div class="row-info">
+                        <p class="pull-left">Test the new Websitebox</p>
+
+                        <p class="pull-right">daily</p>
+                    </div>
+                    <div class="row-info active">
+                        <p class="pull-left">Test the new Websitebox</p>
+
+                        <p class="pull-right">daily</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- main navigation of the page -->
+<ul class="nav nav-pills navbar-right main-nav">
+<li class="dropdown icon-notify">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+        <span class="sr-only">Notification</span>
+                <span class="icon-holder">
+                  <svg xmlnsxxxx="http://www.w3333333.org/2000/svg" class="icon icon-notification">
+                      <use xlink:href="#icon-notification"></use>
+                  </svg>
+                  <span class="quantity">2</span>
+                </span>
+    </a>
+
+    <div class="dropdown-menu notification-menu users-block">
+        <span class="arrow"></span>
+        <ul class="list-unstyled block-rounded">
+            <li>
+                <div class="panel-body">
+                    <div class="row row-inline panel-row">
+                        <div class="col-xs-10">
+                            <div class="row">
+                                <div class="col-xs-3 column img-holder">
+                                    <img src="../images/avatar02.jpg" class="img-circle img-thumbnail"
+                                         alt="image description">
+                                </div>
+                                <div class="col-xs-7 column text-block">
+                                    <span class="name">Andres Iniesta </span>
+                                    <span class="meta"><time datetime="19:45">Replied at 7:45 PM</time></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-2 column btn-holder">
+                            <a href="#" class="btn btn-success btn-circle btn-checked"><i class="fa fa-check"></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh eu ismod
+                                tincidunt ut laoreet dolore magna ali quam erat volutpat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="alert alert-success">
+                    <div class="row">
+                        <div class="col-xs-12">Send 25 more listings to Andres</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="panel-body">
+                    <div class="row row-inline panel-row">
+                        <div class="col-xs-10">
+                            <div class="row">
+                                <div class="col-xs-3 column img-holder">
+                                    <img src="../images/avatar03.jpg" class="img-circle img-thumbnail img-responsive"
+                                         alt="image description">
+                                </div>
+                                <div class="col-xs-6 column text-block">
+                                    <span class="name">Vanessa Bond</span>
+                                    <span class="meta"><time datetime="19:45">Replied at 7:45 PM</time></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-2 column btn-holder">
+                            <a href="#" class="btn btn-danger btn-circle btn-checked"><i class="fa fa-times"></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh eu ismod
+                                tincidunt ut laoreet dolore magna ali quam erat volutpat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="alert alert-danger">
+                    <div class="row">
+                        <div class="col-xs-12">Send 25 more listings to Vanessa</div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</li>
+
+<!-- To make the POPUP-HELP STEP 3 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+<li class="popup-container dropdown app-menu-holder popup-help-container step03">
+<div class="popup-overlay"></div>
+<a href="#" class="opener-popup dropdown-toggle under-overlay">
+  <span class="icon-view-store">
+      <span class="st1 st-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+      </span>
+      <span class="st2 st-icon">
+            <span></span>
+          <span></span>
+          <span></span>
+      </span>
+      <span class="st3 st-icon">
+            <span></span>
+          <span></span>
+          <span></span>
+      </span>
+  </span>
+</a>
+
+<div class="popup dropdown-menu under-overlay">
+<span class="arrow"></span>
+
+<div class="app-menu menu-list open-close">
+<div class="panel">
+<div class="panel-body">
+    <div class="first-view">
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/app_store.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>App Store</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/websites.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Websites</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/domains.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Domains</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/listings.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Listings</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/contacts.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Contacts</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/emails.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Emails</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/tasks.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Tasks</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/documents.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Documents</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/calendar.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Calendar</span>
+            </a>
+        </div>
+    </div>
+    <div class="slide">
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/campaigns.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Campaigns</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/listing_syndication.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Listing Syndication</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/rss.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>RSS</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/community.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Community</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/google_analytics.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Google Analytics</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/profile.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Profile</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/blog.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Blog</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/prints.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Prints</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/lead_capture.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Lead Capture</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/seo.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>SEO</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/mobile_notifications.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Mobile Notifications</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/craigslist.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Craigslist</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/qr_code.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>QR Code</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/har.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>HAR</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/move.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Move</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/realtor.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Realtor.com</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/apple.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Apple</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/cnn.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>CNN</span>
+            </a>
+        </div>
+    </div>
+    <div class="btn-holder">
+        <a class="btn btn-default btn-block opener" href="#">
+            <span class="hidden-active">More</span>
+            <span class="visible-active">Less</span>
+        </a>
+    </div>
+</div>
+</div>
+</div>
+<!-- To make the POPUP-HELP STEP 3 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+<div class="popup-help step03">
+    <div class="panel panel-default">
+        <span class="arrow arrow-right"></span>
+
+        <div class="panel-heading">
+            <strong class="title">Step 3 of 7</strong>
+            <a class="close" href="#" aria-label="Close"><span aria-hidden="true">&times;</span>
+            </a>
+        </div>
+        <div class="panel-body">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                laoreet dolore magna volutpat.</p>
+
+            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation</p>
+
+            <div class="btn-container text-right"><a href="#" class="btn btn-warning"><i
+                    class="fa fa-chevron-left"></i></a><a href="#" class="btn btn-warning"><i
+                    class="fa fa-chevron-right"></i></a></div>
+        </div>
+    </div>
+</div>
+</div>
+</li>
+<!--Show icon in mobile -->
+<li class="popup-container dropdown app-menu-holder popup-help-container wrap-icon-mobile">
+    <button type="button" class="nav-opener navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</li>
+<!-- To make the POPUP-HELP STEP 4 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+<li class="hidden-xs popup-help-container step04">
+    <div class="popup-overlay"></div>
+
+    <a href="#" data-toggle="modal" data-target="#myModal" class="btn-link under-overlay">
+        <span class="sr-only">Info</span>
+        <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+    </a>
+    <!-- To make the POPUP-HELP STEP 4 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+    <div class="popup-help step04">
+        <div class="panel panel-default">
+            <span class="arrow"></span>
+
+            <div class="panel-heading">
+                <strong class="title">Step 4 of 7</strong>
+                <a class="close" href="#" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </a>
+            </div>
+            <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna volutpat. </p>
+
+                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation</p>
+
+                <div class="btn-container text-right"><a href="#" class="btn btn-warning"><i
+                        class="fa fa-chevron-left"></i></a><a href="#" class="btn btn-warning"><i
+                        class="fa fa-chevron-right"></i></a></div>
+            </div>
+        </div>
+    </div>
+</li>
+<!-- To make the POPUP-HELP STEP 5 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+<li class="popup-container dropdown popup-help-container step05">
+    <div class="popup-overlay"></div>
+    <a class="opener-popup dropdown-toggle under-overlay" href="#">
+     <span class="icon-step05">
+
+     </span>
+    </a>
+
+    <div class="popup dropdown-menu settings-block under-overlay">
+        <span class="arrow"></span>
+
+        <div class="panel">
+            <div class="panel-body">
+                <div class="row dropdown-row">
+                    <div class="col-xs-4 theme-list-holder">
+                        <div class="scrollable">
+                            <span class="title text-uppercase">Theme</span>
+                            <ul class="theme-list list-unstyled">
+                                <li>
+                                    <a href="#"><span class="color color-default"></span><span class="description">Default</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="color color-remax"></span><span
+                                            class="description">Remax</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="active"><span class="color color-century91"></span><span
+                                            class="description">Century 91</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="color color-minimal"></span><span class="description">Minimal</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="color color-summer"></span><span
+                                            class="description">Summer</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="color color-default"></span><span class="description">Default</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="color color-remax"></span><span
+                                            class="description">Remax</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="color color-century91"></span><span class="description">Century 91</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="color color-minimal"></span><span class="description">Minimal</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="color color-summer"></span><span
+                                            class="description">Summer</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-8">
+                        <span class="title text-uppercase">Settings</span>
+
+                        <div class="form-in-drop">
+                            <div class="form-group">
+                                <span class="label-holder"><label for="select-1">Time Zone</label></span>
+                            <span class="select-holder">
+                              <span class="fake-select">
+                                <select id="select-1" class="form-control">
+                                    <option selected="selected">(UTC -8:00)</option>
+                                    <option>(UTC -8:00)</option>
+                                    <option>(UTC -8:00)</option>
+                                    <option>(UTC -8:00)</option>
+                                </select>
+                              </span>
+                            </span>
+                            </div>
+                            <div class="form-group">
+                                <span class="label-holder"><label for="select-2">Email Digest</label></span>
+                            <span class="select-holder">
+                              <span class="fake-select">
+                                <select id="select-2" class="form-control">
+                                    <option selected="selected">option 1</option>
+                                    <option>option 2</option>
+                                    <option>option 3</option>
+                                </select>
+                              </span>
+                            </span>
+                            </div>
+                            <div class="form-group">
+                                <span class="label-holder"><label for="language">Language</label></span>
+                                <span class="input-holder"><input type="text" class="form-control" id="language"
+                                                                  placeholder="English"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- To make the POPUP-HELP STEP 5 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+        <div class="popup-help step05">
+            <div class="panel panel-default">
+                <span class="arrow arrow-right"></span>
+
+                <div class="panel-heading">
+                    <strong class="title">Step 5 of 7</strong>
+                    <a class="close" href="#" aria-label="Close"><span aria-hidden="true">&times;</span>
+                    </a>
+                </div>
+                <div class="panel-body">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                        ut laoreet dolore magna volutpat. </p>
+
+                    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation</p>
+
+                    <div class="btn-container text-right"><a href="#" class="btn btn-warning"><i
+                            class="fa fa-chevron-left"></i></a><a href="#" class="btn btn-warning"><i
+                            class="fa fa-chevron-right"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+<!-- To make the POPUP-HELP STEP 6 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+<li class="dropdown hidden-xs user-dropdown popup-help-container step06">
+    <div class="popup-overlay"></div>
+    <a href="#" id="dropdownMenu2" class="user-block dropdown-toggle under-overlay" data-toggle="dropdown" role="button"
+       aria-haspopup="true" aria-expanded="false">
+        <div class="row">
+            <div class="col-xs-3 img-holder"><img src="../images/avatar01.jpg" class="img-responsive img-circle"
+                                                  alt="image description"></div>
+            <div class="col-xs-9 text-block">
+                <div class="name"><strong>Richard Mattius</strong><span class="caret"></span></div>
+                <strong class="status text-uppercase text-warning">PREMIUM USER</strong>
+            </div>
+        </div>
+    </a>
+
+    <div class="dropdown-menu under-overlay">
+        <span class="arrow"></span>
+
+        <div class="panel-body">
+            <ul class="list-unstyled" aria-labelledby="dropdownMenu2">
+                <li class="switch-account">
+                    <a href="#switch-account-menu" class="switch-account-toggle collapsed" data-toggle="collapse">
+                        <span class="renew-icon"><i class="material-icons">autorenew</i></span>
+                        <span class="account-name">Century 21 Inc.</span>
+                        <span class="text">Switch Account</span>
+                        <span class="menu-arrow-icon"><i class="material-icons">arrow_drop_down</i></span>
+                    </a>
+
+                    <div id="switch-account-menu" class="collapse">
+                        <ul>
+                            <li><a href="#">Realty Corp.</a></li>
+                            <li><a href="#">Bradly and Drown</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li role="separator" class="divider"></li>
+
+                <li>
+                    <a href="app-account-info.html">
+                        <i class="material-icons">person</i>
+                        <span class="text">My Account</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="my-user.html">
+                        <i class="material-icons">group</i>
+                        <span class="text">My Users</span>
+                    </a>
+                </li>
+                <li>
+                    <div class=""></div>
+                    <a href="my-product.html">
+                        <i class="material-icons">apps</i>
+                        <span class="text">My Products & Services</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="app-store.html">
+                        <i class="material-icons">shopping_basket</i>
+                        <span class="text">WebsiteBox Store</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#myModal">
+                        <i class="material-icons">help</i>
+                        <span class="text">Help & Support</span>
+                    </a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li>
+                    <a href="#">
+                        <i class="material-icons">exit_to_app</i>
+                        <span class="text">Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- To make the POPUP-HELP STEP 6 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+        <div class="popup-help step06">
+            <div class="panel panel-default">
+                <span class="arrow arrow-right"></span>
+
+                <div class="panel-heading">
+                    <strong class="title">Step 6 of 7</strong>
+                    <a class="close" href="#" aria-label="Close"><span aria-hidden="true">&times;</span>
+                    </a>
+                </div>
+                <div class="panel-body">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                        ut laoreet dolore magna volutpat. </p>
+
+                    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation</p>
+
+                    <div class="btn-container text-right"><a href="#" class="btn btn-warning"><i
+                            class="fa fa-chevron-left"></i></a><a href="#" class="btn btn-warning"><i
+                            class="fa fa-chevron-right"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+</ul>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="drop visible-xs visible-sm menu-mobile-767">
+    <div class="navbar-collapse">
+        <div class="row-top">
+            <p class="text-menu">Menu</p>
+            <button type="button" class="nav-opener nav-toggle-767">
+                <span class="x1"></span>
+                <span class="x2"></span>
+            </button>
+        </div>
+        <div class="box-search">
+            <div class="search-row">
+                <input type="text" class="form-control input-search input-control" placeholder="Search"
+                       style="position: relative; z-index: 3; background: transparent;">
+                <a href="#" class="icon-search"><i class="fa fa-search"></i></a>
+            </div>
+        </div>
+        <div class="user-dropdown">
+          <div class="dropdown-menu">
+            <ul class="list-unstyled user-account-menu">
+                <li class="switch-account">
+                    <a href="#switch-account-menu-mobile" class="switch-account-toggle collapsed" data-toggle="collapse">
+                        <span class="renew-icon"><i class="material-icons">autorenew</i></span>
+                        <span class="account-name">Century 21 Inc.</span>
+                        <span class="text">Switch Account</span>
+                        <span class="menu-arrow-icon"><i class="material-icons">arrow_drop_down</i></span>
+                    </a>
+
+                    <div id="switch-account-menu-mobile" class="collapse">
+                        <ul>
+                            <li><a href="#">Realty Corp.</a></li>
+                            <li><a href="#">Bradly and Drown</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li role="separator" class="divider"></li>
+
+                <li>
+                    <a href="app-account-info.html">
+                        <i class="material-icons">person</i>
+                        <span class="text">My Account</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="my-user.html">
+                        <i class="material-icons">group</i>
+                        <span class="text">My Users</span>
+                    </a>
+                </li>
+                <li>
+                    <div class=""></div>
+                    <a href="my-product.html">
+                        <i class="material-icons">apps</i>
+                        <span class="text">My Products &amp; Services</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="app-store.html">
+                        <i class="material-icons">shopping_basket</i>
+                        <span class="text">WebsiteBox Store</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#myModal">
+                        <i class="material-icons">help</i>
+                        <span class="text">Help &amp; Support</span>
+                    </a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li>
+                    <a href="#">
+                        <i class="material-icons">exit_to_app</i>
+                        <span class="text">Logout</span>
+                    </a>
+                </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row user-block">
+            <div class="col-xs-3 img-holder"><img src="../images/avatar01.jpg" class="img-responsive img-circle"
+                                                  alt="image description"></div>
+            <div class="col-xs-9 text-block">
+                <div class="name"><strong>Richard Mattius</strong></div>
+                <strong class="status text-uppercase text-warning">PREMIUM USER</strong>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</nav>
+</header><!-- contain main informative part of the site -->
+<main id="main" role="main">
+  <div class="container-fluid">
+    <div class="row same-height-holder">
+      <div id="content-page">
+        <div class="col-lg-8">
+          <div class="panel panel-default no-panel-mobile margin-clear same-height-col col-agl-app">
+            <ul class="switchers-list list-unstyled switch-2">
+              <li>
+                <a href="app-calendar-month-view.html" class="btn btn-default">
+                M
+                </a>
+              </li>
+              <li>
+                <a href="app-calendar-week-view.html" class="btn btn-default">
+                W
+                </a>
+              </li>
+              <li class="active">
+                <a href="#" class="btn btn-default">
+                D
+                </a>
+              </li>
+            </ul>
+            <div class="panel-heading panel-heading-calendar">
+              <div class="row">
+                <div class="col-xs-5 col-sm-5 col-lg-5 left-col">
+                  <div class="row">
+                    <div class="col-sm-2 img-block">
+                      <div class="img-holder"><img src="../images/calendar.png" class="img-responsive"
+                        alt="image description"></div>
+                    </div>
+                    <div class="col-sm-10 heading-block">
+                      <h1>Calendar App</h1>
+                      <p>Manage your calendars</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-7 col-sm-7 col-lg-7 text-right buttons-holder right-col">
+                  <!-- Dropdown view in mobile -->
+                  <div class="dropdown dropdown-more">
+                    <a class="btn btn-sm btn-dots" id="dLabel" data-toggle="dropdown" aria-haspopup="true"
+                      aria-expanded="false">
+                    <span class="dot-1"></span>
+                    <span class="dot-2"></span>
+                    <span class="dot-3"></span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+                      <li><a href="#"> Add </a></li>
+                      <li><a href="#"> Display </a></li>
+                      <li><a href="#"> More </a></li>
+                    </ul>
+                  </div>
+                  <!-- mobile view search modal -->
+                  <a href="#" class="popup-opener btn-popup-search" data-toggle="modal" data-target="#searchModal">
+                  <i class="fa fa-search"></i>
+                  </a>
+                  <!-- nav switch m/d/w -->
+                  <div class="sheet-view-mdw">
+                    <ul>
+                      <li>
+                        <a href="app-calendar-month-view.html">
+                        M
+                        </a>
+                      </li>
+                      <li>
+                        <a href="app-calendar-week-view.html">
+                        w
+                        </a>
+                      </li>
+                      <li>
+                        <a href="app-calendar-daily-view.html" class="active">
+                        d
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Modal -->
+                  <div class="modal fade modal-left-to-right modal-special-mobile" id="searchModal" tabindex="-1"
+                    role="dialog">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <div class="row">
+                            <div class="col-xs-10">
+                              <h1>Search</h1>
+                              <p>3 results found</p>
+                            </div>
+                            <div class="col-xs-2 button-block">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-body">
+                          <div class="search-pupup-content">
+                            <div class="box-search sidebar">
+                              <div class="search-row">
+                                <input type="text" class="form-control" placeholder="Search"
+                                  style="position: relative; z-index: 3; background: transparent;">
+                                <a href="#" class="icon-search"><i class="fa fa-search"></i></a>
+                              </div>
+                            </div>
+                            <div class="sidebar-calendar-daily">
+                              <div class="calendar-view-row">
+                                <div class="col-left">
+                                  <div class="icon-calendar">
+                                    <div class="month">
+                                      Feb
+                                    </div>
+                                    <div class="day">
+                                      14
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-right">
+                                  <p class="text-info">
+                                    Meeting with Peyman Aleagha
+                                  </p>
+                                  <p class="date">
+                                    8:30 AM - 9:00AM
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="calendar-view-row">
+                                <div class="col-left">
+                                  <div class="icon-calendar">
+                                    <div class="month">
+                                      Feb
+                                    </div>
+                                    <div class="day">
+                                      14
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-right">
+                                  <p class="text-info">
+                                    Meeting with Peyman Aleagha
+                                  </p>
+                                  <p class="date">
+                                    8:30 AM - 9:00AM
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="calendar-view-row">
+                                <div class="col-left">
+                                  <div class="icon-calendar">
+                                    <div class="month">
+                                      Feb
+                                    </div>
+                                    <div class="day">
+                                      14
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-right">
+                                  <p class="text-info">
+                                    Meeting with Peyman Aleagha
+                                  </p>
+                                  <p class="date">
+                                    8:30 AM - 9:00AM
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="categories-section">
+                              <div class="panel-heading-pop">
+                                <div class="row row-inline">
+                                  <div class="col-xs-6 column">
+                                    <h1>Calendars</h1>
+                                  </div>
+                                  <div class="col-xs-6 column popup-container text-right popup-categories">
+                                    <button type="button" class="btn btn-default btn-plus opener-popup">
+                                    <span class="x1">
+                                    </span>
+                                    <span class="x2">
+                                    </span>
+                                    </button>
+                                    <!--Popup addtag-->
+                                    <div class="popup box-add-tag">
+                                      <div class="panel panel-default">
+                                        <span class="arrow"></span>
+                                        <div class="panel-heading-tag">
+                                          <strong class="title">Add Tag</strong>
+                                        </div>
+                                        <div class="panel-body-tag">
+                                          <div class="content-add-tag">
+                                            <div class="add-tag">
+                                              <input type="text" placeholder="New Tag">
+                                              <button type="submit" class="btn btn-orange"
+                                                value="submit">
+                                              Submit
+                                              </button>
+                                            </div>
+                                            <div class="tag-content">
+                                              <div class="tag-content-inner">
+                                                <span class="tag"><span>Work&nbsp;&nbsp;</span><a
+                                                  href="#"
+                                                  title="Removing tag">x</a></span><span
+                                                  class="tag"><span>Cards&nbsp;&nbsp;</span><a
+                                                  href="#"
+                                                  title="Removing tag">x</a></span><span
+                                                  class="tag"><span>Apple&nbsp;&nbsp;</span><a
+                                                  href="#"
+                                                  title="Removing tag">x</a></span><span
+                                                  class="tag"><span>Business Cards&nbsp;&nbsp;</span><a
+                                                  href="#"
+                                                  title="Removing tag">x</a></span><span
+                                                  class="tag"><span>Website&nbsp;&nbsp;</span><a
+                                                  href="#" title="Removing tag">x</a></span>
+                                                <div class="tags_clear"></div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="box-select-calendars">
+                                <div class="row-select-calendar">
+                                  <label>
+                                  <input type="checkbox">
+                                  <span></span>
+                                  Work Calendar
+                                  </label>
+                                  <div class="color-picker">
+                                    <span class="color-view">
+                                    </span>
+                                  </div>
+                                </div>
+                                <div class="row-select-calendar">
+                                  <label>
+                                  <input type="checkbox">
+                                  <span></span>
+                                  Work Calendar
+                                  </label>
+                                  <div class="color-picker">
+                                    <span class="color-view">
+                                    </span>
+                                  </div>
+                                </div>
+                                <div class="row-select-calendar">
+                                  <label>
+                                  <input type="checkbox">
+                                  <span></span>
+                                  Work Calendar
+                                  </label>
+                                  <div class="color-picker">
+                                    <span class="color-view">
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="btn-bottom">
+                          <button type="submit" class="btn btn-lg btn-warning btn-block text-uppercase btn-view-320">
+                          Search
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="buttons-row list-btn-op on-app-grid">
+                    <div class="box-daily-date">
+                      <a href="#" class="btn-left"><i class="fa fa-angle-left"></i></a>
+                      <input type="text" class="text-center" placeholder="Feb 20, 2016">
+                      <a href="#" class="btn-right"><i class="fa fa-angle-right"></i></a>
+                    </div>
+                    <button type="button" class="btn btn-default btn-add btn-add-agile "><i class="fa fa-plus-circle"></i>Add
+                    </button>
+                    <button type="button" class="btn btn-default">More</button>
+                    <button type="button" class="btn btn-default visible-desktop popup-opener" data-toggle="modal"
+                      data-target="#searchModal">Search
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box-daily-view-320">
+              <div class="sheet-view-mdw">
+                <ul>
+                  <li>
+                    <a href="app-calendar-month-view.html">
+                    Month
+                    </a>
+                  </li>
+                  <li>
+                    <a href="app-calendar-week-view.html">
+                    week
+                    </a>
+                  </li>
+                  <li>
+                    <a href="app-calendar-daily-view.html" class="active">
+                    day
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="box-daily-date">
+                <a href="#" class="btn-left"><i class="fa fa-angle-left"></i></a>
+                <input type="text" class="text-center" placeholder="Feb 20, 2016">
+                <a href="#" class="btn-right"><i class="fa fa-angle-right"></i></a>
+              </div>
+            </div>
+            <!-- Content blog grid view -->
+            <div class="sheet-calendars-view">
+              <div class="calendar-header">
+                <div class="date-view">
+                  <h2>Monday, February 20, 2016</h2>
+                </div>
+                <div class="text-even">
+                  <p>3 Events</p>
+                </div>
+              </div>
+              <div class="calendar-daily-view-content">
+                <div class="daily-view-content-inner">
+                  <div class="daily-row">
+                    <div class="daily-hourse">
+                      <p>7AM</p>
+                    </div>
+                    <div class="daily-view-details" data-toggle="modal" data-target="#calendarAppDetails">
+                      <div class="hours">
+                        08:00 AM - 9:30 AM
+                      </div>
+                      <div class="daily-info">
+                        Meeting with Peyman Aleagha
+                      </div>
+                      <div class="daily-notes">
+                        (more details or notes maybe?)
+                      </div>
+                    </div>
+                  </div>
+                  <div class="daily-row">
+                    <div class="daily-hourse">
+                      <p>8AM</p>
+                    </div>
+                  </div>
+                  <div class="daily-row">
+                    <div class="daily-hourse">
+                      <p>9AM</p>
+                    </div>
+                  </div>
+                  <div class="daily-row">
+                    <div class="daily-hourse">
+                      <p>10AM</p>
+                    </div>
+                  </div>
+                  <div class="daily-row">
+                    <div class="daily-hourse">
+                      <p>11AM</p>
+                    </div>
+                  </div>
+                  <div class="daily-row">
+                    <div class="daily-hourse">
+                      <p>12PM</p>
+                    </div>
+                    <div class="daily-view-details">
+                      <div class="hours">
+                        12:00 PM
+                      </div>
+                      <div class="daily-info">
+                        Send Email to Jonathan
+                      </div>
+                    </div>
+                  </div>
+                  <div class="daily-row">
+                    <div class="daily-hourse">
+                      <p>1PM</p>
+                    </div>
+                  </div>
+                  <div class="daily-row">
+                    <div class="daily-hourse">
+                      <p>2PM</p>
+                    </div>
+                  </div>
+                  <div class="daily-row">
+                    <div class="daily-hourse">
+                      <p>3PM</p>
+                    </div>
+                  </div>
+                  <div class="daily-row">
+                    <div class="daily-hourse">
+                      <p>4PM</p>
+                    </div>
+                  </div>
+                  <div class="daily-row">
+                    <div class="daily-hourse">
+                      <p>5PM</p>
+                    </div>
+                    <div class="daily-view-details">
+                      <div class="hours">
+                        5:00 PM
+                      </div>
+                      <div class="daily-info">
+                        Send Email with Listing Details
+                      </div>
+                    </div>
+                  </div>
+                  <div class="daily-row">
+                    <div class="daily-hourse">
+                      <p>6PM</p>
+                    </div>
+                  </div>
+                  <div class="daily-row">
+                    <div class="daily-hourse">
+                      <p>7PM</p>
+                    </div>
+                  </div>
+                  <div class="daily-row">
+                    <div class="daily-hourse">
+                      <p>8PM</p>
+                    </div>
+                  </div>
+                  <div class="daily-row">
+                    <div class="daily-hourse">
+                      <p>9PM</p>
+                    </div>
+                  </div>
+                  <div class="daily-row">
+                    <div class="daily-hourse">
+                      <p>10PM</p>
+                    </div>
+                  </div>
+                  <div class="daily-row">
+                    <div class="daily-hourse">
+                      <p>11PM</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 hidden-xs hidden-sm sidebar-right ">
+          <div class="panel panel-default same-height panel-search no-bottom-indent same-height-col col-agl-app">
+            <div class="panel-heading">
+              <h1>Search</h1>
+              <p>5 results found</p>
+            </div>
+            <div class="box-search sidebar">
+              <div class="search-row">
+                <input type="text" class="form-control" placeholder="Search"
+                  style="position: relative; z-index: 3; background: transparent;">
+                <a href="#" class="icon-search"><i class="fa fa-search"></i></a>
+              </div>
+            </div>
+            <div class="sidebar-calendar-daily">
+              <div class="calendar-view-row">
+                <div class="col-left">
+                  <div class="icon-calendar">
+                    <div class="month">
+                      Feb
+                    </div>
+                    <div class="day">
+                      14
+                    </div>
+                  </div>
+                </div>
+                <div class="col-right">
+                  <p class="text-info">
+                    Meeting with Peyman Aleagha
+                  </p>
+                  <p class="date">
+                    8:30 AM - 9:00AM
+                  </p>
+                </div>
+              </div>
+              <div class="calendar-view-row">
+                <div class="col-left">
+                  <div class="icon-calendar">
+                    <div class="month">
+                      Feb
+                    </div>
+                    <div class="day">
+                      14
+                    </div>
+                  </div>
+                </div>
+                <div class="col-right">
+                  <p class="text-info">
+                    Meeting with Peyman Aleagha
+                  </p>
+                  <p class="date">
+                    8:30 AM - 9:00AM
+                  </p>
+                </div>
+              </div>
+              <div class="calendar-view-row">
+                <div class="col-left">
+                  <div class="icon-calendar">
+                    <div class="month">
+                      Feb
+                    </div>
+                    <div class="day">
+                      14
+                    </div>
+                  </div>
+                </div>
+                <div class="col-right">
+                  <p class="text-info">
+                    Meeting with Peyman Aleagha
+                  </p>
+                  <p class="date">
+                    8:30 AM - 9:00AM
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="categories-section">
+              <div class="panel-heading">
+                <div class="row row-inline">
+                  <div class="col-xs-10 column">
+                    <h1>Calendars</h1>
+                  </div>
+                  <div class="col-xs-2 column popup-container text-right popup-categories">
+                    <button type="button" class="btn btn-default btn-plus opener-popup">
+                    <span class="x1">
+                    </span>
+                    <span class="x2">
+                    </span>
+                    </button>
+                    <!--Popup addtag-->
+                    <div class="popup box-add-tag">
+                      <div class="panel panel-default">
+                        <span class="arrow"></span>
+                        <div class="panel-heading-tag">
+                          <strong class="title">Add Tag</strong>
+                        </div>
+                        <div class="panel-body-tag">
+                          <div class="content-add-tag">
+                            <div class="add-tag">
+                              <input type="text" placeholder="New Tag">
+                              <button type="submit" class="btn btn-orange" value="submit">
+                              Submit
+                              </button>
+                            </div>
+                            <div class="tag-content">
+                              <div class="tag-content-inner">
+                                <span
+                                  class="tag"><span>Work&nbsp;&nbsp;</span><a href="#"
+                                  title="Removing tag">x</a></span><span
+                                  class="tag"><span>Cards&nbsp;&nbsp;</span><a href="#"
+                                  title="Removing tag">x</a></span><span
+                                  class="tag"><span>Apple&nbsp;&nbsp;</span><a href="#"
+                                  title="Removing tag">x</a></span><span
+                                  class="tag"><span>Business Cards&nbsp;&nbsp;</span><a href="#"
+                                  title="Removing tag">x</a></span><span
+                                  class="tag"><span>Website&nbsp;&nbsp;</span><a href="#"
+                                  title="Removing tag">x</a></span>
+                                <div class="tags_clear"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-select-calendars">
+                <div class="row-select-calendar">
+                  <label>
+                  <input type="checkbox">
+                  <span></span>
+                  Work Calendar
+                  </label>
+                  <div class="color-picker popup-container">
+                    <span class="color-view opener-popup" id="color-view-1">
+                    </span>
+                    <div class="popup popup-color-picker">
+                      <span class="arrow"></span>
+                      <div class="panel-heading">
+                        <strong class="title">Color Picker</strong>
+                        <a class="close close-popup" href="#" aria-label="Close"><span aria-hidden="true">×</span>
+                        </a>
+                      </div>
+                      <div class="content-popup-color-picker">
+                        <div class="list-color-fixed">
+                          <a href="#" class="color1" value="#ef6a24"></a>
+                          <a href="#" class="color2" value="#ef6a24"></a>
+                          <a href="#" class="color3" value="#ef6a24"></a>
+                          <a href="#" class="color4" value="#ef6a24"></a>
+                          <a href="#" class="color5" value="#ef6a24"></a>
+                        </div>
+                        <div class="list-color">
+                          <div id="cp7">
+                            <div class="add-color">
+                              <input type="text" id='inputcolor'>
+                              <button type="button" class="btn btn-orange">Add Color</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row-select-calendar">
+                  <label>
+                  <input type="checkbox">
+                  <span></span>
+                  Work Calendar
+                  </label>
+                  <div class="color-picker">
+                    <span class="color-view">
+                    </span>
+                  </div>
+                </div>
+                <div class="row-select-calendar">
+                  <label>
+                  <input type="checkbox">
+                  <span></span>
+                  Work Calendar
+                  </label>
+                  <div class="color-picker">
+                    <span class="color-view">
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- modal -->
+<div class="modal fade support-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h1 class="modal-title" id="myModalLabel">Help & Support</h1>
+
+                <p>Help with management Area Activities</p>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetuer adi pis cing elit, sed diam nonummy nibh.</p>
+                <!-- 16:9 aspect ratio -->
+                <div class="media-holder">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZyhrYis509A"
+                                frameborder="0" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+                <ol class="custom-numeric-list">
+                    <li><a href="#"><span class="number">Q</span>Lorem ipsum dolor sit amet, consectetuer adi pis cing
+                        elit, sed diam nonummy nibh?</a></li>
+                    <li><a href="#"><span class="number">Q</span>Lorem ipsum dolor sit amet, consectetuer adi pis cing
+                        elit?</a></li>
+                    <li><a href="#"><span class="number">Q</span>Lorem ipsum dolor sit amet, consectetuer adi pis cing
+                        elit, sed diam nonummy nibh?</a></li>
+                    <li><a href="#"><span class="number">Q</span>Lorem ipsum dolor sit amet, consectetuer adi pis cing
+                        elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore mangaja endosre?</a></li>
+                    <li><a href="#"><span class="number">Q</span>Lorem ipsum dolor sit amet, consectetuer adi pis cing
+                        elit, sed diam nonummy nibh?</a></li>
+                    <li><a href="#"><span class="number">Q</span>Lorem ipsum dolor sit amet, consectetuer adi pis cing
+                        elit?</a></li>
+                    <li><a href="#"><span class="number">Q</span>Lorem ipsum dolor sit amet, consectetuer adi pis cing
+                        elit, sed diam nonummy nibh?</a></li>
+                    <li><a href="#"><span class="number">Q</span>Lorem ipsum dolor sit amet, consectetuer adi pis cing
+                        elit, sed diam nonummy nibh euismod?</a></li>
+                </ol>
+                <a href="#" class="btn btn-warning btn-block">Contact Support</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Confirm deletion modal -->
+<div class="modal fade delete-modal" id="deleteModal" role="dialog" data-backdrop="false">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h1 class="modal-title">Delete Confirmation</h1>
+            </div>
+            <div class="modal-body clearfix">
+                <button class="btn btn-default pull-left">Cancel</button>
+                <button class="btn btn-red pull-right" data-dismiss="modal">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Popup calendar app details-->
+<div class="modal fade sliding-right-modal calendarAppDetails multi-section-modal" id="calendarAppDetails" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="secondary-section calendarLocation">
+            <div class="secondary-section-inner">
+                <div class="panel panel-default panel-transparent">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-10">
+                                <div class="row">
+                                    <div class="col-sm-12 heading-block">
+                                        <h1>Location</h1>
+                                        <p>Client Management Area Activities</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-2 text-right">
+                                <button type="button" class="btn btn-transparent btn-close close-sub-level">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="content-location">
+                            <div class="box-transport">
+                                <label class="box-transport-item">
+                                    <input type="radio" name="transport_type" checked>
+                                    <a>
+                                        <i class="location-icon icon-1"></i>
+                                    </a>
+                                </label>
+                                <label class="box-transport-item">
+                                    <input type="radio" name="transport_type">
+                                    <a>
+                                        <i class="location-icon icon-2"></i>
+                                    </a>
+                                </label>
+                                <label class="box-transport-item">
+                                    <input type="radio" name="transport_type">
+                                    <a>
+                                        <i class="location-icon icon-3"></i>
+                                    </a>
+                                </label>
+                                <label class="box-transport-item">
+                                    <input type="radio" name="transport_type">
+                                    <a>
+                                        <i class="location-icon icon-4"></i>
+                                    </a>
+                                </label>
+
+                            </div>
+                            <div class="search-localtion">
+                                <div class="row-localtion">
+                                    <p class="text-title">Your location</p>
+                                    <input type="text" placeholder="Bowling Green Lane 4331">
+                                </div>
+                                <div class="row-localtion">
+                                    <p class="text-title">Destination</p>
+                                    <input type="text" placeholder="Allen Road 1517">
+                                </div>
+                                <div class="map">
+                                    <img src="../images/calendar/map-localtion.jpg">
+                                </div>
+                                <a class="btn btn-orange">
+                                    Start Routing
+                                </a>
+                            </div>
+                            <div class="box-directions">
+                                <p class="direction-title">Directions</p>
+
+                                <div class="dir-content">
+                                    <label class="row-direction">
+                                        <input type="checkbox">
+                                        <span class="mask-circ"></span>
+
+                                        <p class="km">0.3km</p>
+
+                                        <p class="desc">Head north to the habent ciaritatem</p>
+                                    </label>
+                                    <label class="row-direction">
+                                        <input type="checkbox">
+                                        <span class="mask-circ"></span>
+
+                                        <p class="km">0.3km</p>
+
+                                        <p class="desc">Head north to the habent ciaritatem</p>
+                                    </label>
+                                    <label class="row-direction">
+                                        <input type="checkbox">
+                                        <span class="mask-circ"></span>
+
+                                        <p class="km">0.3km</p>
+
+                                        <p class="desc">Head north to the habent ciaritatem</p>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-section modal-content domains-modal-first">
+            <div class="modal-header">
+                <div class="row">
+                    <div class="col-xs-7">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="visible-desktop-768">
+                                    <p class="hours">
+                                        8:30AM - 9:00 AM
+                                    </p>
+
+                                    <p class="day">
+                                        Tuesday, November 3, 2015
+                                    </p>
+                                </div>
+                                <div class="visible-mobile-768">
+                                    <h1 class="modal-title">Residential Niche Site</h1>
+
+                                    <p>Event Details</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-5 text-right">
+                        <div class="buttons-holder">
+                            <button type="button" class="btn btn-default btn-with-icon hidden-xs btn-edit"><i
+                                    class="fa fa-pencil"></i>Edit
+                            </button>
+                            <button type="button" class="btn btn-orange btn-saveinfo btn-edit">Save</button>
+                            <button type="button" class="btn btn-default hidden-xs btn-delete">Delete</button>
+                            <button type="button" class="btn btn-default hidden-xs btn-discard">Discard</button>
+                            <button type="button" class="btn btn-default btn-close menu-followed" data-dismiss="modal"
+                                    aria-label="Close"><span aria-hidden="true">×</span></button>
+                            <div class="dropdown dropdown-more">
+                                <a class="btn btn-sm btn-dots" id="dLabel" data-toggle="dropdown" aria-haspopup="true"
+                                   aria-expanded="false">
+                                    <span class="dot-1"></span>
+                                    <span class="dot-2"></span>
+                                    <span class="dot-3"></span>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                    <li><a href="#"> Edit </a></li>
+                                    <li><a href="#"> Delete </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="calendar-details-content">
+
+                <div class="calendar-view-row clearfix">
+                    <div class="col-left">
+                        <a href="#" class="icon-calendar calendar-datepicker">
+                            <div class="month">
+                                February
+                            </div>
+                            <div class="num">
+                                14
+                            </div>
+                            <!--<input type="text" placeholder="TESTTT" class="calendar-datepicker" id="date-num">-->
+                            <div class="text">
+                                Wednesday
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="col-right has-dropdown">
+                        <input type="text" class="text-info" placeholder="Meeting with Peyman Aleagha">
+                        <div class="dropdown inline-block-item select-time">
+                            <input type="text" class="date dropdown-opener" value="8:30 AM - 9:00AM">
+                            <i class="fa fa-clock-o"></i>
+                            <div class="dropdown-menu dropdown-dialog">
+                              <div class="dialog-header">
+                                <h2 class="dialog-title">Set Time</h2>
+                                <button type="button" class="btn btn-default btn-close-dialog"><span aria-hidden="true">×</span></button>
+                              </div>
+                              <div class="dialog-content dialog-set-time">
+                                <div class="set-time-row">
+                                    <span class="time-label">From:</span>
+                                    <select class="selectpicker wsb-select">
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                    </select>
+                                    :
+                                    <select class="selectpicker wsb-select">
+                                        <option>30</option>
+                                        <option>31</option>
+                                        <option>32</option>
+                                    </select>
+
+                                    <select class="selectpicker wsb-select">
+                                        <option>AM</option>
+                                        <option>PM</option>
+                                    </select>
+                                </div>
+                                <div class="set-time-row">
+                                    <span class="time-label">To:</span>
+                                    <select class="selectpicker wsb-select">
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                    </select>
+                                    :
+                                    <select class="selectpicker wsb-select">
+                                        <option>30</option>
+                                        <option>31</option>
+                                        <option>32</option>
+                                    </select>
+
+                                    <select class="selectpicker wsb-select">
+                                        <option>AM</option>
+                                        <option>PM</option>
+                                    </select>
+                                </div>
+                                <div class="set-time-submit text-right">
+                                  <button type="button" class="btn btn-orange">Submit</button>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <input type="text" class="address" placeholder="1517 Allen Road, Austin, TX 98216">
+
+                        <select class="selectpicker wsb-select one-arrow select-calendar" data-show-icon="true">
+                          <option data-icon="calendar-type-icon work">Work Calendar</option>
+                          <option data-icon="calendar-type-icon home"><span class="calendar-type-icon home"></span>Home Calendar</option>
+                          <option data-icon="calendar-type-icon holidays"><span class="calendar-type-icon holidays"></span>Holidays</option>
+                        </select>
+
+                    </div>
+                    <a href="#" class="localtion-details sub-modal-opener">
+                        <i class="fa fa-map-marker"></i>
+                    </a>
+                </div>
+                <div class="box-guest">
+                    <h2 class="title">GUESTS</h2>
+                    <a href="#" class="item-guest">
+                        <img src="../images/avatar04.jpg">
+                    </a>
+                    <a href="#" class="item-guest">
+                        <img src="../images/avatar04.jpg">
+                    </a>
+                    <a href="#" class="item-guest">
+                        <img src="../images/avatar04.jpg">
+                    </a>
+                    <a href="#" class="item-guest">
+                        <img src="../images/avatar04.jpg">
+                    </a>
+
+                    <div class="popup-hover-container users-block-container has-dropdown">
+                        <div class="dropdown">
+                            <div class="image-holder dropdown-opener">
+                                <a href="#" class="btn-add-guest">+</a>
+                            </div>
+                            <div class="dropdown-menu dropdown-dialog">
+                              <div class="dialog-header">
+                                <h2 class="dialog-title">Assigned Users</h2>
+                                <button type="button" class="btn btn-default btn-close-dialog"><span aria-hidden="true">×</span></button>
+                              </div>
+                              <div class="dialog-content">
+                                <div class="content-inner users-block assign-block">
+                                  <form action="#">
+                                    <div class="form-group">
+                                      <input type="search" class="form-control" placeholder="Search Users">
+                                    </div>
+                                    <div class="checklist-item checkbox">
+                                      <label>
+                                        <input type="checkbox" name="assign_user" checked>
+                                        <span class="fake-input btn btn-success btn-circle btn-checked">
+                                          <i class="fa fa-check"></i>
+                                          <i class="fa fa-times"></i>
+                                        </span>
+                                        <div class="row">
+                                          <div class="col-xs-2 img-holder">
+                                            <img src="../images/avatar06.jpg" class="img-bordered" alt="image description">
+                                          </div>
+                                          <div class="col-xs-10 text-block">
+                                            <span class="name">Benjamin Watson</span>
+                                            <span class="meta">benjamin@gmail.com</span>
+                                          </div>
+                                        </div>
+                                      </label>
+                                    </div>
+                                    <div class="checklist-item checkbox">
+                                      <label>
+                                        <input type="checkbox" name="assign_user">
+                                        <span class="fake-input btn btn-success btn-circle btn-checked">
+                                          <i class="fa fa-check"></i>
+                                          <i class="fa fa-times"></i>
+                                        </span>
+                                        <div class="row">
+                                          <div class="col-xs-2 img-holder">
+                                            <img src="../images/avatar05.jpg" class="img-bordered" alt="image description">
+                                          </div>
+                                          <div class="col-xs-10 text-block">
+                                            <span class="name">Ryan Bennet</span>
+                                            <span class="meta">benjamin@gmail.com</span>
+                                          </div>
+                                        </div>
+                                      </label>
+                                    </div>
+                                    <div class="checklist-item checkbox">
+                                      <label>
+                                        <input type="checkbox" name="assign_user">
+                                        <span class="fake-input btn btn-success btn-circle btn-checked">
+                                          <i class="fa fa-check"></i>
+                                          <i class="fa fa-times"></i>
+                                        </span>
+                                        <div class="row">
+                                          <div class="col-xs-2 img-holder">
+                                            <img src="../images/avatar07.jpg" class="img-bordered" alt="image description">
+                                          </div>
+                                          <div class="col-xs-10 text-block">
+                                            <span class="name">Benjamin Watson</span>
+                                            <span class="meta">benjamin@gmail.com</span>
+                                          </div>
+                                        </div>
+                                      </label>
+                                    </div>
+                                    <div class="checklist-item checkbox">
+                                      <label>
+                                        <input type="checkbox" name="assign_user">
+                                        <span class="fake-input btn btn-success btn-circle btn-checked">
+                                          <i class="fa fa-check"></i>
+                                          <i class="fa fa-times"></i>
+                                        </span>
+                                        <div class="row">
+                                          <div class="col-xs-2 img-holder">
+                                            <img src="../images/avatar08.jpg" class="img-bordered" alt="image description">
+                                          </div>
+                                          <div class="col-xs-10 text-block">
+                                            <span class="name">Benjamin Watson</span>
+                                            <span class="meta">benjamin@gmail.com</span>
+                                          </div>
+                                        </div>
+                                      </label>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="box-desc">
+                    <h2 class="title">Description</h2>
+
+                    <p class="description-content">
+                        It took Eric Hines over two years to film this gorgeous time lapse of Chicago. And what a good
+                        two years spent! I could watch this over and over. The shot I adore most is the shadows of the
+                        buildings rising on ice over Lake Michigan. In all my life, I haven’t seen that angle of
+                        Chicago. Okay, gotta go. I’m going to watch this video yet another time.
+                    </p>
+
+                    <div class="wsb-wysiwyg">
+                        <div id="summernote">
+                            <p>
+                                It took Eric Hines over two years to film this gorgeous time lapse of Chicago. And what a good
+                                two years spent! I could watch this over and over. The shot I adore most is the shadows of the
+                                buildings rising on ice over Lake Michigan. In all my life, I haven’t seen that angle of
+                                Chicago. Okay, gotta go. I’m going to watch this video yet another time.
+                            </p>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="calendar-details-content-320">
+                <div class="content-top">
+                    <p class="title">Meeting with John Snow</p>
+
+                    <div class="address">
+                        <p class="">
+                            1817 South Lamar Boulevard
+
+                        </p>
+
+                        <p class="">
+                            Austin, TX 78704
+                        </p>
+                        <label class="work-calendar-text">Work calendar</label>
+                    </div>
+
+                    <p class="desc">It took Eric Hines over two years to film this gorgeous time lapse of Chicago. And what a good
+                        two years spent! I could watch this over and over. The shot I adore most is the shadows of the buildings
+                        rising on ice over Lake Michigan.
+                    </p>
+                </div>
+
+                <div class="box-guest">
+                    <a href="#" class="item-guest">
+                        <img src="../images/avatar04.jpg">
+                    </a>
+                    <a href="#" class="item-guest">
+                        <img src="../images/avatar04.jpg">
+                    </a>
+                    <a href="#" class="item-guest">
+                        <img src="../images/avatar04.jpg">
+                    </a>
+                    <a href="#" class="item-guest">
+                        <img src="../images/avatar04.jpg">
+                    </a>
+
+                    <div class="popup-hover-container users-block-container">
+                        <div class="image-holder opener-popup">
+                            <a href="#" class="btn-add-guest">+</a>
+                        </div>
+                        <div class="popup users-block">
+                            <div class="popup-holder">
+                                <div class="panel panel-default">
+                                    <span class="arrow"></span>
+
+                                    <div class="panel-heading">
+                                        <strong class="title">Assigned Users</strong>
+                                        <a class="close close-popup" href="#" aria-label="Close"><span aria-hidden="true">×</span>
+                                        </a>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="form-group">
+                                            <input type="search" class="form-control" placeholder="Search by Name">
+                                        </div>
+                                        <div class="scrollable">
+                                            <!-- To make the BTN always visible (active), class .ACTIVE should be added to the PANEL-ROW element. -->
+                                            <div class="row row-inline panel-row active">
+                                                <div class="col-xs-10">
+                                                    <div class="row">
+                                                        <div class="col-xs-4 column img-holder">
+                                                            <img src="../images/avatar05.jpg" class="img-circle img-bordered"
+                                                                 alt="image description">
+                                                        </div>
+                                                        <div class="col-xs-8 column text-block">
+                                                            <span class="name">Benjamin Watson </span>
+                                                            <a href="mailto:benjamin@gmail.com" class="meta">benjamin@gmail.com</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-2 column btn-holder">
+                                                    <button type="button" class="btn btn-success btn-circle active"
+                                                            data-toggle="button" aria-pressed="false" autocomplete="off">
+                                                        <i class="fa fa-check hidden-on-hover"></i>
+                                                        <i class="fa fa-times visible-on-hover"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- To make the BTN always visible (active), class .ACTIVE should be added to the PANEL-ROW element. -->
+                                            <div class="row row-inline panel-row active">
+                                                <div class="col-xs-10">
+                                                    <div class="row">
+                                                        <div class="col-xs-4 column img-holder">
+                                                            <img src="../images/avatar06.jpg" class="img-circle img-bordered"
+                                                                 alt="image description">
+                                                        </div>
+                                                        <div class="col-xs-8 column text-block">
+                                                            <span class="name">Benjamin Watson </span>
+                                                            <a href="mailto:benjamin@gmail.com" class="meta">benjamin@gmail.com</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-2 column btn-holder">
+                                                    <button type="button" class="btn btn-success btn-circle active"
+                                                            data-toggle="button" aria-pressed="false" autocomplete="off">
+                                                        <i class="fa fa-check hidden-on-hover"></i>
+                                                        <i class="fa fa-times visible-on-hover"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- To make the BTN always visible (active), class .ACTIVE should be added to the PANEL-ROW element. -->
+                                            <div class="row row-inline panel-row active">
+                                                <div class="col-xs-10">
+                                                    <div class="row">
+                                                        <div class="col-xs-4 column img-holder">
+                                                            <img src="../images/avatar07.jpg" class="img-circle img-bordered"
+                                                                 alt="image description">
+                                                        </div>
+                                                        <div class="col-xs-8 column text-block">
+                                                            <span class="name">Benjamin Watson </span>
+                                                            <a href="mailto:benjamin@gmail.com" class="meta">benjamin@gmail.com</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-2 column btn-holder">
+                                                    <button type="button" class="btn btn-success btn-circle active"
+                                                            data-toggle="button" aria-pressed="false" autocomplete="off">
+                                                        <i class="fa fa-check hidden-on-hover"></i>
+                                                        <i class="fa fa-times visible-on-hover"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- To make the BTN always visible (active), class .ACTIVE should be added to the PANEL-ROW element. -->
+                                            <div class="row row-inline panel-row active">
+                                                <div class="col-xs-10">
+                                                    <div class="row">
+                                                        <div class="col-xs-4 column img-holder">
+                                                            <img src="../images/avatar08.jpg" class="img-circle img-bordered"
+                                                                 alt="image description">
+                                                        </div>
+                                                        <div class="col-xs-8 column text-block">
+                                                            <span class="name">Benjamin Watson </span>
+                                                            <a href="mailto:benjamin@gmail.com" class="meta">benjamin@gmail.com</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-2 column btn-holder">
+                                                    <button type="button" class="btn btn-success btn-circle active"
+                                                            data-toggle="button" aria-pressed="false" autocomplete="off">
+                                                        <i class="fa fa-check hidden-on-hover"></i>
+                                                        <i class="fa fa-times visible-on-hover"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--Popup location-->
+<!-- <div class="modal fade sliding-right-modal calendarLocation  wsb-modal in" id="calendarLocation" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h1 class="modal-title">Localtion</h1>
+
+                                <p>Client Management Area Activities</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttons-holder">
+
+                        <button type="button" class="btn btn-default btn-close menu-followed" data-dismiss="modal"
+                                aria-label="Close"><span aria-hidden="true">×</span></button>
+
+                    </div>
+
+                </div>
+                <div class="hr-header"></div>
+            </div>
+            <div class="content-location">
+                <div class="box-transport">
+                    <div class="box-transport-item">
+                        <a href="#" class="active">
+                            <i class="location-icon icon-1"></i>
+                        </a>
+                    </div>  <div class="box-transport-item">
+                    <a href="#">
+                        <i class="location-icon icon-2"></i>
+                    </a></div>  <div class="box-transport-item">
+                    <a href="#">
+                        <i class="location-icon icon-3"></i>
+                    </a></div>  <div class="box-transport-item">
+                    <a href="#">
+                        <i class="location-icon icon-4"></i>
+                    </a></div>
+
+                </div>
+                <div class="search-localtion">
+                    <div class="row-localtion">
+                        <p class="text-title">Your location</p>
+                        <input type="text" placeholder="Bowling Green Lane 4331">
+                    </div>
+                    <div class="row-localtion">
+                        <p class="text-title">Destination</p>
+                        <input type="text" placeholder="Allen Road 1517">
+                    </div>
+                    <div class="map">
+                        <img src="../images/calendar/map-localtion.jpg">
+                    </div>
+                    <a class="btn btn-orange">
+                        Start Routing
+                    </a>
+                </div>
+                <div class="box-directions">
+                    <p class="direction-title">Directions</p>
+
+                    <div class="dir-content">
+                        <label class="row-direction">
+                            <input type="checkbox">
+                            <span class="mask-circ"></span>
+
+                            <p class="km">0.3km</p>
+
+                            <p class="desc">Head north to the habent ciaritatem</p>
+                        </label>
+                        <label class="row-direction">
+                            <input type="checkbox">
+                            <span class="mask-circ"></span>
+
+                            <p class="km">0.3km</p>
+
+                            <p class="desc">Head north to the habent ciaritatem</p>
+                        </label>
+                        <label class="row-direction">
+                            <input type="checkbox">
+                            <span class="mask-circ"></span>
+
+                            <p class="km">0.3km</p>
+
+                            <p class="desc">Head north to the habent ciaritatem</p>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div> -->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/jquery-ui/jquery-ui.js"></script>
+<!-- scroll bar  -->
+<script src="../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- custom select -->
+<script type="text/javascript" src="../bower_components/bootstrap-select/js/bootstrap-select.js"></script>
+<!-- custom select -->
+<script type="text/javascript" src="../js/custom-select-menu.jquery.js"></script>
+<!-- Duallist box -->
+<script type="text/javascript" src="../js/dual-list-box.js"></script>
+<!-- include bootstrap JavaScript -->
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- include Bootstrap date picker JavaScript -->
+<script type="text/javascript" src="../js/bootstrap-datepicker.min.js"></script>
+<!-- include colorpicker js-->
+<script type="text/javascript" src="../bower_components/mjolnic-bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
+<!-- include Summernote WYSIWYG -->
+<script src="../bower_components/summernote/dist/summernote.min.js"></script>
+<!-- include Masonry for blog girid -->
+<script src="../js/isotope.pkgd.min.js"></script>
+<!-- include custom JavaScript -->
+<script src="../js/jquery.main.js"></script>
+<!-- Google Map -->
+<script src="http://maps.google.com/maps/api/js"></script>
+<script src="../bower_components/gmaps/gmaps.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#speciality-select').DualListBox({
+            json: false,
+            moveAllBtn: false,
+            title: ''
+        });
+        $('.conten-grid-view').isotope({
+            itemSelector: '.it-blog',
+            layoutMode: 'masonry',
+            masonry: {
+                columnWidth: 0
+            }
+        });
+        $('#inputcolor').val('#ccc');
+        $('#cp7').colorpicker({
+            customClass: 'colorpicker-2x',
+            sliders: {
+                saturation: {
+                    maxLeft: 220,
+                    maxTop: 220
+                },
+                hue: {
+                    maxTop: 220
+                },
+                alpha: {
+                    maxTop: 220
+                }
+            },
+            color: '#ffaa00',
+            container: true,
+            inline: true
+        });
+        $('.calendar-datepicker').datepicker({
+            format: "yyyy-mm-dd",
+            autoclose: true,
+            showIcon: true
+        });
+
+    });
+</script>
+</div>
+</body>
+</html>
+

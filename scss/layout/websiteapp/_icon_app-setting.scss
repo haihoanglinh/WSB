@@ -1,0 +1,195 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$setting-img1-active-name: 'setting-img1-active';
+$setting-img1-active-x: 52px;
+$setting-img1-active-y: 0px;
+$setting-img1-active-offset-x: -52px;
+$setting-img1-active-offset-y: 0px;
+$setting-img1-active-width: 25px;
+$setting-img1-active-height: 24px;
+$setting-img1-active-total-width: 101px;
+$setting-img1-active-total-height: 76px;
+$setting-img1-active-image: '../images/websiteapp/setting/website_app_setting.png';
+$setting-img1-active: (52px, 0px, -52px, 0px, 25px, 24px, 101px, 76px, '../images/websiteapp/setting/website_app_setting.png', 'setting-img1-active', );
+$setting-img1-name: 'setting-img1';
+$setting-img1-x: 52px;
+$setting-img1-y: 24px;
+$setting-img1-offset-x: -52px;
+$setting-img1-offset-y: -24px;
+$setting-img1-width: 25px;
+$setting-img1-height: 24px;
+$setting-img1-total-width: 101px;
+$setting-img1-total-height: 76px;
+$setting-img1-image: '../images/websiteapp/setting/website_app_setting.png';
+$setting-img1: (52px, 24px, -52px, -24px, 25px, 24px, 101px, 76px, '../images/websiteapp/setting/website_app_setting.png', 'setting-img1', );
+$setting-img2-active-name: 'setting-img2-active';
+$setting-img2-active-x: 0px;
+$setting-img2-active-y: 0px;
+$setting-img2-active-offset-x: 0px;
+$setting-img2-active-offset-y: 0px;
+$setting-img2-active-width: 26px;
+$setting-img2-active-height: 27px;
+$setting-img2-active-total-width: 101px;
+$setting-img2-active-total-height: 76px;
+$setting-img2-active-image: '../images/websiteapp/setting/website_app_setting.png';
+$setting-img2-active: (0px, 0px, 0px, 0px, 26px, 27px, 101px, 76px, '../images/websiteapp/setting/website_app_setting.png', 'setting-img2-active', );
+$setting-img2-name: 'setting-img2';
+$setting-img2-x: 26px;
+$setting-img2-y: 0px;
+$setting-img2-offset-x: -26px;
+$setting-img2-offset-y: 0px;
+$setting-img2-width: 26px;
+$setting-img2-height: 27px;
+$setting-img2-total-width: 101px;
+$setting-img2-total-height: 76px;
+$setting-img2-image: '../images/websiteapp/setting/website_app_setting.png';
+$setting-img2: (26px, 0px, -26px, 0px, 26px, 27px, 101px, 76px, '../images/websiteapp/setting/website_app_setting.png', 'setting-img2', );
+$setting-img3-active-name: 'setting-img3-active';
+$setting-img3-active-x: 0px;
+$setting-img3-active-y: 27px;
+$setting-img3-active-offset-x: 0px;
+$setting-img3-active-offset-y: -27px;
+$setting-img3-active-width: 25px;
+$setting-img3-active-height: 25px;
+$setting-img3-active-total-width: 101px;
+$setting-img3-active-total-height: 76px;
+$setting-img3-active-image: '../images/websiteapp/setting/website_app_setting.png';
+$setting-img3-active: (0px, 27px, 0px, -27px, 25px, 25px, 101px, 76px, '../images/websiteapp/setting/website_app_setting.png', 'setting-img3-active', );
+$setting-img3-name: 'setting-img3';
+$setting-img3-x: 25px;
+$setting-img3-y: 27px;
+$setting-img3-offset-x: -25px;
+$setting-img3-offset-y: -27px;
+$setting-img3-width: 25px;
+$setting-img3-height: 25px;
+$setting-img3-total-width: 101px;
+$setting-img3-total-height: 76px;
+$setting-img3-image: '../images/websiteapp/setting/website_app_setting.png';
+$setting-img3: (25px, 27px, -25px, -27px, 25px, 25px, 101px, 76px, '../images/websiteapp/setting/website_app_setting.png', 'setting-img3', );
+$setting-img4-active-name: 'setting-img4-active';
+$setting-img4-active-x: 0px;
+$setting-img4-active-y: 52px;
+$setting-img4-active-offset-x: 0px;
+$setting-img4-active-offset-y: -52px;
+$setting-img4-active-width: 24px;
+$setting-img4-active-height: 24px;
+$setting-img4-active-total-width: 101px;
+$setting-img4-active-total-height: 76px;
+$setting-img4-active-image: '../images/websiteapp/setting/website_app_setting.png';
+$setting-img4-active: (0px, 52px, 0px, -52px, 24px, 24px, 101px, 76px, '../images/websiteapp/setting/website_app_setting.png', 'setting-img4-active', );
+$setting-img4-name: 'setting-img4';
+$setting-img4-x: 24px;
+$setting-img4-y: 52px;
+$setting-img4-offset-x: -24px;
+$setting-img4-offset-y: -52px;
+$setting-img4-width: 24px;
+$setting-img4-height: 24px;
+$setting-img4-total-width: 101px;
+$setting-img4-total-height: 76px;
+$setting-img4-image: '../images/websiteapp/setting/website_app_setting.png';
+$setting-img4: (24px, 52px, -24px, -52px, 24px, 24px, 101px, 76px, '../images/websiteapp/setting/website_app_setting.png', 'setting-img4', );
+$setting-img5-active-name: 'setting-img5-active';
+$setting-img5-active-x: 48px;
+$setting-img5-active-y: 52px;
+$setting-img5-active-offset-x: -48px;
+$setting-img5-active-offset-y: -52px;
+$setting-img5-active-width: 24px;
+$setting-img5-active-height: 24px;
+$setting-img5-active-total-width: 101px;
+$setting-img5-active-total-height: 76px;
+$setting-img5-active-image: '../images/websiteapp/setting/website_app_setting.png';
+$setting-img5-active: (48px, 52px, -48px, -52px, 24px, 24px, 101px, 76px, '../images/websiteapp/setting/website_app_setting.png', 'setting-img5-active', );
+$setting-img5-name: 'setting-img5';
+$setting-img5-x: 77px;
+$setting-img5-y: 0px;
+$setting-img5-offset-x: -77px;
+$setting-img5-offset-y: 0px;
+$setting-img5-width: 24px;
+$setting-img5-height: 24px;
+$setting-img5-total-width: 101px;
+$setting-img5-total-height: 76px;
+$setting-img5-image: '../images/websiteapp/setting/website_app_setting.png';
+$setting-img5: (77px, 0px, -77px, 0px, 24px, 24px, 101px, 76px, '../images/websiteapp/setting/website_app_setting.png', 'setting-img5', );
+$spritesheet-width: 101px;
+$spritesheet-height: 76px;
+$spritesheet-image: '../images/websiteapp/setting/website_app_setting.png';
+$spritesheet-sprites: ($setting-img1-active, $setting-img1, $setting-img2-active, $setting-img2, $setting-img3-active, $setting-img3, $setting-img4-active, $setting-img4, $setting-img5-active, $setting-img5, );
+$spritesheet: (101px, 76px, '../images/websiteapp/setting/website_app_setting.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

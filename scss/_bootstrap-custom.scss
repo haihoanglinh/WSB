@@ -1,0 +1,210 @@
+// custom variables and override bootstrap variables
+
+$shark: #27292b;
+$manatee: #8d939a;
+$mountain-mist: #919191;
+$mako: #414851;
+$charcoal: #354052;
+$deep-carrot-orange: #ef6a1e;
+$flamingo: #f34e33;
+$carmine-pink: #ef4f4f;
+$dollar-bill: #97c758;
+$grey: #dadada;
+$valencia: #ec5858;
+
+$body-bg: #f0f0f0;
+
+$hover-bg: #f0f0f0;
+
+
+$brand-white: #fff;
+$brand-black: $shark;
+
+$brand-success: $dollar-bill;
+$brand-danger: $flamingo;
+
+$brand-warning: $deep-carrot-orange;
+$brand-pink: $carmine-pink;
+
+
+$header-bg-color: $brand-black;
+$close-color: $flamingo;
+
+$popover-shadow-color: #7d8385;
+
+$nav-color: $mountain-mist;
+$nav-hover-color: $brand-white;
+$icon-hover-color: $brand-white;
+
+$base-border-color: #d3d6d7;
+
+
+
+//== Scaffolding
+
+$text-color: $manatee;
+$alt-text-color: $mako;
+
+$link-color: $shark;
+$alt-link-color: $charcoal;
+
+$body-min-width: 320px;
+
+//== Typography
+
+$font-family-sans-serif: 'proxima_nova', Arial, Helvetica, sans-serif;
+
+$font-size-h1: 128.57%;  // ~18px
+$font-size-h2: 121.43%; // ~17px
+$font-size-h3: 114.29%; // ~16px
+$font-size-h4: 107.14%; // ~15px
+
+$line-height-base: 1.571429;
+
+$headings-line-height: 1.2222;
+$headings-color: $shark;
+$app-title-color: $charcoal;
+
+
+//== Components
+
+$padding-base-vertical: 8px;
+
+
+//== Tables
+
+$table-border-color: $base-border-color;
+
+//== Buttons
+
+$btn-default-color: $alt-text-color;
+$btn-default-border: rgba(#7d8385, 0.3);
+
+$btn-alt-bg: #f0f2f2;
+
+
+//== Forms
+
+$input-color: $brand-black;
+$input-border: #cfd7de;
+$input-border-focus: $input-border;
+
+$input-color-placeholder: #9ca6b3;
+
+$input-height-base: 42px;
+
+
+//== Dropdowns
+
+$dropdown-link-color: $text-color;
+$dropdown-link-hover-color: $brand-black;
+
+$dropdown-link-hover-bg: #f0f0f0;
+$dropdown-shadow: rgba(#7d8385, 0.55);
+$dropdown-border-color: #cdd0d1;
+
+
+//== Media queries breakpoints
+
+// Medium screen / desktop
+$screen-md: 1025px;
+
+$screen-md-min: $screen-md;
+
+// Large screen / wide desktop
+// $screen-lg: 1440px;
+
+
+//== Grid system
+
+$grid-gutter-width: 30px;
+
+
+//== Container sizes
+
+// Large screen / wide desktop
+//$container-large-desktop: (1410px + $grid-gutter-width);
+
+//== Container sizes
+
+// Medium screen / desktop
+$container-desktop: (995px + $grid-gutter-width);
+
+// Large screen / wide desktop
+$container-large-desktop: 100%;
+
+
+// Navbar collapse
+//** Point at which the navbar becomes uncollapsed.
+$grid-float-breakpoint: $screen-md-min;
+
+//== Navbar
+
+$navbar-height: 43px;
+$navbar-border-radius: 0;
+$navbar-default-border: transparent;
+
+// Navbar links
+$navbar-default-link-color: $text-color;
+$navbar-default-link-hover-color: $link-color;
+$navbar-default-link-active-color: $navbar-default-link-hover-color;
+$navbar-default-link-active-bg: #f0f0f0;
+
+
+//== Navs
+
+$nav-link-padding: 10px 20px;
+
+
+// Navbar toggle
+$navbar-default-toggle-hover-bg: transparent;
+$navbar-default-toggle-icon-bar-bg: $nav-color;
+$navbar-default-toggle-icon-bar-hover-bg: #fff;
+$navbar-default-toggle-border-color: transparent;
+
+
+//== Form states and alerts
+$state-success-text: $brand-success;
+$state-success-bg: #e7f1dc;
+
+$state-warning-text: $brand-warning;
+
+$state-danger-text: $brand-danger;
+$state-danger-bg: #fad8d3;
+
+$alert-alt-border: #d3d5d5;
+
+
+//== Popovers
+
+$popover-border-color: #7d8385;
+$popover-title-bg: #fff;
+
+
+//== Alerts
+
+$alert-padding: 16px 10px 13px;
+
+
+//== Panels
+
+$panel-body-padding: 12px 10px;
+$panel-heading-padding: 10px;
+$panel-default-text: $text-color;
+$panel-default-border: rgba(#7d8385, 0.3);
+$panel-heading-border: #d3d6d7;
+$panel-default-heading-bg: #fff;
+$panel-footer-bg: #fcfcfc;
+
+
+
+
+//== Thumbnails
+
+$thumbnail-padding: 2px;
+$thumbnail-border: #7d8385;
+$thumbnail-bg: #fff;
+
+
+
+$animation-duration: 0.3s;

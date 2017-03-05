@@ -1,0 +1,294 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$icon-active-listing-name: 'icon-active-listing';
+$icon-active-listing-x: 128px;
+$icon-active-listing-y: 149px;
+$icon-active-listing-offset-x: -128px;
+$icon-active-listing-offset-y: -149px;
+$icon-active-listing-width: 50px;
+$icon-active-listing-height: 50px;
+$icon-active-listing-total-width: 264px;
+$icon-active-listing-total-height: 247px;
+$icon-active-listing-image: '../images/insights/insight_spritesheet.png';
+$icon-active-listing: (128px, 149px, -128px, -149px, 50px, 50px, 264px, 247px, '../images/insights/insight_spritesheet.png', 'icon-active-listing', );
+$icon-add-people-name: 'icon-add-people';
+$icon-add-people-x: 196px;
+$icon-add-people-y: 136px;
+$icon-add-people-offset-x: -196px;
+$icon-add-people-offset-y: -136px;
+$icon-add-people-width: 17px;
+$icon-add-people-height: 12px;
+$icon-add-people-total-width: 264px;
+$icon-add-people-total-height: 247px;
+$icon-add-people-image: '../images/insights/insight_spritesheet.png';
+$icon-add-people: (196px, 136px, -196px, -136px, 17px, 12px, 264px, 247px, '../images/insights/insight_spritesheet.png', 'icon-add-people', );
+$icon-avergae-listing-name: 'icon-avergae-listing';
+$icon-avergae-listing-x: 40px;
+$icon-avergae-listing-y: 207px;
+$icon-avergae-listing-offset-x: -40px;
+$icon-avergae-listing-offset-y: -207px;
+$icon-avergae-listing-width: 43px;
+$icon-avergae-listing-height: 36px;
+$icon-avergae-listing-total-width: 264px;
+$icon-avergae-listing-total-height: 247px;
+$icon-avergae-listing-image: '../images/insights/insight_spritesheet.png';
+$icon-avergae-listing: (40px, 207px, -40px, -207px, 43px, 36px, 264px, 247px, '../images/insights/insight_spritesheet.png', 'icon-avergae-listing', );
+$icon-calendar-blue-name: 'icon-calendar-blue';
+$icon-calendar-blue-x: 196px;
+$icon-calendar-blue-y: 0px;
+$icon-calendar-blue-offset-x: -196px;
+$icon-calendar-blue-offset-y: 0px;
+$icon-calendar-blue-width: 68px;
+$icon-calendar-blue-height: 68px;
+$icon-calendar-blue-total-width: 264px;
+$icon-calendar-blue-total-height: 247px;
+$icon-calendar-blue-image: '../images/insights/insight_spritesheet.png';
+$icon-calendar-blue: (196px, 0px, -196px, 0px, 68px, 68px, 264px, 247px, '../images/insights/insight_spritesheet.png', 'icon-calendar-blue', );
+$icon-calendar-name: 'icon-calendar';
+$icon-calendar-x: 196px;
+$icon-calendar-y: 68px;
+$icon-calendar-offset-x: -196px;
+$icon-calendar-offset-y: -68px;
+$icon-calendar-width: 68px;
+$icon-calendar-height: 68px;
+$icon-calendar-total-width: 264px;
+$icon-calendar-total-height: 247px;
+$icon-calendar-image: '../images/insights/insight_spritesheet.png';
+$icon-calendar: (196px, 68px, -196px, -68px, 68px, 68px, 264px, 247px, '../images/insights/insight_spritesheet.png', 'icon-calendar', );
+$icon-external-link-w-name: 'icon-external-link-w';
+$icon-external-link-w-x: 222px;
+$icon-external-link-w-y: 136px;
+$icon-external-link-w-offset-x: -222px;
+$icon-external-link-w-offset-y: -136px;
+$icon-external-link-w-width: 9px;
+$icon-external-link-w-height: 9px;
+$icon-external-link-w-total-width: 264px;
+$icon-external-link-w-total-height: 247px;
+$icon-external-link-w-image: '../images/insights/insight_spritesheet.png';
+$icon-external-link-w: (222px, 136px, -222px, -136px, 9px, 9px, 264px, 247px, '../images/insights/insight_spritesheet.png', 'icon-external-link-w', );
+$icon-external-link-name: 'icon-external-link';
+$icon-external-link-x: 213px;
+$icon-external-link-y: 136px;
+$icon-external-link-offset-x: -213px;
+$icon-external-link-offset-y: -136px;
+$icon-external-link-width: 9px;
+$icon-external-link-height: 9px;
+$icon-external-link-total-width: 264px;
+$icon-external-link-total-height: 247px;
+$icon-external-link-image: '../images/insights/insight_spritesheet.png';
+$icon-external-link: (213px, 136px, -213px, -136px, 9px, 9px, 264px, 247px, '../images/insights/insight_spritesheet.png', 'icon-external-link', );
+$icon-file-pdf-name: 'icon-file-pdf';
+$icon-file-pdf-x: 0px;
+$icon-file-pdf-y: 207px;
+$icon-file-pdf-offset-x: 0px;
+$icon-file-pdf-offset-y: -207px;
+$icon-file-pdf-width: 40px;
+$icon-file-pdf-height: 40px;
+$icon-file-pdf-total-width: 264px;
+$icon-file-pdf-total-height: 247px;
+$icon-file-pdf-image: '../images/insights/insight_spritesheet.png';
+$icon-file-pdf: (0px, 207px, 0px, -207px, 40px, 40px, 264px, 247px, '../images/insights/insight_spritesheet.png', 'icon-file-pdf', );
+$icon-file-word-name: 'icon-file-word';
+$icon-file-word-x: 218px;
+$icon-file-word-y: 149px;
+$icon-file-word-offset-x: -218px;
+$icon-file-word-offset-y: -149px;
+$icon-file-word-width: 40px;
+$icon-file-word-height: 40px;
+$icon-file-word-total-width: 264px;
+$icon-file-word-total-height: 247px;
+$icon-file-word-image: '../images/insights/insight_spritesheet.png';
+$icon-file-word: (218px, 149px, -218px, -149px, 40px, 40px, 264px, 247px, '../images/insights/insight_spritesheet.png', 'icon-file-word', );
+$icon-hourglass-w-name: 'icon-hourglass-w';
+$icon-hourglass-w-x: 160px;
+$icon-hourglass-w-y: 120px;
+$icon-hourglass-w-offset-x: -160px;
+$icon-hourglass-w-offset-y: -120px;
+$icon-hourglass-w-width: 10px;
+$icon-hourglass-w-height: 13px;
+$icon-hourglass-w-total-width: 264px;
+$icon-hourglass-w-total-height: 247px;
+$icon-hourglass-w-image: '../images/insights/insight_spritesheet.png';
+$icon-hourglass-w: (160px, 120px, -160px, -120px, 10px, 13px, 264px, 247px, '../images/insights/insight_spritesheet.png', 'icon-hourglass-w', );
+$icon-hourglass-name: 'icon-hourglass';
+$icon-hourglass-x: 150px;
+$icon-hourglass-y: 120px;
+$icon-hourglass-offset-x: -150px;
+$icon-hourglass-offset-y: -120px;
+$icon-hourglass-width: 10px;
+$icon-hourglass-height: 13px;
+$icon-hourglass-total-width: 264px;
+$icon-hourglass-total-height: 247px;
+$icon-hourglass-image: '../images/insights/insight_spritesheet.png';
+$icon-hourglass: (150px, 120px, -150px, -120px, 10px, 13px, 264px, 247px, '../images/insights/insight_spritesheet.png', 'icon-hourglass', );
+$icon-mail-blue-name: 'icon-mail-blue';
+$icon-mail-blue-x: 75px;
+$icon-mail-blue-y: 74px;
+$icon-mail-blue-offset-x: -75px;
+$icon-mail-blue-offset-y: -74px;
+$icon-mail-blue-width: 75px;
+$icon-mail-blue-height: 75px;
+$icon-mail-blue-total-width: 264px;
+$icon-mail-blue-total-height: 247px;
+$icon-mail-blue-image: '../images/insights/insight_spritesheet.png';
+$icon-mail-blue: (75px, 74px, -75px, -74px, 75px, 75px, 264px, 247px, '../images/insights/insight_spritesheet.png', 'icon-mail-blue', );
+$icon-mail-name: 'icon-mail';
+$icon-mail-x: 0px;
+$icon-mail-y: 74px;
+$icon-mail-offset-x: 0px;
+$icon-mail-offset-y: -74px;
+$icon-mail-width: 75px;
+$icon-mail-height: 75px;
+$icon-mail-total-width: 264px;
+$icon-mail-total-height: 247px;
+$icon-mail-image: '../images/insights/insight_spritesheet.png';
+$icon-mail: (0px, 74px, 0px, -74px, 75px, 75px, 264px, 247px, '../images/insights/insight_spritesheet.png', 'icon-mail', );
+$icon-new-listing-name: 'icon-new-listing';
+$icon-new-listing-x: 178px;
+$icon-new-listing-y: 149px;
+$icon-new-listing-offset-x: -178px;
+$icon-new-listing-offset-y: -149px;
+$icon-new-listing-width: 40px;
+$icon-new-listing-height: 50px;
+$icon-new-listing-total-width: 264px;
+$icon-new-listing-total-height: 247px;
+$icon-new-listing-image: '../images/insights/insight_spritesheet.png';
+$icon-new-listing: (178px, 149px, -178px, -149px, 40px, 50px, 264px, 247px, '../images/insights/insight_spritesheet.png', 'icon-new-listing', );
+$icon-sold-listing-name: 'icon-sold-listing';
+$icon-sold-listing-x: 150px;
+$icon-sold-listing-y: 74px;
+$icon-sold-listing-offset-x: -150px;
+$icon-sold-listing-offset-y: -74px;
+$icon-sold-listing-width: 46px;
+$icon-sold-listing-height: 46px;
+$icon-sold-listing-total-width: 264px;
+$icon-sold-listing-total-height: 247px;
+$icon-sold-listing-image: '../images/insights/insight_spritesheet.png';
+$icon-sold-listing: (150px, 74px, -150px, -74px, 46px, 46px, 264px, 247px, '../images/insights/insight_spritesheet.png', 'icon-sold-listing', );
+$icon-task-blue-name: 'icon-task-blue';
+$icon-task-blue-x: 64px;
+$icon-task-blue-y: 149px;
+$icon-task-blue-offset-x: -64px;
+$icon-task-blue-offset-y: -149px;
+$icon-task-blue-width: 64px;
+$icon-task-blue-height: 58px;
+$icon-task-blue-total-width: 264px;
+$icon-task-blue-total-height: 247px;
+$icon-task-blue-image: '../images/insights/insight_spritesheet.png';
+$icon-task-blue: (64px, 149px, -64px, -149px, 64px, 58px, 264px, 247px, '../images/insights/insight_spritesheet.png', 'icon-task-blue', );
+$icon-task-name: 'icon-task';
+$icon-task-x: 0px;
+$icon-task-y: 149px;
+$icon-task-offset-x: 0px;
+$icon-task-offset-y: -149px;
+$icon-task-width: 64px;
+$icon-task-height: 58px;
+$icon-task-total-width: 264px;
+$icon-task-total-height: 247px;
+$icon-task-image: '../images/insights/insight_spritesheet.png';
+$icon-task: (0px, 149px, 0px, -149px, 64px, 58px, 264px, 247px, '../images/insights/insight_spritesheet.png', 'icon-task', );
+$icon-weather-blue-name: 'icon-weather-blue';
+$icon-weather-blue-x: 98px;
+$icon-weather-blue-y: 0px;
+$icon-weather-blue-offset-x: -98px;
+$icon-weather-blue-offset-y: 0px;
+$icon-weather-blue-width: 98px;
+$icon-weather-blue-height: 74px;
+$icon-weather-blue-total-width: 264px;
+$icon-weather-blue-total-height: 247px;
+$icon-weather-blue-image: '../images/insights/insight_spritesheet.png';
+$icon-weather-blue: (98px, 0px, -98px, 0px, 98px, 74px, 264px, 247px, '../images/insights/insight_spritesheet.png', 'icon-weather-blue', );
+$icon-weather-name: 'icon-weather';
+$icon-weather-x: 0px;
+$icon-weather-y: 0px;
+$icon-weather-offset-x: 0px;
+$icon-weather-offset-y: 0px;
+$icon-weather-width: 98px;
+$icon-weather-height: 74px;
+$icon-weather-total-width: 264px;
+$icon-weather-total-height: 247px;
+$icon-weather-image: '../images/insights/insight_spritesheet.png';
+$icon-weather: (0px, 0px, 0px, 0px, 98px, 74px, 264px, 247px, '../images/insights/insight_spritesheet.png', 'icon-weather', );
+$spritesheet-width: 264px;
+$spritesheet-height: 247px;
+$spritesheet-image: '../images/insights/insight_spritesheet.png';
+$spritesheet-sprites: ($icon-active-listing, $icon-add-people, $icon-avergae-listing, $icon-calendar-blue, $icon-calendar, $icon-external-link-w, $icon-external-link, $icon-file-pdf, $icon-file-word, $icon-hourglass-w, $icon-hourglass, $icon-mail-blue, $icon-mail, $icon-new-listing, $icon-sold-listing, $icon-task-blue, $icon-task, $icon-weather-blue, $icon-weather, );
+$spritesheet: (264px, 247px, '../images/insights/insight_spritesheet.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

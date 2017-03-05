@@ -1,0 +1,131 @@
+$breakpoints: (
+  'xs-phone': 320px,
+  'phone': 480px,
+  'tablet': 768px,
+  'desktop': 1025px,
+  'widescreen': 1200px
+);
+
+// keywords
+$media-expressions: (
+  'screen': 'screen',
+  'print': 'print',
+  'handheld': 'handheld',
+  'landscape': '(orientation: landscape)',
+  'portrait': '(orientation: portrait)',
+  'retina2x': '(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)',
+  'retina3x': '(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)'
+);
+
+// ligatured operators ≥ ≤
+
+@font-face {
+  font-family: 'proxima_nova';
+  src: url('../fonts/proximanova-bold.eot');
+  src: url('../fonts/proximanova-bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/proximanova-bold.woff2') format('woff2'),
+       url('../fonts/proximanova-bold.woff') format('woff'),
+       url('../fonts/proximanova-bold.ttf') format('truetype'),
+       url('../fonts/proximanova-bold.svg#proxima_nova_rgbold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova';
+  src: url('../fonts/proximanova-regular.eot');
+  src: url('../fonts/proximanova-regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/proximanova-regular.woff2') format('woff2'),
+       url('../fonts/proximanova-regular.woff') format('woff'),
+       url('../fonts/proximanova-regular.ttf') format('truetype'),
+       url('../fonts/proximanova-regular.svg#proxima_nova_rgregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova';
+  src: url('../fonts/proximanova-semibold.eot');
+  src: url('../fonts/proximanova-semibold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/proximanova-semibold.woff2') format('woff2'),
+       url('../fonts/proximanova-semibold.woff') format('woff'),
+       url('../fonts/proximanova-semibold.ttf') format('truetype'),
+       url('../fonts/proximanova-semibold.svg#proxima_novasemibold') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova';
+  src: url('../fonts/proximanova-black.eot');
+  src: url('../fonts/proximanova-black.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/proximanova-black.woff') format('woff'),
+       url('../fonts/proximanova-black.ttf') format('truetype'),
+       url('../fonts/proximanova-black.svg#ProximaNovaBlRegular') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@import 'vendors/include-media';
+
+@import "bootstrap-custom";
+@import "vendors/bootstrap/variables";
+@import "vendors/bootstrap/mixins";
+
+/* --------------------------------
+1. Common site styles
+2. Custom form styles
+3. Styles for responsive breakpoints
+--------------------------------------- */
+
+@import 'base/mixins';
+@import 'base/helpers';
+
+/* --------------------------------
+  2. Common site styles
+----------------------------------*/
+
+@import 'layout/header';
+@import 'layout/navigation';
+@import 'layout/common';
+@import 'components/popups';
+@import 'components/extra-modal';
+@import 'components/icons';
+@import 'components/icon_menu_user_dropdown';
+@import 'components/dropdown_dialog';
+@import 'components/insights';
+@import 'components/search-box';
+
+/* --------------------------------
+  3. Custom form styles
+----------------------------------*/
+
+@import 'components/forms';
+
+/* --------------------------------
+  4. IE Fix
+----------------------------------*/
+@import 'components/ie-fix';
+
+/* --------------------------------
+Pages
+----------------------------------*/
+@import 'layout/accountinfo/accountinfo';
+@import 'layout/blog/blog';
+@import 'layout/calendar/calendar';
+@import 'layout/contact/contact';
+@import 'layout/controlpanel/controlpanel';
+@import 'layout/document/document';
+@import 'layout/domain/domains';
+@import 'layout/integrations/integration';
+@import 'layout/lead-capture/lead-capture';
+@import 'layout/listing/listing';
+@import 'layout/my-product/my-product';
+@import 'layout/my-user/my-user';
+@import 'layout/qrcode/qrcode';
+@import 'layout/rss/rss';
+@import 'layout/shortcut/shortcut';
+@import 'layout/store/store';
+@import 'layout/task/task';
+@import 'layout/team/team';
+@import 'layout/websiteapp/website-modal'; 

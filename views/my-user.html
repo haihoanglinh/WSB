@@ -1,0 +1,1812 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- set the encoding of your site -->
+    <meta charset="utf-8">
+    <!-- set the viewport width and initial-scale on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My User</title>
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+    <!-- Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <!-- Boostrap select -->
+    <link rel="stylesheet" href="../bower_components/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <!-- include the datepicker -->
+    <link rel="stylesheet" href="../bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+        <!-- include bootstrap WYSIWYG -->
+    <link rel="stylesheet" href="../bower_components/summernote/dist/summernote.css">
+    <!-- include the site stylesheet -->
+    <link rel="stylesheet" href="../css/main.css">
+    <script type="text/javascript" src="../js/svg-sprites.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('svg-icon-placeholder').innerHTML += SVG_SPRITES['sprite'];
+        }, false);
+    </script>
+</head>
+<body class="app--my-user blog-page">
+<div id="svg-icon-placeholder" style="display: none;"></div>
+<!-- main container of all the page elements -->
+<div class="wrapper">
+
+<!-- header of the page -->
+<header id="header" class="well well-dark header-fixed-mobile">
+<nav class="navbar navbar-default main-nav-container">
+<div class="container-fluid">
+<!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+
+        <!-- page logo -->
+        <div class="navbar-brand logo">
+        <a href="app-control-panel.html"><img src="../images/logo.svg" alt="WebsiteBox" width="89" height="37"></a>
+    </div>
+    </div>
+
+
+    <!--Box search for app-->
+    <div class="box-search">
+        <div class="search-row">
+            <input type="text"class="form-control input-search input-control" placeholder="Search">
+            <a href="#" class="icon-search"><i class="fa fa-search"></i></a>
+
+            <div class="box-search-details">
+                <div class="result-document">
+                    <div class="result-title">
+                        <p class="title">
+                    <span>
+                        <img src="../images/controlpanel/documents.png">
+                    </span>
+                        My Users</p>
+                    </div>
+                    <div class="result-content">
+                        <div class="row-info">
+                            <p class="pull-left">Test the new Websitebox</p>
+
+                            <p class="pull-right">Document</p>
+                        </div> <div class="row-info">
+                        <p class="pull-left">Test the new Websitebox</p>
+
+                        <p class="pull-right">Document</p>
+                    </div>
+                        <div class="row-info active">
+                            <p class="pull-left">Test the new Websitebox</p>
+
+                            <p class="pull-right">Document</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+                </div>
+
+    <!-- main navigation of the page -->
+    <ul class="nav nav-pills navbar-right main-nav">
+    <li class="dropdown icon-notify">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Notification</span>
+                    <span class="icon-holder">
+                      <svg xmlnsxxxx="http://www.w3333333.org/2000/svg" class="icon icon-notification">
+                          <use xlink:href="#icon-notification"></use>
+                      </svg>
+                      <span class="quantity">2</span>
+                    </span>
+        </a>
+
+        <div class="dropdown-menu notification-menu users-block">
+            <span class="arrow"></span>
+            <ul class="list-unstyled block-rounded">
+                <li>
+                    <div class="panel-body">
+                        <div class="row row-inline panel-row">
+                            <div class="col-xs-10">
+                                <div class="row">
+                                    <div class="col-xs-3 column img-holder">
+                                        <img src="../images/avatar02.jpg" class="img-circle img-thumbnail"
+                                             alt="image description">
+                                    </div>
+                                    <div class="col-xs-7 column text-block">
+                                        <span class="name">Andres Iniesta </span>
+                                        <span class="meta"><time datetime="19:45">Replied at 7:45 PM</time></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-2 column btn-holder">
+                                <a href="#" class="btn btn-success btn-circle btn-checked"><i class="fa fa-check"></i></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh eu ismod
+                                    tincidunt ut laoreet dolore magna ali quam erat volutpat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="alert alert-success">
+                        <div class="row">
+                            <div class="col-xs-12">Send 25 more listings to Andres</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="panel-body">
+                        <div class="row row-inline panel-row">
+                            <div class="col-xs-10">
+                                <div class="row">
+                                    <div class="col-xs-3 column img-holder">
+                                        <img src="../images/avatar03.jpg" class="img-circle img-thumbnail img-responsive"
+                                             alt="image description">
+                                    </div>
+                                    <div class="col-xs-6 column text-block">
+                                        <span class="name">Vanessa Bond</span>
+                                        <span class="meta"><time datetime="19:45">Replied at 7:45 PM</time></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-2 column btn-holder">
+                                <a href="#" class="btn btn-danger btn-circle btn-checked"><i class="fa fa-times"></i></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh eu ismod
+                                    tincidunt ut laoreet dolore magna ali quam erat volutpat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="alert alert-danger">
+                        <div class="row">
+                            <div class="col-xs-12">Send 25 more listings to Vanessa</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </li>
+
+    <!-- To make the POPUP-HELP STEP 3 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+    <li class="popup-container dropdown app-menu-holder popup-help-container step03">
+    <div class="popup-overlay"></div>
+    <a href="#" class="opener-popup dropdown-toggle under-overlay">
+      <span class="icon-view-store">
+          <span class="st1 st-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+          </span>
+          <span class="st2 st-icon">
+                <span></span>
+              <span></span>
+              <span></span>
+          </span>
+          <span class="st3 st-icon">
+                <span></span>
+              <span></span>
+              <span></span>
+          </span>
+      </span>
+    </a>
+
+    <div class="popup dropdown-menu under-overlay">
+    <span class="arrow"></span>
+
+    <div class="app-menu menu-list open-close">
+    <div class="panel">
+    <div class="panel-body">
+        <div class="first-view">
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/app_store.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>App Store</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/websites.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Websites</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/domains.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Domains</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/listings.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Listings</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/contacts.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Contacts</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/emails.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Emails</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/tasks.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Tasks</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/documents.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Documents</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/calendar.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Calendar</span>
+                </a>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/campaigns.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Campaigns</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/listing_syndication.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Listing Syndication</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/rss.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>RSS</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/community.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Community</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/google_analytics.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Google Analytics</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/profile.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Profile</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/blog.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Blog</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/prints.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Prints</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/lead_capture.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Lead Capture</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/seo.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>SEO</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/mobile_notifications.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Mobile Notifications</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/craigslist.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Craigslist</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/qr_code.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>QR Code</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/har.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>HAR</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/move.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Move</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/realtor.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Realtor.com</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/apple.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Apple</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/cnn.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>CNN</span>
+                </a>
+            </div>
+        </div>
+        <div class="btn-holder">
+            <a class="btn btn-default btn-block opener" href="#">
+                <span class="hidden-active">More</span>
+                <span class="visible-active">Less</span>
+            </a>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- To make the POPUP-HELP STEP 3 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+    <div class="popup-help step03">
+        <div class="panel panel-default">
+            <span class="arrow arrow-right"></span>
+
+            <div class="panel-heading">
+                <strong class="title">Step 3 of 7</strong>
+                <a class="close" href="#" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </a>
+            </div>
+            <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna volutpat.</p>
+
+                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation</p>
+
+                <div class="btn-container text-right"><a href="#" class="btn btn-warning"><i
+                        class="fa fa-chevron-left"></i></a><a href="#" class="btn btn-warning"><i
+                        class="fa fa-chevron-right"></i></a></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </li>
+    <!--Show icon in mobile -->
+    <li class="popup-container dropdown app-menu-holder popup-help-container wrap-icon-mobile">
+        <button type="button" class="nav-opener navbar-toggle">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </li>
+    <!-- To make the POPUP-HELP STEP 4 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+    <li class="hidden-xs popup-help-container step04">
+        <div class="popup-overlay"></div>
+
+        <a href="#" data-toggle="modal" data-target="#myModal" class="btn-link under-overlay">
+            <span class="sr-only">Info</span>
+            <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+        </a>
+        <!-- To make the POPUP-HELP STEP 4 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+        <div class="popup-help step04">
+            <div class="panel panel-default">
+                <span class="arrow"></span>
+
+                <div class="panel-heading">
+                    <strong class="title">Step 4 of 7</strong>
+                    <a class="close" href="#" aria-label="Close"><span aria-hidden="true">&times;</span>
+                    </a>
+                </div>
+                <div class="panel-body">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                        laoreet dolore magna volutpat. </p>
+
+                    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation</p>
+
+                    <div class="btn-container text-right"><a href="#" class="btn btn-warning"><i
+                            class="fa fa-chevron-left"></i></a><a href="#" class="btn btn-warning"><i
+                            class="fa fa-chevron-right"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <!-- To make the POPUP-HELP STEP 5 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+    <li class="popup-container dropdown popup-help-container step05">
+        <div class="popup-overlay"></div>
+        <a class="opener-popup dropdown-toggle under-overlay" href="#">
+         <span class="icon-step05">
+
+         </span>
+        </a>
+
+        <div class="popup dropdown-menu settings-block under-overlay">
+            <span class="arrow"></span>
+
+            <div class="panel">
+                <div class="panel-body">
+                    <div class="row dropdown-row">
+                        <div class="col-xs-4 theme-list-holder">
+                            <div class="scrollable">
+                                <span class="title text-uppercase">Theme</span>
+                                <ul class="theme-list list-unstyled">
+                                    <li>
+                                        <a href="#"><span class="color color-default"></span><span class="description">Default</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="color color-remax"></span><span
+                                                class="description">Remax</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="active"><span class="color color-century91"></span><span
+                                                class="description">Century 91</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="color color-minimal"></span><span class="description">Minimal</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="color color-summer"></span><span
+                                                class="description">Summer</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="color color-default"></span><span class="description">Default</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="color color-remax"></span><span
+                                                class="description">Remax</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="color color-century91"></span><span class="description">Century 91</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="color color-minimal"></span><span class="description">Minimal</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="color color-summer"></span><span
+                                                class="description">Summer</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-8">
+                            <span class="title text-uppercase">Settings</span>
+
+                            <div class="form-in-drop">
+                                <div class="form-group">
+                                    <span class="label-holder"><label for="select-1">Time Zone</label></span>
+                                <span class="select-holder">
+                                  <span class="fake-select">
+                                    <select id="select-1" class="form-control">
+                                        <option selected="selected">(UTC -8:00)</option>
+                                        <option>(UTC -8:00)</option>
+                                        <option>(UTC -8:00)</option>
+                                        <option>(UTC -8:00)</option>
+                                    </select>
+                                  </span>
+                                </span>
+                                </div>
+                                <div class="form-group">
+                                    <span class="label-holder"><label for="select-2">Email Digest</label></span>
+                                <span class="select-holder">
+                                  <span class="fake-select">
+                                    <select id="select-2" class="form-control">
+                                        <option selected="selected">option 1</option>
+                                        <option>option 2</option>
+                                        <option>option 3</option>
+                                    </select>
+                                  </span>
+                                </span>
+                                </div>
+                                <div class="form-group">
+                                    <span class="label-holder"><label for="language">Language</label></span>
+                                    <span class="input-holder"><input type="text" class="form-control" id="language"
+                                                                      placeholder="English"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- To make the POPUP-HELP STEP 5 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+            <div class="popup-help step05">
+                <div class="panel panel-default">
+                    <span class="arrow arrow-right"></span>
+
+                    <div class="panel-heading">
+                        <strong class="title">Step 5 of 7</strong>
+                        <a class="close" href="#" aria-label="Close"><span aria-hidden="true">&times;</span>
+                        </a>
+                    </div>
+                    <div class="panel-body">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                            ut laoreet dolore magna volutpat. </p>
+
+                        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation</p>
+
+                        <div class="btn-container text-right"><a href="#" class="btn btn-warning"><i
+                                class="fa fa-chevron-left"></i></a><a href="#" class="btn btn-warning"><i
+                                class="fa fa-chevron-right"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <!-- To make the POPUP-HELP STEP 6 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+    <li class="dropdown hidden-xs user-dropdown popup-help-container step06">
+        <div class="popup-overlay"></div>
+        <a href="#" id="dropdownMenu2" class="user-block dropdown-toggle under-overlay" data-toggle="dropdown" role="button"
+           aria-haspopup="true" aria-expanded="false">
+            <div class="row">
+                <div class="col-xs-3 img-holder"><img src="../images/avatar01.jpg" class="img-responsive img-circle"
+                                                      alt="image description"></div>
+                <div class="col-xs-9 text-block">
+                    <div class="name"><strong>Richard Mattius</strong><span class="caret"></span></div>
+                    <strong class="status text-uppercase text-warning">PREMIUM USER</strong>
+                </div>
+            </div>
+        </a>
+
+        <div class="dropdown-menu under-overlay">
+            <span class="arrow"></span>
+
+            <div class="panel-body">
+                <ul class="list-unstyled" aria-labelledby="dropdownMenu2">
+                    <li class="switch-account">
+                        <a href="#switch-account-menu" class="switch-account-toggle collapsed" data-toggle="collapse">
+                            <span class="renew-icon"><i class="material-icons">autorenew</i></span>
+                            <span class="account-name">Century 21 Inc.</span>
+                            <span class="text">Switch Account</span>
+                            <span class="menu-arrow-icon"><i class="material-icons">arrow_drop_down</i></span>
+                        </a>
+
+                        <div id="switch-account-menu" class="collapse">
+                            <ul>
+                                <li><a href="#">Realty Corp.</a></li>
+                                <li><a href="#">Bradly and Drown</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li role="separator" class="divider"></li>
+
+                    <li>
+                        <a href="app-account-info.html">
+                            <i class="material-icons">person</i>
+                            <span class="text">My Account</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="my-user.html">
+                            <i class="material-icons">group</i>
+                            <span class="text">My Users</span>
+                        </a>
+                    </li>
+                    <li>
+                        <div class=""></div>
+                        <a href="my-product.html">
+                            <i class="material-icons">apps</i>
+                            <span class="text">My Products & Services</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="app-store.html">
+                            <i class="material-icons">shopping_basket</i>
+                            <span class="text">WebsiteBox Store</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#myModal">
+                            <i class="material-icons">help</i>
+                            <span class="text">Help & Support</span>
+                        </a>
+                    </li>
+                    <li role="separator" class="divider"></li>
+                    <li>
+                        <a href="#">
+                            <i class="material-icons">exit_to_app</i>
+                            <span class="text">Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- To make the POPUP-HELP STEP 6 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+            <div class="popup-help step06">
+                <div class="panel panel-default">
+                    <span class="arrow arrow-right"></span>
+
+                    <div class="panel-heading">
+                        <strong class="title">Step 6 of 7</strong>
+                        <a class="close" href="#" aria-label="Close"><span aria-hidden="true">&times;</span>
+                        </a>
+                    </div>
+                    <div class="panel-body">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                            ut laoreet dolore magna volutpat. </p>
+
+                        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation</p>
+
+                        <div class="btn-container text-right"><a href="#" class="btn btn-warning"><i
+                                class="fa fa-chevron-left"></i></a><a href="#" class="btn btn-warning"><i
+                                class="fa fa-chevron-right"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    </ul>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="drop visible-xs visible-sm menu-mobile-767">
+    <div class="navbar-collapse">
+        <div class="row-top">
+            <p class="text-menu">Menu</p>
+            <button type="button" class="nav-opener nav-toggle-767">
+                <span class="x1"></span>
+                <span class="x2"></span>
+            </button>
+        </div>
+        <div class="box-search">
+            <div class="search-row">
+                <input type="text" class="form-control input-search input-control" placeholder="Search"
+                       style="position: relative; z-index: 3; background: transparent;">
+                <a href="#" class="icon-search"><i class="fa fa-search"></i></a>
+            </div>
+        </div>
+        <div class="user-dropdown">
+          <div class="dropdown-menu">
+            <ul class="list-unstyled user-account-menu">
+                <li class="switch-account">
+                    <a href="#switch-account-menu-mobile" class="switch-account-toggle collapsed" data-toggle="collapse">
+                        <span class="renew-icon"><i class="material-icons">autorenew</i></span>
+                        <span class="account-name">Century 21 Inc.</span>
+                        <span class="text">Switch Account</span>
+                        <span class="menu-arrow-icon"><i class="material-icons">arrow_drop_down</i></span>
+                    </a>
+
+                    <div id="switch-account-menu-mobile" class="collapse">
+                        <ul>
+                            <li><a href="#">Realty Corp.</a></li>
+                            <li><a href="#">Bradly and Drown</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li role="separator" class="divider"></li>
+
+                <li>
+                    <a href="app-account-info.html">
+                        <i class="material-icons">person</i>
+                        <span class="text">My Account</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="my-user.html">
+                        <i class="material-icons">group</i>
+                        <span class="text">My Users</span>
+                    </a>
+                </li>
+                <li>
+                    <div class=""></div>
+                    <a href="my-product.html">
+                        <i class="material-icons">apps</i>
+                        <span class="text">My Products &amp; Services</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="app-store.html">
+                        <i class="material-icons">shopping_basket</i>
+                        <span class="text">WebsiteBox Store</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#myModal">
+                        <i class="material-icons">help</i>
+                        <span class="text">Help &amp; Support</span>
+                    </a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li>
+                    <a href="#">
+                        <i class="material-icons">exit_to_app</i>
+                        <span class="text">Logout</span>
+                    </a>
+                </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row user-block">
+            <div class="col-xs-3 img-holder"><img src="../images/avatar01.jpg" class="img-responsive img-circle"
+                                                  alt="image description"></div>
+            <div class="col-xs-9 text-block">
+                <div class="name"><strong>Richard Mattius</strong></div>
+                <strong class="status text-uppercase text-warning">PREMIUM USER</strong>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</nav>
+</header>
+<!-- contain main informative part of the site -->
+<main id="main" role="main">
+  <div class="container-fluid">
+    <div class="row">
+      <div id="content-page">
+        <div class="col-lg-12">
+          <div class="panel panel-default no-panel-mobile col-agl-app">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-5 col-sm-5 col-lg-5 left-col">
+                        <div class="row">
+                            <div class="col-sm-2 img-block">
+                                <div class="img-holder"><img src="../images/user.png" class="img-responsive" alt="image description"></div>
+                            </div>
+                            <div class="col-sm-10 heading-block">
+                                <h1>My Users</h1>
+
+                                <p>Short Description</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-7 col-sm-7 col-lg-7 text-right buttons-holder right-col">
+                        <span class="hint-text">8 of 10 credits used</span>
+                        <button type="button" class="btn btn-default btn-add btn-shadow" data-toggle="modal" data-target="#addUserModal"><i class="fa fa-plus-circle"></i>Add User</button>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body">
+                <div class="view-type list-view user-table">
+                    
+                    <table class="table user-table">
+                        <thead class="hidden-xs">
+                            <tr>
+                                <th class="col1 text-left clear-padding-left">
+                                    Name
+                                </th>
+                                <th class="col2 text-left">
+                                    Status
+                                </th>
+                                <th class="col3 text-left hidden-mobile-1024">
+                                    Created ON
+                                </th>
+                                <th class="col4 text-left">
+                                    Last login
+                                </th>
+                                <th class="col5 text-left">
+                                    Email
+                                </th>
+                                <th class="col6 clear-padding-right">
+                                    &nbsp;
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="user-name clear-padding-left">
+                                   <img src="../images/my-user/user1.jpg" alt="User">
+                                   <p>Ben Johnson</p>
+                                </td>
+                                <td class="">
+                                    <span class="label label-success label-status reverse">ADMIN</span>
+                                </td>
+                                <td class="hidden-mobile-1024">
+                                    <span>Jan 5, 2017</span>
+                                </td>
+                                <td class="">
+                                    <span>Apr 16, 2016</span>
+                                </td>
+                                <td class="user-email">
+                                    <a href="mailto:benj@gmail.com">benj@gmail.com</a>
+                                </td>
+                                <td class="text-right has-dropdown">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="user-name clear-padding-left">
+                                   <img src="../images/my-user/user2.jpg" alt="User">
+                                   <p>David Clohach</p>
+                                </td>
+                                <td class="has-dropdown">
+                                    <div class="dropdown inline-block-item">
+                                        <span class="label label-success label-status dropdown-opener">ACTIVE</span>
+                                        <div class="dropdown-menu dropdown-dialog">
+                                              <div class="dialog-header">
+                                                <h2 class="dialog-title">Are you sure you want to deactive?</h2>
+                                                <button type="button" class="btn btn-default btn-close-dialog"><span aria-hidden="true">×</span></button>
+                                              </div>
+                                              <div class="dialog-content">
+                                                <div class="content-inner">
+                                                    <div class="action-buttons">
+                                                      <button class="btn btn-default pull-left">Cancel</button>
+                                                      <button class="btn btn-red pull-right" data-dismiss="modal">Deactive</button>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="hidden-mobile-1024">
+                                    <span>Jan 5, 2017</span>
+                                </td>
+                                <td class="">
+                                    <span>Apr 16, 2016</span>
+                                </td>
+                                <td class="user-email">
+                                    <a href="mailto:david@gmail.com">david@gmail.com</a>
+                                </td>
+                                <td class="text-right has-dropdown">
+                                    <button type="button" class="btn btn-default btn-with-icon btn-edit btn-shadow" data-toggle="modal" data-target="#editUserModal"><i class="fa fa-key"></i>Permissions</button>
+                                    <div class="dropdown inline-block-item">
+                                        <button type="button" class="btn btn-default btn-shadow user-del-btn dropdown-opener">
+                                            <i class="fa fa-trash"></i>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-dialog">
+                                              <div class="dialog-header">
+                                                <h2 class="dialog-title">Are you sure?</h2>
+                                                <button type="button" class="btn btn-default btn-close-dialog"><span aria-hidden="true">×</span></button>
+                                              </div>
+                                              <div class="dialog-content">
+                                                <div class="content-inner">
+                                                    <div class="action-buttons">
+                                                      <button class="btn btn-default pull-left">Cancel</button>
+                                                      <button class="btn btn-red pull-right" data-dismiss="modal">Delete</button>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="user-name clear-padding-left">
+                                   <img src="../images/my-user/user3.jpg" alt="User">
+                                   <p>Vlariusz Ciesia</p>
+                                </td>
+                                <td class="has-dropdown">
+                                    <div class="dropdown inline-block-item">
+                                        <span class="label label-default label-status dropdown-opener">PENDING</span>
+                                        <div class="dropdown-menu dropdown-dialog">
+                                              <div class="dialog-header">
+                                                <h2 class="dialog-title">Are you sure you want to resent this invite?</h2>
+                                                <button type="button" class="btn btn-default btn-close-dialog"><span aria-hidden="true">×</span></button>
+                                              </div>
+                                              <div class="dialog-content">
+                                                <div class="content-inner">
+                                                    <div class="action-buttons">
+                                                      <button class="btn btn-default pull-left">Cancel</button>
+                                                      <button class="btn btn-orange pull-right" data-dismiss="modal">Resend</button>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="hidden-mobile-1024">
+                                    <span>Jan 5, 2017</span>
+                                </td>
+                                <td class="">
+                                    <span>Apr 16, 2016</span>
+                                </td>
+                                <td class="user-email">
+                                    <a href="mailto:vlarius@gmail.com">vlarius@gmail.com</a>
+                                </td>
+                                <td class="text-right has-dropdown">
+                                    <button type="button" class="btn btn-default btn-with-icon btn-edit btn-shadow" data-toggle="modal" data-target="#editUserModal"><i class="fa fa-key"></i>Permissions</button>
+                                    <div class="dropdown inline-block-item">
+                                        <button type="button" class="btn btn-default btn-shadow user-del-btn dropdown-opener">
+                                            <i class="fa fa-trash"></i>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-dialog">
+                                              <div class="dialog-header">
+                                                <h2 class="dialog-title">Are you sure?</h2>
+                                                <button type="button" class="btn btn-default btn-close-dialog"><span aria-hidden="true">×</span></button>
+                                              </div>
+                                              <div class="dialog-content">
+                                                <div class="content-inner">
+                                                    <div class="action-buttons">
+                                                      <button class="btn btn-default pull-left">Cancel</button>
+                                                      <button class="btn btn-red pull-right" data-dismiss="modal">Delete</button>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="user-name clear-padding-left">
+                                   <img src="../images/my-user/user1.jpg" alt="User">
+                                   <p>Ben Johnson</p>
+                                </td>
+                                <td class="has-dropdown">
+                                    <div class="dropdown inline-block-item">
+                                        <span class="label label-success label-status dropdown-opener">ACTIVE</span>
+                                        <div class="dropdown-menu dropdown-dialog">
+                                              <div class="dialog-header">
+                                                <h2 class="dialog-title">Are you sure you want to deactive?</h2>
+                                                <button type="button" class="btn btn-default btn-close-dialog"><span aria-hidden="true">×</span></button>
+                                              </div>
+                                              <div class="dialog-content">
+                                                <div class="content-inner">
+                                                    <div class="action-buttons">
+                                                      <button class="btn btn-default pull-left">Cancel</button>
+                                                      <button class="btn btn-red pull-right" data-dismiss="modal">Deactive</button>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="hidden-mobile-1024">
+                                    <span>Jan 5, 2017</span>
+                                </td>
+                                <td class="">
+                                    <span>Apr 16, 2016</span>
+                                </td>
+                                <td class="user-email">
+                                    <a href="mailto:benj@gmail.com">benj@gmail.com</a>
+                                </td>
+                                <td class="text-right has-dropdown">
+                                    <button type="button" class="btn btn-default btn-with-icon btn-edit btn-shadow" data-toggle="modal" data-target="#editUserModal"><i class="fa fa-key"></i>Permissions</button>
+                                    <div class="dropdown inline-block-item">
+                                        <button type="button" class="btn btn-default btn-shadow user-del-btn dropdown-opener">
+                                            <i class="fa fa-trash"></i>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-dialog">
+                                              <div class="dialog-header">
+                                                <h2 class="dialog-title">Are you sure?</h2>
+                                                <button type="button" class="btn btn-default btn-close-dialog"><span aria-hidden="true">×</span></button>
+                                              </div>
+                                              <div class="dialog-content">
+                                                <div class="content-inner">
+                                                    <div class="action-buttons">
+                                                      <button class="btn btn-default pull-left">Cancel</button>
+                                                      <button class="btn btn-red pull-right" data-dismiss="modal">Delete</button>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="user-name clear-padding-left">
+                                   <img src="../images/my-user/user4.jpg" alt="User">
+                                   <p>Tobia Crivlllari</p>
+                                </td>
+                                <td class="has-dropdown">
+                                    <div class="dropdown inline-block-item">
+                                        <span class="label label-danger label-status dropdown-opener">INACTIVE</span>
+                                        <div class="dropdown-menu dropdown-dialog">
+                                              <div class="dialog-header">
+                                                <h2 class="dialog-title">Are you sure you want to active?</h2>
+                                                <button type="button" class="btn btn-default btn-close-dialog"><span aria-hidden="true">×</span></button>
+                                              </div>
+                                              <div class="dialog-content">
+                                                <div class="content-inner">
+                                                    <div class="action-buttons">
+                                                      <button class="btn btn-default pull-left">Cancel</button>
+                                                      <button class="btn btn-orange pull-right" data-dismiss="modal">Active</button>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="hidden-mobile-1024">
+                                    <span>Jan 5, 2017</span>
+                                </td>
+                                <td class="">
+                                    <span>Apr 16, 2016</span>
+                                </td>
+                                <td class="user-email">
+                                    <a href="mailto:ben@gmail.com">tobia@gmail.com</a>
+                                </td>
+                                <td class="text-right has-dropdown">
+                                    <button type="button" class="btn btn-default btn-with-icon btn-edit btn-shadow" data-toggle="modal" data-target="#editUserModal"><i class="fa fa-key"></i>Permissions</button>
+                                    <div class="dropdown inline-block-item">
+                                        <button type="button" class="btn btn-default btn-shadow user-del-btn dropdown-opener">
+                                            <i class="fa fa-trash"></i>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-dialog">
+                                              <div class="dialog-header">
+                                                <h2 class="dialog-title">Are you sure?</h2>
+                                                <button type="button" class="btn btn-default btn-close-dialog"><span aria-hidden="true">×</span></button>
+                                              </div>
+                                              <div class="dialog-content">
+                                                <div class="content-inner">
+                                                    <div class="action-buttons">
+                                                      <button class="btn btn-default pull-left">Cancel</button>
+                                                      <button class="btn btn-red pull-right" data-dismiss="modal">Delete</button>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="user-name clear-padding-left">
+                                   <img src="../images/my-user/user1.jpg" alt="User">
+                                   <p>Ben Johnson</p>
+                                </td>
+                                <td class="has-dropdown">
+                                    <div class="dropdown inline-block-item">
+                                        <span class="label label-success label-status dropdown-opener">ACTIVE</span>
+                                        <div class="dropdown-menu dropdown-dialog">
+                                              <div class="dialog-header">
+                                                <h2 class="dialog-title">Are you sure you want to deactive?</h2>
+                                                <button type="button" class="btn btn-default btn-close-dialog"><span aria-hidden="true">×</span></button>
+                                              </div>
+                                              <div class="dialog-content">
+                                                <div class="content-inner">
+                                                    <div class="action-buttons">
+                                                      <button class="btn btn-default pull-left">Cancel</button>
+                                                      <button class="btn btn-red pull-right" data-dismiss="modal">Deactive</button>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="hidden-mobile-1024">
+                                    <span>Jan 5, 2017</span>
+                                </td>
+                                <td class="">
+                                    <span>Apr 16, 2016</span>
+                                </td>
+                                <td class="user-email">
+                                    <a href="mailto:ben@gmail.com">benj@gmail.com</a>
+                                </td>
+                                <td class="text-right has-dropdown">
+                                    <button type="button" class="btn btn-default btn-with-icon btn-edit btn-shadow" data-toggle="modal" data-target="#editUserModal"><i class="fa fa-key"></i>Permissions</button>
+                                    <div class="dropdown inline-block-item">
+                                        <button type="button" class="btn btn-default btn-shadow user-del-btn dropdown-opener">
+                                            <i class="fa fa-trash"></i>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-dialog">
+                                              <div class="dialog-header">
+                                                <h2 class="dialog-title">Are you sure?</h2>
+                                                <button type="button" class="btn btn-default btn-close-dialog"><span aria-hidden="true">×</span></button>
+                                              </div>
+                                              <div class="dialog-content">
+                                                <div class="content-inner">
+                                                    <div class="action-buttons">
+                                                      <button class="btn btn-default pull-left">Cancel</button>
+                                                      <button class="btn btn-red pull-right" data-dismiss="modal">Delete</button>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="user-table-mobile visible-desktop-768">
+                    <div class="user-item text-center">
+                        <img class="user-img" src="../images/my-user/user1.jpg" alt="User"/>
+                        <p class="user-name">Ben Johnson</p>
+                        <div class="has-dropdown">
+                            <div class="dropdown inline-block-item">
+                                <span class="label label-success label-status reverse">ADMIN</span>
+                            </div>
+                        </div>
+                        <a class="user-email" href="mailto:benj@gmail.com">benj@gmail.com</a>
+                        <p class="user-created-on">Created ON: Jan 5, 2016</p>
+                        <p class="user-last-login">LastLogin: April 15, 2016</p>
+                        <div class="user-actions has-dropdown">
+                        </div>
+                    </div>
+                    <div class="user-item text-center">
+                        <img class="user-img" src="../images/my-user/user2.jpg" alt="User"/>
+                        <p class="user-name">David Clohach</p>
+                        <div class="has-dropdown">
+                            <div class="dropdown inline-block-item">
+                                <span class="label label-success label-status dropdown-opener">ACTIVE</span>
+                                <div class="dropdown-menu dropdown-dialog">
+                                      <div class="dialog-header">
+                                        <h2 class="dialog-title">Are you sure you want to deactive?</h2>
+                                        <button type="button" class="btn btn-default btn-close-dialog"><span aria-hidden="true">×</span></button>
+                                      </div>
+                                      <div class="dialog-content">
+                                        <div class="content-inner">
+                                            <div class="action-buttons">
+                                              <button class="btn btn-default pull-left">Cancel</button>
+                                              <button class="btn btn-red pull-right" data-dismiss="modal">Deactive</button>
+                                            </div>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="user-email" href="mailto:david@gmail.com">david@gmail.com</a>
+                        <p class="user-created-on">Created ON: Jan 5, 2016</p>
+                        <p class="user-last-login">LastLogin: April 15, 2016</p>
+                        <div class="user-actions has-dropdown">
+                            <button type="button" class="btn btn-default btn-with-icon btn-edit btn-shadow" data-toggle="modal" data-target="#editUserModal"><i class="fa fa-key"></i>Permissions</button>
+                            <div class="dropdown inline-block-item">
+                                <button type="button" class="btn btn-default btn-shadow user-del-btn dropdown-opener">
+                                    <i class="fa fa-trash"></i>
+                                </button>
+                                <div class="dropdown-menu dropdown-dialog" style="right: -20px">
+                                      <div class="dialog-header">
+                                        <h2 class="dialog-title">Are you sure?</h2>
+                                        <button type="button" class="btn btn-default btn-close-dialog"><span aria-hidden="true">×</span></button>
+                                      </div>
+                                      <div class="dialog-content">
+                                        <div class="content-inner">
+                                            <div class="action-buttons">
+                                              <button class="btn btn-default pull-left">Cancel</button>
+                                              <button class="btn btn-red pull-right" data-dismiss="modal">Delete</button>
+                                            </div>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-item text-center">
+                        <img class="user-img" src="../images/my-user/user3.jpg" alt="User"/>
+                        <p class="user-name">Andrew Krats</p>
+                        <div class="has-dropdown">
+                            <div class="dropdown inline-block-item">
+                                <span class="label label-default label-status dropdown-opener">PENDING</span>
+                                <div class="dropdown-menu dropdown-dialog">
+                                      <div class="dialog-header">
+                                        <h2 class="dialog-title">Are you sure you want to resent this invite?</h2>
+                                        <button type="button" class="btn btn-default btn-close-dialog"><span aria-hidden="true">×</span></button>
+                                      </div>
+                                      <div class="dialog-content">
+                                        <div class="content-inner">
+                                            <div class="action-buttons">
+                                              <button class="btn btn-default pull-left">Cancel</button>
+                                              <button class="btn btn-orange pull-right" data-dismiss="modal">Resend</button>
+                                            </div>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="user-email" href="mailto:benj@gmail.com">benj@gmail.com</a>
+                        <p class="user-created-on">Created ON: Jan 5, 2016</p>
+                        <p class="user-last-login">LastLogin: April 15, 2016</p>
+                        <div class="user-actions has-dropdown">
+                            <button type="button" class="btn btn-default btn-with-icon btn-edit btn-shadow" data-toggle="modal" data-target="#editUserModal"><i class="fa fa-key"></i>Permissions</button>
+                            <div class="dropdown inline-block-item">
+                                <button type="button" class="btn btn-default btn-shadow user-del-btn dropdown-opener">
+                                    <i class="fa fa-trash"></i>
+                                </button>
+                                <div class="dropdown-menu dropdown-dialog" style="right: -20px">
+                                      <div class="dialog-header">
+                                        <h2 class="dialog-title">Are you sure?</h2>
+                                        <button type="button" class="btn btn-default btn-close-dialog"><span aria-hidden="true">×</span></button>
+                                      </div>
+                                      <div class="dialog-content">
+                                        <div class="content-inner">
+                                            <div class="action-buttons">
+                                              <button class="btn btn-default pull-left">Cancel</button>
+                                              <button class="btn btn-red pull-right" data-dismiss="modal">Delete</button>
+                                            </div>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-item text-center">
+                        <img class="user-img" src="../images/my-user/user4.jpg" alt="User"/>
+                        <p class="user-name">Ben Johnson</p>
+                        <div class="has-dropdown">
+                            <div class="dropdown inline-block-item">
+                                <span class="label label-danger label-status dropdown-opener">INACTIVE</span>
+                                <div class="dropdown-menu dropdown-dialog">
+                                      <div class="dialog-header">
+                                        <h2 class="dialog-title">Are you sure you want to active?</h2>
+                                        <button type="button" class="btn btn-default btn-close-dialog"><span aria-hidden="true">×</span></button>
+                                      </div>
+                                      <div class="dialog-content">
+                                        <div class="content-inner">
+                                            <div class="action-buttons">
+                                              <button class="btn btn-default pull-left">Cancel</button>
+                                              <button class="btn btn-orange pull-right" data-dismiss="modal">Active</button>
+                                            </div>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="user-email" href="mailto:benj@gmail.com">benj@gmail.com</a>
+                        <p class="user-created-on">Created ON: Jan 5, 2016</p>
+                        <p class="user-last-login">LastLogin: April 15, 2016</p>
+                        <div class="user-actions has-dropdown">
+                            <button type="button" class="btn btn-default btn-with-icon btn-edit btn-shadow" data-toggle="modal" data-target="#editUserModal"><i class="fa fa-key"></i>Permissions</button>
+                            <div class="dropdown inline-block-item">
+                                <button type="button" class="btn btn-default btn-shadow user-del-btn dropdown-opener">
+                                    <i class="fa fa-trash"></i>
+                                </button>
+                                <div class="dropdown-menu dropdown-dialog" style="right: -20px">
+                                      <div class="dialog-header">
+                                        <h2 class="dialog-title">Are you sure?</h2>
+                                        <button type="button" class="btn btn-default btn-close-dialog"><span aria-hidden="true">×</span></button>
+                                      </div>
+                                      <div class="dialog-content">
+                                        <div class="content-inner">
+                                            <div class="action-buttons">
+                                              <button class="btn btn-default pull-left">Cancel</button>
+                                              <button class="btn btn-red pull-right" data-dismiss="modal">Delete</button>
+                                            </div>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</main>
+
+<div class="modal fade sliding-right-modal multi-section-modal only-secondary edit-user-modal extended" id="addUserModal" tabindex="-1" role="dialog" aria-labelledby="addUserModal">
+    <div class="modal-dialog" role="document">
+
+        <div class="secondary-section single">
+            <div class="secondary-section-inner">
+                <div class="panel panel-default panel-transparent app-extended">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-9">
+                                <div class="row">
+                                    <div class="col-sm-12 heading-block">
+                                        <h1>Add New User</h1>
+                                        <p>User information</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 text-right">
+                                <button type="button" class="btn btn-transparent btn-close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row user-info-row">
+                            <div class="col-xs-6">
+                                <div class="form-group">
+                                    <label class="control-label">First Name</label>
+                                    <input type="text" class="form-control" value="Nick">
+                                </div>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="form-group">
+                                    <label class="control-label">Last Name</label>
+                                    <input type="text" class="form-control" value="Hammet">
+                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <label class="control-label">Email</label>
+                                    <input type="text" class="form-control" value="nickhammet@gmail.com">
+                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                                <input type="submit" class="btn btn-orange btn-full save-user-btn" value="Save">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade sliding-right-modal multi-section-modal only-secondary edit-user-modal extended" id="editUserModal" tabindex="-1" role="dialog" aria-labelledby="editUserModal">
+    <div class="modal-dialog" role="document">
+
+        <div class="secondary-section single">
+            <div class="secondary-section-inner">
+                <div class="panel panel-default panel-transparent app-extended">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-9">
+                                <div class="row">
+                                    <div class="col-sm-12 heading-block">
+                                        <h1>Edit Nick Hammet</h1>
+                                        <p>User management permissions</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 text-right">
+                                <button type="button" class="btn btn-transparent btn-close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body" style="padding-top:0">
+                        <div class="app-permissions">
+                            <div class="app-permission">
+                                <div class="app-permission-header">
+                                    <a class="btn-collapse">
+                                      <img src="../images/websites.png" alt="App Icon" class="app-icon"/>
+                                      <span class="app-title">
+                                        Websites App
+                                      </span>
+                                      <i class="fa fa-info-circle"></i>
+                                    </a>
+                                    <div class="box-switch-on-off">
+                                        <div class="button-wrap on-off">
+                                            <div class="button-bg">
+                                                <div class="button-on">on</div>
+                                                <div class="button-off">off</div>
+                                                <div class="button-switch"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="app-permission">
+                                <div class="app-permission-header">
+                                    <a class="btn-collapse">
+                                      <img src="../images/listings.png" alt="App Icon" class="app-icon"/>
+                                      <span class="app-title">
+                                        Listings App
+                                      </span>
+                                      <i class="fa fa-info-circle"></i>
+                                    </a>
+                                    <div class="box-switch-on-off">
+                                        <div class="button-wrap on-off">
+                                            <div class="button-bg">
+                                                <div class="button-on">on</div>
+                                                <div class="button-off">off</div>
+                                                <div class="button-switch"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="app-permission">
+                                <div class="app-permission-header">
+                                    <a class="btn-collapse">
+                                      <img src="../images/documents.png" alt="App Icon" class="app-icon"/>
+                                      <span class="app-title">
+                                        Documents App
+                                      </span>
+                                      <i class="fa fa-info-circle"></i>
+                                    </a>
+                                    <div class="box-switch-on-off">
+                                        <div class="button-wrap on-off">
+                                            <div class="button-bg">
+                                                <div class="button-on">on</div>
+                                                <div class="button-off">off</div>
+                                                <div class="button-switch"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="app-permission">
+                                <div class="app-permission-header">
+                                    <a class="btn-collapse">
+                                      <img src="../images/domains.png" alt="App Icon" class="app-icon"/>
+                                      <span class="app-title">
+                                        Domains App
+                                      </span>
+                                      <i class="fa fa-info-circle"></i>
+                                    </a>
+                                    <div class="box-switch-on-off">
+                                        <div class="button-wrap on-off">
+                                            <div class="button-bg">
+                                                <div class="button-on">on</div>
+                                                <div class="button-off">off</div>
+                                                <div class="button-switch"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="app-permission">
+                                <div class="app-permission-header">
+                                    <a class="btn-collapse">
+                                      <img src="../images/contacts.png" alt="App Icon" class="app-icon"/>
+                                      <span class="app-title">
+                                        Contacts App
+                                      </span>
+                                      <i class="fa fa-info-circle"></i>
+                                    </a>
+                                    <div class="box-switch-on-off">
+                                        <div class="button-wrap on-off">
+                                            <div class="button-bg">
+                                                <div class="button-on">on</div>
+                                                <div class="button-off">off</div>
+                                                <div class="button-switch"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="app-permission">
+                                <div class="app-permission-header">
+                                    <a class="btn-collapse">
+                                      <img src="../images/emails.png" alt="App Icon" class="app-icon"/>
+                                      <span class="app-title">
+                                        Emails App
+                                      </span>
+                                      <i class="fa fa-info-circle"></i>
+                                    </a>
+                                    <div class="box-switch-on-off">
+                                        <div class="button-wrap on-off">
+                                            <div class="button-bg">
+                                                <div class="button-on">on</div>
+                                                <div class="button-off">off</div>
+                                                <div class="button-switch"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="app-permission">
+                                <div class="app-permission-header">
+                                    <a class="btn-collapse">
+                                      <img src="../images/tasks.png" alt="App Icon" class="app-icon"/>
+                                      <span class="app-title">
+                                        Tasks App
+                                      </span>
+                                      <i class="fa fa-info-circle"></i>
+                                    </a>
+                                    <div class="box-switch-on-off">
+                                        <div class="button-wrap on-off">
+                                            <div class="button-bg">
+                                                <div class="button-on">on</div>
+                                                <div class="button-off">off</div>
+                                                <div class="button-switch"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="app-permission">
+                                <div class="app-permission-header">
+                                    <a class="btn-collapse">
+                                      <img src="../images/calendar.png" alt="App Icon" class="app-icon"/>
+                                      <span class="app-title">
+                                        Calendar App
+                                      </span>
+                                      <i class="fa fa-info-circle"></i>
+                                    </a>
+                                    <div class="box-switch-on-off">
+                                        <div class="button-wrap on-off">
+                                            <div class="button-bg">
+                                                <div class="button-on">on</div>
+                                                <div class="button-off">off</div>
+                                                <div class="button-switch"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="app-permission">
+                                <div class="app-permission-header">
+                                    <a class="btn-collapse">
+                                      <img src="../images/campaigns.png" alt="App Icon" class="app-icon"/>
+                                      <span class="app-title">
+                                        Campaigns App
+                                      </span>
+                                      <i class="fa fa-info-circle"></i>
+                                    </a>
+                                    <div class="box-switch-on-off">
+                                        <div class="button-wrap on-off">
+                                            <div class="button-bg">
+                                                <div class="button-on">on</div>
+                                                <div class="button-off">off</div>
+                                                <div class="button-switch"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="app-permission">
+                                <div class="app-permission-header">
+                                    <a class="btn-collapse">
+                                      <img src="../images/rss.png" alt="App Icon" class="app-icon"/>
+                                      <span class="app-title">
+                                        RSS App
+                                      </span>
+                                      <i class="fa fa-info-circle"></i>
+                                    </a>
+                                    <div class="box-switch-on-off">
+                                        <div class="button-wrap on-off">
+                                            <div class="button-bg">
+                                                <div class="button-on">on</div>
+                                                <div class="button-off">off</div>
+                                                <div class="button-switch"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="app-permission">
+                                <div class="app-permission-header">
+                                    <a class="btn-collapse">
+                                      <img src="../images/google_analytics.png" alt="App Icon" class="app-icon"/>
+                                      <span class="app-title">
+                                        Analitics
+                                      </span>
+                                      <i class="fa fa-info-circle"></i>
+                                    </a>
+                                    <div class="box-switch-on-off">
+                                        <div class="button-wrap on-off">
+                                            <div class="button-bg">
+                                                <div class="button-on">on</div>
+                                                <div class="button-off">off</div>
+                                                <div class="button-switch"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="app-permission">
+                                <div class="app-permission-header">
+                                    <a class="btn-collapse">
+                                      <img src="../images/profile.png" alt="App Icon" class="app-icon"/>
+                                      <span class="app-title">
+                                        Team App
+                                      </span>
+                                      <i class="fa fa-info-circle"></i>
+                                    </a>
+                                    <div class="box-switch-on-off">
+                                        <div class="button-wrap on-off">
+                                            <div class="button-bg">
+                                                <div class="button-on">on</div>
+                                                <div class="button-off">off</div>
+                                                <div class="button-switch"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="app-permission">
+                                <div class="app-permission-header">
+                                    <a class="btn-collapse">
+                                      <img src="../images/blog.png" alt="App Icon" class="app-icon"/>
+                                      <span class="app-title">
+                                        Blog App
+                                      </span>
+                                      <i class="fa fa-info-circle"></i>
+                                    </a>
+                                    <div class="box-switch-on-off">
+                                        <div class="button-wrap on-off">
+                                            <div class="button-bg">
+                                                <div class="button-on">on</div>
+                                                <div class="button-off">off</div>
+                                                <div class="button-switch"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="app-permission">
+                                <div class="app-permission-header">
+                                    <a class="btn-collapse">
+                                      <img src="../images/prints.png" alt="App Icon" class="app-icon"/>
+                                      <span class="app-title">
+                                        Prints App
+                                      </span>
+                                      <i class="fa fa-info-circle"></i>
+                                    </a>
+                                    <div class="box-switch-on-off">
+                                        <div class="button-wrap on-off">
+                                            <div class="button-bg">
+                                                <div class="button-on">on</div>
+                                                <div class="button-off">off</div>
+                                                <div class="button-switch"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="app-permission">
+                                <div class="app-permission-header">
+                                    <a class="btn-collapse">
+                                      <img src="../images/lead_capture.png" alt="App Icon" class="app-icon"/>
+                                      <span class="app-title">
+                                        Lead Capture
+                                      </span>
+                                      <i class="fa fa-info-circle"></i>
+                                    </a>
+                                    <div class="box-switch-on-off">
+                                        <div class="button-wrap on-off">
+                                            <div class="button-bg">
+                                                <div class="button-on">on</div>
+                                                <div class="button-off">off</div>
+                                                <div class="button-switch"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="app-permission">
+                                <div class="app-permission-header">
+                                    <a class="btn-collapse">
+                                      <img src="../images/seo.png" alt="App Icon" class="app-icon"/>
+                                      <span class="app-title">
+                                        SEO APP
+                                      </span>
+                                      <i class="fa fa-info-circle"></i>
+                                    </a>
+                                    <div class="box-switch-on-off">
+                                        <div class="button-wrap on-off">
+                                            <div class="button-bg">
+                                                <div class="button-on">on</div>
+                                                <div class="button-off">off</div>
+                                                <div class="button-switch"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="app-permission">
+                                <div class="app-permission-header">
+                                    <a class="btn-collapse">
+                                      <img src="../images/qr_code.png" alt="App Icon" class="app-icon"/>
+                                      <span class="app-title">
+                                        QR Code
+                                      </span>
+                                      <i class="fa fa-info-circle"></i>
+                                    </a>
+                                    <div class="box-switch-on-off">
+                                        <div class="button-wrap on-off">
+                                            <div class="button-bg">
+                                                <div class="button-on">on</div>
+                                                <div class="button-off">off</div>
+                                                <div class="button-switch"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal -->
+<div class="modal fade support-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h1 class="modal-title" id="myModalLabel">Help & Support</h1>
+                <p>Help with management Area Activities</p>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetuer adi pis cing elit, sed diam nonummy nibh.</p>
+                <!-- 16:9 aspect ratio -->
+                <div class="media-holder">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZyhrYis509A"
+                                frameborder="0" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+                <ol class="custom-numeric-list">
+                    <li><a href="#"><span class="number">Q</span>Lorem ipsum dolor sit amet, consectetuer adi pis cing elit, sed diam nonummy nibh?</a></li>
+                    <li><a href="#"><span class="number">Q</span>Lorem ipsum dolor sit amet, consectetuer adi pis cing elit?</a></li>
+                    <li><a href="#"><span class="number">Q</span>Lorem ipsum dolor sit amet, consectetuer adi pis cing elit, sed diam nonummy nibh?</a></li>
+                    <li><a href="#"><span class="number">Q</span>Lorem ipsum dolor sit amet, consectetuer adi pis cing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore mangaja endosre?</a></li>
+                    <li><a href="#"><span class="number">Q</span>Lorem ipsum dolor sit amet, consectetuer adi pis cing elit, sed diam nonummy nibh?</a></li>
+                    <li><a href="#"><span class="number">Q</span>Lorem ipsum dolor sit amet, consectetuer adi pis cing elit?</a></li>
+                    <li><a href="#"><span class="number">Q</span>Lorem ipsum dolor sit amet, consectetuer adi pis cing elit, sed diam nonummy nibh?</a></li>
+                    <li><a href="#"><span class="number">Q</span>Lorem ipsum dolor sit amet, consectetuer adi pis cing elit, sed diam nonummy nibh euismod?</a></li>
+                </ol>
+                <a href="#" class="btn btn-warning btn-block">Contact Support</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/jquery-ui/jquery-ui.js"></script>
+<!-- scroll bar  -->
+<script src="../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- custom select -->
+<script type="text/javascript" src="../bower_components/bootstrap-select/js/bootstrap-select.js"></script>
+<!-- Duallist box -->
+<script type="text/javascript" src="../js/dual-list-box.js"></script>
+<!-- include bootstrap JavaScript -->
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- include Masonry for blog girid -->
+<script src="../js/isotope.pkgd.min.js"></script>
+<!-- include custom JavaScript -->
+<!-- include Bootstrap date picker JavaScript -->
+<script type="text/javascript" src="../js/bootstrap-datepicker.min.js"></script>
+<!-- include Summernote WYSIWYG -->
+<script src="../bower_components/summernote/dist/summernote.min.js"></script>
+<script src="../js/jquery.main.js"></script>
+<!-- Google Map -->
+<script src="http://maps.google.com/maps/api/js"></script>
+<script src="../bower_components/gmaps/gmaps.min.js"></script>
+<script type="text/javascript">
+
+</script>
+</div>
+</body>
+</html>

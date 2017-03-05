@@ -1,0 +1,45 @@
+/*
+Import css team app
+*/
+
+@import '../document/document_sprites';
+@import 'main';
+@import 'modal';
+
+.app--listing{
+  .icon-file{
+    display: inline-block;
+  }
+
+  .icon-file-pdf{
+    @include sprite($file-pdf);
+  }
+
+  .icon-file-doc{
+    @include sprite($file-doc);
+  }
+
+  .icon-file-xls{
+    @include sprite($file-xls);
+  }
+
+  .icon-file-txt{
+    @include sprite($file-txt);
+  }
+
+  .icon-file-jpg{
+    @include sprite($file-jpg);
+  }
+
+  .icon-file-zip{
+    @include sprite($file-zip);
+  }
+
+  body[data-view-type="map-view"]{
+    .list-btn-op{
+      .btn-edit, .btn-delete{
+        display: none;
+      }
+    }
+  }
+}

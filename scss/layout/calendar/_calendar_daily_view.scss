@@ -1,0 +1,106 @@
+.app--calendar{
+  #calendarAppDetails {
+    .modal-header .visible-desktop-768{
+      .hours{
+        font-size: 17px;
+        color: #414851;
+        font-weight: 500;
+      }
+      .day{
+        font-size: 14px;
+        color: #8d939a;
+      }
+    }
+    .wsb-wysiwyg{
+      display: none;
+    }
+    .col-right{
+      input{
+        border: 1px solid transparent;
+        &:hover{
+          border: 1px solid #cfd7de;
+        }
+        &:focus{
+          border: 1px solid #f16a1e;
+        }
+      }
+    }
+    .buttons-holder{
+     .btn{
+       -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.1);
+       -moz-box-shadow: 0 1px 2px rgba(0,0,0,.1);
+       box-shadow: 0 1px 2px rgba(0,0,0,.1);
+     }
+      .btn-discard{
+        display: none;
+      }
+    }
+    .btn-saveinfo.btn-edit {
+      display: none;
+      min-width: 80px;
+    }
+    .btn-with-icon.btn-edit {
+      i {
+        margin-right: 10px;
+      }
+    }
+    &.editinfo{
+      .buttons-holder{
+        .btn-discard{
+          display: inline-block;
+        }
+        .btn-delete{
+          display: none;
+        }
+      }
+      .btn-saveinfo.btn-edit {
+        display: inline-block;
+      }
+      .btn-with-icon.btn-edit{
+        display: none;
+      }
+      .wsb-wysiwyg{
+        display: block;
+      }
+      .col-right{
+        input{
+          border: 1px solid #cfd7de;
+          &:focus{
+            border: 1px solid #f16a1e;
+          }
+        }
+        .work-calendar-text{
+          display: none;
+        }
+        .work-calendar-edit{
+          display: block;
+          margin-left: 0;
+        }
+      }
+      .description-content{
+        display: none;
+      }
+
+    }
+
+  }
+
+  #calendarLocation{
+  &.in{
+    &:before{
+      content: "";
+      position: fixed;
+      z-index: 1020;
+      background: #000;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.4;
+    }
+    .modal-dialog{
+      z-index: 8888;
+    }
+  }
+  }
+}

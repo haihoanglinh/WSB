@@ -1,0 +1,640 @@
+// vertical align el inside parent with fixed height/min-height
+// usage
+// html - .parent>.child
+// scss - @include v-align;
+//     or @include v-align(250px);
+//     or @include v-align(250px, bottom, before);
+//
+$color-orange:#ef6a1e;
+$color-border:#cfd7de;
+@mixin v-align($va-height: 100%, $va-direction: middle, $va-pseudo: after) {
+  white-space: nowrap;
+  text-align: center;
+  &:#{$va-pseudo} {
+    content: '';
+    display: inline-block;
+    vertical-align: $va-direction;
+    width: 0;
+    min-height: $va-height;
+  }
+
+  > * {
+    white-space: normal;
+    display: inline-block;
+    vertical-align: $va-direction;
+    max-width: 99%;
+  }
+}
+
+// vertical align a pair of child el inside parent
+// usage
+// html - .post>.image+.text
+// scss - @include v-align-pair(image, text);
+//     or @include v-align-pair(image, text, bottom);
+//     or @include v-align-pair(image, text, middle, 200px);
+//
+@mixin v-align-pair($child-name1, $child-name2, $valign: middle, $width1: auto, $width2: auto) {
+  display: table;
+  .#{$child-name1} {
+    display: table-cell;
+    vertical-align: $valign;
+    width: $width1;
+  }
+  .#{$child-name2} {
+    display: table-cell;
+    vertical-align: $valign;
+    width: $width2;
+  }
+}
+
+// vertical align el
+// usage: @include vertical-align-el;
+//
+@mixin vertical-align-el {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/// Mixin helping defining both `width` and `height` simultaneously.
+///
+/// @author Hugo Giraudel
+///
+/// @access public
+///
+/// @param {Length} $width - Element’s `width`
+/// @param {Length} $height ($width) - Element’s `height`
+///
+/// @example scss - Usage
+///   .foo {
+///     @include size(10em);
+///   }
+///
+///   .bar {
+///     @include size(100%, 10em);
+///   }
+///
+/// @example css - CSS output
+///   .foo {
+///     width: 10em;
+///     height: 10em;
+///   }
+///
+///   .bar {
+///     width: 100%;
+///     height: 10em;
+///   }
+///
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+/// font-smothing
+/// @include font-smoothing(on);
+/// @include font-smoothing(off);
+@mixin font-smoothing($value: on) {
+  @if $value == on {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  } @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+}
+
+/// Hides the text in an element, commonly used to show an image. Some elements will need block-level styles applied.
+///
+/// @link http://zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement
+///
+/// @example scss - Usage
+///   .element {
+///     @include hide-text;
+///   }
+///
+/// @example css - CSS Output
+///   .element {
+///     overflow: hidden;
+///     text-indent: 101%;
+///     white-space: nowrap;
+///   }
+///
+@mixin hide-text {
+  overflow: hidden;
+  text-indent: -9999px;
+  white-space: nowrap;
+}
+
+// align blocks
+@mixin align($value) {
+  display: inline-block;
+  vertical-align: $value;
+}
+
+// for absolute position block
+@mixin absolute($top: 0, $bottom: 0, $left: 0, $right: 0) {
+  position: absolute;
+  top: $top;
+  bottom: $bottom;
+  left: $left;
+  right: $right;
+}
+
+// arrow with shadow on drop
+@mixin has-arrow-sprite {
+  &:after {
+    content: "";
+    @include size(18px, 19px);
+    background: url(../images/sprite.png) no-repeat;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, 3px);
+  }
+}
+
+// arrow with shadow on drop
+@mixin arrow {
+  &:before,
+  &:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: solid;
+    border-width: 0 9px 9px;
+    border-color: transparent transparent $dropdown-border-color;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    @include media('>=tablet') {
+      border-width: 0 10px 10px;
+    }
+  }
+
+  &:after {
+    @include size(16px, 16px);
+    border: none;
+    background: #fff;
+    // bottom: -1px;
+    transform: rotate(-45deg);
+    top: 6px;
+    left: 1px;
+
+    @include media('>=tablet') {
+      @include size(17px, 15px);
+    }
+  }
+}
+
+// box's shadow style
+@mixin box-shadow {
+  box-shadow: 0 0 10px $dropdown-shadow;
+  border-color: $dropdown-border-color;
+}
+
+// scrollable styles
+@mixin scrollable {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/// Creates a visual triangle.
+/// Mixin takes ($size, $color, $direction)
+/// The $size argument can take one or two values—width height.
+/// The $color argument can take one or two
+/// values—foreground-color background-color.
+///
+/// @author http://bourbon.io/docs/#triangle
+///
+/// $direction:
+/// up, down, left, right, up-right, up-left, down-right, down-left
+/// @example scss - Usage
+///   @include triangle(12px, gray, down);
+///   @include triangle(12px 6px, gray blue, up-left);
+///
+@mixin triangle($size, $color, $direction) {
+  $width: nth($size, 1);
+  $height: nth($size, length($size));
+  $foreground-color: nth($color, 1);
+  $background-color: if(length($color) == 2, nth($color, 2), transparent);
+  height: 0;
+  width: 0;
+
+  @if ($direction == up) or ($direction == down) or ($direction == right) or ($direction == left) {
+    $width: $width / 2;
+    $height: if(length($size) > 1, $height, $height/2);
+
+    @if $direction == up {
+      border-bottom: $height solid $foreground-color;
+      border-left: $width solid $background-color;
+      border-right: $width solid $background-color;
+    } @else if $direction == right {
+      border-bottom: $width solid $background-color;
+      border-left: $height solid $foreground-color;
+      border-top: $width solid $background-color;
+    } @else if $direction == down {
+      border-left: $width solid $background-color;
+      border-right: $width solid $background-color;
+      border-top: $height solid $foreground-color;
+    } @else if $direction == left {
+      border-bottom: $width solid $background-color;
+      border-right: $height solid $foreground-color;
+      border-top: $width solid $background-color;
+    }
+  } @else if ($direction == up-right) or ($direction == up-left) {
+    border-top: $height solid $foreground-color;
+
+    @if $direction == up-right {
+      border-left: $width solid $background-color;
+    } @else if $direction == up-left {
+      border-right: $width solid $background-color;
+    }
+  } @else if ($direction == down-right) or ($direction == down-left) {
+    border-bottom: $height solid $foreground-color;
+
+    @if $direction == down-right {
+      border-left: $width solid $background-color;
+    } @else if $direction == down-left {
+      border-right: $width solid $background-color;
+    }
+  } @else if ($direction == inset-up) {
+    border-color: $background-color $background-color $foreground-color;
+    border-style: solid;
+    border-width: $height $width;
+  } @else if ($direction == inset-down) {
+    border-color: $foreground-color $background-color $background-color;
+    border-style: solid;
+    border-width: $height $width;
+  } @else if ($direction == inset-right) {
+    border-color: $background-color $background-color $background-color $foreground-color;
+    border-style: solid;
+    border-width: $width $height;
+  } @else if ($direction == inset-left) {
+    border-color: $background-color $foreground-color $background-color $background-color;
+    border-style: solid;
+    border-width: $width $height;
+  }
+}
+
+/// Animate css properties
+// usage
+// scss - @include animate(color);
+//     or @include animate(color width);
+//     or @include animate(color width, 1s, linear);
+//
+$animation-speed: .3s !default;
+
+@mixin animate($properties, $duration: $animation-speed, $easing: ease-in-out) {
+  $list: ();
+  @each $prop in $properties {
+    $str: #{$prop} #{$animation-speed} #{$easing};
+    $list: join($list, $str, comma);
+  }
+  transition: $list;
+}
+
+/// Mixin for styling form-placeholders
+/// @example scss - Usage
+///   @include placeholder {
+///    color: #333;
+///   }
+///
+///   input[type='text'],
+///   input[type='tel'],
+///   input[type='email'] {
+///     @include placeholder {
+///      color: red;
+///     }
+///   }
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content
+  }
+  &::-moz-placeholder {
+    opacity: 1;
+    @content
+  }
+  &:-moz-placeholder {
+    @content
+  }
+  &:-ms-input-placeholder {
+    @content
+  }
+  &.placeholder {
+    @content
+  }
+}
+
+/// Font-size px to rem calc
+/// @example scss - Usage
+/// selector {
+///    @include rem-font-size(16px);
+/// }
+
+@mixin rem-font-size($pxSize) {
+  font-size: $pxSize;
+  font-size: ($pxSize / 10px) + rem;
+}
+
+//Mixin Border radius
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin calc($property, $expression) {
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
+
+/*
+btn close
+*/
+@mixin close-btn-cm($width, $height, $bordercolor) {
+  width: $width;
+  height: $height;
+  border: 1px solid $bordercolor;
+  position: relative;
+  opacity: 1;
+  @include border-radius(3px);
+  &:before {
+    content: "";
+    width: 19px;
+    height: 2px;
+    background: #414851;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  &:after {
+    content: "";
+    width: 19px;
+    height: 2px;
+    background: #414851;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}
+
+/*
+input
+*/
+@mixin input-text($width, $height, $bordercolor) {
+  width: $width;
+  height: $height;
+  border: 1px solid $bordercolor;
+  position: relative;
+  opacity: 1;
+  @include border-radius(3px);
+  &:active, &:focus {
+    border-color: #f16a1e;
+  }
+}
+
+/*
+Mixin add tag
+*/
+@mixin add-tag {
+  box-shadow: 0 4px 10px rgba(125, 131, 133, 0.55)!important;
+  &:after, &:before {
+    bottom: 100%;
+    right: 24px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  &:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #fff;
+    border-width: 10px;
+    margin-left: -10px;
+    margin-bottom: -1px;
+  }
+  &:before {
+    border-color: transparent;
+    border-bottom-color: rgba(125, 131, 133, 0.3);
+    border-width: 10px;
+    margin-left: -11px;
+  }
+  .panel-default {
+    padding: 15px;
+    overflow: hidden;
+  }
+  .panel-heading-tag {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #d3d6d7;
+    .title {
+      font-weight: 500;
+      font-size: 14px;
+
+    }
+  }
+  .panel-body-tag {
+    padding-top: 15px;
+    overflow: hidden;
+  }
+  .content-add-tag {
+    .add-tag {
+      position: relative;
+      overflow: hidden;
+      input {
+        height: 36px;
+        width: 36px;
+        -webkit-border-radius: 3px 0 0 3px;
+        -moz-border-radius: 3px 0 0 3px;
+        border-radius: 3px 0 0 3px;
+        float: left;
+        width: calc(100% - 74px);
+        width: -moz-calc(100% - 74px);
+        width: -webkit-calc(100% - 74px);
+        border: 1px solid #cfd7de;
+        font-size: 14px;
+        color: #8d939a;
+        padding: 0 15px;
+      }
+      button {
+        width: 74px;
+        height: 36px;
+        -webkit-border-radius: 0 3px 3px 0;
+        -moz-border-radius: 0 3px 3px 0;
+        border-radius: 0 3px 3px 0;
+        float: left;
+        border: none;
+      }
+    }
+    .tag-content {
+      clear: both;
+      overflow: hidden;
+      margin: 12px 0 0 0;
+      .tag-content-inner {
+        margin: 0 -4px;
+        .tag {
+          font-size: 12px;
+          @include border-radius(2px);
+          margin: 0 4px 8px;
+          padding: 1px 4px 0 5px;
+          display: inline-block;
+          border: 1px solid #cfd7de;
+          color: #414851;
+          float: left;
+          &.remove{
+            display: none;
+          }
+
+          a {
+            display: inline-block;
+            float: left;
+            font-size: 14px;
+            margin-right: 5px;
+            line-height: 19px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin delete-confirm {
+  .modal-dialog {
+    margin: 220px auto 0;
+    width: 290px;
+    height: 150px;
+    .modal-header {
+      padding: 20px 15px 12px 15px !important;
+      position: relative;
+      &:after {
+        left: 15px;
+        right: 15px;
+      }
+      .modal-title {
+        font-size: 14px;
+        line-height: 18px;
+      }
+      .close {
+        width: 22px;
+        height: 22px;
+        right: 15px;
+        border-color: #dee0e0;
+        top: 28px;
+      }
+    }
+    .modal-body {
+      padding: 25px 15px !important;
+      .btn {
+        width: 120px;
+      }
+    }
+  }
+}
+
+// Checkbox
+@mixin wb-checkbox {
+  .wsb-checkbox {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    line-height: 1;
+    font-size: 0;
+    label {
+      min-height: 16px;
+      padding: 0;
+      margin-bottom: 0;
+      font-weight: normal;
+      cursor: pointer;
+      input[type="checkbox"] {
+        left: 0;
+        top: 0;
+        opacity: 0;
+        z-index: -1;
+        position: absolute;
+        margin-left: -20px;
+        &:checked + .fake-input {
+          border-color: #ef6a1e;
+          &:before {
+            opacity: 1;
+          }
+        }
+      }
+      .fake-input {
+        width: 16px;
+        height: 16px;
+        border: 1px solid #a4abb2;
+        border-radius: 3px;
+        display: inline-block;
+        background: #fff;
+        vertical-align: middle;
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        &:before {
+          position: absolute;
+          top: 1px;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          content: "\f00c";
+          opacity: 0;
+          font-size: 12px;
+          color: #f16a1e;
+          font-family: FontAwesome;
+          background: transparent;
+          line-height: 1;
+        }
+      }
+      &:hover {
+        .fake-input {
+          border-color: #ef6a1e;
+          &:before {
+            opacity: 1;
+            font-weight: normal;
+            margin-left: 1px;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+@mixin placeholdercolor($color: $input-color-placeholder) {
+  // Firefox
+  &::-moz-placeholder {
+    color: $color;
+    opacity: 1; // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526
+  }
+  &:-ms-input-placeholder { color: $color; } // Internet Explorer 10+
+  &::-webkit-input-placeholder  { color: $color; } // Safari and Chrome
+}
+@mixin border {
+  @include border-radius(3px);
+  border: 1px solid #cfd7de;
+  overflow: hidden;
+  position: relative;
+}
+
+$orange: #f16a1e;
+$btn-orange-color:              #fff !default;
+$btn-orange-bg:                 $orange !default;
+$btn-orange-border:             darken($btn-orange-bg, 5%) !default;
+$red: #ec5858;
+$btn-red-color:              #fff !default;
+$btn-red-bg:                 $red !default;
+$btn-red-border:             darken($btn-red-color, 5%) !default;
+
+.btn-orange {
+  @include button-variant($btn-orange-color, $btn-orange-bg, $btn-orange-border);
+}
+.btn-red {
+  @include button-variant($btn-red-color, $btn-red-bg, $btn-red-border);
+}

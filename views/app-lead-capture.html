@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- set the encoding of your site -->
+    <meta charset="utf-8">
+    <!-- set the viewport width and initial-scale on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lead Capture App</title>
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+    <!-- Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <!-- Boostrap select -->
+    <link rel="stylesheet" href="../bower_components/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <!-- include the datepicker -->
+    <link rel="stylesheet" href="../bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+        <!-- include bootstrap WYSIWYG -->
+    <link rel="stylesheet" href="../bower_components/summernote/dist/summernote.css">
+    <!-- include the site stylesheet -->
+    <link rel="stylesheet" href="../css/main.css">
+    <script type="text/javascript" src="../js/svg-sprites.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('svg-icon-placeholder').innerHTML += SVG_SPRITES['sprite'];
+        }, false);
+    </script>
+</head>
+<body class="app--blog app--lead-capture blog-page">
+<div id="svg-icon-placeholder" style="display: none;"></div>
+<!-- main container of all the page elements -->
+<div class="wrapper">
+
+<!-- header of the page -->
+<header id="header" class="well well-dark header-fixed-mobile">
+<nav class="navbar navbar-default main-nav-container">
+<div class="container-fluid">
+<!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+
+        <!-- page logo -->
+        <div class="navbar-brand logo">
+        <a href="app-control-panel.html"><img src="../images/logo.svg" alt="WebsiteBox" width="89" height="37"></a>
+    </div>
+    </div>
+
+
+    <!--Box search for app-->
+    <div class="box-search">
+        <div class="search-row">
+            <input type="text"class="form-control input-search input-control" placeholder="Search">
+            <a href="#" class="icon-search"><i class="fa fa-search"></i></a>
+
+            <div class="box-search-details">
+                <div class="result-document">
+                    <div class="result-title">
+                        <p class="title">
+                    <span>
+                        <img src="../images/controlpanel/documents.png">
+                    </span>
+                            Lead Capture</p>
+                    </div>
+                    <div class="result-content">
+                        <div class="row-info">
+                            <p class="pull-left">Test the new Websitebox</p>
+
+                            <p class="pull-right">Document</p>
+                        </div> <div class="row-info">
+                        <p class="pull-left">Test the new Websitebox</p>
+
+                        <p class="pull-right">Document</p>
+                    </div>
+                        <div class="row-info active">
+                            <p class="pull-left">Test the new Websitebox</p>
+
+                            <p class="pull-right">Document</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+                </div>
+
+    <!-- main navigation of the page -->
+    <ul class="nav nav-pills navbar-right main-nav">
+    <li class="dropdown icon-notify">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Notification</span>
+                    <span class="icon-holder">
+                      <svg xmlnsxxxx="http://www.w3333333.org/2000/svg" class="icon icon-notification">
+                          <use xlink:href="#icon-notification"></use>
+                      </svg>
+                      <span class="quantity">2</span>
+                    </span>
+        </a>
+
+        <div class="dropdown-menu notification-menu users-block">
+            <span class="arrow"></span>
+            <ul class="list-unstyled block-rounded">
+                <li>
+                    <div class="panel-body">
+                        <div class="row row-inline panel-row">
+                            <div class="col-xs-10">
+                                <div class="row">
+                                    <div class="col-xs-3 column img-holder">
+                                        <img src="../images/avatar02.jpg" class="img-circle img-thumbnail"
+                                             alt="image description">
+                                    </div>
+                                    <div class="col-xs-7 column text-block">
+                                        <span class="name">Andres Iniesta </span>
+                                        <span class="meta"><time datetime="19:45">Replied at 7:45 PM</time></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-2 column btn-holder">
+                                <a href="#" class="btn btn-success btn-circle btn-checked"><i class="fa fa-check"></i></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh eu ismod
+                                    tincidunt ut laoreet dolore magna ali quam erat volutpat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="alert alert-success">
+                        <div class="row">
+                            <div class="col-xs-12">Send 25 more listings to Andres</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="panel-body">
+                        <div class="row row-inline panel-row">
+                            <div class="col-xs-10">
+                                <div class="row">
+                                    <div class="col-xs-3 column img-holder">
+                                        <img src="../images/avatar03.jpg" class="img-circle img-thumbnail img-responsive"
+                                             alt="image description">
+                                    </div>
+                                    <div class="col-xs-6 column text-block">
+                                        <span class="name">Vanessa Bond</span>
+                                        <span class="meta"><time datetime="19:45">Replied at 7:45 PM</time></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-2 column btn-holder">
+                                <a href="#" class="btn btn-danger btn-circle btn-checked"><i class="fa fa-times"></i></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh eu ismod
+                                    tincidunt ut laoreet dolore magna ali quam erat volutpat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="alert alert-danger">
+                        <div class="row">
+                            <div class="col-xs-12">Send 25 more listings to Vanessa</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </li>
+
+    <!-- To make the POPUP-HELP STEP 3 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+    <li class="popup-container dropdown app-menu-holder popup-help-container step03">
+    <div class="popup-overlay"></div>
+    <a href="#" class="opener-popup dropdown-toggle under-overlay">
+      <span class="icon-view-store">
+          <span class="st1 st-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+          </span>
+          <span class="st2 st-icon">
+                <span></span>
+              <span></span>
+              <span></span>
+          </span>
+          <span class="st3 st-icon">
+                <span></span>
+              <span></span>
+              <span></span>
+          </span>
+      </span>
+    </a>
+
+    <div class="popup dropdown-menu under-overlay">
+    <span class="arrow"></span>
+
+    <div class="app-menu menu-list open-close">
+    <div class="panel">
+    <div class="panel-body">
+        <div class="first-view">
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/app_store.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>App Store</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/websites.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Websites</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/domains.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Domains</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/listings.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Listings</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/contacts.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Contacts</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/emails.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Emails</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/tasks.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Tasks</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/documents.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Documents</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/calendar.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Calendar</span>
+                </a>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/campaigns.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Campaigns</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/listing_syndication.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Listing Syndication</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/rss.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>RSS</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/community.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Community</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/google_analytics.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Google Analytics</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/profile.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Profile</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/blog.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Blog</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/prints.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Prints</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/lead_capture.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Lead Capture</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/seo.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>SEO</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/mobile_notifications.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Mobile Notifications</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/craigslist.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Craigslist</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/qr_code.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>QR Code</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/har.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>HAR</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/move.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Move</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/realtor.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Realtor.com</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/apple.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>Apple</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#">
+                    <div class="item-img"><img src="../images/cnn.png" class="img-responsive"
+                                               alt="image description"></div>
+                    <span>CNN</span>
+                </a>
+            </div>
+        </div>
+        <div class="btn-holder">
+            <a class="btn btn-default btn-block opener" href="#">
+                <span class="hidden-active">More</span>
+                <span class="visible-active">Less</span>
+            </a>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- To make the POPUP-HELP STEP 3 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+    <div class="popup-help step03">
+        <div class="panel panel-default">
+            <span class="arrow arrow-right"></span>
+
+            <div class="panel-heading">
+                <strong class="title">Step 3 of 7</strong>
+                <a class="close" href="#" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </a>
+            </div>
+            <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna volutpat.</p>
+
+                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation</p>
+
+                <div class="btn-container text-right"><a href="#" class="btn btn-warning"><i
+                        class="fa fa-chevron-left"></i></a><a href="#" class="btn btn-warning"><i
+                        class="fa fa-chevron-right"></i></a></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </li>
+    <!--Show icon in mobile -->
+    <li class="popup-container dropdown app-menu-holder popup-help-container wrap-icon-mobile">
+        <button type="button" class="nav-opener navbar-toggle">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </li>
+    <!-- To make the POPUP-HELP STEP 4 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+    <li class="hidden-xs popup-help-container step04">
+        <div class="popup-overlay"></div>
+
+        <a href="#" data-toggle="modal" data-target="#myModal" class="btn-link under-overlay">
+            <span class="sr-only">Info</span>
+            <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+        </a>
+        <!-- To make the POPUP-HELP STEP 4 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+        <div class="popup-help step04">
+            <div class="panel panel-default">
+                <span class="arrow"></span>
+
+                <div class="panel-heading">
+                    <strong class="title">Step 4 of 7</strong>
+                    <a class="close" href="#" aria-label="Close"><span aria-hidden="true">&times;</span>
+                    </a>
+                </div>
+                <div class="panel-body">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                        laoreet dolore magna volutpat. </p>
+
+                    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation</p>
+
+                    <div class="btn-container text-right"><a href="#" class="btn btn-warning"><i
+                            class="fa fa-chevron-left"></i></a><a href="#" class="btn btn-warning"><i
+                            class="fa fa-chevron-right"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <!-- To make the POPUP-HELP STEP 5 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+    <li class="popup-container dropdown popup-help-container step05">
+        <div class="popup-overlay"></div>
+        <a class="opener-popup dropdown-toggle under-overlay" href="#">
+         <span class="icon-step05">
+
+         </span>
+        </a>
+
+        <div class="popup dropdown-menu settings-block under-overlay">
+            <span class="arrow"></span>
+
+            <div class="panel">
+                <div class="panel-body">
+                    <div class="row dropdown-row">
+                        <div class="col-xs-4 theme-list-holder">
+                            <div class="scrollable">
+                                <span class="title text-uppercase">Theme</span>
+                                <ul class="theme-list list-unstyled">
+                                    <li>
+                                        <a href="#"><span class="color color-default"></span><span class="description">Default</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="color color-remax"></span><span
+                                                class="description">Remax</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="active"><span class="color color-century91"></span><span
+                                                class="description">Century 91</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="color color-minimal"></span><span class="description">Minimal</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="color color-summer"></span><span
+                                                class="description">Summer</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="color color-default"></span><span class="description">Default</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="color color-remax"></span><span
+                                                class="description">Remax</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="color color-century91"></span><span class="description">Century 91</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="color color-minimal"></span><span class="description">Minimal</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="color color-summer"></span><span
+                                                class="description">Summer</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-8">
+                            <span class="title text-uppercase">Settings</span>
+
+                            <div class="form-in-drop">
+                                <div class="form-group">
+                                    <span class="label-holder"><label for="select-1">Time Zone</label></span>
+                                <span class="select-holder">
+                                  <span class="fake-select">
+                                    <select id="select-1" class="form-control">
+                                        <option selected="selected">(UTC -8:00)</option>
+                                        <option>(UTC -8:00)</option>
+                                        <option>(UTC -8:00)</option>
+                                        <option>(UTC -8:00)</option>
+                                    </select>
+                                  </span>
+                                </span>
+                                </div>
+                                <div class="form-group">
+                                    <span class="label-holder"><label for="select-2">Email Digest</label></span>
+                                <span class="select-holder">
+                                  <span class="fake-select">
+                                    <select id="select-2" class="form-control">
+                                        <option selected="selected">option 1</option>
+                                        <option>option 2</option>
+                                        <option>option 3</option>
+                                    </select>
+                                  </span>
+                                </span>
+                                </div>
+                                <div class="form-group">
+                                    <span class="label-holder"><label for="language">Language</label></span>
+                                    <span class="input-holder"><input type="text" class="form-control" id="language"
+                                                                      placeholder="English"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- To make the POPUP-HELP STEP 5 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+            <div class="popup-help step05">
+                <div class="panel panel-default">
+                    <span class="arrow arrow-right"></span>
+
+                    <div class="panel-heading">
+                        <strong class="title">Step 5 of 7</strong>
+                        <a class="close" href="#" aria-label="Close"><span aria-hidden="true">&times;</span>
+                        </a>
+                    </div>
+                    <div class="panel-body">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                            ut laoreet dolore magna volutpat. </p>
+
+                        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation</p>
+
+                        <div class="btn-container text-right"><a href="#" class="btn btn-warning"><i
+                                class="fa fa-chevron-left"></i></a><a href="#" class="btn btn-warning"><i
+                                class="fa fa-chevron-right"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <!-- To make the POPUP-HELP STEP 6 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+    <li class="dropdown hidden-xs user-dropdown popup-help-container step06">
+        <div class="popup-overlay"></div>
+        <a href="#" id="dropdownMenu2" class="user-block dropdown-toggle under-overlay" data-toggle="dropdown" role="button"
+           aria-haspopup="true" aria-expanded="false">
+            <div class="row">
+                <div class="col-xs-3 img-holder"><img src="../images/avatar01.jpg" class="img-responsive img-circle"
+                                                      alt="image description"></div>
+                <div class="col-xs-9 text-block">
+                    <div class="name"><strong>Richard Mattius</strong><span class="caret"></span></div>
+                    <strong class="status text-uppercase text-warning">PREMIUM USER</strong>
+                </div>
+            </div>
+        </a>
+
+        <div class="dropdown-menu under-overlay">
+            <span class="arrow"></span>
+
+            <div class="panel-body">
+                <ul class="list-unstyled" aria-labelledby="dropdownMenu2">
+                    <li class="switch-account">
+                        <a href="#switch-account-menu" class="switch-account-toggle collapsed" data-toggle="collapse">
+                            <span class="renew-icon"><i class="material-icons">autorenew</i></span>
+                            <span class="account-name">Century 21 Inc.</span>
+                            <span class="text">Switch Account</span>
+                            <span class="menu-arrow-icon"><i class="material-icons">arrow_drop_down</i></span>
+                        </a>
+
+                        <div id="switch-account-menu" class="collapse">
+                            <ul>
+                                <li><a href="#">Realty Corp.</a></li>
+                                <li><a href="#">Bradly and Drown</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li role="separator" class="divider"></li>
+
+                    <li>
+                        <a href="app-account-info.html">
+                            <i class="material-icons">person</i>
+                            <span class="text">My Account</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="my-user.html">
+                            <i class="material-icons">group</i>
+                            <span class="text">My Users</span>
+                        </a>
+                    </li>
+                    <li>
+                        <div class=""></div>
+                        <a href="my-product.html">
+                            <i class="material-icons">apps</i>
+                            <span class="text">My Products & Services</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="app-store.html">
+                            <i class="material-icons">shopping_basket</i>
+                            <span class="text">WebsiteBox Store</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#myModal">
+                            <i class="material-icons">help</i>
+                            <span class="text">Help & Support</span>
+                        </a>
+                    </li>
+                    <li role="separator" class="divider"></li>
+                    <li>
+                        <a href="#">
+                            <i class="material-icons">exit_to_app</i>
+                            <span class="text">Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- To make the POPUP-HELP STEP 6 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+            <div class="popup-help step06">
+                <div class="panel panel-default">
+                    <span class="arrow arrow-right"></span>
+
+                    <div class="panel-heading">
+                        <strong class="title">Step 6 of 7</strong>
+                        <a class="close" href="#" aria-label="Close"><span aria-hidden="true">&times;</span>
+                        </a>
+                    </div>
+                    <div class="panel-body">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                            ut laoreet dolore magna volutpat. </p>
+
+                        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation</p>
+
+                        <div class="btn-container text-right"><a href="#" class="btn btn-warning"><i
+                                class="fa fa-chevron-left"></i></a><a href="#" class="btn btn-warning"><i
+                                class="fa fa-chevron-right"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    </ul>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="drop visible-xs visible-sm menu-mobile-767">
+    <div class="navbar-collapse">
+        <div class="row-top">
+            <p class="text-menu">Menu</p>
+            <button type="button" class="nav-opener nav-toggle-767">
+                <span class="x1"></span>
+                <span class="x2"></span>
+            </button>
+        </div>
+        <div class="box-search">
+            <div class="search-row">
+                <input type="text" class="form-control input-search input-control" placeholder="Search"
+                       style="position: relative; z-index: 3; background: transparent;">
+                <a href="#" class="icon-search"><i class="fa fa-search"></i></a>
+            </div>
+        </div>
+        <div class="user-dropdown">
+                          <div class="dropdown-menu">
+                            <ul class="list-unstyled user-account-menu">
+                                <li class="switch-account">
+                                    <a href="#switch-account-menu-mobile" class="switch-account-toggle collapsed" data-toggle="collapse">
+                                        <span class="renew-icon"><i class="material-icons">autorenew</i></span>
+                                        <span class="account-name">Century 21 Inc.</span>
+                                        <span class="text">Switch Account</span>
+                                        <span class="menu-arrow-icon"><i class="material-icons">arrow_drop_down</i></span>
+                                    </a>
+
+                                    <div id="switch-account-menu-mobile" class="collapse">
+                                        <ul>
+                                            <li><a href="#">Realty Corp.</a></li>
+                                            <li><a href="#">Bradly and Drown</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li role="separator" class="divider"></li>
+
+                                <li>
+                                    <a href="app-account-info.html">
+                                        <i class="material-icons">person</i>
+                                        <span class="text">My Account</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="my-user.html">
+                                        <i class="material-icons">group</i>
+                                        <span class="text">My Users</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class=""></div>
+                                    <a href="my-product.html">
+                                        <i class="material-icons">apps</i>
+                                        <span class="text">My Products &amp; Services</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="app-store.html">
+                                        <i class="material-icons">shopping_basket</i>
+                                        <span class="text">WebsiteBox Store</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" data-toggle="modal" data-target="#myModal">
+                                        <i class="material-icons">help</i>
+                                        <span class="text">Help &amp; Support</span>
+                                    </a>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li>
+                                    <a href="#">
+                                        <i class="material-icons">exit_to_app</i>
+                                        <span class="text">Logout</span>
+                                    </a>
+                                </li>
+                            </ul>
+                          </div>
+                        </div>
+        <div class="row user-block">
+            <div class="col-xs-3 img-holder"><img src="../images/avatar01.jpg" class="img-responsive img-circle"
+                                                  alt="image description"></div>
+            <div class="col-xs-9 text-block">
+                <div class="name"><strong>Richard Mattius</strong></div>
+                <strong class="status text-uppercase text-warning">PREMIUM USER</strong>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</nav>
+</header>
+<!-- contain main informative part of the site -->
+<main id="main" role="main">
+  <div class="container-fluid">
+    <div class="row">
+      <div id="content-page">
+        <div class="col-lg-12">
+          <div class="panel panel-default no-panel-mobile col-agl-app">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-5 col-sm-5 col-lg-5 left-col">
+                        <div class="row">
+                            <div class="col-sm-2 img-block">
+                                <div class="img-holder"><img src="../images/lead_capture.png" class="img-responsive" alt="image description"></div>
+                            </div>
+                            <div class="col-sm-10 heading-block">
+                                <h1>Lead Capture App</h1>
+
+                                <p>Lead Capture Settings</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-7 col-sm-7 col-lg-7 text-right buttons-holder right-col">
+
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body">
+                <div class="view-type list-view">
+                    <form class="shortcut-form">
+                        <table class="table lc-table">
+                            <thead class="hidden-xs">
+                                <tr>
+                                    <th class="col1 text-left clear-padding-left">
+                                        &nbsp;
+                                    </th>
+                                    <th class="col2 text-left">
+                                        Website
+                                    </th>
+                                    <th class="col3 text-left">
+                                        Status
+                                    </th>
+                                    <th class="col4 text-left">
+                                        Rule
+                                    </th>
+                                    <th class="col5 text-left">
+                                        Default Tab
+                                    </th>
+                                    <th class="col6 text-left clear-padding-right">
+                                        Location
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="lc-image clear-padding-left">
+                                      <a href="#" data-toggle="modal" data-target="#leadModal"><img src="../images/lead-capture/lc01.jpg"></a>
+                                    </td>
+                                    <td class="lc-website">
+                                        <span>Toronto Housing Market</span>
+                                    </td>
+                                    <td class="lc-status hidden-xs">
+                                        <div class="box-switch-on-off">
+                                            <div class="button-wrap on-off">
+                                                <div class="button-bg">
+                                                    <div class="button-on">on</div>
+                                                    <div class="button-off">off</div>
+                                                    <div class="button-switch"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="lc-rule hidden-xs">
+                                        <span>Must Register</span>
+                                    </td>
+                                    <td class="lc-tab hidden-xs">
+                                        <span>Sign Up</span>
+                                    </td>
+                                    <td class="lc-location clear-padding-right hidden-xs">
+                                        <span class="location-widget top-right-h"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="lc-image clear-padding-left">
+                                        <img src="../images/lead-capture/lc02.jpg">
+                                    </td>
+                                    <td class="lc-website">
+                                        <span>Toronto Housing Market</span>
+                                    </td>
+                                    <td class="lc-status hidden-xs">
+                                        <div class="box-switch-on-off">
+                                            <div class="button-wrap on-off">
+                                                <div class="button-bg">
+                                                    <div class="button-on">on</div>
+                                                    <div class="button-off">off</div>
+                                                    <div class="button-switch"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="lc-rule hidden-xs">
+                                        <span>Optional</span>
+                                    </td>
+                                    <td class="lc-tab hidden-xs">
+                                        <span>Log In</span>
+                                    </td>
+                                    <td class="lc-location clear-padding-right hidden-xs">
+                                        <span class="location-widget top-right-v"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="lc-image clear-padding-left">
+                                        <img src="../images/lead-capture/lc03.jpg">
+                                    </td>
+                                    <td class="lc-website">
+                                        <span>Toronto Housing Market</span>
+                                    </td>
+                                    <td class="lc-status hidden-xs">
+                                        <div class="box-switch-on-off">
+                                            <div class="button-wrap on-off">
+                                                <div class="button-bg">
+                                                    <div class="button-on">on</div>
+                                                    <div class="button-off">off</div>
+                                                    <div class="button-switch"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="lc-rule hidden-xs">
+                                        <span>Must Register</span>
+                                    </td>
+                                    <td class="lc-tab hidden-xs">
+                                        <span>Sign Up</span>
+                                    </td>
+                                    <td class="lc-location clear-padding-right hidden-xs">
+                                        <span class="location-widget top-left-v"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="lc-image clear-padding-left">
+                                        <img src="../images/lead-capture/lc04.jpg">
+                                    </td>
+                                    <td class="lc-website">
+                                        <span>Toronto Housing Market</span>
+                                    </td>
+                                    <td class="lc-status hidden-xs">
+                                        <div class="box-switch-on-off">
+                                            <div class="button-wrap on-off">
+                                                <div class="button-bg">
+                                                    <div class="button-on">on</div>
+                                                    <div class="button-off">off</div>
+                                                    <div class="button-switch"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="lc-rule hidden-xs">
+                                        <span>Optional</span>
+                                    </td>
+                                    <td class="lc-tab hidden-xs">
+                                        <span>Log In</span>
+                                    </td>
+                                    <td class="lc-location clear-padding-right hidden-xs">
+                                        <span class="location-widget bottom-right-h"></span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</main>
+<!-- modal -->
+<div class="modal fade support-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h1 class="modal-title" id="myModalLabel">Help & Support</h1>
+                <p>Help with management Area Activities</p>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetuer adi pis cing elit, sed diam nonummy nibh.</p>
+                <!-- 16:9 aspect ratio -->
+                <div class="media-holder">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZyhrYis509A"
+                                frameborder="0" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+                <ol class="custom-numeric-list">
+                    <li><a href="#"><span class="number">Q</span>Lorem ipsum dolor sit amet, consectetuer adi pis cing elit, sed diam nonummy nibh?</a></li>
+                    <li><a href="#"><span class="number">Q</span>Lorem ipsum dolor sit amet, consectetuer adi pis cing elit?</a></li>
+                    <li><a href="#"><span class="number">Q</span>Lorem ipsum dolor sit amet, consectetuer adi pis cing elit, sed diam nonummy nibh?</a></li>
+                    <li><a href="#"><span class="number">Q</span>Lorem ipsum dolor sit amet, consectetuer adi pis cing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore mangaja endosre?</a></li>
+                    <li><a href="#"><span class="number">Q</span>Lorem ipsum dolor sit amet, consectetuer adi pis cing elit, sed diam nonummy nibh?</a></li>
+                    <li><a href="#"><span class="number">Q</span>Lorem ipsum dolor sit amet, consectetuer adi pis cing elit?</a></li>
+                    <li><a href="#"><span class="number">Q</span>Lorem ipsum dolor sit amet, consectetuer adi pis cing elit, sed diam nonummy nibh?</a></li>
+                    <li><a href="#"><span class="number">Q</span>Lorem ipsum dolor sit amet, consectetuer adi pis cing elit, sed diam nonummy nibh euismod?</a></li>
+                </ol>
+                <a href="#" class="btn btn-warning btn-block">Contact Support</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Confirm deletion modal -->
+<div class="modal fade delete-modal" id="deleteModal" role="dialog" data-backdrop="false">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h1 class="modal-title">Delete Confirmation</h1>
+            </div>
+            <div class="modal-body clearfix">
+                <button class="btn btn-default pull-left">Cancel</button>
+                <button class="btn btn-red pull-right" data-dismiss="modal">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade sliding-right-modal lc-modal" id="leadModal" role="dialog">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="row">
+            <div class="col-xs-9 col-sm-7">
+              <div class="row">
+                <div class="col-sm-12">
+                  <h1 class="modal-title">Residential Niche Site</h1>
+                   <p>Lead Capture Settings</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-3 col-sm-5 text-right">
+              <div class="buttons-holder">
+                <button type="button" class="btn btn-default btn-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              </div>
+            </div>
+        </div>
+        <div class="hr-header"></div>
+      </div>
+      <div class="modal-body">
+        <div class="lead-details modal-content-section clearfix">
+          <div class="lead-col-left">
+            <img src="../images/lead-capture/img1.jpg"/>
+          </div>
+          <div class="lead-col-right">
+            <h2>Residential Niche Site</h2>
+            <h3>Points to Ninedevis.com</h3>
+            <p>This powerful tool enables forced registration on your site. Visitors must submit their name and email to you prior to searching for listings on your site.</p>
+          </div>
+        </div>
+
+        <div class="modal-content-section status-section clearfix">
+          <h3 class="modal-section-heading">STATUS <a href="#" class="btn-show-info"><i class="fa fa-info-circle"></i></a></h3>
+          <p>Stand out from the crowd! You know what makes your business unique, tell us about it and then let us create something specifically for you.</p>
+          <div class="box-switch-on-off">
+              <div class="button-wrap on-off">
+                  <div class="button-bg">
+                      <div class="button-on">on</div>
+                      <div class="button-off">off</div>
+                      <div class="button-switch"></div>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="modal-content-section clearfix">
+          <h3 class="modal-section-heading">RULE <a href="#" class="btn-show-info"><i class="fa fa-info-circle"></i></a></h3>
+          <p>WebsiteBox is known for having really good SEO, now they are going to be known for having a really great price point. I think people</p>
+          <ul class="rule-options">
+            <li class="mb-15">
+              <div class="wsb-radio">
+                  <label>
+                      <input type="radio" name="rule_radio">
+                      <span class="fake-input">
+                      </span>
+                      Visiter must Register
+                      <a href="#" class="btn-show-info"><i class="fa fa-info-circle"></i></a>
+                  </label>
+              </div>
+            </li>
+            <li class="mb-10">
+              <div class="wsb-radio">
+                  <label>
+                      <input type="radio" name="rule_radio">
+                      <span class="fake-input">
+                      </span>
+                      Registration is optional
+                      <a href="#" class="btn-show-info"><i class="fa fa-info-circle"></i></a>
+                  </label>
+              </div>
+            </li>
+            <li class="mb-10">
+              <div class="wsb-radio">
+                  <label>
+                      <input type="radio" name="rule_radio">
+                      <span class="fake-input">
+                      </span>
+                      Must register after 
+                      <select class="selectpicker wsb-select">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                      </select> searches
+                      <a href="#" class="btn-show-info"><i class="fa fa-info-circle"></i></a>
+                  </label>
+              </div>
+            </li>
+            <li class="mb-15">
+              <div class="wsb-radio">
+                  <label>
+                      <input type="radio" name="rule_radio">
+                      <span class="fake-input">
+                      </span>
+                      Must register after 
+                      <select class="selectpicker wsb-select">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                      </select> views
+                      <a href="#" class="btn-show-info"><i class="fa fa-info-circle"></i></a>
+                  </label>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="modal-content-section clearfix">
+          <h3 class="modal-section-heading">DEFAULT TABS <a href="#" class="btn-show-info"><i class="fa fa-info-circle"></i></a></h3>
+          <p>WebsiteBox is known for having really good SEO, now they are going to be known for having a really great price point. I think people</p>
+          <ul class="tab-options">
+            <li>
+              <div class="wsb-radio">
+                  <label>
+                      <input type="radio" name="tab_radio">
+                      <span class="fake-input">
+                      </span>
+                      Sign Up
+                  </label>
+              </div>
+            </li>
+            <li>
+              <div class="wsb-radio">
+                  <label>
+                      <input type="radio" name="tab_radio">
+                      <span class="fake-input">
+                      </span>
+                      Log In
+                  </label>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="modal-content-section clearfix">
+          <h3 class="modal-section-heading">SIGN UP PAGE CONTENT <a href="#" class="btn-show-info"><i class="fa fa-info-circle"></i></a></h3>
+          <p>Choose a style, submit your info and tell us what makes your company unique and we will create a header that will elevate your site to one that looks like it cost you</p>
+          <div class="wsb-wysiwyg">
+              <div id="summernote">
+
+              </div>
+          </div>
+
+        </div>
+
+        <div class="modal-content-section clearfix">
+          <h3 class="modal-section-heading">LOCATION <a href="#" class="btn-show-info"><i class="fa fa-info-circle"></i></a></h3>
+          <p>Our designers will make your site look fantastic!</p>
+          <ul class="location-options">
+            <li>
+              <div class="location-radio">
+                <input type="radio" name="location_radio" id="location-1">
+                <label for="location-1">
+                  <span class="location-widget top-right-h"></span>
+                </label>
+              </div>
+            </li>
+            <li>
+              <div class="location-radio">
+                <input type="radio" name="location_radio" id="location-2">
+                <label for="location-2">
+                  <span class="location-widget top-right-v"></span>
+                </label>
+              </div>
+            </li>
+            <li>
+              <div class="location-radio">
+                <input type="radio" name="location_radio" id="location-3">
+                <label for="location-3">
+                  <span class="location-widget top-left-v"></span>
+                </label>
+              </div>
+            </li>
+            <li>
+              <div class="location-radio">
+                <input type="radio" name="location_radio" id="location-4">
+                <label for="location-4">
+                  <span class="location-widget bottom-right-h"></span>
+                </label>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </button>
+  </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/jquery-ui/jquery-ui.js"></script>
+<!-- scroll bar  -->
+<script src="../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- custom select -->
+<script type="text/javascript" src="../bower_components/bootstrap-select/js/bootstrap-select.js"></script>
+<!-- Duallist box -->
+<script type="text/javascript" src="../js/dual-list-box.js"></script>
+<!-- include bootstrap JavaScript -->
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- include Masonry for blog girid -->
+<script src="../js/isotope.pkgd.min.js"></script>
+<!-- include custom JavaScript -->
+<!-- include Bootstrap date picker JavaScript -->
+<script type="text/javascript" src="../js/bootstrap-datepicker.min.js"></script>
+<!-- include Summernote WYSIWYG -->
+<script src="../bower_components/summernote/dist/summernote.min.js"></script>
+<script src="../js/jquery.main.js"></script>
+<!-- Google Map -->
+<script src="http://maps.google.com/maps/api/js"></script>
+<script src="../bower_components/gmaps/gmaps.min.js"></script>
+<script type="text/javascript">
+
+</script>
+</div>
+</body>
+</html>

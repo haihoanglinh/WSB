@@ -1,0 +1,217 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$icon-menu-1-active-name: 'icon-menu-1-active';
+$icon-menu-1-active-x: 0px;
+$icon-menu-1-active-y: 0px;
+$icon-menu-1-active-offset-x: 0px;
+$icon-menu-1-active-offset-y: 0px;
+$icon-menu-1-active-width: 17px;
+$icon-menu-1-active-height: 17px;
+$icon-menu-1-active-total-width: 67px;
+$icon-menu-1-active-total-height: 51px;
+$icon-menu-1-active-image: '../images/icon-menu/icon_menu_user_dropdown.png';
+$icon-menu-1-active: (0px, 0px, 0px, 0px, 17px, 17px, 67px, 51px, '../images/icon-menu/icon_menu_user_dropdown.png', 'icon-menu-1-active', );
+$icon-menu-1-name: 'icon-menu-1';
+$icon-menu-1-x: 0px;
+$icon-menu-1-y: 34px;
+$icon-menu-1-offset-x: 0px;
+$icon-menu-1-offset-y: -34px;
+$icon-menu-1-width: 17px;
+$icon-menu-1-height: 17px;
+$icon-menu-1-total-width: 67px;
+$icon-menu-1-total-height: 51px;
+$icon-menu-1-image: '../images/icon-menu/icon_menu_user_dropdown.png';
+$icon-menu-1: (0px, 34px, 0px, -34px, 17px, 17px, 67px, 51px, '../images/icon-menu/icon_menu_user_dropdown.png', 'icon-menu-1', );
+$icon-menu-2-active-name: 'icon-menu-2-active';
+$icon-menu-2-active-x: 0px;
+$icon-menu-2-active-y: 17px;
+$icon-menu-2-active-offset-x: 0px;
+$icon-menu-2-active-offset-y: -17px;
+$icon-menu-2-active-width: 17px;
+$icon-menu-2-active-height: 17px;
+$icon-menu-2-active-total-width: 67px;
+$icon-menu-2-active-total-height: 51px;
+$icon-menu-2-active-image: '../images/icon-menu/icon_menu_user_dropdown.png';
+$icon-menu-2-active: (0px, 17px, 0px, -17px, 17px, 17px, 67px, 51px, '../images/icon-menu/icon_menu_user_dropdown.png', 'icon-menu-2-active', );
+$icon-menu-2-name: 'icon-menu-2';
+$icon-menu-2-x: 17px;
+$icon-menu-2-y: 17px;
+$icon-menu-2-offset-x: -17px;
+$icon-menu-2-offset-y: -17px;
+$icon-menu-2-width: 17px;
+$icon-menu-2-height: 17px;
+$icon-menu-2-total-width: 67px;
+$icon-menu-2-total-height: 51px;
+$icon-menu-2-image: '../images/icon-menu/icon_menu_user_dropdown.png';
+$icon-menu-2: (17px, 17px, -17px, -17px, 17px, 17px, 67px, 51px, '../images/icon-menu/icon_menu_user_dropdown.png', 'icon-menu-2', );
+$icon-menu-3-active-name: 'icon-menu-3-active';
+$icon-menu-3-active-x: 51px;
+$icon-menu-3-active-y: 0px;
+$icon-menu-3-active-offset-x: -51px;
+$icon-menu-3-active-offset-y: 0px;
+$icon-menu-3-active-width: 16px;
+$icon-menu-3-active-height: 16px;
+$icon-menu-3-active-total-width: 67px;
+$icon-menu-3-active-total-height: 51px;
+$icon-menu-3-active-image: '../images/icon-menu/icon_menu_user_dropdown.png';
+$icon-menu-3-active: (51px, 0px, -51px, 0px, 16px, 16px, 67px, 51px, '../images/icon-menu/icon_menu_user_dropdown.png', 'icon-menu-3-active', );
+$icon-menu-3-name: 'icon-menu-3';
+$icon-menu-3-x: 34px;
+$icon-menu-3-y: 34px;
+$icon-menu-3-offset-x: -34px;
+$icon-menu-3-offset-y: -34px;
+$icon-menu-3-width: 16px;
+$icon-menu-3-height: 16px;
+$icon-menu-3-total-width: 67px;
+$icon-menu-3-total-height: 51px;
+$icon-menu-3-image: '../images/icon-menu/icon_menu_user_dropdown.png';
+$icon-menu-3: (34px, 34px, -34px, -34px, 16px, 16px, 67px, 51px, '../images/icon-menu/icon_menu_user_dropdown.png', 'icon-menu-3', );
+$icon-menu-4-active-name: 'icon-menu-4-active';
+$icon-menu-4-active-x: 51px;
+$icon-menu-4-active-y: 30px;
+$icon-menu-4-active-offset-x: -51px;
+$icon-menu-4-active-offset-y: -30px;
+$icon-menu-4-active-width: 16px;
+$icon-menu-4-active-height: 14px;
+$icon-menu-4-active-total-width: 67px;
+$icon-menu-4-active-total-height: 51px;
+$icon-menu-4-active-image: '../images/icon-menu/icon_menu_user_dropdown.png';
+$icon-menu-4-active: (51px, 30px, -51px, -30px, 16px, 14px, 67px, 51px, '../images/icon-menu/icon_menu_user_dropdown.png', 'icon-menu-4-active', );
+$icon-menu-4-name: 'icon-menu-4';
+$icon-menu-4-x: 51px;
+$icon-menu-4-y: 16px;
+$icon-menu-4-offset-x: -51px;
+$icon-menu-4-offset-y: -16px;
+$icon-menu-4-width: 16px;
+$icon-menu-4-height: 14px;
+$icon-menu-4-total-width: 67px;
+$icon-menu-4-total-height: 51px;
+$icon-menu-4-image: '../images/icon-menu/icon_menu_user_dropdown.png';
+$icon-menu-4: (51px, 16px, -51px, -16px, 16px, 14px, 67px, 51px, '../images/icon-menu/icon_menu_user_dropdown.png', 'icon-menu-4', );
+$icon-menu-5-active-name: 'icon-menu-5-active';
+$icon-menu-5-active-x: 17px;
+$icon-menu-5-active-y: 34px;
+$icon-menu-5-active-offset-x: -17px;
+$icon-menu-5-active-offset-y: -34px;
+$icon-menu-5-active-width: 17px;
+$icon-menu-5-active-height: 17px;
+$icon-menu-5-active-total-width: 67px;
+$icon-menu-5-active-total-height: 51px;
+$icon-menu-5-active-image: '../images/icon-menu/icon_menu_user_dropdown.png';
+$icon-menu-5-active: (17px, 34px, -17px, -34px, 17px, 17px, 67px, 51px, '../images/icon-menu/icon_menu_user_dropdown.png', 'icon-menu-5-active', );
+$icon-menu-5-name: 'icon-menu-5';
+$icon-menu-5-x: 34px;
+$icon-menu-5-y: 17px;
+$icon-menu-5-offset-x: -34px;
+$icon-menu-5-offset-y: -17px;
+$icon-menu-5-width: 17px;
+$icon-menu-5-height: 17px;
+$icon-menu-5-total-width: 67px;
+$icon-menu-5-total-height: 51px;
+$icon-menu-5-image: '../images/icon-menu/icon_menu_user_dropdown.png';
+$icon-menu-5: (34px, 17px, -34px, -17px, 17px, 17px, 67px, 51px, '../images/icon-menu/icon_menu_user_dropdown.png', 'icon-menu-5', );
+$icon-menu-6-active-name: 'icon-menu-6-active';
+$icon-menu-6-active-x: 34px;
+$icon-menu-6-active-y: 0px;
+$icon-menu-6-active-offset-x: -34px;
+$icon-menu-6-active-offset-y: 0px;
+$icon-menu-6-active-width: 17px;
+$icon-menu-6-active-height: 17px;
+$icon-menu-6-active-total-width: 67px;
+$icon-menu-6-active-total-height: 51px;
+$icon-menu-6-active-image: '../images/icon-menu/icon_menu_user_dropdown.png';
+$icon-menu-6-active: (34px, 0px, -34px, 0px, 17px, 17px, 67px, 51px, '../images/icon-menu/icon_menu_user_dropdown.png', 'icon-menu-6-active', );
+$icon-menu-6-name: 'icon-menu-6';
+$icon-menu-6-x: 17px;
+$icon-menu-6-y: 0px;
+$icon-menu-6-offset-x: -17px;
+$icon-menu-6-offset-y: 0px;
+$icon-menu-6-width: 17px;
+$icon-menu-6-height: 17px;
+$icon-menu-6-total-width: 67px;
+$icon-menu-6-total-height: 51px;
+$icon-menu-6-image: '../images/icon-menu/icon_menu_user_dropdown.png';
+$icon-menu-6: (17px, 0px, -17px, 0px, 17px, 17px, 67px, 51px, '../images/icon-menu/icon_menu_user_dropdown.png', 'icon-menu-6', );
+$spritesheet-width: 67px;
+$spritesheet-height: 51px;
+$spritesheet-image: '../images/icon-menu/icon_menu_user_dropdown.png';
+$spritesheet-sprites: ($icon-menu-1-active, $icon-menu-1, $icon-menu-2-active, $icon-menu-2, $icon-menu-3-active, $icon-menu-3, $icon-menu-4-active, $icon-menu-4, $icon-menu-5-active, $icon-menu-5, $icon-menu-6-active, $icon-menu-6, );
+$spritesheet: (67px, 51px, '../images/icon-menu/icon_menu_user_dropdown.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

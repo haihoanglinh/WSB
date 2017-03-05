@@ -1,0 +1,164 @@
+/*
+Css Your App
+*/
+.app--shortcut{
+  .shortcut-table{
+    .add-row{
+        .wsb-select{
+          width: 160px!important;
+        }
+    }
+    .form-group{
+      margin-bottom: 0;
+      .form-control{
+        padding: 3px 8px;
+        margin-bottom: 0;
+      } 
+    }   
+    .fake-select{
+      min-width: 160px;    
+      top: 4px;
+      position: relative;
+      @include media('<=tablet'){
+        min-width: 110px;
+      }
+    } 
+    .col4{
+      min-width: 95px;
+    }
+    .col5{
+      width: 160px;
+    }
+    tr{
+      &>th{
+        padding-bottom: 15px!important;
+        &:first-child{
+          padding-left: 0!important;
+        }
+        &:last-child{
+          padding-left: 0!important;
+          padding-right: 0!important;
+        }
+      }
+      &>td{
+        &:first-child{
+          padding-left: 0!important;
+        }
+        &:last-child{
+          padding-left: 0!important;
+          padding-right: 0!important;
+        }
+        padding: 15px 10px 15px!important;
+        &.shortcut-name{
+          &>img{
+            margin-right: 5px;
+          }
+        }
+      }
+      input[type="checkbox"]{
+        &+.fake-input{
+          display: none;
+        }
+        &:checked{
+          &+.fake-input{
+            display: block;
+          }
+        }
+      }
+      &:hover{
+        input[type="checkbox"]{
+          &+.fake-input{
+            display: block;
+          }
+        }
+      }
+    }
+    .buttons-col{
+      padding-right: 0!important;
+      .btn{
+        min-width: 74px;
+      }
+      .btn + .btn{
+        margin-left: 8px;
+      }
+    }
+    .shortcut-check{
+      .wsb-checkbox{
+        float: right;
+      }
+    }
+  }
+
+  .grid-view{
+    .shortcut-table{
+      @include media('<tablet'){
+        display: none;
+      }
+    }
+  }
+
+  .shortcuts-grid{
+    overflow: hidden;
+    margin-right: -12px;
+    margin-left: -12px;
+    .shortcut-item{
+      text-align: center;
+      float: left;
+      margin: 5px 12px;
+      .shortcut-box{
+        width: 74px;
+        height: 74px;
+        margin-bottom: 5px;
+        border-radius: 10px;
+        border: 1px solid $base-border-color;
+        text-align: center;
+        position: relative;
+        line-height: 70px;
+        .wsb-checkbox{
+          position: absolute;
+          right: 4px;
+          top: 4px;
+        }
+      }
+      input[type="checkbox"]{
+        &+.fake-input{
+          display: none;
+        }
+        &:checked{
+          &+.fake-input{
+            display: block;
+          }
+        }
+      }
+      &:hover{
+        input[type="checkbox"]{
+          &+.fake-input{
+            display: block;
+          }
+        }
+      }
+    }
+    @include media('<=320px'){
+      margin-right: -18px;
+      margin-left: -18px;
+      .shortcut-item{
+        margin: 5px 18px;
+      }
+    }
+  }
+
+  @include media('>tablet'){
+    .list-view-shortcut{
+      .box-view-screen-small{
+        display: none;
+      }
+    }
+  }
+  @include media('<=tablet'){
+    .list-view-shortcut{
+      .shortcut-form{
+        display: none;
+      }
+    }
+  }
+}

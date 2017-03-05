@@ -1,0 +1,329 @@
+.app--document{  
+  .icon-file{
+    display: inline-block;
+  }
+
+  .icon-file-pdf{
+    @include sprite($file-pdf);
+  }
+
+  .icon-file-doc{
+    @include sprite($file-doc);
+  }
+
+  .icon-file-xls{
+    @include sprite($file-xls);
+  }
+
+  .icon-file-txt{
+    @include sprite($file-txt);
+  }
+
+  .icon-file-jpg{
+    @include sprite($file-jpg);
+  }
+
+  .icon-file-zip{
+    @include sprite($file-zip);
+  }
+
+  .box-add-tag{
+    @include add-tag();
+  }
+
+  .col-agl-app {
+      min-height: -webkit-calc(100vh - 140px);
+      min-height: calc(100vh - 140px);
+  }
+
+  .table-document{
+    .doc-file{
+      &>span{
+        vertical-align: top;
+        margin-left: 5px;
+        line-height: 35px;
+      }
+    }
+    &>thead{
+      &>tr{
+        &>td{
+          border-top: 1px solid #d3d6d7;
+        }
+      }
+    }
+    &>tbody{
+      &>tr{
+        &>td{
+          border-top: none;
+          border-bottom: none!important;
+          padding: 10px 5px;
+        }
+      }
+    }
+    .doc-author{
+      position: relative;
+      .people-avatar-shared{
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        bottom: 23px;
+        right: 10px;
+        z-index: 1;
+        display: inline-block;
+        .people-avatar-small{
+          @include border-radius(50%);
+        }
+        .shared-multiple{
+          display: inline-block;
+          border: 1px solid $manatee;
+          color: $manatee;
+          font-size: 10px;
+          line-height: 20px;
+          text-align: center;
+          width: 100%;
+          height: 100%;
+          background-color: #fff;
+          @include border-radius(50%);
+        }
+      }
+      .doc-folder{
+        font-weight: 500;
+      }
+    }
+    input[type="checkbox"]{
+      &+.fake-input{
+        display: none;
+        margin-top: 5px;
+      }
+      &:checked{
+        &+.fake-input{
+          display: block;
+        }
+      }
+    }
+    tbody{
+      tr{
+        &:hover{
+          .fake-input{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  .folder-box{
+    border: 1px solid $input-border;
+    display: table;
+    width: 100%;
+    .folder-list{
+      display: table-cell;
+      width: 220px;
+      border-right: 1px solid $input-border;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      vertical-align: top;
+      @include media('<=768px'){
+        display: none;
+      }
+      &>li{
+        width: 100%;
+        margin: 0;
+        padding: 7px 20px 7px 25px;
+        .file-count{
+          float: right;
+          color: $manatee!important;
+        } 
+        .folder-name{
+          margin-left: 10px;
+        }
+        &>a:hover, &>a:focus{
+          color: $orange;
+          background-color: transparent;
+        }
+        &.active{
+          &>a, &>a:hover, &>a:focus{
+            color: $orange;
+            background-color: transparent;
+            .fa-folder-o:before {
+              content: "\f115";
+            }
+          }
+        }
+      }
+    }
+    .folder-files{
+      display: table-cell;
+      padding: 25px 30px;
+      vertical-align: top;
+      input[type="checkbox"]{
+        &+.fake-input{
+          display: none;
+        }
+        &:checked{
+          &+.fake-input{
+            display: block;
+          }
+        }
+      }
+      .file-table{
+        width: 100%;
+        tr{
+          &:hover{
+            .fake-input{
+              display: block;
+            }
+          }
+          td{
+            padding: 0 5px;
+            &.file-select{
+              width: 20px;
+              .checkbox{
+                margin: 0;
+                label{
+                  height: 16px;
+                  position: relative;
+                  top: 2px;
+                }
+              }
+            }
+            &.doc-file{
+              span{
+                line-height: 35px;
+                vertical-align: top;
+                margin-left: 10px;
+              }
+            }
+          }
+        }
+      }
+      .file-size{
+        @include media('>tablet'){
+          display: none;
+        }
+      }
+      .file-select{
+        @include media ('<=tablet'){
+          display: none;
+        }
+      }
+      @include media('>tablet'){
+        .small{
+          &.icon-file-txt{
+            @include sprite($file-txt-small);
+          }
+          &.icon-file-doc{
+            @include sprite($file-doc-small);
+          }
+          &.icon-file-jpg{
+            @include sprite($file-jpg-small);
+          }
+          &.icon-file-zip{
+            @include sprite($file-zip-small);
+          }
+          &.icon-file-pdf{
+            @include sprite($file-pdf-small);
+          }
+          &.icon-file-xls{
+            @include sprite($file-xls-small);
+          }
+        }
+        .file-table{
+          thead{
+            display: none;
+            tr{
+              th{
+                border-bottom: 1px solid #d3d6d7;
+              }
+            }
+          }
+          tr{
+            td{
+              padding: 0;
+              &.doc-file{
+                span{
+                  line-height: 25px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    @include media('>tablet'){
+      .visible-tablet{
+        display: none;
+      }
+    }
+    @include media('<=tablet'){
+      border: 0;
+      padding: 25px 0;
+      .file-size{
+        text-align: center;
+      }
+      .file-table{
+        thead{
+          tr{
+            th{
+              padding: 8px;
+              border-bottom: 1px solid #d3d6d7;
+            }
+          }
+        }
+      }
+      .folder-files{
+        padding: 0;
+        .file-table tr td {
+          padding: 10px 5px;
+        }
+      }
+    }
+  }
+
+
+
+  .popup.box-add-tag .content-add-tag .tag-content .tag-content-inner .tag.remove {
+      display: none;
+  }
+
+
+  .users-block-container .image-holder.opener-popup .img-first {
+    width: 100%;
+    left: -3px;
+  }
+
+  .users-block-container .image-holder.opener-popup {
+    .img-second {
+      z-index: 4;
+      width: 20px;
+    }
+    .box-plus {
+      width: 20px;
+      height: 20px;
+      background: #ffffff;
+      z-index: 5;
+      position: absolute;
+      z-index: 5;
+      right: -5px;
+      bottom: 0;
+      border: 1px solid #d0d8df;
+      @include border-radius(50%);
+      text-align: center;
+      > * {
+        font-size: 10px;
+        line-height: 20px;
+        color: #8d939a;
+      }
+    }
+  }
+
+  .users-block-container .image-holder.opener-popup {
+    width: 38px;
+    height: 38px;
+    position: relative;
+    @media (min-width: 1200px) and (max-width: 1300px) {
+      height: 32px;
+      width: 32px;
+    }
+  }
+}

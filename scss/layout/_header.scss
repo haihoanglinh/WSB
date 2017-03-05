@@ -1,0 +1,112 @@
+/* header styles */
+#header {
+  &.well {
+    border-radius: 0;
+    border: none;
+    margin-bottom: 0;
+    padding: 26px 25px 4px;
+    min-height: 80px;
+    max-height: 80px;
+    z-index: 8;
+    &.header-relative{
+      position: relative;
+      z-index: 55;
+    }
+    padding: 12px 15px 6px;
+    @include media('>=xs-phone'){
+      padding: 12px 15px 6px;
+      min-height: 60px;
+      max-height: 60px;
+    }
+    @include media('>=tablet'){
+      padding: 19px 25px 15px;
+      min-height: 80px;
+      max-height: 80px;
+    }
+
+    @include media('>=1024px') {
+//      padding: 12px 0 5px;
+      padding-bottom: 13px;
+      min-height: 80px;
+      max-height: 80px;
+    }
+
+    @include media('>widescreen') {
+      width: 100%;
+      z-index: 8;
+      position: relative;
+      &.header-relative{
+        position: relative;
+      }
+      &.fixed-header{
+        position: fixed;
+        width: 100%;
+
+      }
+    }
+  }
+
+  .w1 {
+    @include media('<desktop') {
+      padding: 0 15px;
+    }
+  }
+
+  .container {
+    width: 100%;
+
+    @include media('>=tablet', '<desktop') {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+.well {
+  &.well-dark {
+    background: $header-bg-color;
+  }
+}
+
+.well-dark {
+  .navbar-default {
+    background: $header-bg-color;
+    border: none;
+  }
+}
+
+.container > .navbar-header {
+  @include media('>=widescreen') {
+    margin-left: -17px;
+  }
+
+}
+
+.navbar-right {
+  @include media('>=widescreen') {
+    margin-right: -22px !important;
+  }
+}
+
+/* logo styles */
+.navbar-brand {
+  padding: 0;
+  width: 89px;
+  height: 37px;
+  // margin-left: 15px;
+  // margin-left: 0 !important;
+  margin-left: 0;
+  @include media('>=tablet') {
+    margin-left: 0;
+  }
+
+
+}
+
+.user-account-menu{
+  li{
+    a{
+      color: #fff
+    }
+  }
+}

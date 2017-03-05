@@ -1,0 +1,147 @@
+.wsbx-listings-results .wsbx-blog-results-top {
+  padding: 0 25px;
+}
+
+.wsbx-listings-results .tabs--default .tabs__pane--active {
+  padding: 0;
+}
+
+.wsbx-listings-results .wsbx-listings {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.wsbx-listings--header {
+  padding: 49px 0 45px;
+  background: #34334f;
+}
+
+.wsbx-listings--header .wrap-text-input, .wsbx-listings--header .form-control {
+  float: left;
+}
+
+.wsbx-listings--header .wrap-text-input {
+  position: relative;
+}
+
+.wsbx-listings--header .wrap-text-input input[type="text"] {
+  width: 600px;
+  border-left: 0;
+}
+
+.wsbx-listings--header .input-group input[type="text"] {
+  width: 600px;
+}
+
+.wsbx-listings--header .input-group select {
+  border-radius: 0;
+  width: 150px;
+  font-size: 14px;
+  color: #34334f;
+}
+
+.wsbx-listings--header .form-control {
+  height: 50px;
+  border: 0;
+  border-left: 1px solid #c1c1c1;
+}
+
+.wsbx-listings--header .button {
+  color: #fff;
+  margin: 16px 0 0;
+  padding: 0;
+  background: none;
+}
+
+.wsbx-listings--header .icon-save {
+  margin-right: 8px;
+}
+
+.wsbx-listings--header .button-reset {
+  opacity: 0.5;
+  border: 0;
+  margin-right: 19px;
+}
+
+.wsbx-listings--header .icon-save, .wsbx-listings--header .icon-show-map, .wsbx-listings--header .icon-search-by-drive {
+  margin-bottom: -2px;
+}
+
+.wsbx-listings--header .wsbx-listings--tag {
+  margin: 14px 2px 0 0;
+  color: #fff;
+  padding: 1px 10px;
+  border-radius: 3px;
+  background: #fda600;
+  display: inline-block;
+}
+
+.wsbx-listings--header .wsbx-listings--tag .delete-tag {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.wsbx-listings--header .wsbx-listings--tag i {
+  color: #34334f;
+}
+
+.wsbx-listings--content {
+  background: #fff;
+}
+
+.wsbx-listings--content .box-pagination {
+  border-top: 0;
+}
+
+.wsbx-listings .nav-search, .wsbx-listings .button {
+  border-radius: 3px;
+}
+
+.wsbx-listings .nav-search {
+  padding: 13px;
+  background: #ebebeb;
+}
+
+.wsbx-listings .nav-search .icon-show-map {
+  margin-right: 11px;
+}
+
+.wsbx-listings .nav-search .icon-search-by-drive {
+  margin-right: 12px;
+}
+
+.wsbx-listings .nav-search .button {
+  color: #34334f;
+  margin: 0;
+  padding: 9px 12px;
+  background: #fda600;
+}
+
+.wsbx-listings .nav-search .input-group select {
+  float: right;
+  width: 140px;
+  border: 0;
+  color: #34334f;
+  background: none;
+  -webkit-box-shadow: inset 0px 0px 7px transparent;
+  -moz-box-shadow: inset 0px 0px 7px transparent;
+  box-shadow: inset 0px 0px 7px transparent;
+}
+
+@media screen and (max-width: 767px) {
+  .tabs--default .tabs__pane--active {
+    margin-bottom: 0;
+  }
+  .wsbx-listings--content .box-pagination {
+    padding: 0;
+  }
+  .wsbx-listings--content .box-pagination .pagination.right {
+    width: 100%;
+    float: none;
+  }
+  .wsbx-listings--content .box-pagination .pagination a {
+    position: static;
+    top: auto;
+    width: 40px;
+  }
+}

@@ -1,0 +1,2197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- set the encoding of your site -->
+    <meta charset="utf-8">
+    <!-- set the viewport width and initial-scale on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebsiteBox</title>
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+    <!-- Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- include the site bootstrap stylesheet -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <!-- include the site stylesheet -->
+    <link rel="stylesheet" href="../css/main.css">
+    <script type="text/javascript" src="../js/svg-sprites.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('svg-icon-placeholder').innerHTML += SVG_SPRITES['sprite'];
+        }, false);
+    </script>
+</head>
+
+
+<body class="app--store">
+<div id="svg-icon-placeholder" style="display: none;"></div>
+<!-- main container of all the page elements -->
+<div class="wrapper">
+<!-- header of the page -->
+<header id="header" class="well well-dark header-fixed-mobile">
+    <nav class="navbar navbar-default main-nav-container">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+
+                <!-- page logo -->
+                <div class="navbar-brand logo"><a href="app-control-panel.html"><img src="../images/logo.svg" alt="WebsiteBox" width="89" height="37"></a>
+                </div>
+            </div>
+            <!--Box search for app-->
+            <div class="box-search">
+                <div class="search-row">
+                    <input type="text"class="form-control input-search input-control" placeholder="Search">
+                    <a href="#" class="icon-search"><i class="fa fa-search"></i></a>
+
+                    <div class="box-search-details">
+                        <div class="result-document">
+                            <div class="result-title">
+                                <p class="title">
+                        <span>
+                            <img src="../images/controlpanel/store.png">
+                        </span>
+                                    App store</p>
+                            </div>
+                            <div class="result-content">
+                                <div class="row-info">
+                                    <p class="pull-left">Test the new Websitebox</p>
+
+                                    <p class="pull-right">store</p>
+                                </div> <div class="row-info">
+                                <p class="pull-left">Test the new Websitebox</p>
+
+                                <p class="pull-right">store</p>
+                            </div>
+                                <div class="row-info active">
+                                    <p class="pull-left">Test the new Websitebox</p>
+
+                                    <p class="pull-right">store</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- main navigation of the page -->
+            <ul class="nav nav-pills navbar-right main-nav">
+                <li class="dropdown icon-notify">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Notification</span>
+                                <span class="icon-holder">
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-notification">
+                                      <use xlink:href="#icon-notification"></use>
+                                  </svg>
+                                  <span class="quantity">2</span>
+                                </span>
+                    </a>
+
+                    <div class="dropdown-menu notification-menu users-block">
+                        <span class="arrow"></span>
+                        <ul class="list-unstyled block-rounded">
+                            <li>
+                                <div class="panel-body">
+                                    <div class="row row-inline panel-row">
+                                        <div class="col-xs-10">
+                                            <div class="row">
+                                                <div class="col-xs-3 column img-holder">
+                                                    <img src="../images/avatar02.jpg" class="img-circle img-thumbnail"
+                                                         alt="image description">
+                                                </div>
+                                                <div class="col-xs-7 column text-block">
+                                                    <span class="name">Andres Iniesta </span>
+                                                    <span class="meta"><time datetime="19:45">Replied at 7:45 PM</time></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-2 column btn-holder">
+                                            <a href="#" class="btn btn-success btn-circle btn-checked"><i class="fa fa-check"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh eu ismod
+                                                tincidunt ut laoreet dolore magna ali quam erat volutpat.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="alert alert-success">
+                                    <div class="row">
+                                        <div class="col-xs-12">Send 25 more listings to Andres</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="panel-body">
+                                    <div class="row row-inline panel-row">
+                                        <div class="col-xs-10">
+                                            <div class="row">
+                                                <div class="col-xs-3 column img-holder">
+                                                    <img src="../images/avatar03.jpg" class="img-circle img-thumbnail img-responsive"
+                                                         alt="image description">
+                                                </div>
+                                                <div class="col-xs-6 column text-block">
+                                                    <span class="name">Vanessa Bond</span>
+                                                    <span class="meta"><time datetime="19:45">Replied at 7:45 PM</time></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-2 column btn-holder">
+                                            <a href="#" class="btn btn-danger btn-circle btn-checked"><i class="fa fa-times"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh eu ismod
+                                                tincidunt ut laoreet dolore magna ali quam erat volutpat.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="alert alert-danger">
+                                    <div class="row">
+                                        <div class="col-xs-12">Send 25 more listings to Vanessa</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <!-- To make the POPUP-HELP STEP 3 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+                <li class="popup-container dropdown app-menu-holder popup-help-container step03">
+                    <div class="popup-overlay"></div>
+                        <a href="#" class="opener-popup dropdown-toggle under-overlay">
+                          <span class="icon-view-store">
+                              <span class="st1 st-icon">
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                              </span>
+                              <span class="st2 st-icon">
+                                    <span></span>
+                                  <span></span>
+                                  <span></span>
+                              </span>
+                              <span class="st3 st-icon">
+                                    <span></span>
+                                  <span></span>
+                                  <span></span>
+                              </span>
+                          </span>
+                        </a>
+
+                    <div class="popup dropdown-menu under-overlay">
+                        <span class="arrow"></span>
+
+                        <div class="app-menu menu-list open-close">
+                            <div class="panel">
+                                <div class="panel-body">
+                            <div class="first-view">
+                                <div class="menu-item">
+                                    <a href="#">
+                                        <div class="item-img"><img src="../images/app_store.png" class="img-responsive"
+                                                                   alt="image description"></div>
+                                        <span>App Store</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#">
+                                        <div class="item-img"><img src="../images/websites.png" class="img-responsive"
+                                                                   alt="image description"></div>
+                                        <span>Websites</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#">
+                                        <div class="item-img"><img src="../images/domains.png" class="img-responsive"
+                                                                   alt="image description"></div>
+                                        <span>Domains</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#">
+                                        <div class="item-img"><img src="../images/listings.png" class="img-responsive"
+                                                                   alt="image description"></div>
+                                        <span>Listings</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#">
+                                        <div class="item-img"><img src="../images/contacts.png" class="img-responsive"
+                                                                   alt="image description"></div>
+                                        <span>Contacts</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#">
+                                        <div class="item-img"><img src="../images/emails.png" class="img-responsive"
+                                                                   alt="image description"></div>
+                                        <span>Emails</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#">
+                                        <div class="item-img"><img src="../images/tasks.png" class="img-responsive"
+                                                                   alt="image description"></div>
+                                        <span>Tasks</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#">
+                                        <div class="item-img"><img src="../images/documents.png" class="img-responsive"
+                                                                   alt="image description"></div>
+                                        <span>Documents</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#">
+                                        <div class="item-img"><img src="../images/calendar.png" class="img-responsive"
+                                                                   alt="image description"></div>
+                                        <span>Calendar</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="menu-item">
+                                    <a href="#">
+                                        <div class="item-img"><img src="../images/campaigns.png" class="img-responsive"
+                                                                   alt="image description"></div>
+                                        <span>Campaigns</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#">
+                                        <div class="item-img"><img src="../images/listing_syndication.png" class="img-responsive"
+                                                                   alt="image description"></div>
+                                        <span>Listing Syndication</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#">
+                                        <div class="item-img"><img src="../images/rss.png" class="img-responsive"
+                                                                   alt="image description"></div>
+                                        <span>RSS</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#">
+                                        <div class="item-img"><img src="../images/community.png" class="img-responsive"
+                                                                   alt="image description"></div>
+                                        <span>Community</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#">
+                                        <div class="item-img"><img src="../images/google_analytics.png" class="img-responsive"
+                                                                   alt="image description"></div>
+                                        <span>Google Analytics</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#">
+                                        <div class="item-img"><img src="../images/profile.png" class="img-responsive"
+                                                                   alt="image description"></div>
+                                        <span>Profile</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#">
+                                        <div class="item-img"><img src="../images/blog.png" class="img-responsive"
+                                                                   alt="image description"></div>
+                                        <span>Blog</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#">
+                                        <div class="item-img"><img src="../images/prints.png" class="img-responsive"
+                                                                   alt="image description"></div>
+                                        <span>Prints</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#">
+                                        <div class="item-img"><img src="../images/lead_capture.png" class="img-responsive"
+                                                                   alt="image description"></div>
+                                        <span>Lead Capture</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#">
+                                        <div class="item-img"><img src="../images/seo.png" class="img-responsive"
+                                                                   alt="image description"></div>
+                                        <span>SEO</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#">
+                                        <div class="item-img"><img src="../images/mobile_notifications.png" class="img-responsive"
+                                                                   alt="image description"></div>
+                                        <span>Mobile Notifications</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#">
+                                        <div class="item-img"><img src="../images/craigslist.png" class="img-responsive"
+                                                                   alt="image description"></div>
+                                        <span>Craigslist</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#">
+                                        <div class="item-img"><img src="../images/qr_code.png" class="img-responsive"
+                                                                   alt="image description"></div>
+                                        <span>QR Code</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#">
+                                        <div class="item-img"><img src="../images/har.png" class="img-responsive"
+                                                                   alt="image description"></div>
+                                        <span>HAR</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#">
+                                        <div class="item-img"><img src="../images/move.png" class="img-responsive"
+                                                                   alt="image description"></div>
+                                        <span>Move</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#">
+                                        <div class="item-img"><img src="../images/realtor.png" class="img-responsive"
+                                                                   alt="image description"></div>
+                                        <span>Realtor.com</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#">
+                                        <div class="item-img"><img src="../images/apple.png" class="img-responsive"
+                                                                   alt="image description"></div>
+                                        <span>Apple</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#">
+                                        <div class="item-img"><img src="../images/cnn.png" class="img-responsive"
+                                                                   alt="image description"></div>
+                                        <span>CNN</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="btn-holder">
+                                <a class="btn btn-default btn-block opener" href="#">
+                                    <span class="hidden-active">More</span>
+                                    <span class="visible-active">Less</span>
+                                </a>
+                            </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- To make the POPUP-HELP STEP 3 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+                        <div class="popup-help step03">
+                            <div class="panel panel-default">
+                                <span class="arrow arrow-right"></span>
+
+                                <div class="panel-heading">
+                                    <strong class="title">Step 3 of 7</strong>
+                                    <a class="close" href="#" aria-label="Close"><span aria-hidden="true">&times;</span>
+                                    </a>
+                                </div>
+                                <div class="panel-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                                        laoreet dolore magna volutpat.</p>
+
+                                    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation</p>
+
+                                    <div class="btn-container text-right"><a href="#" class="btn btn-orange"><i
+                                            class="fa fa-chevron-left"></i></a><a href="#" class="btn btn-orange"><i
+                                            class="fa fa-chevron-right"></i></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!--Show icon in mobile -->
+                <li class="popup-container dropdown app-menu-holder popup-help-container wrap-icon-mobile">
+                    <button type="button" class="nav-opener navbar-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </li>
+                <!-- To make the POPUP-HELP STEP 4 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+                <li class="hidden-xs popup-help-container step04">
+                    <div class="popup-overlay"></div>
+
+                    <a href="#" data-toggle="modal" data-target="#myModal" class="btn-link under-overlay">
+                        <span class="sr-only">Info</span>
+                        <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                    </a>
+                    <!-- To make the POPUP-HELP STEP 4 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+                    <div class="popup-help step04">
+                        <div class="panel panel-default">
+                            <span class="arrow"></span>
+
+                            <div class="panel-heading">
+                                <strong class="title">Step 4 of 7</strong>
+                                <a class="close" href="#" aria-label="Close"><span aria-hidden="true">&times;</span>
+                                </a>
+                            </div>
+                            <div class="panel-body">
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                                    laoreet dolore magna volutpat. </p>
+
+                                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation</p>
+
+                                <div class="btn-container text-right"><a href="#" class="btn btn-orange"><i
+                                        class="fa fa-chevron-left"></i></a><a href="#" class="btn btn-orange"><i
+                                        class="fa fa-chevron-right"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- To make the POPUP-HELP STEP 5 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+                <li class="popup-container dropdown popup-help-container step05">
+                    <div class="popup-overlay"></div>
+                    <a class="opener-popup dropdown-toggle under-overlay" href="#">
+                     <span class="icon-step05">
+
+                     </span>
+                    </a>
+
+                    <div class="popup dropdown-menu settings-block under-overlay">
+                        <span class="arrow"></span>
+
+                        <div class="panel">
+                            <div class="panel-body">
+                                <div class="row dropdown-row">
+                                    <div class="col-xs-4 theme-list-holder">
+                                        <div class="scrollable">
+                                            <span class="title text-uppercase">Theme</span>
+                                            <ul class="theme-list list-unstyled">
+                                                <li>
+                                                    <a href="#"><span class="color color-default"></span><span class="description">Default</span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><span class="color color-remax"></span><span
+                                                            class="description">Remax</span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="active"><span class="color color-century91"></span><span
+                                                            class="description">Century 91</span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><span class="color color-minimal"></span><span class="description">Minimal</span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><span class="color color-summer"></span><span
+                                                            class="description">Summer</span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><span class="color color-default"></span><span class="description">Default</span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><span class="color color-remax"></span><span
+                                                            class="description">Remax</span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><span class="color color-century91"></span><span class="description">Century 91</span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><span class="color color-minimal"></span><span class="description">Minimal</span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><span class="color color-summer"></span><span
+                                                            class="description">Summer</span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <span class="title text-uppercase">Settings</span>
+
+                                        <div class="form-in-drop">
+                                            <div class="form-group">
+                                                <span class="label-holder"><label for="select-1">Time Zone</label></span>
+                                            <span class="select-holder">
+                                              <span class="fake-select">
+                                                <select id="select-1" class="form-control">
+                                                    <option selected="selected">(UTC -8:00)</option>
+                                                    <option>(UTC -8:00)</option>
+                                                    <option>(UTC -8:00)</option>
+                                                    <option>(UTC -8:00)</option>
+                                                </select>
+                                              </span>
+                                            </span>
+                                            </div>
+                                            <div class="form-group">
+                                                <span class="label-holder"><label for="select-2">Email Digest</label></span>
+                                            <span class="select-holder">
+                                              <span class="fake-select">
+                                                <select id="select-2" class="form-control">
+                                                    <option selected="selected">option 1</option>
+                                                    <option>option 2</option>
+                                                    <option>option 3</option>
+                                                </select>
+                                              </span>
+                                            </span>
+                                            </div>
+                                            <div class="form-group">
+                                                <span class="label-holder"><label for="language">Language</label></span>
+                                                <span class="input-holder"><input type="text" class="form-control" id="language"
+                                                                                  placeholder="English"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- To make the POPUP-HELP STEP 5 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+                        <div class="popup-help step05">
+                            <div class="panel panel-default">
+                                <span class="arrow arrow-right"></span>
+
+                                <div class="panel-heading">
+                                    <strong class="title">Step 5 of 7</strong>
+                                    <a class="close" href="#" aria-label="Close"><span aria-hidden="true">&times;</span>
+                                    </a>
+                                </div>
+                                <div class="panel-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                                        ut laoreet dolore magna volutpat. </p>
+
+                                    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation</p>
+
+                                    <div class="btn-container text-right"><a href="#" class="btn btn-orange"><i
+                                            class="fa fa-chevron-left"></i></a><a href="#" class="btn btn-orange"><i
+                                            class="fa fa-chevron-right"></i></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- To make the POPUP-HELP STEP 6 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+                <li class="dropdown hidden-xs user-dropdown popup-help-container step06">
+                    <div class="popup-overlay"></div>
+                    <a href="#" id="dropdownMenu2" class="user-block dropdown-toggle under-overlay" data-toggle="dropdown" role="button"
+                       aria-haspopup="true" aria-expanded="false">
+                        <div class="row">
+                            <div class="col-xs-3 img-holder"><img src="../images/avatar01.jpg" class="img-responsive img-circle"
+                                                                  alt="image description"></div>
+                            <div class="col-xs-9 text-block">
+                                <div class="name"><strong>Richard Mattius</strong><span class="caret"></span></div>
+                                <strong class="status text-uppercase text-warning">PREMIUM USER</strong>
+                            </div>
+                        </div>
+                    </a>
+
+                    <div class="dropdown-menu under-overlay">
+                        <span class="arrow"></span>
+
+                        <div class="panel-body">
+                            <ul class="list-unstyled" aria-labelledby="dropdownMenu2">
+                                <li class="switch-account">
+                                    <a href="#switch-account-menu" class="switch-account-toggle collapsed" data-toggle="collapse">
+                                        <span class="renew-icon"><i class="material-icons">autorenew</i></span>
+                                        <span class="account-name">Century 21 Inc.</span>
+                                        <span class="text">Switch Account</span>
+                                        <span class="menu-arrow-icon"><i class="material-icons">arrow_drop_down</i></span>
+                                    </a>
+
+                                    <div id="switch-account-menu" class="collapse">
+                                        <ul>
+                                            <li><a href="#">Realty Corp.</a></li>
+                                            <li><a href="#">Bradly and Drown</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li role="separator" class="divider"></li>
+
+                                <li>
+                                    <a href="app-account-info.html">
+                                        <i class="material-icons">person</i>
+                                        <span class="text">My Account</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="my-user.html">
+                                        <i class="material-icons">group</i>
+                                        <span class="text">My Users</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class=""></div>
+                                    <a href="my-product.html">
+                                        <i class="material-icons">apps</i>
+                                        <span class="text">My Products & Services</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="app-store.html">
+                                        <i class="material-icons">shopping_basket</i>
+                                        <span class="text">WebsiteBox Store</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" data-toggle="modal" data-target="#myModal">
+                                        <i class="material-icons">help</i>
+                                        <span class="text">Help & Support</span>
+                                    </a>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li>
+                                    <a href="#">
+                                        <i class="material-icons">exit_to_app</i>
+                                        <span class="text">Logout</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- To make the POPUP-HELP STEP 6 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+                        <div class="popup-help step06">
+                            <div class="panel panel-default">
+                                <span class="arrow arrow-right"></span>
+
+                                <div class="panel-heading">
+                                    <strong class="title">Step 6 of 7</strong>
+                                    <a class="close" href="#" aria-label="Close"><span aria-hidden="true">&times;</span>
+                                    </a>
+                                </div>
+                                <div class="panel-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                                        ut laoreet dolore magna volutpat. </p>
+
+                                    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation</p>
+
+                                    <div class="btn-container text-right"><a href="#" class="btn btn-orange"><i
+                                            class="fa fa-chevron-left"></i></a><a href="#" class="btn btn-orange"><i
+                                            class="fa fa-chevron-right"></i></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="drop visible-xs visible-sm menu-mobile-767">
+                <div class="navbar-collapse">
+                    <div class="row-top">
+                    <p class="text-menu">Menu</p>
+                    <button type="button" class="nav-opener nav-toggle-767">
+                        <span class="x1"></span>
+                        <span class="x2"></span>
+                    </button>
+                    </div>
+                    <div class="box-search">
+                        <div class="search-row">
+                            <input type="text" class="form-control input-search input-control" placeholder="Search" style="position: relative; z-index: 3; background: transparent;">
+                            <a href="#" class="icon-search"><i class="fa fa-search"></i></a>
+                        </div>
+                    </div>
+                    <div class="user-dropdown">
+                          <div class="dropdown-menu">
+                            <ul class="list-unstyled user-account-menu">
+                                <li class="switch-account">
+                                    <a href="#switch-account-menu-mobile" class="switch-account-toggle collapsed" data-toggle="collapse">
+                                        <span class="renew-icon"><i class="material-icons">autorenew</i></span>
+                                        <span class="account-name">Century 21 Inc.</span>
+                                        <span class="text">Switch Account</span>
+                                        <span class="menu-arrow-icon"><i class="material-icons">arrow_drop_down</i></span>
+                                    </a>
+
+                                    <div id="switch-account-menu-mobile" class="collapse">
+                                        <ul>
+                                            <li><a href="#">Realty Corp.</a></li>
+                                            <li><a href="#">Bradly and Drown</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li role="separator" class="divider"></li>
+
+                                <li>
+                                    <a href="app-account-info.html">
+                                        <i class="material-icons">person</i>
+                                        <span class="text">My Account</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="my-user.html">
+                                        <i class="material-icons">group</i>
+                                        <span class="text">My Users</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class=""></div>
+                                    <a href="my-product.html">
+                                        <i class="material-icons">apps</i>
+                                        <span class="text">My Products &amp; Services</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="app-store.html">
+                                        <i class="material-icons">shopping_basket</i>
+                                        <span class="text">WebsiteBox Store</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" data-toggle="modal" data-target="#myModal">
+                                        <i class="material-icons">help</i>
+                                        <span class="text">Help &amp; Support</span>
+                                    </a>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li>
+                                    <a href="#">
+                                        <i class="material-icons">exit_to_app</i>
+                                        <span class="text">Logout</span>
+                                    </a>
+                                </li>
+                            </ul>
+                          </div>
+                        </div>
+                    <div class="row user-block">
+                        <div class="col-xs-3 img-holder"><img src="../images/avatar01.jpg" class="img-responsive img-circle"
+                                                              alt="image description"></div>
+                        <div class="col-xs-9 text-block">
+                            <div class="name"><strong>Richard Mattius</strong></div>
+                            <strong class="status text-uppercase text-warning">PREMIUM USER</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- contain main informative part of the site -->
+<main id="main" role="main">
+    <div class="container-fluid same-height-holder">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel panel-default panel-store">
+                    <div class="panel-heading">
+                        <div class="row">
+
+                            <!-- App Heading -->
+                            <div class="col-xs-7">
+                                <div class="row">
+                                    <div class="col-sm-2 img-block">
+                                        <div class="img-holder"><img src="../images/app_store.png" class="img-responsive" alt="image description"></div>
+                                    </div>
+                                    <div class="col-sm-10 heading-block single-line">
+                                        <h1>Websitebox Store</h1>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Shopping Cart Section -->
+                            <div class="col-xs-5 text-right">
+                                <button type="button" class="btn btn-orange btn-cart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-cart">
+                                      <use xlink:href="#icon-cart"></use>
+                                    </svg>
+                                    <span class="hidden-xs">Shopping Cart</span>
+                                    <span class="badge">4</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel-body">
+                        <div class="filter-section">
+                            <!-- Add class .active to make orange border -->
+                            <button type="button" class="btn btn-default btn-lg btn-filter active">Bundles<span class="badge">5</span></button>
+                            <button type="button" class="btn btn-default btn-lg btn-filter">Apps<span class="badge">24</span></button>
+                            <button type="button" class="btn btn-default btn-lg btn-filter">Websites<span class="badge">12</span></button>
+                            <button type="button" class="btn btn-default btn-lg btn-filter">Services<span class="badge">5</span></button>
+
+                            <div class="dropdown filter-dropdown clearfix">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="filterDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  What Do You Need?
+                                  <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="filterDropdown">
+                                  <li><a href="#">Real Estate Website</a></li>
+                                  <li><a href="#">SEO-friendly Content</a></li>
+                                  <li><a href="#">Powerful CRM</a></li>
+                                  <li><a href="#">24/7 Hosting</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <!-- Start An App Section -->
+                        <div class="app-section">
+                            <div class="section-heading">
+                                <h2>Specials</h2>
+                                <h3>Gotta have it all? Check out our bundles!</h3>
+                            </div>
+                            <div class="section-body">
+                                <ul class="app-list small-list">
+                                    <li class="thumbnail small">
+                                        <div class="thumbnail-image">
+                                            <a href="#"><img src="../images/store/specials-1.jpg" alt="App thumbnail"></a>
+                                        </div>
+                                        <div class="thumbnail-badge">
+                                            <span class="price">$79</span>
+                                            <span>ONE-TIME FEE</span>
+                                        </div>
+                                        <div class="caption">
+                                          <h3>Document App</h3>
+                                          <p>Includes 1 team website, CRM, IDX integration, 14 apps and hosting</p>
+                                        </div>
+                                    </li>
+                                    <li class="thumbnail small">
+                                        <div class="thumbnail-image">
+                                            <a href="#"><img src="../images/store/specials-2.jpg" alt="App thumbnail"></a>
+                                        </div>
+                                        <div class="thumbnail-badge">
+                                            <span class="price">$79</span>
+                                            <span>ONE-TIME FEE</span>
+                                        </div>
+                                        <div class="caption">
+                                          <h3>Document App</h3>
+                                          <p>Includes 1 team website, CRM, IDX integration, 14 apps and hosting</p>
+                                        </div>
+                                    </li>
+                                    <li class="thumbnail small">
+                                        <div class="thumbnail-image">
+                                            <a href="#"><img src="../images/store/specials-3.jpg" alt="App thumbnail"></a>
+                                        </div>
+                                        <div class="thumbnail-badge">
+                                            <span class="price">$79</span>
+                                            <span>ONE-TIME FEE</span>
+                                        </div>
+                                        <div class="caption">
+                                          <h3>Document App</h3>
+                                          <p>Includes 1 team website, CRM, IDX integration, 14 apps and hosting</p>
+                                        </div>
+                                    </li>
+                                    <li class="thumbnail small">
+                                        <div class="thumbnail-image">
+                                            <a href="#"><img src="../images/store/specials-4.jpg" alt="App thumbnail"></a>
+                                        </div>
+                                        <div class="thumbnail-badge">
+                                            <span class="price">$79</span>
+                                            <span>ONE-TIME FEE</span>
+                                        </div>
+                                        <div class="caption">
+                                          <h3>Document App</h3>
+                                          <p>Includes 1 team website, CRM, IDX integration, 14 apps and hosting</p>
+                                        </div>
+                                    </li>
+                                    <li class="thumbnail small">
+                                        <div class="thumbnail-image">
+                                            <a href="#"><img src="../images/store/specials-5.jpg" alt="App thumbnail"></a>
+                                        </div>
+                                        <div class="thumbnail-badge">
+                                            <span class="price">$79</span>
+                                            <span>ONE-TIME FEE</span>
+                                        </div>
+                                        <div class="caption">
+                                          <h3>Document App</h3>
+                                          <p>Includes 1 team website, CRM, IDX integration, 14 apps and hosting</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- End An App Section -->
+
+                        <!-- Start An App Section -->
+                        <div class="app-section">
+                            <div class="section-heading">
+                                <h2>Bundles</h2>
+                                <h3>Check out our Bundles. We have a feeling you’ll be impressed.</h3>
+                            </div>
+                            <div class="section-body">
+                                <ul class="app-list big-list">
+                                    <li class="thumbnail normal has-button">
+                                        <div class="thumbnail-image">
+                                            <a href="#"><img src="../images/store/bundles-1.jpg" alt="App thumbnail"></a>
+                                        </div>
+                                        <div class="thumbnail-badge">
+                                            <span class="price">$79</span>
+                                            <span>ONE-TIME FEE</span>
+                                        </div>
+                                        <div class="caption">
+                                          <h3>Document App</h3>
+                                          <p>Includes 1 team website, CRM, IDX integration, 14 apps and hosting</p>
+                                        </div>
+                                        <a href="#" class="btn btn-orange btn-readmore">READ MORE</a>
+                                    </li>
+                                    <li class="thumbnail normal has-button">
+                                        <div class="thumbnail-image">
+                                            <a href="#"><img src="../images/store/bundles-2.jpg" alt="App thumbnail"></a>
+                                        </div>
+                                        <div class="thumbnail-badge">
+                                            <span class="price">$79</span>
+                                            <span>ONE-TIME FEE</span>
+                                        </div>
+                                        <div class="caption">
+                                          <h3>Document App</h3>
+                                          <p>Includes 1 team website, CRM, IDX integration, 14 apps and hosting</p>
+                                        </div>
+                                        <a href="#" class="btn btn-orange btn-readmore">READ MORE</a>
+                                    </li>
+                                    <li class="thumbnail normal has-button">
+                                        <div class="thumbnail-image">
+                                            <a href="#"><img src="../images/store/bundles-3.jpg" alt="App thumbnail"></a>
+                                        </div>
+                                        <div class="thumbnail-badge">
+                                            <span class="price">$79</span>
+                                            <span>ONE-TIME FEE</span>
+                                        </div>
+                                        <div class="caption">
+                                          <h3>Document App</h3>
+                                          <p>Includes 1 team website, CRM, IDX integration, 14 apps and hosting</p>
+                                        </div>
+                                        <a href="#" class="btn btn-orange btn-readmore">READ MORE</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- End An App Section -->
+
+                        <!-- Start An App Section -->
+                        <div class="app-section">
+                            <div class="section-heading">
+                                <h2>Apps</h2>
+                                <h3>Seamlessly integrate useful tools with your website to help your business grow!</h3>
+                            </div>
+                            <div class="section-body">
+                                <ul class="app-list small-list">
+                                    <li class="thumbnail small">
+                                        <div class="thumbnail-image">
+                                            <a href="#"><img src="../images/store/apps-1.jpg" alt="App thumbnail"></a>
+                                        </div>
+                                        <div class="thumbnail-badge">
+                                            <span class="price">$79</span>
+                                        </div>
+                                        <div class="caption">
+                                          <h3>SEO App</h3>
+                                          <p>Includes 1 team website, CRM, IDX integration, 14 apps and hosting</p>
+                                        </div>
+                                    </li>
+                                    <li class="thumbnail small">
+                                        <div class="thumbnail-image">
+                                            <a href="#"><img src="../images/store/apps-2.jpg" alt="App thumbnail"></a>
+                                        </div>
+                                        <div class="thumbnail-badge">
+                                            <span class="price">$79</span>
+                                        </div>
+                                        <div class="caption">
+                                          <h3>Lead Capture App</h3>
+                                          <p>Includes 1 team website, CRM, IDX integration, 14 apps and hosting</p>
+                                        </div>
+                                    </li>
+                                    <li class="thumbnail small">
+                                        <div class="thumbnail-image">
+                                            <a href="#"><img src="../images/store/apps-3.jpg" alt="App thumbnail"></a>
+                                        </div>
+                                        <div class="thumbnail-badge">
+                                            <span class="price">$79</span>
+                                        </div>
+                                        <div class="caption">
+                                          <h3>Blog App</h3>
+                                          <p>Includes 1 team website, CRM, IDX integration, 14 apps and hosting</p>
+                                        </div>
+                                    </li>
+                                    <li class="thumbnail small">
+                                        <div class="thumbnail-image">
+                                            <a href="#" data-toggle="modal" data-target="#appModal"><img src="../images/store/apps-4.jpg" alt="App thumbnail"></a>
+                                        </div>
+                                        <div class="thumbnail-badge">
+                                            <span class="price">$79</span>
+                                        </div>
+                                        <div class="caption">
+                                          <h3>QR Code App</h3>
+                                          <p>Includes 1 team website, CRM, IDX integration, 14 apps and hosting</p>
+                                        </div>
+                                    </li>
+                                    <li class="thumbnail small">
+                                        <div class="thumbnail-image">
+                                            <a href="#"><img src="../images/store/apps-5.jpg" alt="App thumbnail"></a>
+                                        </div>
+                                        <div class="thumbnail-badge">
+                                            <span class="price">$79</span>
+                                        </div>
+                                        <div class="caption">
+                                          <h3>Tasks App</h3>
+                                          <p>Includes 1 team website, CRM, IDX integration, 14 apps and hosting</p>
+                                        </div>
+                                    </li>
+                                     <li class="thumbnail small">
+                                        <div class="thumbnail-image">
+                                            <a href="#"><img src="../images/store/apps-6.jpg" alt="App thumbnail"></a>
+                                        </div>
+                                        <div class="thumbnail-badge">
+                                            <span class="price">$79</span>
+                                        </div>
+                                        <div class="caption">
+                                          <h3>Mobile Notification</h3>
+                                          <p>Includes 1 team website, CRM, IDX integration, 14 apps and hosting</p>
+                                        </div>
+                                    </li>
+                                     <li class="thumbnail small">
+                                        <div class="thumbnail-image">
+                                            <a href="#"><img src="../images/store/apps-7.jpg" alt="App thumbnail"></a>
+                                        </div>
+                                        <div class="thumbnail-badge">
+                                            <span class="price">$79</span>
+                                        </div>
+                                        <div class="caption">
+                                          <h3>Prints App</h3>
+                                          <p>Includes 1 team website, CRM, IDX integration, 14 apps and hosting</p>
+                                        </div>
+                                    </li>
+                                     <li class="thumbnail small">
+                                        <div class="thumbnail-image">
+                                            <a href="#"><img src="../images/store/apps-8.jpg" alt="App thumbnail"></a>
+                                        </div>
+                                        <div class="thumbnail-badge">
+                                            <span class="price">$79</span>
+                                        </div>
+                                        <div class="caption">
+                                          <h3>Live Chat App</h3>
+                                          <p>Includes 1 team website, CRM, IDX integration, 14 apps and hosting</p>
+                                        </div>
+                                    </li>
+                                    <li class="thumbnail small">
+                                        <div class="thumbnail-image">
+                                            <a href="#"><img src="../images/store/apps-9.jpg" alt="App thumbnail"></a>
+                                        </div>
+                                        <div class="thumbnail-badge">
+                                            <span class="price">$79</span>
+                                        </div>
+                                        <div class="caption">
+                                          <h3>Document App</h3>
+                                          <p>Includes 1 team website, CRM, IDX integration, 14 apps and hosting</p>
+                                        </div>
+                                    </li>
+                                    <li class="thumbnail small see-all">
+                                        <a href="#">
+                                            <span>See all</span>
+                                            <span class="price">12</span>
+                                            <span>Services</span>
+                                            <span class="three-dot">
+                                                <i class="fa fa-circle"></i>
+                                                <i class="fa fa-circle"></i>
+                                                <i class="fa fa-circle"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- End An App Section -->
+
+                        <!-- Start An App Section -->
+                        <div class="app-section">
+                            <div class="section-heading">
+                                <h2>Websites</h2>
+                                <h3>Let’s get you there faster with $99 LeadSites</h3>
+                            </div>
+                            <div class="section-body">
+                                <ul class="app-list big-list">
+                                    <li class="thumbnail big">
+                                        <div class="thumbnail-image">
+                                            <a href="#"><img src="../images/store/websites-1.jpg" alt="App thumbnail"></a>
+                                        </div>
+                                        <div class="thumbnail-badge">
+                                            <span class="price">$79</span>
+                                            <span>ONE-TIME FEE</span>
+                                        </div>
+                                        <div class="caption">
+                                          <h3>Ultimate IDX LeadSite</h3>
+                                          <p>Includes 1 team website, CRM, IDX integration, 14 apps and hosting</p>
+                                        </div>
+                                    </li>
+                                    <li class="thumbnail big">
+                                        <div class="thumbnail-image">
+                                            <a href="#"><img src="../images/store/websites-2.jpg" alt="App thumbnail"></a>
+                                        </div>
+                                        <div class="thumbnail-badge">
+                                            <span class="price">$79</span>
+                                            <span>ONE-TIME FEE</span>
+                                        </div>
+                                        <div class="caption">
+                                          <h3>Condo Project LeadSite</h3>
+                                          <p>Includes 1 team website, CRM, IDX integration, 14 apps and hosting</p>
+                                        </div>
+                                    </li>
+                                    <li class="thumbnail big">
+                                        <div class="thumbnail-image">
+                                            <a href="#"><img src="../images/store/websites-3.jpg" alt="App thumbnail"></a>
+                                        </div>
+                                        <div class="thumbnail-badge">
+                                            <span class="price">$79</span>
+                                            <span>ONE-TIME FEE</span>
+                                        </div>
+                                        <div class="caption">
+                                          <h3>First Time Buyer LeadSite</h3>
+                                          <p>Includes 1 team website, CRM, IDX integration, 14 apps and hosting</p>
+                                        </div>
+                                    </li>
+                                    <li class="thumbnail big">
+                                        <div class="thumbnail-image">
+                                            <a href="#"><img src="../images/store/websites-4.jpg" alt="App thumbnail"></a>
+                                        </div>
+                                        <div class="thumbnail-badge">
+                                            <span class="price">$79</span>
+                                            <span>ONE-TIME FEE</span>
+                                        </div>
+                                        <div class="caption">
+                                          <h3>Document App</h3>
+                                          <p>Includes 1 team website, CRM, IDX integration, 14 apps and hosting</p>
+                                        </div>
+                                    </li>
+                                    <li class="thumbnail big">
+                                        <div class="thumbnail-image">
+                                            <a href="#"><img src="../images/store/websites-5.jpg" alt="App thumbnail"></a>
+                                        </div>
+                                        <div class="thumbnail-badge">
+                                            <span class="price">$79</span>
+                                            <span>ONE-TIME FEE</span>
+                                        </div>
+                                        <div class="caption">
+                                          <h3>Condo Project LeadSite</h3>
+                                          <p>Includes 1 team website, CRM, IDX integration, 14 apps and hosting</p>
+                                        </div>
+                                    </li>
+                                    <li class="thumbnail big">
+                                        <div class="thumbnail-image">
+                                            <a href="#"><img src="../images/store/websites-6.jpg" alt="App thumbnail"></a>
+                                        </div>
+                                        <div class="thumbnail-badge">
+                                            <span class="price">$79</span>
+                                            <span>ONE-TIME FEE</span>
+                                        </div>
+                                        <div class="caption">
+                                          <h3>First Time Buyer LeadSite</h3>
+                                          <p>Includes 1 team website, CRM, IDX integration, 14 apps and hosting</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- End An App Section -->
+
+                        <!-- Start An App Section -->
+                        <div class="app-section">
+                            <div class="section-heading">
+                                <h2>Services</h2>
+                                <h3>Seamlessly integrate useful tools with your website to help your business grow!</h3>
+                            </div>
+                            <div class="section-body">
+                                <ul class="app-list small-list">
+                                    <li class="thumbnail small">
+                                        <div class="thumbnail-image">
+                                            <a href="#"><img src="../images/store/services-1.jpg" alt="App thumbnail"></a>
+                                        </div>
+                                        <div class="thumbnail-badge">
+                                            <span class="price">$79</span>
+                                            <span>ONE-TIME FEE</span>
+                                        </div>
+                                        <div class="caption">
+                                          <h3>Redesign your website</h3>
+                                          <p>We will redesign your website with new technology and give it</p>
+                                        </div>
+                                    </li>
+                                    <li class="thumbnail small">
+                                        <div class="thumbnail-image">
+                                            <a href="#"><img src="../images/store/services-2.jpg" alt="App thumbnail"></a>
+                                        </div>
+                                        <div class="thumbnail-badge">
+                                            <span class="price">$79</span>
+                                            <span>ONE-TIME FEE</span>
+                                        </div>
+                                        <div class="caption">
+                                          <h3>Make you business shine</h3>
+                                          <p>Great taglines tailored for you</p>
+                                        </div>
+                                    </li>
+                                    <li class="thumbnail small">
+                                        <div class="thumbnail-image">
+                                            <a href="#"><img src="../images/store/services-3.jpg" alt="App thumbnail"></a>
+                                        </div>
+                                        <div class="thumbnail-badge">
+                                            <span class="price">$79</span>
+                                            <span>ONE-TIME FEE</span>
+                                        </div>
+                                        <div class="caption">
+                                          <h3>Professional AD Banners</h3>
+                                          <p>Stunning beautiful yet professional and appealing web banner/ad</p>
+                                        </div>
+                                    </li>
+                                    <li class="thumbnail small">
+                                        <div class="thumbnail-image">
+                                            <a href="#"><img src="../images/store/services-4.jpg" alt="App thumbnail"></a>
+                                        </div>
+                                        <div class="thumbnail-badge">
+                                            <span class="price">$79</span>
+                                            <span>ONE-TIME FEE</span>
+                                        </div>
+                                        <div class="caption">
+                                          <h3>Google analytics tools</h3>
+                                          <p>Google Analytics & Webmaster Tools(now, Search Console)</p>
+                                        </div>
+                                    </li>
+                                    <li class="thumbnail small">
+                                        <div class="thumbnail-image">
+                                            <a href="#"><img src="../images/store/services-5.jpg" alt="App thumbnail"></a>
+                                        </div>
+                                        <div class="thumbnail-badge">
+                                            <span class="price">$79</span>
+                                            <span>ONE-TIME FEE</span>
+                                        </div>
+                                        <div class="caption">
+                                          <h3>Professional business card</h3>
+                                          <p>Design eye catching, unique style Business Card</p>
+                                        </div>
+                                    </li>
+                                     <li class="thumbnail small">
+                                        <div class="thumbnail-image">
+                                            <a href="#"><img src="../images/store/services-1.jpg" alt="App thumbnail"></a>
+                                        </div>
+                                        <div class="thumbnail-badge">
+                                            <span class="price">$79</span>
+                                            <span>ONE-TIME FEE</span>
+                                        </div>
+                                        <div class="caption">
+                                          <h3>Mobile Notification</h3>
+                                          <p>Includes 1 team website, CRM, IDX integration, 14 apps and hosting</p>
+                                        </div>
+                                    </li>
+                                     <li class="thumbnail small">
+                                        <div class="thumbnail-image">
+                                            <a href="#"><img src="../images/store/services-2.jpg" alt="App thumbnail"></a>
+                                        </div>
+                                        <div class="thumbnail-badge">
+                                            <span class="price">$79</span>
+                                            <span>ONE-TIME FEE</span>
+                                        </div>
+                                        <div class="caption">
+                                          <h3>Prints App</h3>
+                                          <p>Includes 1 team website, CRM, IDX integration, 14 apps and hosting</p>
+                                        </div>
+                                    </li>
+                                     <li class="thumbnail small">
+                                        <div class="thumbnail-image">
+                                            <a href="#"><img src="../images/store/services-3.jpg" alt="App thumbnail"></a>
+                                        </div>
+                                        <div class="thumbnail-badge">
+                                            <span class="price">$79</span>
+                                            <span>ONE-TIME FEE</span>
+                                        </div>
+                                        <div class="caption">
+                                          <h3>Live Chat App</h3>
+                                          <p>Includes 1 team website, CRM, IDX integration, 14 apps and hosting</p>
+                                        </div>
+                                    </li>
+                                    <li class="thumbnail small">
+                                        <div class="thumbnail-image">
+                                            <a href="#"><img src="../images/store/services-4.jpg" alt="App thumbnail"></a>
+                                        </div>
+                                        <div class="thumbnail-badge">
+                                            <span class="price">$79</span>
+                                            <span>ONE-TIME FEE</span>
+                                        </div>
+                                        <div class="caption">
+                                          <h3>Document App</h3>
+                                          <p>Includes 1 team website, CRM, IDX integration, 14 apps and hosting</p>
+                                        </div>
+                                    </li>
+                                    <li class="thumbnail small see-all">
+                                        <a href="#">
+                                            <span>See all</span>
+                                            <span class="price">12</span>
+                                            <span>Services</span>
+                                            <span class="three-dot">
+                                                <i class="fa fa-circle"></i>
+                                                <i class="fa fa-circle"></i>
+                                                <i class="fa fa-circle"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- End An App Section -->
+
+                        <!-- Start An App Section -->
+                        <div class="app-section">
+                            <div class="section-heading">
+                                <h2>Domain</h2>
+                                <h3>Ready to launch? Let’s get you set up with a domain name!</h3>
+                            </div>
+                            <div class="section-body">
+                                <div class="search-domain-section">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="input-group search-domain-input">
+                                                <input type="text" class="form-control hidden-xs" placeholder="Enter a Domain Name to Search">
+                                                <input type="text" class="form-control visible-xs" placeholder="Domain Name">
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-orange" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>SEARCH</button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <form class="custom-form">
+                                            <div class="col-sm-6">
+                                                <div class="domain-item">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox">
+                                                            <span class="fake-input"></span>
+                                                            yourname<span class="text-orange">.com</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="thumbnail-badge">
+                                                        <span class="price">$79</span>
+                                                        <span>ONE-TIME FEE</span>
+                                                    </div>
+                                                </div>
+                                                <div class="domain-item">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox">
+                                                            <span class="fake-input"></span>
+                                                            yourname<span class="text-orange">.net</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="thumbnail-badge">
+                                                        <span class="price">$79</span>
+                                                        <span>ONE-TIME FEE</span>
+                                                    </div>
+                                                </div>
+                                                <div class="domain-item">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox">
+                                                            <span class="fake-input"></span>
+                                                            yourname<span class="text-orange">.info</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="thumbnail-badge">
+                                                        <span class="price">$79</span>
+                                                        <span>ONE-TIME FEE</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="domain-item">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox">
+                                                            <span class="fake-input"></span>
+                                                            yourname<span class="text-orange">.org</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="thumbnail-badge">
+                                                        <span class="price">$79</span>
+                                                        <span>ONE-TIME FEE</span>
+                                                    </div>
+                                                </div>
+                                                <div class="domain-item">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox">
+                                                            <span class="fake-input"></span>
+                                                            yourname<span class="text-orange">.biz</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="thumbnail-badge">
+                                                        <span class="price">$79</span>
+                                                        <span>ONE-TIME FEE</span>
+                                                    </div>
+                                                </div>
+                                                <div class="domain-item">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox">
+                                                            <span class="fake-input"></span>
+                                                            yourname<span class="text-orange">.co</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="thumbnail-badge">
+                                                        <span class="price">$79</span>
+                                                        <span>ONE-TIME FEE</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 text-center">
+                                                <button class="btn btn-lg btn-orange btn-buy" type="button">BUY NOW</button>          
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End An App Section -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- APP MODALS -->
+<div class="modal fade sliding-modal popup-app-details multi-section-modal" id="appModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog app-details-container" role="document">
+
+        <!-- Shopping cart panel -->
+        <div class="secondary-section app-details-extended">
+            <div class="app-details-extended-inner secondary-section-inner">
+                <div class="panel panel-default panel-transparent app-extended">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-9">
+                                <div class="row">
+                                    <div class="col-sm-12 heading-block">
+                                        <h1>Payment Details</h1>
+                                        <p>List of user activity and stats</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 text-right">
+                                <button type="button" class="btn btn-transparent btn-close close-sub-level">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="offer-block">
+                            <h3>Special Offer for you</h3>
+                            <p>Good design will make a great impression on anyone that visits your website</p>
+
+                            <div class="offer-countdown">
+                                <span class="countdown-block countdown-min">
+                                    <span class="number">00</span>
+                                    <span class="title">MINUTES</span>
+                                </span>
+                                <span class="countdown-block countdown-divider">:</span>
+                                <span class="countdown-block countdown-second">
+                                    <span class="number">56</span>
+                                    <span class="title">SECONDS</span>
+                                </span>
+                                <span class="countdown-block countdown-divider">:</span>
+                                <span class="countdown-block countdown-milli">
+                                    <span class="number">33</span>
+                                    <span class="title">MILLISECOND</span>
+                                </span>
+                            </div>  
+
+                            <div class="offer-list">
+                                <div class="offer-item panel-group">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <a class="btn-collapse" data-toggle="collapse" href="#collapse1">
+                                                <i class="glyphicon glyphicon-menu-down"></i>
+                                                <i class="glyphicon glyphicon-menu-up"></i>
+                                            </a>
+                                            <button type="button" class="btn btn-orange btn-unhide" data-hide-text="Close" data-unhide-text="Unhide" data-toggle="collapse" href="#collapse1"></button>
+                                            <img class="offer-img" src="../images/seo.png" alt="App icon"/>
+                                            <h4 class="panel-title">
+                                                SEO App
+                                            </h4>
+                                        </div>
+                                        <div id="collapse1" class="panel-collapse collapse in">
+                                          <div class="panel-body">
+                                                <p>Boost your website's ranking. The SEO App includes all the tools you'll need to improve your online presense - and grow your business!</p>
+                                                <div class="offer-price">
+                                                    <span class="original">$99</span>
+                                                    <span class="r-arrow">&rarr;</span>
+                                                    <span class="discount text-orange">$79</span>
+                                                </div>
+                                                <button type="button" class="btn btn-orange btn-cart">
+                                                    ADD TO CART
+                                                    <span>One-time fee</span>
+                                                </button>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="offer-item panel-group">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <a class="btn-collapse collapsed" data-toggle="collapse" href="#collapse2">
+                                                <i class="glyphicon glyphicon-menu-down"></i>
+                                                <i class="glyphicon glyphicon-menu-up"></i>
+                                            </a>
+                                            <button type="button" class="btn btn-orange btn-unhide" data-hide-text="Close" data-unhide-text="Unhide" data-toggle="collapse" href="#collapse2"></button>
+                                            <img class="offer-img" src="../images/google_analytics.png" alt="App icon"/>
+                                            <h4 class="panel-title">
+                                                Google Analytic
+                                            </h4>
+                                        </div>
+                                        <div id="collapse2" class="panel-collapse collapse">
+                                          <div class="panel-body">
+                                                <p>Boost your website's ranking. The SEO App includes all the tools you'll need to improve your online presense - and grow your business!</p>
+                                                <div class="offer-price">
+                                                    <span class="original">$99</span>
+                                                    <span class="r-arrow">&rarr;</span>
+                                                    <span class="discount text-orange">$79</span>
+                                                </div>
+                                                <button type="button" class="btn btn-orange btn-cart">
+                                                    ADD TO CART
+                                                    <span>One-time fee</span>
+                                                </button>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="offer-item panel-group">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <a class="btn-collapse collapsed" data-toggle="collapse" href="#collapse3">
+                                                <i class="glyphicon glyphicon-menu-down"></i>
+                                                <i class="glyphicon glyphicon-menu-up"></i>
+                                            </a>
+                                            <button type="button" class="btn btn-orange btn-unhide" data-hide-text="Close" data-unhide-text="Unhide" data-toggle="collapse" href="#collapse3"></button>
+                                            <img class="offer-img" src="../images/lead_capture.png" alt="App icon"/>
+                                            <h4 class="panel-title">
+                                                Lead Capture
+                                            </h4>
+                                        </div>
+                                        <div id="collapse3" class="panel-collapse collapse">
+                                          <div class="panel-body">
+                                                <p>Boost your website's ranking. The SEO App includes all the tools you'll need to improve your online presense - and grow your business!</p>
+                                                <div class="offer-price">
+                                                    <span class="original">$99</span>
+                                                    <span class="r-arrow">&rarr;</span>
+                                                    <span class="discount text-orange">$79</span>
+                                                </div>
+                                                <button type="button" class="btn btn-orange btn-cart">
+                                                    ADD TO CART
+                                                    <span>One-time fee</span>
+                                                </button>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment-block shopping-cart-block hide clearfix">
+                            <div class="block-heading">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
+                                </svg>
+                                <h2>Shopping Cart</h2>
+                                <a href="#" class="btn-help"><i class="fa fa-info-circle"></i></a>
+                            </div>
+                            <hr class="payment-divider"/>
+                            <div class="block-content">
+                                <div class="cart-items">
+                                    <div class="cart-item">
+                                        <a href="#" class="btn-remove"><span aria-hidden="true">×</span></a>
+                                        <img class="cart-item-img" src="../images/rss.png"/>
+                                        <span class="cart-item-name">RSS App</span>
+                                        <span class="cart-item-price text-orange">$99</span>
+                                        <div class="card-item-count">
+                                            <input type="number" value="1">
+                                            <div class="count-modify">
+                                                <i class="count-plus glyphicon glyphicon-triangle-top"></i>
+                                                <i class="count-subtract glyphicon glyphicon-triangle-bottom"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-item">
+                                        <a href="#" class="btn-remove"><span aria-hidden="true">×</span></a>
+                                        <img class="cart-item-img" src="../images/qr_code.png"/>
+                                        <span class="cart-item-name">QR Code App</span>
+                                        <span class="cart-item-price text-orange">$99</span>
+                                        <div class="card-item-count">
+                                            <input type="number" value="1">
+                                            <div class="count-modify">
+                                                <i class="count-plus glyphicon glyphicon-triangle-top"></i>
+                                                <i class="count-subtract glyphicon glyphicon-triangle-bottom"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <dl class="cart-price">
+                                    <dt>Sub Total:</dt>
+                                    <dd class="text-orange">$198</dd>
+                                    <dt>Tax</dt>
+                                    <dd class="text-orange">$0</dd>
+                                    <dt>Total</dt>
+                                    <dd class="text-orange">$198</dd>
+                                </dl>
+
+                                <hr class="payment-divider"/>
+
+                                <div class="cart-action">
+                                    <button type="button" class="btn btn-reverse btn-orange btn-shop"><i class="glyphicon glyphicon-menu-left"></i>Shop More</button>
+                                    <button type="button" class="btn btn-orange btn-cart">ENTER CREDIT CARD</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment-block enter-card-block hide hide clearfix">
+                            <div class="block-heading">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-credit-card"></use>
+                                </svg>
+                                <h2>Payment Info</h2>
+                                <a href="#" class="btn-help"><i class="fa fa-info-circle"></i></a>
+                            </div>
+                            <div class="block-content clearfix">
+                                <div class="form-group card-name-group">
+                                    <label class="control-label">Card Number</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control">
+                                        <span class="input-group-addon">
+                                            <img src="../images/card-master.png"/>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="card-info-group">
+                                    <div class="card-info-group-left">
+                                        <div class="form-group card-month">
+                                            <label class="control-label">Expiration</label>
+                                            <select class="form-control">
+                                                <option>March(03)</option>
+                                                <option>April(04)</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group card-year">
+                                            <select class="form-control">
+                                                <option>2020</option>
+                                                <option>2022</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-info-group-right">
+                                        <div class="form-group card-cvc">
+                                            <label class="control-label">CVC<a href="#" class="btn-help"><i class="fa fa-info-circle"></i></a></label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="payment-guide">
+                                    <i class="fa fa-exclamation-circle"></i>
+                                    All Payment in USD
+                                </span>
+                                <span class="payment-guide">
+                                    <i class="fa fa-lock"></i>
+                                    Site is secured using an SSL Certificate
+                                </span>
+
+                                <hr class="payment-divider"/>
+
+                                <div class="form-group card-promo-group clearfix">
+                                    <div class="pull-right input-promo-group clearfix">
+                                        <label class="control-label">You have Promo Code?</label>
+                                        <input type="text" class="form-control">
+                                        <button type="button" class="btn btn-default btn-verify">Verify</button>
+                                    </div>
+                                </div>
+
+                                <hr class="payment-divider"/>
+
+                                <div class="pull-right">
+                                    <button type="button" class="btn btn-orange btn-enter-card">PROCESS CREDIT CARD</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setup-block hide">
+                            <p>This powerful tool enables forced registration on your site. Visitors must submit their name and email to you prior to searching for listings on your site</p>
+                            
+                            <form class="custom-form">
+                                <div class="config-list">
+                                    <div class="config-item">
+                                        <span class="item-number">1</span>
+                                        <h3 class="item-title">Which header style do you prefer?</h3>
+                                        <div class="item-content">
+                                            <div class="image-option">
+                                                <label>
+                                                    <input name="header_style" type="radio">
+                                                    <span class="option-placeholder"></span>
+                                                </label>
+                                                <span>1. Benton style</span>
+                                            </div>
+                                            <div class="image-option">
+                                                <label>
+                                                    <input name="header_style" type="radio">
+                                                    <span class="option-placeholder"></span>
+                                                </label>
+                                                <span>2. Celco style</span>
+                                            </div>
+                                            <div class="image-option">
+                                                <label>
+                                                    <input name="header_style" type="radio">
+                                                    <span class="option-placeholder"></span>
+                                                </label>
+                                                <span>3. Jaimain style</span>
+                                            </div>
+                                            <div class="image-option">
+                                                <label>
+                                                    <input name="header_style" type="radio">
+                                                    <span class="option-placeholder"></span>
+                                                </label>
+                                                <span>4. Kalem style</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="config-item item-background">
+                                        <span class="item-number">2</span>
+                                        <h3 class="item-title">What background image do you want to use?</h3>
+                                        <button class="btn btn-orange">Upload</button>
+                                        <button class="btn btn-default">Select from Library</button>
+                                    </div>
+                                    <div class="config-item item-background">
+                                        <span class="item-number">3</span>
+                                        <h3 class="item-title">Upload your own background</h3>
+                                        <div class="uploaded-bg">
+                                            <div class="image-option">
+                                                <label>
+                                                    <input name="bg_image" type="radio">
+                                                    <span class="option-placeholder">
+                                                        <img src="../images/store/bg-1.jpg" alt="background image"/>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="image-option">
+                                                <label>
+                                                    <input name="bg_image" type="radio">
+                                                    <span class="option-placeholder">
+                                                        <img src="../images/store/bg-2.jpg" alt="background image"/>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="image-option">
+                                                <label>
+                                                    <input name="bg_image" type="radio">
+                                                    <span class="option-placeholder">
+                                                        <img src="../images/store/bg-3.jpg" alt="background image"/>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="image-option">
+                                                <label>
+                                                    <input name="bg_image" type="radio">
+                                                    <span class="option-placeholder">
+                                                        <img src="../images/store/bg-4.jpg" alt="background image"/>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="config-item item-include">
+                                        <span class="item-number">4</span>
+                                        <h3 class="item-title">What info do you want to include?</h3>
+                                        <div class="form-group">
+                                            <label>
+                                                <input type="checkbox" name="info_option">
+                                                <span class="fake-input"></span>Name
+                                            </label>
+                                            <input type="text" class="form-control" placeholder="Name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>
+                                                <input type="checkbox" name="info_option">
+                                                <span class="fake-input"></span>Company
+                                            </label>
+                                            <input type="text" class="form-control" placeholder="Company Name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>
+                                                <input type="checkbox" name="info_option">
+                                                <span class="fake-input"></span>Title
+                                            </label>
+                                            <input type="text" class="form-control" placeholder="Title for Website">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>
+                                                <input type="checkbox" name="info_option">
+                                                <span class="fake-input"></span>Phone
+                                            </label>
+                                            <input type="text" class="form-control" placeholder="Phone Number">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>
+                                                <input type="checkbox" name="info_option">
+                                                <span class="fake-input"></span>Email
+                                            </label>
+                                            <input type="text" class="form-control" placeholder="Email Address">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>
+                                                <input type="checkbox" name="info_option">
+                                                <span class="fake-input"></span>Address
+                                            </label>
+                                            <textarea class="form-control" placeholder="City, state, street, office"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>
+                                                <input type="checkbox" name="info_option">
+                                                <span class="fake-input"></span>Tagline
+                                            </label>
+                                            <textarea class="form-control" placeholder="Enter Tags"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>
+                                                <input type="checkbox" name="info_option">
+                                                <span class="fake-input"></span>Other
+                                            </label>
+                                            <textarea class="form-control" placeholder="Enter Additional Information"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label style="margin-top: 6px">
+                                                <input type="checkbox" name="info_option">
+                                                <span class="fake-input"></span>Photo
+                                            </label>
+                                            <button class="btn btn-default btn-upload">Upload Photo</button>
+                                        </div>
+                                        <div class="form-group">
+                                            <label style="margin-top: 6px">
+                                                <input type="checkbox" name="info_option">
+                                                <span class="fake-input"></span>Logo
+                                            </label>
+                                            <button class="btn btn-default btn-upload">Upload Logo</button>
+                                        </div>
+                                    </div>
+                                    <div class="config-item item-include">
+                                        <span class="item-number">5</span>
+                                        <h3 class="item-title">Add Comments?</h3>
+                                        <div class="form-group">
+                                            <textarea class="form-control">Add Comments</textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="submit" value="SUBMIT" class="btn btn-orange btn-submit">
+                            </form>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End shopping cart panel -->
+
+        <div class="main-section app-details-inner modal-content">
+            <div class="modal-header">
+                <div class="row">
+                    <!-- App Heading -->
+                    <div class="col-xs-7">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h1 class="modal-title" id="myModalLabel">QR Code App</h1>
+                                 <p>App Details</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Shopping Cart Section -->
+                    <div class="col-xs-5 text-right">
+                        <button type="button" class="btn btn-orange btn-cart btn-add-to-cart">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-cart">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
+                            </svg>
+                            <span class="hidden-xs">ADD TO CART</span>
+                        </button>
+                        <button type="button" class="btn btn-default btn-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                </div>
+                <div class="hr-header"></div>
+            </div>
+            <div class="modal-body">
+                <div class="detail-block">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-8 product-detail product-detail-header">
+                            <h2 class="product-title">QR Code App</h2>
+                            <p>Boost your mobile marketing and drive more traffic to your site with QR codes</p>
+                        </div>
+                        <div class="col-sm-4 text-center">
+                            <img class="product-img" src="../images/store/app-image.jpg" alt="Product Image">
+                            <div class="product-rating">
+                                <span class="star-rating">
+                                    <i class="fa fa-star rating-active"></i>
+                                    <i class="fa fa-star rating-active"></i>
+                                    <i class="fa fa-star rating-active"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </span>
+                                <span class="text-orange">7 reviews</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="product-detail">
+                                <p>QR codes quickly and efficiently connect homebuyers to you and your website. This app allows you to add QR codes to flyers, lawn signs and other marketing materials. How they work is when a potential client scans one with their mobile device they will then be taken directly to your site.</p>
+                                <a class="btn btn-orange btn-add-to-cart">
+                                    ADD TO CART
+                                    <span>$99 ONE-TIME FEE</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail-block">
+                    <h3 class="detail-block-heading">PRODUCTS PHOTO</h3>
+                    <div id="carousel-app-gallery" class="carousel slide" data-ride="carousel" data-interval="3000">
+                        <div class="carousel-outer">
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="../images/store/app-photo-1.jpg" alt="" />
+                                </div>
+                                <div class="item">
+                                    <img src="../images/store/app-photo-1.jpg" alt="" />
+                                </div>
+                                <div class="item">
+                                    <img src="../images/store/app-photo-1.jpg" alt="" />
+                                </div>
+                            </div>
+                                
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-app-gallery" data-slide="prev">
+                                <span class="carousel-control-icon">
+                                    <i class="fa fa-angle-left"></i>
+                                </span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-app-gallery" data-slide="next">
+                                <span class="carousel-control-icon">
+                                    <i class="fa fa-angle-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                        
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-app-gallery" data-slide-to="0" class="active"><img src="../images/store/app-thumb-1.jpg" alt="" /></li>
+                            <li data-target="#carousel-app-gallery" data-slide-to="1"><img src="../images/store/app-thumb-1.jpg" alt="" /></li>
+                            <li data-target="#carousel-app-gallery" data-slide-to="2"><img src="../images/store/app-thumb-1.jpg" alt="" /></li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="detail-block">
+                    <h3 class="detail-block-heading">FEATURES</h3>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="icon-box">
+                                <div class="iconbox-header">
+                                    <div class="iconbox-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-cart">
+                                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-qrcode"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="iconbox-block">
+                                    <div class="iconbox-title">
+                                        <h4 class="iconbox-heading">Manage your QR Codes easily</h4>
+                                    </div>
+                                    <div class="iconbox-text">
+                                        <p>Create QR codes in seconds and keep track of how many times each QR code has been scanned.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="icon-box">
+                                <div class="iconbox-header">
+                                    <div class="iconbox-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-cart">
+                                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-outdoor"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="iconbox-block">
+                                    <div class="iconbox-title">
+                                        <h4 class="iconbox-heading">Include on your outdoor signs</h4>
+                                    </div>
+                                    <div class="iconbox-text">
+                                        <p>Get the attention of tech-savvy house hunters by linking the codes back to a property page!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="icon-box">
+                                <div class="iconbox-header">
+                                    <div class="iconbox-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-cart">
+                                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-business-card"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="iconbox-block">
+                                    <div class="iconbox-title">
+                                        <h4 class="iconbox-heading">Put it on your business card.</h4>
+                                    </div>
+                                    <div class="iconbox-text">
+                                        <p>Link it directly to your website and open up a new way for your clients and future clients to engage with you</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="icon-box">
+                                <div class="iconbox-header">
+                                    <div class="iconbox-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-cart">
+                                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-traffic"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="iconbox-block">
+                                    <div class="iconbox-title">
+                                        <h4 class="iconbox-heading">Drive traffic to your website</h4>
+                                    </div>
+                                    <div class="iconbox-text">
+                                        <p>Combine web and print marketing to sell homes faster by driving targeted, local traffic.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="icon-box">
+                                <div class="iconbox-header">
+                                    <div class="iconbox-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-cart">
+                                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fly"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="iconbox-block">
+                                    <div class="iconbox-title">
+                                        <h4 class="iconbox-heading">Add them to listing flyer</h4>
+                                    </div>
+                                    <div class="iconbox-text">
+                                        <p>Adding QR codes to Listing Flyers and linking them to a listing page is a great way to market properties to today’s buyers.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <h3 class="detail-block-em">Start getting more mobile traffic today!</h3>
+                            <a class="btn btn-orange btn-add-to-cart">
+                                ADD TO CART
+                                <span>$99 ONE-TIME FEE</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail-block">
+                    <h3 class="detail-block-heading">REVIEWS</h3>
+                    <div class="review-item">
+                        <div class="review-text">
+                            <p>QR codes quickly and efficiently connect homebuyers to you and your website. This app allows you to add QR codes to flyers, lawn signs and other marketing materials. How they work is when a potential client scans one with their mobile device they will then be taken directly to your site. The door is open, now it’s up to you to close.</p>
+                            <span class="star-rating text-right">
+                                <i class="fa fa-star rating-active"></i>
+                                <i class="fa fa-star rating-active"></i>
+                                <i class="fa fa-star rating-active"></i>
+                                <i class="fa fa-star rating-active"></i>
+                                <i class="fa fa-star rating-active"></i>
+                            </span>
+                        </div>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">
+                                <img src="../images/store/reviewer.jpg" alt="Reviewer Name">
+                            </div>
+                            <div class="reviewer-name">
+                                <span>Banjamin Watson</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-item">
+                        <div class="review-text">
+                            <p>Get the app today & start getting mobile traffic & leads tonight! Only $99 one-time! Purchase the QR Code App in three easy steps</p>
+                            <span class="star-rating text-right">
+                                <i class="fa fa-star rating-active"></i>
+                                <i class="fa fa-star rating-active"></i>
+                                <i class="fa fa-star rating-active"></i>
+                                <i class="fa fa-star rating-active"></i>
+                                <i class="fa fa-star rating-active"></i>
+                            </span>
+                        </div>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">
+                                <img src="../images/store/reviewer.jpg" alt="Reviewer Name">
+                            </div>
+                            <div class="reviewer-name">
+                                <span>Roman Wagner</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END APP MODALS -->
+
+<!-- modal -->
+<div class="modal fade support-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h1 class="modal-title" id="myModalLabel">Help & Support</h1>
+
+                <p>Help with management Area Activities</p>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetuer adi pis cing elit, sed diam nonummy nibh.</p>
+                <!-- 16:9 aspect ratio -->
+                <div class="media-holder">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZyhrYis509A"
+                                frameborder="0" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+                <ol class="custom-numeric-list">
+                    <li><a href="#">
+                        <span class="number">Q</span>
+                        <span class="text">Adding or Registering a New Domain Name?</span>
+                    </a></li>
+                    <li><a href="#"><span class="number">Q</span>
+                        <span class="text">In your Control Panel, at the bottom left, there’s a major resource section to help you to get the most out of your WebsiteBox tools and resources?</span>
+                    </a></li>
+                    <li><a href="#"><span class="number">Q</span>
+                        <span class="text">It’s labeled Help & Support and has eight buttons. Let’s look at each with a brief overview?</span>
+                    </a></li>
+                    <li><a href="#"><span class="number">Q</span>
+                        <span class="text">Getting Started This is the most valuable section for the new user?</span>
+                    </a></li>
+                    <li><a href="#"><span class="number">Q</span>
+                        <span class="text">Take all of the time you need to review these sections individually and you’ll get off?</span>
+                    </a></li>
+                    <li><a href="#"><span class="number">Q</span>
+                        <span class="text">If a picture is worth a thousand words, for instruction a video is priceless?</span></a>
+                    </li>
+                    <li><a href="#"><span class="number">Q</span>
+                        <span class="text">This help button takes you to instructional videos that will make your site setup and continued use an efficient and enjoyable process?</span>
+                    </a>
+                    </li>
+                </ol>
+                <a href="#" class="btn btn-orange btn-block">Contact Support</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<!-- scroll bar  -->
+<script src="../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- include bootstrap JavaScript -->
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- include custom JavaScript -->
+<script src="../js/jquery.main.js"></script>
+</body>
+</html>

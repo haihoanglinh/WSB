@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- set the encoding of your site -->
+  <meta charset="utf-8">
+  <!-- set the viewport width and initial-scale on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebsiteBox</title>
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+    <!-- Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- include the site bootstrap stylesheet -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+  <!-- include the site stylesheet -->
+  <link rel="stylesheet" href="../css/main.css">
+  <script type="text/javascript" src="../js/svg-sprites.js"></script>
+  <script>
+      document.addEventListener('DOMContentLoaded', function(){
+          document.getElementById('svg-icon-placeholder').innerHTML += SVG_SPRITES['sprite'];
+      }, false);
+  </script>
+</head>
+<body>
+  <div id="svg-icon-placeholder" style="display: none;"></div>
+  <!-- main container of all the page elements -->
+  <div class="wrapper">
+    <!-- header of the page -->
+    <header id="header" class="well well-dark">
+      <nav class="navbar navbar-default main-nav-container">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="nav-opener navbar-toggle">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- page logo -->
+            <div class="navbar-brand logo"><a href="app-control-panel.html"><img src="../images/logo.svg" alt="WebsiteBox" width="89" height="37"></a></div>
+          </div>
+          <!--Box search for app-->
+          <div class="box-search">
+              <div class="search-row">
+                  <input type="text" class="form-control input-control" placeholder="Search">
+                  <a href="#" class="icon-search"><i class="fa fa-search"></i></a>
+              </div>
+          </div>
+            <!-- main navigation of the page -->
+          <ul class="nav nav-pills navbar-right main-nav">
+            <li class="dropdown visible-xs-inline-block visible-sm-inline-block">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Notification</span>
+                <span class="icon-holder">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-notification">
+                    <use xlink:href="#icon-notification"></use>
+                  </svg>
+                  <span class="quantity">2</span>
+                </span>
+              </a>
+              <div class="dropdown-menu notification-menu users-block">
+                <span class="arrow"></span>
+                <ul class="list-unstyled block-rounded">
+                  <li>
+                    <div class="panel-body">
+                      <div class="row row-inline panel-row">
+                        <div class="col-xs-10">
+                          <div class="row">
+                            <div class="col-xs-3 column img-holder">
+                              <img src="../images/avatar02.jpg" class="img-circle img-thumbnail" alt="image description">
+                            </div>
+                            <div class="col-xs-7 column text-block">
+                              <span class="name">Andres Iniesta </span>
+                              <span class="meta"><time datetime="19:45">Replied at 7:45 PM</time></span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-2 column btn-holder">
+                          <a href="#" class="btn btn-success btn-circle btn-checked"><i class="fa fa-check"></i></a>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh eu ismod tincidunt ut laoreet dolore magna ali quam erat volutpat.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="alert alert-success">
+                      <div class="row">
+                        <div class="col-xs-12">Send 25 more listings to Andres</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="panel-body">
+                      <div class="row row-inline panel-row">
+                        <div class="col-xs-10">
+                          <div class="row">
+                            <div class="col-xs-3 column img-holder">
+                              <img src="../images/avatar03.jpg" class="img-circle img-thumbnail img-responsive" alt="image description">
+                            </div>
+                            <div class="col-xs-6 column text-block">
+                              <span class="name">Vanessa Bond</span>
+                              <span class="meta"><time datetime="19:45">Replied at 7:45 PM</time></span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-2 column btn-holder">
+                          <a href="#" class="btn btn-danger btn-circle btn-checked"><i class="fa fa-times"></i></a>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh eu ismod tincidunt ut laoreet dolore magna ali quam erat volutpat.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="alert alert-danger">
+                      <div class="row">
+                        <div class="col-xs-12">Send 25 more listings to Vanessa</div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!-- To make the POPUP-HELP STEP 3 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+            <li class="popup-container dropdown app-menu-holder popup-help-container step03">
+              <div class="popup-overlay"></div>
+              <a href="#" class="opener-popup dropdown-toggle under-overlay">
+                 <span class="icon-view-store">
+      <span class="st1 st-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+      </span>
+      <span class="st2 st-icon">
+            <span></span>
+          <span></span>
+          <span></span>
+      </span>
+      <span class="st3 st-icon">
+            <span></span>
+          <span></span>
+          <span></span>
+      </span>
+  </span>
+              </a>
+              <div class="popup dropdown-menu under-overlay">
+                <span class="arrow"></span>
+                <div class="app-menu menu-list open-close">
+                  <div class="panel">
+                    <div class="panel-body">
+                      <div class="first-view">
+                        <div class="menu-item">
+                          <a href="#">
+                            <div class="item-img"><img src="../images/app_store.png" class="img-responsive" alt="image description"></div>
+                            <span>App Store</span>
+                          </a>
+                        </div>
+                        <div class="menu-item">
+                          <a href="#">
+                            <div class="item-img"><img src="../images/websites.png" class="img-responsive" alt="image description"></div>
+                            <span>Websites</span>
+                          </a>
+                        </div>
+                        <div class="menu-item">
+                          <a href="#">
+                            <div class="item-img"><img src="../images/domains.png" class="img-responsive" alt="image description"></div>
+                            <span>Domains</span>
+                          </a>
+                        </div>
+                        <div class="menu-item">
+                          <a href="#">
+                            <div class="item-img"><img src="../images/listings.png" class="img-responsive" alt="image description"></div>
+                            <span>Listings</span>
+                          </a>
+                        </div>
+                        <div class="menu-item">
+                          <a href="#">
+                            <div class="item-img"><img src="../images/contacts.png" class="img-responsive" alt="image description"></div>
+                            <span>Contacts</span>
+                          </a>
+                        </div>
+                        <div class="menu-item">
+                          <a href="#">
+                            <div class="item-img"><img src="../images/emails.png" class="img-responsive" alt="image description"></div>
+                            <span>Emails</span>
+                          </a>
+                        </div>
+                        <div class="menu-item">
+                          <a href="#">
+                            <div class="item-img"><img src="../images/tasks.png" class="img-responsive" alt="image description"></div>
+                            <span>Tasks</span>
+                          </a>
+                        </div>
+                        <div class="menu-item">
+                          <a href="#">
+                            <div class="item-img"><img src="../images/documents.png" class="img-responsive" alt="image description"></div>
+                            <span>Documents</span>
+                          </a>
+                        </div>
+                        <div class="menu-item">
+                          <a href="#">
+                            <div class="item-img"><img src="../images/calendar.png" class="img-responsive" alt="image description"></div>
+                            <span>Calendar</span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="slide">
+                        <div class="menu-item">
+                          <a href="#">
+                            <div class="item-img"><img src="../images/campaigns.png" class="img-responsive" alt="image description"></div>
+                            <span>Campaigns</span>
+                          </a>
+                        </div>
+                        <div class="menu-item">
+                          <a href="#">
+                            <div class="item-img"><img src="../images/listing_syndication.png" class="img-responsive" alt="image description"></div>
+                            <span>Listing Syndication</span>
+                          </a>
+                        </div>
+                        <div class="menu-item">
+                          <a href="#">
+                            <div class="item-img"><img src="../images/rss.png" class="img-responsive" alt="image description"></div>
+                            <span>RSS</span>
+                          </a>
+                        </div>
+                        <div class="menu-item">
+                          <a href="#">
+                            <div class="item-img"><img src="../images/community.png" class="img-responsive" alt="image description"></div>
+                            <span>Community</span>
+                          </a>
+                        </div>
+                        <div class="menu-item">
+                          <a href="#">
+                            <div class="item-img"><img src="../images/google_analytics.png" class="img-responsive" alt="image description"></div>
+                            <span>Google Analytics</span>
+                          </a>
+                        </div>
+                        <div class="menu-item">
+                          <a href="#">
+                            <div class="item-img"><img src="../images/profile.png" class="img-responsive" alt="image description"></div>
+                            <span>Profile</span>
+                          </a>
+                        </div>
+                        <div class="menu-item">
+                          <a href="#">
+                            <div class="item-img"><img src="../images/blog.png" class="img-responsive" alt="image description"></div>
+                            <span>Blog</span>
+                          </a>
+                        </div>
+                        <div class="menu-item">
+                          <a href="#">
+                            <div class="item-img"><img src="../images/prints.png" class="img-responsive" alt="image description"></div>
+                            <span>Prints</span>
+                          </a>
+                        </div>
+                        <div class="menu-item">
+                          <a href="#">
+                            <div class="item-img"><img src="../images/lead_capture.png" class="img-responsive" alt="image description"></div>
+                            <span>Lead Capture</span>
+                          </a>
+                        </div>
+                        <div class="menu-item">
+                          <a href="#">
+                            <div class="item-img"><img src="../images/seo.png" class="img-responsive" alt="image description"></div>
+                            <span>SEO</span>
+                          </a>
+                        </div>
+                        <div class="menu-item">
+                          <a href="#">
+                            <div class="item-img"><img src="../images/mobile_notifications.png" class="img-responsive" alt="image description"></div>
+                            <span>Mobile Notifications</span>
+                          </a>
+                        </div>
+                        <div class="menu-item">
+                          <a href="#">
+                            <div class="item-img"><img src="../images/craigslist.png" class="img-responsive" alt="image description"></div>
+                            <span>Craigslist</span>
+                          </a>
+                        </div>
+                        <div class="menu-item">
+                          <a href="#">
+                            <div class="item-img"><img src="../images/qr_code.png" class="img-responsive" alt="image description"></div>
+                            <span>QR Code</span>
+                          </a>
+                        </div>
+                        <div class="menu-item">
+                          <a href="#">
+                            <div class="item-img"><img src="../images/har.png" class="img-responsive" alt="image description"></div>
+                            <span>HAR</span>
+                          </a>
+                        </div>
+                        <div class="menu-item">
+                          <a href="#">
+                            <div class="item-img"><img src="../images/move.png" class="img-responsive" alt="image description"></div>
+                            <span>Move</span>
+                          </a>
+                        </div>
+                        <div class="menu-item">
+                          <a href="#">
+                            <div class="item-img"><img src="../images/realtor.png" class="img-responsive" alt="image description"></div>
+                            <span>Realtor.com</span>
+                          </a>
+                        </div>
+                        <div class="menu-item">
+                          <a href="#">
+                            <div class="item-img"><img src="../images/apple.png" class="img-responsive" alt="image description"></div>
+                            <span>Apple</span>
+                          </a>
+                        </div>
+                        <div class="menu-item">
+                          <a href="#">
+                            <div class="item-img"><img src="../images/cnn.png" class="img-responsive" alt="image description"></div>
+                            <span>CNN</span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="btn-holder">
+                        <a class="btn btn-default btn-block opener" href="#">
+                          <span class="hidden-active">More</span>
+                          <span class="visible-active">Less</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- To make the POPUP-HELP STEP 3 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+                <div class="popup-help step03">
+                  <div class="panel panel-default">
+                    <span class="arrow arrow-right"></span>
+                    <div class="panel-heading">
+                      <strong class="title">Step 3 of 7</strong>
+                      <a class="close" href="#" aria-label="Close"><span aria-hidden="true">&times;</span>
+                      </a>
+                    </div>
+                    <div class="panel-body">
+                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna volutpat.</p>
+                      <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation</p>
+                      <div class="btn-container text-right">
+                          <a href="cp-popup-help-step04.html" class="btn btn-warning"><i class="fa fa-chevron-left"></i></a>
+                          <a href="cp-popup-help-step06.html" class="btn btn-warning"><i class="fa fa-chevron-right"></i></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- To make the POPUP-HELP STEP 4 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+            <li class="hidden-xs hidden-xs hidden-sm popup-help-container step04">
+              <div class="popup-overlay"></div>
+              <a href="#" data-toggle="modal" data-target="#myModal" class="btn-link under-overlay">
+                <span class="sr-only">Info</span>
+                  <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+              </a>
+              <!-- To make the POPUP-HELP STEP 4 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+              <div class="popup-help step04">
+                <div class="panel panel-default">
+                  <span class="arrow"></span>
+                  <div class="panel-heading">
+                    <strong class="title">Step 4 of 7</strong>
+                    <a class="close" href="#" aria-label="Close"><span aria-hidden="true">&times;</span>
+                    </a>
+                  </div>
+                  <div class="panel-body">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna volutpat. </p>
+                    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation</p>
+                    <div class="btn-container text-right"><a href="#" class="btn btn-warning"><i class="fa fa-chevron-left"></i></a><a href="#" class="btn btn-warning"><i class="fa fa-chevron-right"></i></a></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- To make the POPUP-HELP STEP 5 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+            <li class="popup-container dropdown hidden-xs hidden-sm popup-help-container popup-help-active step05">
+              <div class="popup-overlay"></div>
+              <a class="opener-popup dropdown-toggle under-overlay" href="#">
+                <span class="icon-step05">
+
+     </span>
+              </a>
+              <div class="popup dropdown-menu settings-block under-overlay">
+                <span class="arrow"></span>
+                <div class="panel">
+                  <div class="panel-body">
+                    <div class="row dropdown-row">
+                      <div class="col-xs-4 theme-list-holder">
+                        <div class="scrollable">
+                          <span class="title text-uppercase">Theme</span>
+                          <ul class="theme-list list-unstyled">
+                            <li>
+                              <a href="#"><span class="color color-default"></span><span class="description">Default</span></a>
+                            </li>
+                            <li>
+                              <a href="#"><span class="color color-remax"></span><span class="description">Remax</span></a>
+                            </li>
+                            <li>
+                              <a href="#" class="active"><span class="color color-century91"></span><span class="description">Century 91</span></a>
+                            </li>
+                            <li>
+                              <a href="#" ><span class="color color-minimal"></span><span class="description">Minimal</span></a>
+                            </li>
+                            <li>
+                              <a href="#"><span class="color color-summer"></span><span class="description">Summer</span></a>
+                            </li>
+                            <li>
+                              <a href="#"><span class="color color-default"></span><span class="description">Default</span></a>
+                            </li>
+                            <li>
+                              <a href="#"><span class="color color-remax"></span><span class="description">Remax</span></a>
+                            </li>
+                            <li>
+                              <a href="#"><span class="color color-century91"></span><span class="description">Century 91</span></a>
+                            </li>
+                            <li>
+                              <a href="#"><span class="color color-minimal"></span><span class="description">Minimal</span></a>
+                            </li>
+                            <li>
+                              <a href="#"><span class="color color-summer"></span><span class="description">Summer</span></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-xs-8">
+                        <span class="title text-uppercase">Settings</span>
+                        <div class="form-in-drop">
+                          <div class="form-group">
+                            <span class="label-holder"><label for="select-1">Time Zone</label></span>
+                            <span class="select-holder">
+                              <span class="fake-select">
+                                <select id="select-1" class="form-control">
+                                  <option selected="selected">(UTC -8:00)</option>
+                                  <option>(UTC -8:00)</option>
+                                  <option>(UTC -8:00)</option>
+                                  <option>(UTC -8:00)</option>
+                                </select>
+                              </span>
+                            </span>
+                          </div>
+                          <div class="form-group">
+                            <span class="label-holder"><label for="select-2">Email Digest</label></span>
+                            <span class="select-holder">
+                              <span class="fake-select">
+                                <select id="select-2" class="form-control">
+                                  <option selected="selected">option 1</option>
+                                  <option>option 2</option>
+                                  <option>option 3</option>
+                                </select>
+                              </span>
+                            </span>
+                          </div>
+                          <div class="form-group">
+                            <span class="label-holder"><label for="language">Language</label></span>
+                            <span class="input-holder"><input type="text" class="form-control" id="language" placeholder="English"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- To make the POPUP-HELP STEP 5 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+                <div class="popup-help step05">
+                  <div class="panel panel-default">
+                    <span class="arrow arrow-right"></span>
+                    <div class="panel-heading">
+                      <strong class="title">Step 5 of 7</strong>
+                      <a class="close" href="#" aria-label="Close"><span aria-hidden="true">&times;</span>
+                      </a>
+                    </div>
+                    <div class="panel-body">
+                      <p>Sometimes it becomes necessary to show your team members what you’re working on or how a design is shaping up. </p>
+                      <div class="btn-container text-right">
+                          <a href="cp-popup-help-step04.html" class="btn btn-warning"><i class="fa fa-chevron-left"></i></a>
+                          <a href="cp-popup-help-step06.html" class="btn btn-warning"><i class="fa fa-chevron-right"></i></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- To make the POPUP-HELP STEP 6 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+            <li class="dropdown hidden-xs hidden-sm user-dropdown popup-help-container step06">
+              <div class="popup-overlay"></div>
+              <a href="#" id="dropdownMenu2" class="user-block dropdown-toggle under-overlay" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <div class="row">
+                  <div class="col-xs-3 img-holder"><img src="../images/avatar01.jpg" class="img-responsive img-circle" alt="image description"></div>
+                  <div class="col-xs-9 text-block">
+                    <div class="name"><strong>Richard Mattius</strong><span class="caret"></span></div>
+                    <strong class="status text-uppercase text-warning">PREMIUM USER</strong>
+                  </div>
+                </div>
+              </a>
+              <div class="dropdown-menu under-overlay">
+                <span class="arrow"></span>
+                <div class="panel-body">
+            <ul class="list-unstyled" aria-labelledby="dropdownMenu2">
+                <li class="switch-account">
+                    <a href="#switch-account-menu" class="switch-account-toggle collapsed" data-toggle="collapse">
+                        <span class="renew-icon"><i class="material-icons">autorenew</i></span>
+                        <span class="account-name">Century 21 Inc.</span>
+                        <span class="text">Switch Account</span>
+                        <span class="menu-arrow-icon"><i class="material-icons">arrow_drop_down</i></span>
+                    </a>
+
+                    <div id="switch-account-menu" class="collapse">
+                        <ul>
+                            <li><a href="#">Realty Corp.</a></li>
+                            <li><a href="#">Bradly and Drown</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li role="separator" class="divider"></li>
+
+                <li>
+                    <a href="app-account-info.html">
+                        <i class="material-icons">person</i>
+                        <span class="text">My Account</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="my-user.html">
+                        <i class="material-icons">group</i>
+                        <span class="text">My Users</span>
+                    </a>
+                </li>
+                <li>
+                    <div class=""></div>
+                    <a href="my-product.html">
+                        <i class="material-icons">apps</i>
+                        <span class="text">My Products & Services</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="app-store.html">
+                        <i class="material-icons">shopping_basket</i>
+                        <span class="text">WebsiteBox Store</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#myModal">
+                        <i class="material-icons">help</i>
+                        <span class="text">Help & Support</span>
+                    </a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li>
+                    <a href="#">
+                        <i class="material-icons">exit_to_app</i>
+                        <span class="text">Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+                <!-- To make the POPUP-HELP STEP 6 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+                <div class="popup-help step06">
+                  <div class="panel panel-default">
+                    <span class="arrow arrow-right"></span>
+                    <div class="panel-heading">
+                      <strong class="title">Step 6 of 7</strong>
+                      <a class="close" href="#" aria-label="Close"><span aria-hidden="true">&times;</span>
+                      </a>
+                    </div>
+                    <div class="panel-body">
+                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna volutpat. </p>
+                      <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation</p>
+                      <div class="btn-container text-right"><a href="#" class="btn btn-warning"><i class="fa fa-chevron-left"></i></a><a href="#" class="btn btn-warning"><i class="fa fa-chevron-right"></i></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="drop visible-xs visible-sm">
+            <div class="navbar-collapse">
+              <button type="button" class="nav-opener navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <div class="user-dropdown">
+                <div class="dropdown-menu">
+                  <ul class="list-unstyled user-account-menu">
+                      <li class="switch-account">
+                          <a href="#switch-account-menu-mobile" class="switch-account-toggle collapsed" data-toggle="collapse">
+                              <span class="renew-icon"><i class="material-icons">autorenew</i></span>
+                              <span class="account-name">Century 21 Inc.</span>
+                              <span class="text">Switch Account</span>
+                              <span class="menu-arrow-icon"><i class="material-icons">arrow_drop_down</i></span>
+                          </a>
+
+                          <div id="switch-account-menu-mobile" class="collapse">
+                              <ul>
+                                  <li><a href="#">Realty Corp.</a></li>
+                                  <li><a href="#">Bradly and Drown</a></li>
+                              </ul>
+                          </div>
+                      </li>
+
+                      <li role="separator" class="divider"></li>
+
+                      <li>
+                          <a href="app-account-info.html">
+                              <i class="material-icons">person</i>
+                              <span class="text">My Account</span>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="my-user.html">
+                              <i class="material-icons">group</i>
+                              <span class="text">My Users</span>
+                          </a>
+                      </li>
+                      <li>
+                          <div class=""></div>
+                          <a href="my-product.html">
+                              <i class="material-icons">apps</i>
+                              <span class="text">My Products &amp; Services</span>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="app-store.html">
+                              <i class="material-icons">shopping_basket</i>
+                              <span class="text">WebsiteBox Store</span>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#" data-toggle="modal" data-target="#myModal">
+                              <i class="material-icons">help</i>
+                              <span class="text">Help &amp; Support</span>
+                          </a>
+                      </li>
+                      <li role="separator" class="divider"></li>
+                      <li>
+                          <a href="#">
+                              <i class="material-icons">exit_to_app</i>
+                              <span class="text">Logout</span>
+                          </a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row user-block">
+                <div class="col-xs-3 img-holder"><img src="../images/avatar01.jpg" class="img-responsive img-circle" alt="image description"></div>
+                <div class="col-xs-9 text-block">
+                  <div class="name"><strong>Richard Mattius</strong></div>
+                  <strong class="status text-uppercase text-warning">PREMIUM USER</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- contain main informative part of the site -->
+    <main id="main" role="main">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- To make the POPUP-HELP STEP 1 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+          <div class="col-md-7 overhidden col-left popup-help-container step01 clearfix">
+          <div class="popup-overlay"></div>
+          <div class="panel panel-default no-bottom-indent no-panel-mobile under-overlay same-height">
+          <div class="panel-heading">
+              <div class="row">
+                  <div class="col-sm-8">
+                      <h1>Your Apps
+                      <span class="label popup-container popup-tooltip hidden-xs">
+                        <a class="opener-popup" href="#"><span class="glyphicon glyphicon-info-sign"
+                                                               aria-hidden="true"></span></a>
+                        <!-- popup -->
+                        <span class="popup">
+                          <span class="panel panel-default">
+                            <span class="arrow arrow-left"></span>
+                            <span class="panel-heading">
+                              <strong class="title">Action</strong>
+                              <a class="close close-popup" href="#" aria-label="Close"><span
+                                      aria-hidden="true">&times;</span>
+                              </a>
+                            </span>
+                            <span class="panel-body">
+                              <span>Lorem ipsum dolor sit amet, consectetuer adipi scing elit, sed nonummy nibh euismod tincidunt ut.</span>
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                      </h1>
+
+                      <p>Here is a list of apps you have access to ...</p>
+                  </div>
+                  <!-- To make the POPUP-HELP STEP 7 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+                  <div class="col-sm-4 text-right hidden-xs popup-help-container step07">
+                      <div class="popup-overlay"></div>
+                      <a href="app-store.html" class="btn btn-lg btn-warning under-overlay">App Store</a>
+                      <!-- To make the POPUP-HELP STEP 7 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+                      <div class="popup-help step07">
+                          <div class="panel panel-default">
+                              <span class="arrow arrow-left"></span>
+
+                              <div class="panel-heading">
+                                  <strong class="title">Step 7 of 7</strong>
+                                  <a class="close" href="#" aria-label="Close"><span aria-hidden="true">&times;</span>
+                                  </a>
+                              </div>
+                              <div class="panel-body">
+                                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                      tincidunt ut laoreet dolore magna volutpat. </p>
+
+                                  <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation</p>
+
+                                  <div class="btn-container text-right"><a href="#" class="btn btn-warning"><i
+                                          class="fa fa-chevron-left"></i></a><a href="#" class="btn btn-warning"><i
+                                          class="fa fa-chevron-right"></i></a></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="panel-scroll">
+              <div class="panel-body">
+                  <div class="row items-holder">
+                      <div class="col-xs-4 col-sm-2 col-lg-2 app-item">
+                          <a href="app-store.html">
+                              <div class="item-img"><img src="../images/controlpanel/app_store.png" class="img-responsive"
+                                                         alt="image description">
+                              </div>
+                              <span>App Store</span>
+                          </a>
+                      </div>
+                      <div class="col-xs-4 col-sm-2 col-lg-2 app-item">
+                          <a href="#">
+                              <div class="item-img"><img src="../images/controlpanel/websites.png" class="img-responsive"
+                                                         alt="image description">
+                              </div>
+                              <span>Websites</span>
+                          </a>
+                      </div>
+                      <div class="col-xs-4 col-sm-2 col-lg-2 app-item">
+                          <a href="#">
+                              <div class="item-img"><img src="../images/controlpanel/domains.png" class="img-responsive"
+                                                         alt="image description">
+                              </div>
+                              <span>Domains</span>
+                          </a>
+                      </div>
+                      <div class="col-xs-4 col-sm-2 col-lg-2 app-item">
+                          <a href="#">
+                              <div class="item-img"><img src="../images/controlpanel/listings.png" class="img-responsive"
+                                                         alt="image description">
+                              </div>
+                              <span>Listings</span>
+                          </a>
+                      </div>
+                      <div class="col-xs-4 col-sm-2 col-lg-2 app-item">
+                          <a href="#">
+                              <div class="item-img"><img src="../images/controlpanel/contacts.png" class="img-responsive"
+                                                         alt="image description">
+                              </div>
+                              <span>Contacts</span>
+                          </a>
+                      </div>
+                      <div class="col-xs-4 col-sm-2 col-lg-2 app-item">
+                          <a href="#">
+                              <div class="item-img"><img src="../images/controlpanel/emails.png" class="img-responsive"
+                                                         alt="image description"></div>
+                              <span>Emails</span>
+                          </a>
+                      </div>
+                      <div class="col-xs-4 col-sm-2 col-lg-2 app-item">
+                          <a href="app-tasks-agile.html">
+                              <div class="item-img"><img src="../images/controlpanel/tasks.png" class="img-responsive" alt="image description">
+                              </div>
+                              <span>Tasks</span>
+                          </a>
+                      </div>
+                      <div class="col-xs-4 col-sm-2 col-lg-2 app-item">
+                          <a href="#">
+                              <div class="item-img"><img src="../images/controlpanel/documents.png" class="img-responsive"
+                                                         alt="image description">
+                              </div>
+                              <span>Documents</span>
+                          </a>
+                      </div>
+                      <div class="col-xs-4 col-sm-2 col-lg-2 app-item">
+                          <a href="#">
+                              <div class="item-img"><img src="../images/controlpanel/calendar.png" class="img-responsive"
+                                                         alt="image description">
+                              </div>
+                              <span>Calendar</span>
+                          </a>
+                      </div>
+                      <div class="col-xs-4 col-sm-2 col-lg-2 app-item">
+                          <a href="#">
+                              <div class="item-img"><img src="../images/controlpanel/campaigns.png" class="img-responsive"
+                                                         alt="image description">
+                              </div>
+                              <span>Campaigns</span>
+                          </a>
+                      </div>
+                      <div class="col-xs-4 col-sm-2 col-lg-2 app-item">
+                          <a href="#">
+                              <div class="item-img"><img src="../images/controlpanel/rss.png" class="img-responsive" alt="image description">
+                              </div>
+                              <span>RSS</span>
+                          </a>
+                      </div>
+                      <div class="col-xs-4 col-sm-2 col-lg-2 app-item">
+                          <a href="#">
+                              <div class="item-img"><img src="../images/controlpanel/google_analytics.png" class="img-responsive"
+                                                         alt="image description"></div>
+                              <span>Analytics</span>
+                          </a>
+                      </div>
+                      <div class="col-xs-4 col-sm-2 col-lg-2 app-item">
+                          <a href="#">
+                              <div class="item-img"><img src="../images/controlpanel/team.png" class="img-responsive"
+                                                         alt="image description"></div>
+                              <span>Team</span>
+                          </a>
+                      </div>
+                      <div class="col-xs-4 col-sm-2 col-lg-2 app-item">
+                          <a href="#">
+                              <div class="item-img"><img src="../images/controlpanel/blog.png" class="img-responsive" alt="image description">
+                              </div>
+                              <span>Blog</span>
+                          </a>
+                      </div>
+                      <div class="col-xs-4 col-sm-2 col-lg-2 app-item">
+                          <a href="#">
+                              <div class="item-img"><img src="../images/controlpanel/prints.png" class="img-responsive"
+                                                         alt="image description"></div>
+                              <span>Prints</span>
+                          </a>
+                      </div>
+
+
+                      <div class="col-xs-4 col-sm-2 col-lg-2 app-item">
+                          <a href="#">
+                              <div class="item-img"><img src="../images/controlpanel/lead_capture.png" class="img-responsive"
+                                                         alt="image description">
+                              </div>
+                              <span>Lead Capture</span>
+                          </a>
+                      </div>
+                      <div class="col-xs-4 col-sm-2 col-lg-2 app-item">
+                          <a href="#">
+                              <div class="item-img"><img src="../images/controlpanel/seo.png" class="img-responsive" alt="image description">
+                              </div>
+                              <span>SEO</span>
+                          </a>
+                      </div>
+                      <div class="col-xs-4 col-sm-2 col-lg-2 app-item">
+                          <a href="#">
+                              <div class="item-img"><img src="../images/controlpanel/qr_code.png" class="img-responsive"
+                                                         alt="image description">
+                              </div>
+                              <span>QR Code</span>
+                          </a>
+                      </div>
+
+
+                      <div class="col-xs-4 col-sm-2 col-lg-2 app-item">
+                          <a href="#">
+                              <div class="item-img"><img src="../images/controlpanel/shortcuts.png" class="img-responsive"
+                                                         alt="image description">
+                              </div>
+                              <span>Shortcuts</span>
+                          </a>
+                      </div>
+
+                      <div class="col-xs-4 col-sm-2 col-lg-2 app-item">
+                          <a href="#">
+                              <div class="item-img"><img src="../images/controlpanel/virtaul-tours.png" class="img-responsive"
+                                                         alt="image description">
+                              </div>
+                              <span>Virtual Tours</span>
+                          </a>
+                      </div>
+
+                      <div class="col-xs-4 col-sm-2 col-lg-2 app-item">
+                          <a href="#">
+                              <div class="item-img"><img src="../images/controlpanel/integration.png" class="img-responsive"
+                                                         alt="image description">
+                              </div>
+                              <span>Integrations</span>
+                          </a>
+                      </div>
+                      <div class="col-xs-4 col-sm-2 col-lg-2 app-item">
+                          <a href="#">
+                              <div class="item-img"><img src="../images/controlpanel/transactions.png" class="img-responsive"
+                                                         alt="image description">
+                              </div>
+                              <span>Transactions</span>
+                          </a>
+                      </div>
+                      <div class="col-xs-4 col-sm-2 col-lg-2 app-item">
+                          <a href="#">
+                              <div class="item-img"><img src="../images/controlpanel/billing.png" class="img-responsive"
+                                                         alt="image description">
+                              </div>
+                              <span>Billing</span>
+                          </a>
+                      </div>
+                      <div class="col-xs-4 col-sm-2 col-lg-2 app-item">
+                          <a href="#">
+                              <div class="item-img"><img src="../images/controlpanel/courses.png" class="img-responsive"
+                                                         alt="image description">
+                              </div>
+                              <span>Courses</span>
+                          </a>
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+          </div>
+          <!-- To make the POPUP-HELP STEP 1 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+          <div class="popup-help step01">
+              <div class="panel panel-default">
+                  <span class="arrow arrow-left"></span>
+
+                  <div class="panel-heading">
+                      <strong class="title">Step 1 of 7</strong>
+                      <a class="close" href="#" aria-label="Close"><span aria-hidden="true">&times;</span>
+                      </a>
+                  </div>
+                  <div class="panel-body">
+                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                          laoreet dolore magna volutpat. </p>
+
+                      <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation</p>
+
+                      <div class="btn-container text-right"><a href="#" class="btn btn-warning"><i class="fa fa-chevron-left"></i></a><a
+                              href="#" class="btn btn-warning"><i class="fa fa-chevron-right"></i></a></div>
+                  </div>
+              </div>
+          </div>
+          </div>
+          <div class="col-md-5 col-right hidden-xs hidden-sm">
+              <!-- To make the POPUP-HELP STEP 2 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+              <div class="popup-help-container step02">
+                  <div class="popup-overlay"></div>
+                  <div class="timeline under-overlay same-height">
+                      <div class="timeline-holder">
+                          <div class="timeline-item">
+                              <div class="row">
+                                  <div class="col-xs-2 timeline-badge">
+                                      <img class="img-circle img-thumbnail img-responsive" src="../images/avatar02.jpg"
+                                           alt="image description">
+                                  </div>
+                                  <div class="col-xs-10 timeline-body">
+                                      <div class="panel panel-default has-arrow">
+                                          <span class="arrow"></span>
+
+                                          <div class="panel-body">
+                                              <div class="row">
+                                                  <div class="col-xs-5">
+                                                      <a href="#" class="title">Andres Iniesta</a>
+                                                  </div>
+                                                  <div class="col-xs-7 padding-left-clear">
+                                            <span class="note"><time datetime="19:45">Visited your website at 7:45 pm
+                                            </time></span>
+                                                  </div>
+                                              </div>
+                                              <div class="row">
+                                                  <div class="col-xs-12">
+                                                      <p>vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et
+                                                          iusto odio dignissim qui blandit praesent </p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="panel-footer alert-danger">
+                                              <div class="row row-inline">
+                                                  <div class="col-xs-9 column">
+                                                      <span class="title-info">Send 25 more listings to Andres</span>
+                                                  </div>
+                                                  <div class="col-xs-3 column text-right btn-holder">
+                                                      <!-- To display checked state of the BTN, class .BTN-CHECKED should be added to the <A> element. -->
+                                                      <a href="#" class="btn btn-success btn-circle hidden"><i
+                                                              class="fa fa-times"></i></a>
+                                                      <a href="#" class="btn btn-danger btn-circle btn-checked pos-right"><i
+                                                              class="fa fa-times"></i></a>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="timeline-item">
+                              <div class="row">
+                                  <div class="col-xs-2 timeline-badge">
+                                      <img class="img-circle img-thumbnail img-responsive" src="../images/avatar03.jpg"
+                                           alt="image description">
+                                  </div>
+                                  <div class="col-xs-10 timeline-body">
+                                      <div class="panel panel-default has-arrow">
+                                          <span class="arrow"></span>
+
+                                          <div class="panel-body">
+                                              <div class="row">
+                                                  <div class="col-xs-6">
+                                                      <a href="#" class="title">Vanessa Bond</a>
+                                                  </div>
+                                                  <div class="col-xs-6">
+                                                      <span class="note"><time datetime="19:45">Replied at 7:45 PM</time></span>
+                                                  </div>
+                                              </div>
+                                              <div class="row">
+                                                  <div class="col-xs-12">
+                                                      <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. </p>
+
+                                                      <div class="info-replied">
+                                                          <div class="img">
+                                                              <div class="img-holder">
+                                                                  <img src="../images/img01.jpg" class="img-responsive"
+                                                                       alt="image description">
+                                                              </div>
+                                                          </div>
+                                                          <p> Claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstra verunt lectores legere me lius quod ii legunt saepius.</p>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="panel-footer">
+                                              <div class="row row-inline">
+                                                  <div class="col-xs-8 column">
+                                                      <span class="title-info">Send 25 more listings to Vanessa</span>
+                                                  </div>
+                                                  <div class="col-xs-4 column text-right btn-holder">
+                                                      <!-- To display checked state of the BTN, class .BTN-CHECKED should be added to the <A> element. -->
+                                                      <a href="#" class="btn btn-danger btn-circle"><i
+                                                              class="fa fa-times"></i></a>
+                                                      <a href="#" class="btn btn-success btn-circle"><i
+                                                              class="fa fa-check"></i></a>
+                                                  </div>
+                                              </div>
+                                          </div>
+
+
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="timeline-item">
+                              <div class="row">
+                                  <div class="col-xs-2 timeline-badge">
+                                      <img class="img-circle img-thumbnail img-responsive" src="../images/avatar02.jpg"
+                                           alt="image description">
+                                  </div>
+                                  <div class="col-xs-10 timeline-body">
+                                      <div class="panel panel-default has-arrow">
+                                          <span class="arrow"></span>
+
+                                          <div class="panel-body">
+                                              <div class="row">
+                                                  <div class="col-xs-8">
+                                                      <a href="#" class="title">You have a new follower</a>
+                                                  </div>
+                                                  <div class="col-xs-4">
+                                                      <span class="note"><time datetime="23:00">at 11:00 PM</time></span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="panel-footer">
+                                              <div class="row row-inline">
+                                                  <div class="col-xs-8 column">
+                                                      <span class="title-info">Send Notes to Ivan</span>
+                                                  </div>
+                                                  <div class="col-xs-4 column text-right btn-holder">
+                                                      <!-- To display checked state of the BTN, class .BTN-CHECKED should be added to the <A> element. -->
+                                                      <a href="#" class="btn btn-danger btn-circle"><i
+                                                              class="fa fa-times"></i></a>
+                                                      <a href="#" class="btn btn-success btn-circle"><i
+                                                              class="fa fa-check"></i></a>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- To make the POPUP-HELP STEP 2 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+                  <div class="popup-help step02">
+                      <div class="panel panel-default">
+                          <span class="arrow arrow-right"></span>
+
+                          <div class="panel-heading">
+                              <strong class="title">Step 2 of 7</strong>
+                              <a class="close" href="#" aria-label="Close"><span aria-hidden="true">&times;</span>
+                              </a>
+                          </div>
+                          <div class="panel-body">
+                              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                                  ut laoreet dolore magna volutpat.</p>
+
+                              <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation</p>
+
+                              <div class="btn-container text-right"><a href="#" class="btn btn-warning"><i
+                                      class="fa fa-chevron-left"></i></a><a href="#" class="btn btn-warning"><i
+                                      class="fa fa-chevron-right"></i></a></div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- modal -->
+    <div class="modal fade support-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h1 class="modal-title" id="myModalLabel">Help & Support</h1>
+            <p>Help with management Area Activities</p>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetuer adi pis cing elit, sed diam nonummy nibh.</p>
+            <!-- 16:9 aspect ratio -->
+            <div class="media-holder">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="..///www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen=""></iframe>
+              </div>
+            </div>
+            <ol class="custom-numeric-list">
+              <li><a href="#"><span class="number">Q</span>Lorem ipsum dolor sit amet, consectetuer adi pis cing elit, sed diam nonummy nibh?</a></li>
+              <li><a href="#"><span class="number">Q</span>Lorem ipsum dolor sit amet, consectetuer adi pis cing elit?</a></li>
+              <li><a href="#"><span class="number">Q</span>Lorem ipsum dolor sit amet, consectetuer adi pis cing elit, sed diam nonummy nibh?</a></li>
+              <li><a href="#"><span class="number">Q</span>Lorem ipsum dolor sit amet, consectetuer adi pis cing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore mangaja endosre?</a></li>
+              <li><a href="#"><span class="number">Q</span>Lorem ipsum dolor sit amet, consectetuer adi pis cing elit, sed diam nonummy nibh?</a></li>
+              <li><a href="#"><span class="number">Q</span>Lorem ipsum dolor sit amet, consectetuer adi pis cing elit?</a></li>
+              <li><a href="#"><span class="number">Q</span>Lorem ipsum dolor sit amet, consectetuer adi pis cing elit, sed diam nonummy nibh?</a></li>
+              <li><a href="#"><span class="number">Q</span>Lorem ipsum dolor sit amet, consectetuer adi pis cing elit, sed diam nonummy nibh euismod?</a></li>
+            </ol>
+            <a href="#" class="btn btn-warning btn-block">Contact Support</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="../bower_components/jquery-ui/jquery-ui.js"></script>
+  <!-- scroll bar  -->
+  <script src="../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+  <!-- custom select -->
+  <script type="text/javascript" src="../js/custom-select-menu.jquery.js"></script>
+  <!-- Duallist box -->
+  <script type="text/javascript" src="../js/dual-list-box.js"></script>
+  <!-- include bootstrap JavaScript -->
+  <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- include custom JavaScript -->
+  <script src="../js/jquery.main.js"></script>
+</body>
+</html>

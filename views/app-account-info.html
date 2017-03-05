@@ -1,0 +1,1825 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- set the encoding of your site -->
+    <meta charset="utf-8">
+    <!-- set the viewport width and initial-scale on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Info</title>
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+    <!-- Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- include the site bootstrap stylesheet -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <!-- Boostrap select -->
+    <link rel="stylesheet" href="../bower_components/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <!-- include the site stylesheet -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- include css Account info -->
+    <link rel="stylesheet" href="../css/crop.css">
+    <link rel="stylesheet" href="../bower_components/rangeslider.js/dist/rangeslider.css">
+    <script type="text/javascript" src="../js/svg-sprites.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('svg-icon-placeholder').innerHTML += SVG_SPRITES['sprite'];
+        }, false);
+    </script>
+</head>
+
+<body class="app--account-info">
+<div id="svg-icon-placeholder" style="display: none;"></div>
+<!-- main container of all the page elements -->
+<div class="wrapper ">
+<!-- header of the page -->
+<header id="header" class="well well-dark header-relative">
+<nav class="navbar navbar-default main-nav-container">
+<div class="container-fluid">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+
+    <!-- page logo -->
+    <div class="navbar-brand logo">
+        <a href="app-control-panel.html"><img src="../images/logo.svg" alt="WebsiteBox" width="89" height="37"></a>
+    </div>
+</div>
+<!--Box search for app-->
+<div class="box-search">
+    <div class="search-row">
+        <input type="text" class="form-control input-search input-control" placeholder="Search">
+        <a href="#" class="icon-search"><i class="fa fa-search"></i></a>
+
+        <div class="box-search-details">
+            <div class="result-document">
+                <div class="result-title">
+                    <p class="title">
+                        <span>
+                            <img src="../images/controlpanel/documents.png">
+                        </span>
+                        Account info</p>
+                </div>
+                <div class="result-content">
+                    <div class="row-info">
+                        <p class="pull-left">Test the new Websitebox</p>
+
+                        <p class="pull-right">Account Info</p>
+                    </div>
+                    <div class="row-info active">
+                        <p class="pull-left">Test the new Websitebox</p>
+
+                        <p class="pull-right">Account Info</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- main navigation of the page -->
+<ul class="nav nav-pills navbar-right main-nav">
+<li class="dropdown icon-notify">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+        <span class="sr-only">Notification</span>
+                <span class="icon-holder">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-notification">
+                      <use xlink:href="#icon-notification"></use>
+                  </svg>
+                  <span class="quantity">2</span>
+                </span>
+    </a>
+
+    <div class="dropdown-menu notification-menu users-block">
+        <span class="arrow"></span>
+        <ul class="list-unstyled block-rounded">
+            <li>
+                <div class="panel-body">
+                    <div class="row row-inline panel-row">
+                        <div class="col-xs-10">
+                            <div class="row">
+                                <div class="col-xs-3 column img-holder">
+                                    <img src="../images/avatar02.jpg" class="img-circle img-thumbnail"
+                                         alt="image description">
+                                </div>
+                                <div class="col-xs-7 column text-block">
+                                    <span class="name">Andres Iniesta </span>
+                                    <span class="meta"><time datetime="19:45">Replied at 7:45 PM</time></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-2 column btn-holder">
+                            <a href="#" class="btn btn-success btn-circle btn-checked"><i class="fa fa-check"></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh eu ismod
+                                tincidunt ut laoreet dolore magna ali quam erat volutpat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="alert alert-success">
+                    <div class="row">
+                        <div class="col-xs-12">Send 25 more listings to Andres</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="panel-body">
+                    <div class="row row-inline panel-row">
+                        <div class="col-xs-10">
+                            <div class="row">
+                                <div class="col-xs-3 column img-holder">
+                                    <img src="../images/avatar03.jpg" class="img-circle img-thumbnail img-responsive"
+                                         alt="image description">
+                                </div>
+                                <div class="col-xs-6 column text-block">
+                                    <span class="name">Vanessa Bond</span>
+                                    <span class="meta"><time datetime="19:45">Replied at 7:45 PM</time></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-2 column btn-holder">
+                            <a href="#" class="btn btn-danger btn-circle btn-checked"><i class="fa fa-times"></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh eu ismod
+                                tincidunt ut laoreet dolore magna ali quam erat volutpat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="alert alert-danger">
+                    <div class="row">
+                        <div class="col-xs-12">Send 25 more listings to Vanessa</div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</li>
+<!-- To make the POPUP-HELP STEP 3 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+<li class="popup-container dropdown app-menu-holder popup-help-container step03">
+<div class="popup-overlay"></div>
+<a href="#" class="opener-popup dropdown-toggle under-overlay">
+  <span class="icon-view-store">
+      <span class="st1 st-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+      </span>
+      <span class="st2 st-icon">
+            <span></span>
+          <span></span>
+          <span></span>
+      </span>
+      <span class="st3 st-icon">
+            <span></span>
+          <span></span>
+          <span></span>
+      </span>
+  </span>
+</a>
+
+<div class="popup dropdown-menu under-overlay">
+<span class="arrow"></span>
+
+<div class="app-menu menu-list open-close">
+<div class="panel">
+<div class="panel-body">
+    <div class="first-view">
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/app_store.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>App Store</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/websites.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Websites</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/domains.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Domains</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../imagesv/listings.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Listings</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/contacts.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Contacts</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/emails.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Emails</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="images/controlpanel/tasks.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Tasks</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/documents.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Documents</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/calendar.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Calendar</span>
+            </a>
+        </div>
+    </div>
+    <div class="slide">
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/campaigns.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Campaigns</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/listing_syndication.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Listing Syndication</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/rss.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>RSS</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/community.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Community</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/google_analytics.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Google Analytics</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/profile.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Profile</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/blog.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Blog</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/prints.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Prints</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/lead_capture.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Lead Capture</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/seo.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>SEO</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/mobile_notifications.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Mobile Notifications</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="images/controlpanel/craigslist.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Craigslist</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/qr_code.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>QR Code</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/har.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>HAR</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/move.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Move</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/realtor.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Realtor.com</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/apple.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Apple</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/controlpanel/cnn.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>CNN</span>
+            </a>
+        </div>
+    </div>
+    <div class="btn-holder">
+        <a class="btn btn-default btn-block opener" href="#">
+            <span class="hidden-active">More</span>
+            <span class="visible-active">Less</span>
+        </a>
+    </div>
+</div>
+</div>
+</div>
+<!-- To make the POPUP-HELP STEP 3 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+<div class="popup-help step03">
+    <div class="panel panel-default">
+        <span class="arrow arrow-right"></span>
+
+        <div class="panel-heading">
+            <strong class="title">Step 3 of 7</strong>
+            <a class="close" href="#" aria-label="Close"><span aria-hidden="true">&times;</span>
+            </a>
+        </div>
+        <div class="panel-body">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                laoreet dolore magna volutpat.</p>
+
+            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation</p>
+
+            <div class="btn-container text-right"><a href="#" class="btn btn-warning"><i
+                    class="fa fa-chevron-left"></i></a><a href="#" class="btn btn-warning"><i
+                    class="fa fa-chevron-right"></i></a></div>
+        </div>
+    </div>
+</div>
+</div>
+</li>
+<!--Show icon in mobile -->
+<li class="popup-container dropdown app-menu-holder popup-help-container wrap-icon-mobile">
+    <button type="button" class="nav-opener navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</li>
+<!-- To make the POPUP-HELP STEP 4 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+<li class="hidden-xs popup-help-container step04">
+    <div class="popup-overlay"></div>
+
+    <a href="#" data-toggle="modal" data-target="#myModal" class="btn-link under-overlay">
+        <span class="sr-only">Info</span>
+        <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+    </a>
+    <!-- To make the POPUP-HELP STEP 4 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+    <div class="popup-help step04">
+        <div class="panel panel-default">
+            <span class="arrow"></span>
+
+            <div class="panel-heading">
+                <strong class="title">Step 4 of 7</strong>
+                <a class="close" href="#" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </a>
+            </div>
+            <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna volutpat. </p>
+
+                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation</p>
+
+                <div class="btn-container text-right"><a href="#" class="btn btn-warning"><i
+                        class="fa fa-chevron-left"></i></a><a href="#" class="btn btn-warning"><i
+                        class="fa fa-chevron-right"></i></a></div>
+            </div>
+        </div>
+    </div>
+</li>
+<!-- To make the POPUP-HELP STEP 5 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+<li class="popup-container dropdown popup-help-container step05">
+    <div class="popup-overlay"></div>
+    <a class="opener-popup dropdown-toggle under-overlay" href="#">
+     <span class="icon-step05">
+
+     </span>
+    </a>
+
+    <div class="popup dropdown-menu settings-block under-overlay">
+        <span class="arrow"></span>
+
+        <div class="panel">
+            <div class="panel-body">
+                <div class="row dropdown-row">
+                    <div class="col-xs-4 theme-list-holder">
+                        <div class="scrollable">
+                            <span class="title text-uppercase">Theme</span>
+                            <ul class="theme-list list-unstyled">
+                                <li>
+                                    <a href="#"><span class="color color-default"></span><span class="description">Default</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="color color-remax"></span><span
+                                            class="description">Remax</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="active"><span class="color color-century91"></span><span
+                                            class="description">Century 91</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="color color-minimal"></span><span class="description">Minimal</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="color color-summer"></span><span
+                                            class="description">Summer</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="color color-default"></span><span class="description">Default</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="color color-remax"></span><span
+                                            class="description">Remax</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="color color-century91"></span><span class="description">Century 91</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="color color-minimal"></span><span class="description">Minimal</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="color color-summer"></span><span
+                                            class="description">Summer</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-8">
+                        <span class="title text-uppercase">Settings</span>
+
+                        <div class="form-in-drop">
+                            <div class="form-group">
+                                <span class="label-holder"><label for="select-1">Time Zone</label></span>
+                            <span class="select-holder">
+                              <span class="fake-select">
+                                <select id="select-1" class="form-control">
+                                    <option selected="selected">(UTC -8:00)</option>
+                                    <option>(UTC -8:00)</option>
+                                    <option>(UTC -8:00)</option>
+                                    <option>(UTC -8:00)</option>
+                                </select>
+                              </span>
+                            </span>
+                            </div>
+                            <div class="form-group">
+                                <span class="label-holder"><label for="select-2">Email Digest</label></span>
+                            <span class="select-holder">
+                              <span class="fake-select">
+                                <select id="select-2" class="form-control">
+                                    <option selected="selected">option 1</option>
+                                    <option>option 2</option>
+                                    <option>option 3</option>
+                                </select>
+                              </span>
+                            </span>
+                            </div>
+                            <div class="form-group">
+                                <span class="label-holder"><label for="language">Language</label></span>
+                                <span class="input-holder"><input type="text" class="form-control" id="language"
+                                                                  placeholder="English"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- To make the POPUP-HELP STEP 5 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+        <div class="popup-help step05">
+            <div class="panel panel-default">
+                <span class="arrow arrow-right"></span>
+
+                <div class="panel-heading">
+                    <strong class="title">Step 5 of 7</strong>
+                    <a class="close" href="#" aria-label="Close"><span aria-hidden="true">&times;</span>
+                    </a>
+                </div>
+                <div class="panel-body">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                        ut laoreet dolore magna volutpat. </p>
+
+                    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation</p>
+
+                    <div class="btn-container text-right"><a href="#" class="btn btn-warning"><i
+                            class="fa fa-chevron-left"></i></a><a href="#" class="btn btn-warning"><i
+                            class="fa fa-chevron-right"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+<!-- To make the POPUP-HELP STEP 6 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+<li class="dropdown hidden-xs user-dropdown popup-help-container step06">
+    <div class="popup-overlay"></div>
+    <a href="#" id="dropdownMenu2" class="user-block dropdown-toggle under-overlay" data-toggle="dropdown" role="button"
+       aria-haspopup="true" aria-expanded="false">
+        <div class="row">
+            <div class="col-xs-3 img-holder"><img src="../images/avatar01.jpg" class="img-responsive img-circle"
+                                                  alt="image description"></div>
+            <div class="col-xs-9 text-block">
+                <div class="name"><strong>Richard Mattius</strong><span class="caret"></span></div>
+                <strong class="status text-uppercase text-warning">PREMIUM USER</strong>
+            </div>
+        </div>
+    </a>
+
+    <div class="dropdown-menu under-overlay">
+        <span class="arrow"></span>
+
+        <div class="panel-body">
+            <ul class="list-unstyled" aria-labelledby="dropdownMenu2">
+                <li class="switch-account">
+                    <a href="#switch-account-menu" class="switch-account-toggle collapsed" data-toggle="collapse">
+                        <span class="renew-icon"><i class="material-icons">autorenew</i></span>
+                        <span class="account-name">Century 21 Inc.</span>
+                        <span class="text">Switch Account</span>
+                        <span class="menu-arrow-icon"><i class="material-icons">arrow_drop_down</i></span>
+                    </a>
+
+                    <div id="switch-account-menu" class="collapse">
+                        <ul>
+                            <li><a href="#">Realty Corp.</a></li>
+                            <li><a href="#">Bradly and Drown</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li role="separator" class="divider"></li>
+
+                <li>
+                    <a href="app-account-info.html">
+                        <i class="material-icons">person</i>
+                        <span class="text">My Account</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="my-user.html">
+                        <i class="material-icons">group</i>
+                        <span class="text">My Users</span>
+                    </a>
+                </li>
+                <li>
+                    <div class=""></div>
+                    <a href="my-product.html">
+                        <i class="material-icons">apps</i>
+                        <span class="text">My Products & Services</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="app-store.html">
+                        <i class="material-icons">shopping_basket</i>
+                        <span class="text">WebsiteBox Store</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#myModal">
+                        <i class="material-icons">help</i>
+                        <span class="text">Help & Support</span>
+                    </a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li>
+                    <a href="#">
+                        <i class="material-icons">exit_to_app</i>
+                        <span class="text">Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- To make the POPUP-HELP STEP 6 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+        <div class="popup-help step06">
+            <div class="panel panel-default">
+                <span class="arrow arrow-right"></span>
+
+                <div class="panel-heading">
+                    <strong class="title">Step 6 of 7</strong>
+                    <a class="close" href="#" aria-label="Close"><span aria-hidden="true">&times;</span>
+                    </a>
+                </div>
+                <div class="panel-body">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                        ut laoreet dolore magna volutpat. </p>
+
+                    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation</p>
+
+                    <div class="btn-container text-right"><a href="#" class="btn btn-warning"><i
+                            class="fa fa-chevron-left"></i></a><a href="#" class="btn btn-warning"><i
+                            class="fa fa-chevron-right"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+</ul>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="drop visible-xs visible-sm menu-mobile-767">
+    <div class="navbar-collapse">
+        <div class="row-top">
+            <p class="text-menu">Menu</p>
+            <button type="button" class="nav-opener nav-toggle-767">
+                <span class="x1"></span>
+                <span class="x2"></span>
+            </button>
+        </div>
+        <div class="box-search">
+            <div class="search-row">
+                <input type="text" class="form-control input-search input-control" placeholder="Search"
+                       style="position: relative; z-index: 3; background: transparent;">
+                <a href="#" class="icon-search"><i class="fa fa-search"></i></a>
+            </div>
+        </div>
+        <div class="user-dropdown">
+          <div class="dropdown-menu">
+            <ul class="list-unstyled user-account-menu">
+                <li class="switch-account">
+                    <a href="#switch-account-menu-mobile" class="switch-account-toggle collapsed" data-toggle="collapse">
+                        <span class="renew-icon"><i class="material-icons">autorenew</i></span>
+                        <span class="account-name">Century 21 Inc.</span>
+                        <span class="text">Switch Account</span>
+                        <span class="menu-arrow-icon"><i class="material-icons">arrow_drop_down</i></span>
+                    </a>
+
+                    <div id="switch-account-menu-mobile" class="collapse">
+                        <ul>
+                            <li><a href="#">Realty Corp.</a></li>
+                            <li><a href="#">Bradly and Drown</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li role="separator" class="divider"></li>
+
+                <li>
+                    <a href="app-account-info.html">
+                        <i class="material-icons">person</i>
+                        <span class="text">My Account</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="my-user.html">
+                        <i class="material-icons">group</i>
+                        <span class="text">My Users</span>
+                    </a>
+                </li>
+                <li>
+                    <div class=""></div>
+                    <a href="my-product.html">
+                        <i class="material-icons">apps</i>
+                        <span class="text">My Products &amp; Services</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="app-store.html">
+                        <i class="material-icons">shopping_basket</i>
+                        <span class="text">WebsiteBox Store</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#myModal">
+                        <i class="material-icons">help</i>
+                        <span class="text">Help &amp; Support</span>
+                    </a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li>
+                    <a href="#">
+                        <i class="material-icons">exit_to_app</i>
+                        <span class="text">Logout</span>
+                    </a>
+                </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row user-block">
+            <div class="col-xs-3 img-holder"><img src="../images/avatar01.jpg" class="img-responsive img-circle"
+                                                  alt="image description"></div>
+            <div class="col-xs-9 text-block">
+                <div class="name"><strong>Richard Mattius</strong></div>
+                <strong class="status text-uppercase text-warning">PREMIUM USER</strong>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</nav>
+</header>
+<!-- contain main informative part of the site -->
+
+
+<main class="main-app" role="main">
+<div class="content-account-info">
+<div class="content-account-info-inner">
+<div class="row same-height-xy-view">
+<div class="col-md-4 col-acc-info acc-col-left ">
+    <div class="account-info-list">
+        <div class="header-account-info">
+            <h2>Account Info</h2>
+            <a href="#" class="btn-acc">
+                <i class="fa fa-pencil"></i>Edit
+            </a>
+            <a href="#" class="btn-acc btn-warning">
+                Save
+            </a>
+        </div>
+        <div class="acc-content-info has-dropdown">
+            <div class="img dropdown" id="imageUploadDropdown">
+                <div class="img normal dropdown-opener">
+                    <img src="../images/acc-img-1.jpg">
+                </div>
+                <div class="img img-edit dropdown-opener">
+                    <img src="../images/acc-edit.jpg">
+                </div>
+
+                <div class="dropdown-menu dropdown-upload-image dropdown-dialog arrow-left">
+                  <div class="dialog-header">
+                    <h2 class="dialog-title">Select on Image</h2>
+                    <button type="button" class="btn btn-default btn-close-dialog"><span aria-hidden="true">×</span></button>
+                  </div>
+                  <div class="dialog-content">
+                    <div class="content-inner">
+                        <div class="upload-step upload-step1">
+                            <div class="row section-header">
+                                <div class="col-xs-6">
+                                    <p class="help-text">Drag & drop or click a button below to start.</p>
+                                </div>
+                            </div>
+                            <div class="upload-content-section">
+                                <div class="row select-image-source">
+                                    <div class="col-xs-4">
+                                        <input type="file" id="imageUpload" style="display:none">
+                                        <a href="#" class="btn btn-orange btn-upload btn-with-icon">
+                                            <i class="material-icons">computer</i><span>Upload</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <a href="#" class="btn btn-orange btn-library btn-with-icon">
+                                            <i class="material-icons">view_module</i><span>Library</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <a href="#" class="btn btn-orange btn-basket btn-with-icon">
+                                            <i class="material-icons">shopping_basket</i><span>Purchase</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="upload-step upload-step2-upload" style="display:none">
+                            <div class="row section-header">
+                                <div class="col-xs-6">
+                                    <p class="help-text">Upload in progress. <br/>Next you can adjust your photo</p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <a href="#" class="btn btn-orange btn-action">Cancel</a>
+                                </div>
+                            </div>
+                            <div class="upload-content-section has-photo">
+                                <div class="image-preview">
+                                    <span class="progress-text"><span class="progress-per">60</span>% Complete</span>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar">
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="upload-step upload-step2-library" style="display:none">
+                            <div class="row section-header">
+                                <div class="col-xs-6">
+                                    <p class="help-text">Select an image from your <br/>library of images</p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <a href="#" class="btn btn-orange btn-action">Select</a>
+                                </div>
+                            </div>
+                            <div class="upload-content-section library">
+                                <div class="library-gallery">
+                                    <div class="library-item">
+                                        <img src="data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAA8AAD/4QMvaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzA2NyA3OS4xNTc3NDcsIDIwMTUvMDMvMzAtMjM6NDA6NDIgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE1IChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpBMkMwOTk1ODE4QjIxMUU2OEJBNjkyQURBQUE1MjA4QSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpBMkMwOTk1OTE4QjIxMUU2OEJBNjkyQURBQUE1MjA4QSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkEyQzA5OTU2MThCMjExRTY4QkE2OTJBREFBQTUyMDhBIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkEyQzA5OTU3MThCMjExRTY4QkE2OTJBREFBQTUyMDhBIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+/+4ADkFkb2JlAGTAAAAAAf/bAIQABgQEBAUEBgUFBgkGBQYJ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" id="image01">
+                                        <button type="button" class="btn btn-default btn-shadow del-btn">
+                                            <i class="fa fa-trash"></i>
+                                        </button>
+                                    </div>
+                                    <div class="library-item">
+                                        <img src="../images/upload-tool/img2.jpg" id="image02">
+                                        <button type="button" class="btn btn-default btn-shadow del-btn">
+                                            <i class="fa fa-trash"></i>
+                                        </button>
+                                    </div>
+                                    <div class="library-item">
+                                        <img src="../images/upload-tool/img3.jpg" id="image03">
+                                        <button type="button" class="btn btn-default btn-shadow del-btn">
+                                            <i class="fa fa-trash"></i>
+                                        </button>
+                                    </div>
+                                    <div class="library-item">
+                                        <img src="../images/upload-tool/img4.jpg" id="image04">
+                                        <button type="button" class="btn btn-default btn-shadow del-btn">
+                                            <i class="fa fa-trash"></i>
+                                        </button>
+                                    </div>
+                                    <div class="library-item">
+                                        <img src="../images/upload-tool/img1.jpg" id="image05">
+                                        <button type="button" class="btn btn-default btn-shadow del-btn">
+                                            <i class="fa fa-trash"></i>
+                                        </button>
+                                    </div>
+                                    <div class="library-item">
+                                        <img src="../images/upload-tool/img3.jpg" id="image06">
+                                        <button type="button" class="btn btn-default btn-shadow del-btn">
+                                            <i class="fa fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="upload-step upload-step2-purchase" style="display:none">
+                            <div class="row section-header">
+                                <div class="col-xs-6">
+                                    <p class="help-text">Select an image from your <br/>library of images</p>
+                                </div>
+                                <div class="col-xs-6 text-right search-image-form">
+                                    <input type="text" class="form-control search-image-text">
+                                    <a href="#" class="btn btn-orange btn-action">Search</a>
+                                </div>
+                            </div>
+                            <div class="upload-content-section library">
+                                <div class="library-gallery">
+                                    <div class="library-item">
+                                        <img src="../images/upload-tool/img1.jpg">
+                                        <span class="price-tag">$5</span>
+                                    </div>
+                                    <div class="library-item">
+                                        <img src="../images/upload-tool/img2.jpg">
+                                        <span class="price-tag">$5</span>
+                                    </div>
+                                    <div class="library-item">
+                                        <img src="../images/upload-tool/img3.jpg">
+                                        <span class="price-tag">$5</span>
+                                    </div>
+                                    <div class="library-item">
+                                        <img src="../images/upload-tool/img4.jpg">
+                                        <span class="price-tag">$5</span>
+                                    </div>
+                                    <div class="library-item">
+                                        <img src="../images/upload-tool/img1.jpg">
+                                        <span class="price-tag">$5</span>
+                                    </div>
+                                    <div class="library-item">
+                                        <img src="../images/upload-tool/img3.jpg">
+                                        <span class="price-tag">$5</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="upload-step upload-step3" style="display:none">
+                            <div class="row section-header">
+                                <div class="col-xs-9">
+                                    <div class="image-tools">
+                                        <a href="#" class="image-tool tool-min"><i class="tool-icon icon-min"></i></a>
+                                        <a href="#" class="image-tool tool-max"><i class="tool-icon icon-max"></i></a>
+                                        <a href="#" class="image-tool tool-rotate"><i class="tool-icon icon-rotate"></i></a>
+                                        <a href="#" class="image-tool tool-flip"><i class="tool-icon icon-flip"></i></a>
+                                    </div>
+                                    <p class="help-text">Zoom in and out <br/>Click crop when done</p>
+                                </div>
+                                <div class="col-xs-3 text-right">
+                                    <a href="#" class="btn btn-orange btn-action">Crop</a>
+                                </div>
+                            </div>
+                            <div class="upload-content-section has-photo">
+                                <div class="image-canvas">
+                                    <div class="image-canvas-inner"></div>
+                                </div>
+                                <div class="image-zoom">
+                                    <input type="range" class="wsb-slider" min="1" step="0.01" max="5" value="0" data-orientation="vertical">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row-ct-name">
+                    <input type="text" class="acc-name text-center" placeholder="First Name" value="Richard">
+                    <input type="text" class="acc-name text-center" placeholder="Last Name" value="Mattius">
+                    <input type="text" class="acc-desc text-center" placeholder="Company Name" value="Century 21 Inc.">
+                </div>
+            </div>
+
+
+            <div class="acc-address-list clearfix">
+
+
+                <p><i class="fa fa-envelope-o"></i>
+                    <input type="text" value="nick12@gmail.com">
+                </p>
+
+                <p><i class="fa fa-phone"></i>
+
+                    <input type="text" value="+1 416-364-0054">
+                </p>
+
+                <p><i class="fa fa-mobile"></i>
+                    <input type="text" value="+1 416-364-0089">
+                </p>
+
+                <p><i class="fa fa-fax"></i>
+                    <input type="text" value="+1 416-364-0056">
+                </p>
+
+                <p><i class="fa fa-map-marker"></i>
+                    <input type="text" class="area-info" placeholder="Address 1" value="7191 Young Street">
+                </p>
+
+                <p class="input-half left">
+                    <input type="text" class="area-info" placeholder="City" value="Toronto">
+                </p>
+
+                <p class="input-half right">
+                    <select class="selectpicker wsb-select" title="City">
+                        <option selected="">Ontario</option>
+                    </select>
+                </p>
+
+                <p class="input-half left">
+                    <input type="text" class="area-info" placeholder="Zip Code" value="100000">
+                </p>
+
+                <p class="input-half right">
+                    <select class="selectpicker wsb-select" title="Country">
+                        <option selected="">Canada</option>
+                    </select>
+                </p>
+
+            </div>
+
+        </div>
+        <div class="acc-map-bottom">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59587.96299808532!2d105.80194401254798!3d21.022773185644827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9a7934d205%3A0xe218215e86cdaf10!2zR2EgSMOgIE7hu5lp!5e0!3m2!1svi!2s!4v1458903728711" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+<div class="col-md-4 col-acc-info acc-col-center">
+<div class="box-credentials">
+    <div class="header-account-info">
+        <h2>Credentials</h2>
+        <a href="#" class="btn-acc">
+            Change Password
+        </a>
+        <a href="#" class="btn-acc btn-save">
+            Save
+        </a>
+    </div>
+    <div class="credentials-content">
+        <p class="cre-desc">
+            The appearance featured a rather ham-fisted Sex and the City skit featuring Armytage as Carrie, and fellow
+            hosts Edwina Bartholomew as Samantha.
+        </p>
+
+        <div class="cre-view-passowrd">
+            <p class="left-text">
+                Existing Passowrd
+            </p>
+            <input type="password" class="right-input" value="12345676">
+        </div>
+    </div>
+    <div class="box-change-password">
+        <div class="change-row">
+            <label>New Password</label>
+            <input type="password" value="">
+        </div>
+        <div class="change-row">
+            <label>Please Retry</label>
+            <input type="password" value="">
+        </div>
+        <div class="change-row">
+            <label></label>
+
+            <div class="strength-pass">
+                <p>Strength</p>
+
+                <div class="strength-color">
+                    <span class="active"></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="box-referrals">
+    <div class="header-account-info">
+        <h2>Referrals</h2>
+
+        <a href="javascrip:void(0)" class="btn-acc btn-referr" data-toggle="modal" data-target="#modalReferrals">
+            Referr Friends
+        </a>
+    </div>
+    <div class="content-referrals">
+        <div class="top-referr">
+            <div class="col-left">
+                <p class="text">290<span>Clicks</span></p>
+
+                <div class="img">
+                    <div class="chart-referrals">
+                        <ul id="bars">
+                            <li>
+                                <div data-percentage="56" class="bar">
+                                    <span></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div data-percentage="33" class="bar">  <span></span></div>
+                            </li>
+                            <li>
+                                <div data-percentage="54" class="bar">  <span></span></div>
+                            </li>
+                            <li>
+                                <div data-percentage="70" class="bar">  <span></span></div>
+                            </li>
+                            <li>
+                                <div data-percentage="64" class="bar">  <span></span></div>
+                            </li>
+                            <li>
+                                <div data-percentage="74" class="bar">  <span></span></div>
+                            </li>
+                            <li>
+                                <div data-percentage="84" class="bar">  <span></span></div>
+                            </li>
+                            <li>
+                                <div data-percentage="94" class="bar">  <span></span></div>
+                            </li>
+                            <li>
+                                <div data-percentage="84" class="bar">  <span></span></div>
+                            </li>
+                            <li>
+                                <div data-percentage="74" class="bar">  <span></span></div>
+                            </li>
+                            <li>
+                                <div data-percentage="64" class="bar">  <span></span></div>
+                            </li>
+                            <li>
+                                <div data-percentage="44" class="bar">  <span></span></div>
+                            </li>
+                            <li>
+                                <div data-percentage="24" class="bar">  <span></span></div>
+                            </li>
+                            <li>
+                                <div data-percentage="34" class="bar">  <span></span></div>
+                            </li>
+                            <li>
+                                <div data-percentage="44" class="bar">  <span></span></div>
+                            </li>
+                            <li>
+                                <div data-percentage="54" class="bar">  <span></span></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-right">
+                <div class="img">
+                    <div class="chart-referrals">
+                        <ul id="bars">
+                            <li>
+                                <div data-percentage="56" class="bar">
+                                    <span></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div data-percentage="33" class="bar">  <span></span></div>
+                            </li>
+                            <li>
+                                <div data-percentage="54" class="bar">  <span></span></div>
+                            </li>
+                            <li>
+                                <div data-percentage="70" class="bar">  <span></span></div>
+                            </li>
+                            <li>
+                                <div data-percentage="64" class="bar">  <span></span></div>
+                            </li>
+                            <li>
+                                <div data-percentage="74" class="bar">  <span></span></div>
+                            </li>
+                            <li>
+                                <div data-percentage="84" class="bar">  <span></span></div>
+                            </li>
+                            <li>
+                                <div data-percentage="94" class="bar">  <span></span></div>
+                            </li>
+                            <li>
+                                <div data-percentage="84" class="bar">  <span></span></div>
+                            </li>
+                            <li>
+                                <div data-percentage="74" class="bar">  <span></span></div>
+                            </li>
+                            <li>
+                                <div data-percentage="64" class="bar">  <span></span></div>
+                            </li>
+                            <li>
+                                <div data-percentage="44" class="bar">  <span></span></div>
+                            </li>
+                            <li>
+                                <div data-percentage="24" class="bar">  <span></span></div>
+                            </li>
+                            <li>
+                                <div data-percentage="34" class="bar">  <span></span></div>
+                            </li>
+                            <li>
+                                <div data-percentage="44" class="bar">  <span></span></div>
+                            </li>
+                            <li>
+                                <div data-percentage="54" class="bar">  <span></span></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="text">32<span>Signups</span></p>
+
+            </div>
+        </div>
+        <div class="bottom-referr">
+            <div class="table member-tbl">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Members</th>
+                        <th class="date">Date</th>
+                        <th class="amount">Amount</th>
+                        <th>Status</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <div class="img">
+                                <img src="../images/acc-img-2.jpg">
+                            </div>
+                            <p class="mb-name">name member</p>
+                        </td>
+                        <td><p class="date">11.02.2016</p></td>
+                        <td><p class="money">$99</p></td>
+                        <td><a href="#" class="approved">Approved</a></td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="img">
+                                <img src="../images/acc-img-2.jpg">
+                            </div>
+                            <p class="mb-name">name member</p>
+                        </td>
+                        <td><p class="date">11.02.2016</p></td>
+                        <td><p class="money">$99</p></td>
+                        <td><a href="#" class="approved">Approved</a></td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="img">
+                                <img src="../images/acc-img-2.jpg">
+                            </div>
+                            <p class="mb-name">name member</p>
+                        </td>
+                        <td><p class="date">11.02.2016</p></td>
+                        <td><p class="money">$99</p></td>
+                        <td><a href="#" class="approved">Approved</a></td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="img">
+                                <img src="../images/acc-img-2.jpg">
+                            </div>
+                            <p class="mb-name">name member</p>
+                        </td>
+                        <td><p class="date">11.02.2016</p></td>
+                        <td><p class="money">$99</p></td>
+                        <td><a href="#" class="approved">Approved</a></td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="img">
+                                <img src="../images/acc-img-2.jpg">
+                            </div>
+                            <p class="mb-name">name member</p>
+                        </td>
+                        <td><p class="date">11.02.2016</p></td>
+                        <td><p class="money">$99</p></td>
+                        <td><a href="#" class="approved">Approved</a></td>
+
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!--<div class="table-member">-->
+            <!--<div class="thead">-->
+            <!--<div class="col-1">-->
+            <!--<p>Members</p>-->
+            <!--</div>-->
+            <!--<div class="col-2">-->
+            <!--<p>Date</p>-->
+            <!--</div>-->
+            <!--<div class="col-3">-->
+            <!--<p>  Amount </p>-->
+            <!--</div>-->
+            <!--<div class="col-4">-->
+            <!--<p> Status</p>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="tbody">-->
+            <!--<div class="row-table-mb">-->
+            <!--<div class="col-1">-->
+
+            <!--<div class="mb-content">-->
+
+            <!--<div class="img">-->
+            <!--<img src="../images/acc-img-2.jpg">-->
+            <!--</div>-->
+            <!--<p class="mb-name">name member</p>-->
+
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="col-2">-->
+
+            <!--<div class="mb-date">-->
+            <!--<p>11.2.2016</p>-->
+            <!--</div>-->
+
+            <!--</div>-->
+            <!--<div class="col-3">-->
+
+            <!--<div class="mb-amout">-->
+            <!--<p>$99</p>-->
+            <!--</div>-->
+
+            <!--</div>-->
+
+            <!--<div class="col-4">-->
+            <!--<div class="mb-approved">-->
+            <!--<a href="#">Approved</a>-->
+            <!--</div>-->
+
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+        </div>
+    </div>
+
+
+</div>
+
+</div>
+<div class="col-md-4 col-acc-info acc-col-right height-full">
+    <div class="box-credit-card">
+        <div class="header-account-info">
+            <h2>Credit Card</h2>
+            <a href="#" class="btn-acc">
+                <i class="fa fa-pencil"></i>Edit
+            </a>
+            <a href="#" class="btn-acc btn-warning">
+                Save
+            </a>
+
+        </div>
+        <div class="cre-content">
+            <p class="desc">Wenger is determined to win another title his way but what was successful in the past may no
+                longer be the best approach. Sunday’s game against Leicester is his and Arsenal’s.</p>
+
+            <p class="card-text">Card Number</p>
+
+            <div class="card-info">
+                <div class="card-number">
+
+                    <input type="text" value="5566 1234 3454 5555">
+                    <img src="../images/master-card.jpg" class="master-card">
+                </div>
+                <div class="row-expiration">
+                    <div class="ex-text">
+                        <p class="title-left">Expiration</p>
+
+                        <p class="title-right">CVC<i class="fa fa-info-circle"></i></p>
+                    </div>
+                    <div class="ex-choice">
+                        <div class="ex-edit">
+
+                            <select class="selectpicker wsb-select one-arrow dd-month">
+                                <option>March (03)</option>
+                                <option>April (04)</option>
+                            </select>
+
+                            <select class="selectpicker wsb-select one-arrow dd-year">
+                                <option>2016</option>
+                                <option>2017</option>
+                            </select>
+
+                            <input type="text" class="input-cvc">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="box-invoice">
+        <div class="header-account-info">
+            <h2>Invoices</h2>
+        </div>
+        <div class="table invoice-tbl">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Invoice</th>
+                    <th class="date">Date</th>
+                    <th class="amount">Total</th>
+                    <th class="status">Status</th>
+                    <th class="invoice"></th>
+
+                </tr>
+                </thead>
+                <tbody>
+                <tr data-toggle="modal" data-target="#modalInvoice">
+                    <td>
+                        <p class="iv-id">#4590</p>
+                    </td>
+                    <td><p class="date">11.02.2016</p></td>
+                    <td><p class="money">$99</p></td>
+                    <td><a href="#" class="paid">Paid</a></td>
+                    <td><a href="#" class="link-invoice">Invoice</a></td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <p class="iv-id">#4590</p>
+                    </td>
+                    <td><p class="date">11.02.2016</p></td>
+                    <td><p class="money">$99</p></td>
+                    <td><a href="#" class="paid">Paid</a></td>
+                    <td><a href="#" class="link-invoice">Invoice</a></td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <p class="iv-id">#4590</p>
+                    </td>
+                    <td><p class="date">11.02.2016</p></td>
+                    <td><p class="money">$99</p></td>
+                    <td><a href="#" class="paid">Paid</a></td>
+                    <td><a href="#" class="link-invoice">Invoice</a></td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <p class="iv-id">#4590</p>
+                    </td>
+                    <td><p class="date">11.02.2016</p></td>
+                    <td><p class="money">$99</p></td>
+                    <td><a href="#" class="paid">Paid</a></td>
+                    <td><a href="#" class="link-invoice">Invoice</a></td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <p class="iv-id">#4590</p>
+                    </td>
+                    <td><p class="date">11.02.2016</p></td>
+                    <td><p class="money">$99</p></td>
+                    <td><a href="#" class="paid">Paid</a></td>
+                    <td><a href="#" class="link-invoice">Invoice</a></td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <p class="iv-id">#4590</p>
+                    </td>
+                    <td><p class="date">11.02.2016</p></td>
+                    <td><p class="money">$99</p></td>
+                    <td><a href="#" class="paid">Paid</a></td>
+                    <td><a href="#" class="link-invoice">Invoice</a></td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <p class="iv-id">#4590</p>
+                    </td>
+                    <td><p class="date">11.02.2016</p></td>
+                    <td><p class="money">$99</p></td>
+                    <td><a href="#" class="paid declined">DECLINED</a></td>
+                    <td><a href="#" class="link-invoice">Try Again</a></td>
+
+                </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+<!--modal Referrals-->
+
+<div class="modal fade support-modal modal-left-to-right referrals-md" id="modalReferrals" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h1 class="modal-title" id="myModalLabel">Referrals</h1>
+
+                <p>Description of referrals</p>
+            </div>
+            <div class="modal-body">
+
+                <div class="referr-content">
+                    <div class="logo-love-referr">
+                        <img src="../images/referrals-1.png">
+                    </div>
+                    <p class="text">Then tell the world about it!</p>
+
+                    <p class="text">For every friend you refer you get:</p>
+
+                    <div class="price-box">
+                        <img src="../images/referrals-2.png">
+                    </div>
+                    <p class="text-use">Use your credit to buy apps, websites
+                    </p>
+
+                    <p class="text-use">or any thing you want!</p>
+
+                    <div class="box-send-link">
+                        <input type="text" placeholder="https://t.co/RNCD0Fc0">
+
+                        <p class="icon">
+                            <img src="../images/referrals-3.png">
+                        </p>
+
+                        <p class="icon2">
+                            <img src="../images/referrals-4.png">
+                        </p>
+
+                        <p class="text-send-link">
+                            Here is your uniqe link,<span> copy and send</span> your friends!
+                        </p>
+                    </div>
+                    <div class="box-promote">
+                        <p class="text-promote">Here is 5 ways to promote it.</p>
+                        <div class="fakebook">
+                            <a href="#" class="">
+                                <img src="../images/ic-fb.png">
+                            </a>
+
+
+                        </div>
+                        <div class="twitter">
+                            <a href="#" class="">
+                                <img src="../images/ic-twitter.jpg">
+                            </a>
+
+                        </div>
+                        <div class="linkedin">
+                            <a href="#" class="linkedin">
+                                <img src="../images/ic-linkedin.jpg">
+                            </a>
+                        </div>
+                        <div class="googleplus">
+                            <a href="#" class="googleplus">
+                                <img src="../images/ic-googleplus.jpg">
+                            </a>
+                        </div>
+                        <div class="blogger">
+                            <a href="#" class="blogger">
+                                <img src="../images/ic-blogger.jpg">
+                            </a>
+                        </div>
+                        <div class="box-checkout-visible facebook">
+                            <span class="arrow-top">
+
+                            </span>
+                            <p>Check out this great tool by WebsiteBox:
+                            </p>
+                            <p>https://t.co/RNCD0Fc0</p>
+                            <a class="btn btn-warning">Go!</a>
+                        </div>
+                        <div class="box-checkout-visible twitter">
+                            <span class="arrow-top">
+
+                            </span>
+                            <p>Check out this great tool by WebsiteBox:
+                            </p>
+                            <p>https://t.co/RNCD0Fc0</p>
+                            <a class="btn btn-warning">Go!</a>
+                        </div>
+                        <div class="box-checkout-visible linkedin">
+                            <span class="arrow-top">
+
+                            </span>
+                            <p>Check out this great tool by WebsiteBox:
+                            </p>
+                            <p>https://t.co/RNCD0Fc0</p>
+                            <a class="btn btn-warning">Go!</a>
+                        </div>
+                        <div class="box-checkout-visible googleplus">
+                            <span class="arrow-top">
+
+                            </span>
+                            <p>Check out this great tool by WebsiteBox:
+                            </p>
+                            <p>https://t.co/RNCD0Fc0</p>
+                            <a class="btn btn-warning">Go!</a>
+                        </div>
+                        <div class="box-checkout-visible blogger">
+                            <span class="arrow-top">
+
+                            </span>
+                            <p>Check out this great tool by WebsiteBox:
+                            </p>
+                            <p>https://t.co/RNCD0Fc0</p>
+                            <a class="btn btn-warning">Go!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--modal Invoice-->
+
+<div class="modal fade support-modal referrals-md invoice-md" id="modalInvoice" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="box-process">
+                    <a href="#" class="btn-border">
+                        <i class="fa fa-print"></i>
+                        Print
+                    </a>
+                    <a href="#" class="btn-border">
+                        Process
+                    </a>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+
+                <h1 class="modal-title" id="myModalLabel">INVOICE #4655</h1>
+
+                <p>Invoice Information</p>
+            </div>
+            <div class="modal-body">
+
+                <div class="invoice-content">
+                    <div class="row-top">
+                        <div class="logo-invoice pull-left">
+                            <img src="../images/logo-invoice.jpg">
+                        </div>
+                        <div class="pull-right">
+                            <div class="try-unpaid">
+                                <a href="#" class="tryagain">Try Again</a>
+                                <a href="#" class="unpaid btn-orange-small">UNPAID</a>
+                            </div>
+                            <p>CC #59685</p>
+                            <p>Jan, 15, 2016</p>
+
+                        </div>
+                    </div>
+                    <div class="invoice-to">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="inv-to-ct">
+                                    <h3 class="title">Invoiced to:</h3>
+                                    <p>Company</p>
+                                    <p>Street Address</p>
+                                    <p>City, State, Zip Code</p>
+                                    <p>Telephone Number</p>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="inv-to-ct">
+                                    <h3 class="title">Pay to:</h3>
+                                    <p>Company</p>
+                                    <p>Street Address</p>
+                                    <p>City, State, Zip Code</p>
+                                    <p>Telephone Number</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="table tbl-invoice-to ">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th class="text-left">#</th>
+                                <th class="desc">Description</th>
+                                <th class="amount">Amount</th>
+
+
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <p class="iv-id">4590</p>
+                                </td>
+                                <td><p class="desc">All App Bundle</p></td>
+                                <td><p class="money">$99</p></td>
+
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="iv-id">4590</p>
+                                </td>
+                                <td><p class="desc">All App Bundle</p></td>
+                                <td><p class="money">$99</p></td>
+
+
+                            </tr>
+
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="box-total">
+                        <div class="row-total">
+                            <p class="pull-left">Subtotal</p>
+                            <p class="pull-right">$219</p>
+                        </div>
+                        <div class="row-total">
+                            <p class="pull-left">Tax</p>
+                            <p class="pull-right">$19</p>
+                        </div>
+                        <div class="row-total">
+                            <p class="pull-left">Credit</p>
+                            <p class="pull-right">$210</p>
+                        </div>
+                        <div class="row-total bottom-total">
+                            <p class="pull-left">Total</p>
+                            <p class="pull-right">$210</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+<!-- modal -->
+<div class="modal fade support-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h1 class="modal-title" id="myModalLabel">Help & Support</h1>
+
+                <p>Help with management Area Activities</p>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetuer adi pis cing elit, sed diam nonummy nibh.</p>
+                <!-- 16:9 aspect ratio -->
+                <div class="media-holder">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZyhrYis509A"
+                                frameborder="0" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+                <ol class="custom-numeric-list">
+                    <li><a href="#">
+                        <span class="number">Q</span>
+                        <span class="text">Adding or Registering a New Domain Name?</span>
+                    </a></li>
+                    <li><a href="#"><span class="number">Q</span>
+                        <span class="text">In your Control Panel, at the bottom left, there’s a major resource section to help you to get the most out of your WebsiteBox tools and resources?</span>
+                    </a></li>
+                    <li><a href="#"><span class="number">Q</span>
+                        <span class="text">It’s labeled Help & Support and has eight buttons. Let’s look at each with a brief overview?</span>
+                    </a></li>
+                    <li><a href="#"><span class="number">Q</span>
+                        <span class="text">Getting Started This is the most valuable section for the new user?</span>
+                    </a></li>
+                    <li><a href="#"><span class="number">Q</span>
+                        <span class="text">Take all of the time you need to review these sections individually and you’ll get off?</span>
+                    </a></li>
+                    <li><a href="#"><span class="number">Q</span>
+                        <span class="text">If a picture is worth a thousand words, for instruction a video is priceless?</span></a>
+                    </li>
+                    <li><a href="#"><span class="number">Q</span>
+                        <span class="text">This help button takes you to instructional videos that will make your site setup and continued use an efficient and enjoyable process?</span>
+                    </a>
+                    </li>
+                </ol>
+                <a href="#" class="btn btn-warning btn-block">Contact Support</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/jquery-ui/jquery-ui.js"></script>
+<!-- scroll bar  -->
+<script src="../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- custom select -->
+<script type="text/javascript" src="../bower_components/bootstrap-select/js/bootstrap-select.js"></script>
+<!-- crop  -->
+<script src="../js/crop.js"></script>
+<!-- tags input -->
+<script type="text/javascript" src="../js/jquery.tagsinput.min.js"></script>
+<!-- date picker -->
+<script type="text/javascript" src="../js/bootstrap-datepicker.min.js"></script>
+<!-- include rangeslider JavaScript -->
+<script src="../bower_components/rangeslider.js/dist/rangeslider.min.js"></script>
+<!-- include rangeslider -->
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- include Masonry -->
+<script src="../js/isotope.pkgd.min.js"></script>
+<!-- include custom JavaScript -->
+<script src="../js/jquery.main.js"></script>
+<script src="../js/apps/script.account.js"></script>
+
+</body>
+</html>

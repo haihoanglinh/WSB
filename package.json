@@ -1,0 +1,11 @@
+{
+  "name": "website-box",
+  "version": "1.0.0",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cli": "^1.2.1",
+    "gulp-flatten": "^0.2.0",
+    "gulp-sass": "^2.2.0",
+    "gulp.spritesmith": "^6.2.1"
+  }
+}

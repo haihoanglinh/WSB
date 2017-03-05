@@ -1,0 +1,755 @@
+.app--team{ 
+  .team-icon{
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    @include border-radius(50%);
+  /*  border: 1px solid #cfd7de;*/
+    position: relative;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 0px 1px #cfd7de;
+    -moz-box-shadow: 0px 0px 0px 1px #cfd7de;
+    box-shadow: 0px 0px 0px 1px #cfd7de;
+    i{
+      display: inline-block;
+      margin: auto;
+      vertical-align: middle;
+    }
+  }
+
+  .hobby-animal{
+    @include sprite($hobby-animal);
+    &.active{
+      @include sprite($hobby-animal-active);
+    }
+  }
+
+  .hobby-beach{
+    @include sprite($hobby-beach);
+    &.active{
+      @include sprite($hobby-beach-active);
+    }
+  }
+
+  .hobby-bicycle{
+    @include sprite($hobby-bicycle);
+    &.active{
+      @include sprite($hobby-bicycle-active);
+    }
+  }
+
+  .hobby-billiards{
+    @include sprite($hobby-billiards);
+    &.active{
+      @include sprite($hobby-billiards-active);
+    }
+  }
+
+  .hobby-boating{
+    @include sprite($hobby-boating);
+    &.active{
+      @include sprite($hobby-boating-active);
+    }
+  }
+
+  .hobby-bowling{
+    @include sprite($hobby-bowling);
+    &.active{
+      @include sprite($hobby-bowling-active);
+    }
+  }
+
+  .hobby-camping{
+    @include sprite($hobby-camping);
+    &.active{
+      @include sprite($hobby-camping-active);
+    }
+  }
+
+  .hobby-card{
+    @include sprite($hobby-card);
+    &.active{
+      @include sprite($hobby-card-active);
+    }
+  }
+
+  .hobby-cars{
+    @include sprite($hobby-cars);
+    &.active{
+      @include sprite($hobby-cars-active);
+    }
+  }
+
+  .hobby-church{
+    @include sprite($hobby-church);
+    &.active{
+      @include sprite($hobby-church-active);
+    }
+  }
+
+  .hobby-computer{
+    @include sprite($hobby-computer);
+    &.active{
+      @include sprite($hobby-computer-active);
+    }
+  }
+
+  .hobby-cooking{
+    @include sprite($hobby-cooking);
+    &.active{
+      @include sprite($hobby-cooking-active);
+    }
+  }
+
+  .hobby-craft{
+    @include sprite($hobby-craft);
+    &.active{
+      @include sprite($hobby-craft-active);
+    }
+  }
+
+  .hobby-dancing{
+    @include sprite($hobby-dancing);
+    &.active{
+      @include sprite($hobby-dancing-active);
+    }
+  }
+
+  .hobby-dating{
+    @include sprite($hobby-dating);
+    &.active{
+      @include sprite($hobby-dating-active);
+    }
+  }
+
+  .hobby-eating{
+    @include sprite($hobby-eating);
+    &.active{
+      @include sprite($hobby-eating-active);
+    }
+  }
+
+  .hobby-entertain{
+    @include sprite($hobby-entertain);
+    &.active{
+      @include sprite($hobby-entertain-active);
+    }
+  }
+
+  .hobby-family{
+    @include sprite($hobby-family);
+    &.active{
+      @include sprite($hobby-family-active);
+    }
+  }
+
+  .hobby-fishing{
+    @include sprite($hobby-fishing);
+    &.active{
+      @include sprite($hobby-fishing-active);
+    }
+  }
+
+  .hobby-gardening{
+    @include sprite($hobby-gardening);
+    &.active{
+      @include sprite($hobby-gardening-active);
+    }
+  }
+
+  .hobby-golf{
+    @include sprite($hobby-golf);
+    &.active{
+      @include sprite($hobby-golf-active);
+    }
+  }
+
+  .hobby-hiking{
+    @include sprite($hobby-hiking);
+    &.active{
+      @include sprite($hobby-hiking-active);
+    }
+  }
+
+  .hobby-horse{
+    @include sprite($hobby-horse);
+    &.active{
+      @include sprite($hobby-horse-active);
+    }
+  }
+
+  .hobby-housework{
+    @include sprite($hobby-housework);
+    &.active{
+      @include sprite($hobby-housework-active);
+    }
+  }
+
+  .hobby-hunting{
+    @include sprite($hobby-hunting);
+    &.active{
+      @include sprite($hobby-hunting-active);
+    }
+  }
+
+  .hobby-motorcycling{
+    @include sprite($hobby-motorcycling);
+    &.active{
+      @include sprite($hobby-motorcycling-active);
+    }
+  }
+
+  .hobby-movie{
+    @include sprite($hobby-movie);
+    &.active{
+      @include sprite($hobby-movie-active);
+    }
+  }
+
+  .hobby-music{
+    @include sprite($hobby-music);
+    &.active{
+      @include sprite($hobby-music-active);
+    }
+  }
+
+  .hobby-painting{
+    @include sprite($hobby-paiting);
+    &.active{
+      @include sprite($hobby-paiting-active);
+    }
+  }
+
+  .hobby-playing{
+    @include sprite($hobby-playing);
+    &.active{
+      @include sprite($hobby-playing-active);
+    }
+  }
+
+  .hobby-reading{
+    @include sprite($hobby-reading);
+    &.active{
+      @include sprite($hobby-reading-active);
+    }
+  }
+
+  .hobby-relax{
+    @include sprite($hobby-relax);
+    &.active{
+      @include sprite($hobby-relax-active);
+    }
+  }
+
+  .hobby-renting{
+    @include sprite($hobby-renting);
+    &.active{
+      @include sprite($hobby-renting-active);
+    }
+  }
+
+  .hobby-running{
+    @include sprite($hobby-running);
+    &.active{
+      @include sprite($hobby-running-active);
+    }
+  }
+
+  .hobby-shopping{
+    @include sprite($hobby-shopping);
+    &.active{
+      @include sprite($hobby-shopping-active);
+    }
+  }
+
+  .hobby-skiing{
+    @include sprite($hobby-skiing);
+    &.active{
+      @include sprite($hobby-skiing-active);
+    }
+  }
+
+  .hobby-sleeping{
+    @include sprite($hobby-sleeping);
+    &.active{
+      @include sprite($hobby-sleeping-active);
+    }
+  }
+
+  .hobby-social{
+    @include sprite($hobby-social);
+    &.active{
+      @include sprite($hobby-social-active);
+    }
+  }
+
+  .hobby-sport{
+    @include sprite($hobby-sport);
+    &.active{
+      @include sprite($hobby-sport-active);
+    }
+  }
+
+  .hobby-swimming{
+    @include sprite($hobby-swimming);
+    &.active{
+      @include sprite($hobby-swimming-active);
+    }
+  }
+
+  .hobby-tennis{
+    @include sprite($hobby-tennis);
+    &.active{
+      @include sprite($hobby-tennis-active);
+    }
+  }
+
+  .hobby-theater{
+    @include sprite($hobby-theater);
+    &.active{
+      @include sprite($hobby-theater-active);
+    }
+  }
+
+  .hobby-travel{
+    @include sprite($hobby-travel);
+    &.active{
+      @include sprite($hobby-travel-active);
+    }
+  }
+
+  .hobby-excercise{
+    @include sprite($hobby-excercise);
+    &.active{
+      @include sprite($hobby-excercise-active);
+    }
+  }
+
+  .hobby-tv{
+    @include sprite($hobby-tv);
+    &.active{
+      @include sprite($hobby-tv-active);
+    }
+  }
+
+  .hobby-volunteer{
+    @include sprite($hobby-volunteer);
+    &.active{
+      @include sprite($hobby-volunteer-active);
+    }
+  }
+
+  .hobby-walking{
+    @include sprite($hobby-walking);
+    &.active{
+      @include sprite($hobby-walking-active);
+    }
+  }
+
+  .hobby-watching-sport{
+    @include sprite($hobby-watching-sport);
+    &.active{
+      @include sprite($hobby-watching-sport-active);
+    }
+  }
+
+  .hobby-writing{
+    @include sprite($hobby-writing);
+    &.active{
+      @include sprite($hobby-writing-active);
+    }
+  }
+
+  .hobby-sewing{
+    @include sprite($icon-sewing);
+    &.active{
+      @include sprite($icon-sewing-active);
+    }
+  }
+
+  .icon-hyperlink{
+    display: inline-block;
+    @include sprite($icon-hyperlink);
+  }
+
+  .icon-map-pin{
+    display: inline-block;
+    @include sprite($icon-map-pin);
+    &:hover{
+      @include sprite($icon-map-pin-active);
+    }
+  }
+
+  .member-type-icon{
+    display: inline-block;
+  }
+
+  .mt-realtor{
+    @include sprite($mt-realtor);
+    &.active{
+      @include sprite($mt-realtor-active);
+    }
+  }
+
+  .mt-appraisers{
+    @include sprite($mt-appraisers);
+    &.active{
+      @include sprite($mt-appraisers-active);
+    }
+  }
+
+  .mt-builder{
+    @include sprite($mt-builder);
+    &.active{
+      @include sprite($mt-builder-active);
+    }
+  }
+
+  .mt-carpentry{
+    @include sprite($mt-carpentry);
+    &.active{
+      @include sprite($mt-carpentry-active);
+    }
+  }
+
+  .mt-cleaning{
+    @include sprite($mt-cleaning);
+    &.active{
+      @include sprite($mt-cleaning-active);
+    }
+  }
+
+  .mt-concrete{
+    @include sprite($mt-concrete);
+    &.active{
+      @include sprite($mt-concrete-active);
+    }
+  }
+
+  .mt-contractor{
+    @include sprite($mt-contractor);
+    &.active{
+      @include sprite($mt-contractor-active);
+    }
+  }
+
+  .mt-decks{
+    @include sprite($mt-decks);
+    &.active{
+      @include sprite($mt-decks-active);
+    }
+  }
+
+  .mt-doors{
+    @include sprite($mt-doors);
+    &.active{
+      @include sprite($mt-doors-active);
+    }
+  }
+
+  .mt-electrical{
+    @include sprite($mt-electrical);
+    &.active{
+      @include sprite($mt-electrical-active);
+    }
+  }
+
+  .mt-fencing{
+    @include sprite($mt-fencing);
+    &.active{
+      @include sprite($mt-fencing-active);
+    }
+  }
+
+  .mt-fireplaces{
+    @include sprite($mt-fireplaces);
+    &.active{
+      @include sprite($mt-fireplaces-active);
+    }
+  }
+
+  .mt-flooring{
+    @include sprite($mt-flooring);
+    &.active{
+      @include sprite($mt-flooring-active);
+    }
+  }
+
+  .mt-funiture{
+    @include sprite($mt-funituring);
+    &.active{
+      @include sprite($mt-funiture-active);
+    }
+  }
+
+  .mt-handymen{
+    @include sprite($mt-handymen);
+    &.active{
+      @include sprite($mt-handymen-active);
+    }
+  }
+
+  .mt-heating{
+    @include sprite($mt-heating);
+    &.active{
+      @include sprite($mt-heating-active);
+    }
+  }
+
+  .mt-inspector{
+    @include sprite($mt-inspector);
+    &.active{
+      @include sprite($mt-inspector-active);
+    }
+  }
+
+  .mt-interior{
+    @include sprite($mt-interior);
+    &.active{
+      @include sprite($mt-interior-active);
+    }
+  }
+
+  .mt-janitorial{
+    @include sprite($mt-janitorial);
+    &.active{
+      @include sprite($mt-janitorial-active);
+    }
+  }
+
+  .mt-landscaping{
+    @include sprite($mt-landscaping);
+    &.active{
+      @include sprite($mt-landscaping-active);
+    }
+  }
+
+  .mt-lawn{
+    @include sprite($mt-lawn);
+    &.active{
+      @include sprite($mt-lawn-active);
+    }
+  }
+
+  .mt-locksmith{
+    @include sprite($mt-locksmith);
+    &.active{
+      @include sprite($mt-locksmith-active);
+    }
+  }
+
+  .mt-mortgage{
+    @include sprite($mt-mortgage);
+    &.active{
+      @include sprite($mt-mortgage-active);
+    }
+  }
+
+  .mt-moving{
+    @include sprite($mt-moving);
+    &.active{
+      @include sprite($mt-moving-active);
+    }
+  }
+
+  .mt-painting{
+    @include sprite($mt-painting);
+    &.active{
+      @include sprite($mt-painting-active);
+    }
+  }
+
+  .mt-inspector{
+    @include sprite($mt-inspector);
+    &.active{
+      @include sprite($mt-inspector-active);
+    }
+  }
+
+  .mt-pest{
+    @include sprite($mt-pest);
+    &.active{
+      @include sprite($mt-pest-active);
+    }
+  }
+
+  .mt-plumbing{
+    @include sprite($mt-plumbing);
+    &.active{
+      @include sprite($mt-plumbing-active);
+    }
+  }
+
+  .mt-pool{
+    @include sprite($mt-pool);
+    &.active{
+      @include sprite($mt-pool-active);
+    }
+  }
+
+  .mt-property{
+    @include sprite($mt-property);
+    &.active{
+      @include sprite($mt-property-active);
+    }
+  }
+
+  .mt-roofing{
+    @include sprite($mt-roofing);
+    &.active{
+      @include sprite($mt-roofing-active);
+    }
+  }
+
+  .mt-staging{
+    @include sprite($mt-staging);
+    &.active{
+      @include sprite($mt-staging-active);
+    }
+  }
+
+  .mt-window{
+    @include sprite($mt-window);
+    &.active{
+      @include sprite($mt-window-active);
+    }
+  }
+
+  .btn-invite{
+    &>i{
+      margin-right: 5px;
+    }
+  }
+
+  .icon-user-plus-black{
+    display: inline-block;
+    @include sprite($icon-user-plus-black);
+    vertical-align: middle;
+  }
+
+  .icon-user-plus-white{
+    display: inline-block;
+    @include sprite($icon-user-plus-white);
+  }
+
+  .switcher.active{
+    .icon-map-pin{
+      @include sprite($icon-map-pin-active);
+    }
+    .fa-folder{
+      &:before{
+        content: "\f07c";
+      }
+    }
+  }
+
+  .team-categories{
+    margin-top: 15px;
+    margin-bottom: 15px!important;
+    .category-item{
+      overflow: hidden;
+      padding: 4px 5px;
+      .pull-left{
+        width: 80%;
+        .cat-name{
+          overflow: hidden;
+          @include calc(max-width, '100% - 35px');
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          display: inline-block;
+        }
+      }
+      .cat-num-count{
+        vertical-align: middle;
+      }
+      .pull-right{
+        width: 20%;
+        text-align: right;
+      }
+      &.selected{
+        color: #eb6b22;
+      }
+      .cat-img{
+        margin-right: 5px;
+        display: inline-block;
+        vertical-align: middle;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+      }
+      .cat-name{
+        vertical-align: middle;
+      }
+      &:hover{
+        cursor: pointer;
+        color: #eb6b22;
+      }
+    }
+  }
+
+  .list-view{
+    .team-icon{
+      border: transparent;
+      box-shadow: none;
+    }
+  }
+
+  .grid-view{
+    @include media('>=1024px'){
+      &>.row >.col-sm-4.col-md-3{
+        width: 25%!important;
+      }
+    }
+  }
+
+  .table-document{
+    &>tbody{
+      &>tr{
+        &>td{
+          border: 0!important;
+          padding: 10px 5px;
+        }
+      }
+    }
+  }
+
+  .team-grid-item{
+    text-align: center;
+    margin: 18px 0;
+    .people-media{
+      position: relative;
+      margin-bottom: 15px;
+      .people-avatar{
+        width: 60px;
+        height: 60px;
+        @include border-radius(50%);
+        display: inline-block;
+      }
+      .team-icon{
+        position: absolute;
+        left: 50%;
+        z-index: 1;
+        background: #fff;
+        margin-left: 10px;
+        bottom: 0px;
+        line-height: 25px;
+      }
+    }
+    .people-name {
+      color: $mako;
+      font-size: 18px;
+      text-align: center;
+      display: block;
+      max-width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    span.label{
+      width: 74px;
+      font-size: 10px;
+      padding: 0.4em;
+      display: inline-block;
+    }
+  }
+}

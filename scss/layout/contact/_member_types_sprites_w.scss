@@ -1,0 +1,437 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$mt-appraisers-white-name: 'mt-appraisers-white';
+$mt-appraisers-white-x: 21px;
+$mt-appraisers-white-y: 21px;
+$mt-appraisers-white-offset-x: -21px;
+$mt-appraisers-white-offset-y: -21px;
+$mt-appraisers-white-width: 20px;
+$mt-appraisers-white-height: 20px;
+$mt-appraisers-white-total-width: 123px;
+$mt-appraisers-white-total-height: 121px;
+$mt-appraisers-white-image: '../images/contact/member_types_white_spritesheet.png';
+$mt-appraisers-white: (21px, 21px, -21px, -21px, 20px, 20px, 123px, 121px, '../images/contact/member_types_white_spritesheet.png', 'mt-appraisers-white', );
+$mt-builder-white-name: 'mt-builder-white';
+$mt-builder-white-x: 37px;
+$mt-builder-white-y: 81px;
+$mt-builder-white-offset-x: -37px;
+$mt-builder-white-offset-y: -81px;
+$mt-builder-white-width: 20px;
+$mt-builder-white-height: 15px;
+$mt-builder-white-total-width: 123px;
+$mt-builder-white-total-height: 121px;
+$mt-builder-white-image: '../images/contact/member_types_white_spritesheet.png';
+$mt-builder-white: (37px, 81px, -37px, -81px, 20px, 15px, 123px, 121px, '../images/contact/member_types_white_spritesheet.png', 'mt-builder-white', );
+$mt-carpentry-white-name: 'mt-carpentry-white';
+$mt-carpentry-white-x: 67px;
+$mt-carpentry-white-y: 17px;
+$mt-carpentry-white-offset-x: -67px;
+$mt-carpentry-white-offset-y: -17px;
+$mt-carpentry-white-width: 20px;
+$mt-carpentry-white-height: 19px;
+$mt-carpentry-white-total-width: 123px;
+$mt-carpentry-white-total-height: 121px;
+$mt-carpentry-white-image: '../images/contact/member_types_white_spritesheet.png';
+$mt-carpentry-white: (67px, 17px, -67px, -17px, 20px, 19px, 123px, 121px, '../images/contact/member_types_white_spritesheet.png', 'mt-carpentry-white', );
+$mt-cleaning-white-name: 'mt-cleaning-white';
+$mt-cleaning-white-x: 67px;
+$mt-cleaning-white-y: 36px;
+$mt-cleaning-white-offset-x: -67px;
+$mt-cleaning-white-offset-y: -36px;
+$mt-cleaning-white-width: 20px;
+$mt-cleaning-white-height: 19px;
+$mt-cleaning-white-total-width: 123px;
+$mt-cleaning-white-total-height: 121px;
+$mt-cleaning-white-image: '../images/contact/member_types_white_spritesheet.png';
+$mt-cleaning-white: (67px, 36px, -67px, -36px, 20px, 19px, 123px, 121px, '../images/contact/member_types_white_spritesheet.png', 'mt-cleaning-white', );
+$mt-concrete-white-name: 'mt-concrete-white';
+$mt-concrete-white-x: 42px;
+$mt-concrete-white-y: 0px;
+$mt-concrete-white-offset-x: -42px;
+$mt-concrete-white-offset-y: 0px;
+$mt-concrete-white-width: 25px;
+$mt-concrete-white-height: 16px;
+$mt-concrete-white-total-width: 123px;
+$mt-concrete-white-total-height: 121px;
+$mt-concrete-white-image: '../images/contact/member_types_white_spritesheet.png';
+$mt-concrete-white: (42px, 0px, -42px, 0px, 25px, 16px, 123px, 121px, '../images/contact/member_types_white_spritesheet.png', 'mt-concrete-white', );
+$mt-contractor-white-name: 'mt-contractor-white';
+$mt-contractor-white-x: 0px;
+$mt-contractor-white-y: 81px;
+$mt-contractor-white-offset-x: 0px;
+$mt-contractor-white-offset-y: -81px;
+$mt-contractor-white-width: 16px;
+$mt-contractor-white-height: 20px;
+$mt-contractor-white-total-width: 123px;
+$mt-contractor-white-total-height: 121px;
+$mt-contractor-white-image: '../images/contact/member_types_white_spritesheet.png';
+$mt-contractor-white: (0px, 81px, 0px, -81px, 16px, 20px, 123px, 121px, '../images/contact/member_types_white_spritesheet.png', 'mt-contractor-white', );
+$mt-decks-white-name: 'mt-decks-white';
+$mt-decks-white-x: 19px;
+$mt-decks-white-y: 61px;
+$mt-decks-white-offset-x: -19px;
+$mt-decks-white-offset-y: -61px;
+$mt-decks-white-width: 20px;
+$mt-decks-white-height: 19px;
+$mt-decks-white-total-width: 123px;
+$mt-decks-white-total-height: 121px;
+$mt-decks-white-image: '../images/contact/member_types_white_spritesheet.png';
+$mt-decks-white: (19px, 61px, -19px, -61px, 20px, 19px, 123px, 121px, '../images/contact/member_types_white_spritesheet.png', 'mt-decks-white', );
+$mt-doors-white-name: 'mt-doors-white';
+$mt-doors-white-x: 108px;
+$mt-doors-white-y: 69px;
+$mt-doors-white-offset-x: -108px;
+$mt-doors-white-offset-y: -69px;
+$mt-doors-white-width: 12px;
+$mt-doors-white-height: 20px;
+$mt-doors-white-total-width: 123px;
+$mt-doors-white-total-height: 121px;
+$mt-doors-white-image: '../images/contact/member_types_white_spritesheet.png';
+$mt-doors-white: (108px, 69px, -108px, -69px, 12px, 20px, 123px, 121px, '../images/contact/member_types_white_spritesheet.png', 'mt-doors-white', );
+$mt-electrical-white-name: 'mt-electrical-white';
+$mt-electrical-white-x: 0px;
+$mt-electrical-white-y: 101px;
+$mt-electrical-white-offset-x: 0px;
+$mt-electrical-white-offset-y: -101px;
+$mt-electrical-white-width: 11px;
+$mt-electrical-white-height: 20px;
+$mt-electrical-white-total-width: 123px;
+$mt-electrical-white-total-height: 121px;
+$mt-electrical-white-image: '../images/contact/member_types_white_spritesheet.png';
+$mt-electrical-white: (0px, 101px, 0px, -101px, 11px, 20px, 123px, 121px, '../images/contact/member_types_white_spritesheet.png', 'mt-electrical-white', );
+$mt-fencing-white-name: 'mt-fencing-white';
+$mt-fencing-white-x: 90px;
+$mt-fencing-white-y: 19px;
+$mt-fencing-white-offset-x: -90px;
+$mt-fencing-white-offset-y: -19px;
+$mt-fencing-white-width: 18px;
+$mt-fencing-white-height: 18px;
+$mt-fencing-white-total-width: 123px;
+$mt-fencing-white-total-height: 121px;
+$mt-fencing-white-image: '../images/contact/member_types_white_spritesheet.png';
+$mt-fencing-white: (90px, 19px, -90px, -19px, 18px, 18px, 123px, 121px, '../images/contact/member_types_white_spritesheet.png', 'mt-fencing-white', );
+$mt-fireplaces-white-name: 'mt-fireplaces-white';
+$mt-fireplaces-white-x: 72px;
+$mt-fireplaces-white-y: 81px;
+$mt-fireplaces-white-offset-x: -72px;
+$mt-fireplaces-white-offset-y: -81px;
+$mt-fireplaces-white-width: 15px;
+$mt-fireplaces-white-height: 14px;
+$mt-fireplaces-white-total-width: 123px;
+$mt-fireplaces-white-total-height: 121px;
+$mt-fireplaces-white-image: '../images/contact/member_types_white_spritesheet.png';
+$mt-fireplaces-white: (72px, 81px, -72px, -81px, 15px, 14px, 123px, 121px, '../images/contact/member_types_white_spritesheet.png', 'mt-fireplaces-white', );
+$mt-flooring-white-name: 'mt-flooring-white';
+$mt-flooring-white-x: 108px;
+$mt-flooring-white-y: 53px;
+$mt-flooring-white-offset-x: -108px;
+$mt-flooring-white-offset-y: -53px;
+$mt-flooring-white-width: 15px;
+$mt-flooring-white-height: 16px;
+$mt-flooring-white-total-width: 123px;
+$mt-flooring-white-total-height: 121px;
+$mt-flooring-white-image: '../images/contact/member_types_white_spritesheet.png';
+$mt-flooring-white: (108px, 53px, -108px, -53px, 15px, 16px, 123px, 121px, '../images/contact/member_types_white_spritesheet.png', 'mt-flooring-white', );
+$mt-funituring-white-name: 'mt-funituring-white';
+$mt-funituring-white-x: 108px;
+$mt-funituring-white-y: 37px;
+$mt-funituring-white-offset-x: -108px;
+$mt-funituring-white-offset-y: -37px;
+$mt-funituring-white-width: 15px;
+$mt-funituring-white-height: 16px;
+$mt-funituring-white-total-width: 123px;
+$mt-funituring-white-total-height: 121px;
+$mt-funituring-white-image: '../images/contact/member_types_white_spritesheet.png';
+$mt-funituring-white: (108px, 37px, -108px, -37px, 15px, 16px, 123px, 121px, '../images/contact/member_types_white_spritesheet.png', 'mt-funituring-white', );
+$mt-handymen-white-name: 'mt-handymen-white';
+$mt-handymen-white-x: 57px;
+$mt-handymen-white-y: 81px;
+$mt-handymen-white-offset-x: -57px;
+$mt-handymen-white-offset-y: -81px;
+$mt-handymen-white-width: 15px;
+$mt-handymen-white-height: 14px;
+$mt-handymen-white-total-width: 123px;
+$mt-handymen-white-total-height: 121px;
+$mt-handymen-white-image: '../images/contact/member_types_white_spritesheet.png';
+$mt-handymen-white: (57px, 81px, -57px, -81px, 15px, 14px, 123px, 121px, '../images/contact/member_types_white_spritesheet.png', 'mt-handymen-white', );
+$mt-heating-white-name: 'mt-heating-white';
+$mt-heating-white-x: 40px;
+$mt-heating-white-y: 41px;
+$mt-heating-white-offset-x: -40px;
+$mt-heating-white-offset-y: -41px;
+$mt-heating-white-width: 20px;
+$mt-heating-white-height: 20px;
+$mt-heating-white-total-width: 123px;
+$mt-heating-white-total-height: 121px;
+$mt-heating-white-image: '../images/contact/member_types_white_spritesheet.png';
+$mt-heating-white: (40px, 41px, -40px, -41px, 20px, 20px, 123px, 121px, '../images/contact/member_types_white_spritesheet.png', 'mt-heating-white', );
+$mt-inspector-white-name: 'mt-inspector-white';
+$mt-inspector-white-x: 90px;
+$mt-inspector-white-y: 37px;
+$mt-inspector-white-offset-x: -90px;
+$mt-inspector-white-offset-y: -37px;
+$mt-inspector-white-width: 17px;
+$mt-inspector-white-height: 19px;
+$mt-inspector-white-total-width: 123px;
+$mt-inspector-white-total-height: 121px;
+$mt-inspector-white-image: '../images/contact/member_types_white_spritesheet.png';
+$mt-inspector-white: (90px, 37px, -90px, -37px, 17px, 19px, 123px, 121px, '../images/contact/member_types_white_spritesheet.png', 'mt-inspector-white', );
+$mt-interior-white-name: 'mt-interior-white';
+$mt-interior-white-x: 108px;
+$mt-interior-white-y: 18px;
+$mt-interior-white-offset-x: -108px;
+$mt-interior-white-offset-y: -18px;
+$mt-interior-white-width: 13px;
+$mt-interior-white-height: 19px;
+$mt-interior-white-total-width: 123px;
+$mt-interior-white-total-height: 121px;
+$mt-interior-white-image: '../images/contact/member_types_white_spritesheet.png';
+$mt-interior-white: (108px, 18px, -108px, -18px, 13px, 19px, 123px, 121px, '../images/contact/member_types_white_spritesheet.png', 'mt-interior-white', );
+$mt-janitorial-white-name: 'mt-janitorial-white';
+$mt-janitorial-white-x: 0px;
+$mt-janitorial-white-y: 61px;
+$mt-janitorial-white-offset-x: 0px;
+$mt-janitorial-white-offset-y: -61px;
+$mt-janitorial-white-width: 19px;
+$mt-janitorial-white-height: 20px;
+$mt-janitorial-white-total-width: 123px;
+$mt-janitorial-white-total-height: 121px;
+$mt-janitorial-white-image: '../images/contact/member_types_white_spritesheet.png';
+$mt-janitorial-white: (0px, 61px, 0px, -61px, 19px, 20px, 123px, 121px, '../images/contact/member_types_white_spritesheet.png', 'mt-janitorial-white', );
+$mt-landscaping-white-name: 'mt-landscaping-white';
+$mt-landscaping-white-x: 67px;
+$mt-landscaping-white-y: 0px;
+$mt-landscaping-white-offset-x: -67px;
+$mt-landscaping-white-offset-y: 0px;
+$mt-landscaping-white-width: 23px;
+$mt-landscaping-white-height: 17px;
+$mt-landscaping-white-total-width: 123px;
+$mt-landscaping-white-total-height: 121px;
+$mt-landscaping-white-image: '../images/contact/member_types_white_spritesheet.png';
+$mt-landscaping-white: (67px, 0px, -67px, 0px, 23px, 17px, 123px, 121px, '../images/contact/member_types_white_spritesheet.png', 'mt-landscaping-white', );
+$mt-lawn-white-name: 'mt-lawn-white';
+$mt-lawn-white-x: 39px;
+$mt-lawn-white-y: 61px;
+$mt-lawn-white-offset-x: -39px;
+$mt-lawn-white-offset-y: -61px;
+$mt-lawn-white-width: 22px;
+$mt-lawn-white-height: 16px;
+$mt-lawn-white-total-width: 123px;
+$mt-lawn-white-total-height: 121px;
+$mt-lawn-white-image: '../images/contact/member_types_white_spritesheet.png';
+$mt-lawn-white: (39px, 61px, -39px, -61px, 22px, 16px, 123px, 121px, '../images/contact/member_types_white_spritesheet.png', 'mt-lawn-white', );
+$mt-locksmith-white-name: 'mt-locksmith-white';
+$mt-locksmith-white-x: 90px;
+$mt-locksmith-white-y: 56px;
+$mt-locksmith-white-offset-x: -90px;
+$mt-locksmith-white-offset-y: -56px;
+$mt-locksmith-white-width: 16px;
+$mt-locksmith-white-height: 20px;
+$mt-locksmith-white-total-width: 123px;
+$mt-locksmith-white-total-height: 121px;
+$mt-locksmith-white-image: '../images/contact/member_types_white_spritesheet.png';
+$mt-locksmith-white: (90px, 56px, -90px, -56px, 16px, 20px, 123px, 121px, '../images/contact/member_types_white_spritesheet.png', 'mt-locksmith-white', );
+$mt-mortgage-white-name: 'mt-mortgage-white';
+$mt-mortgage-white-x: 21px;
+$mt-mortgage-white-y: 0px;
+$mt-mortgage-white-offset-x: -21px;
+$mt-mortgage-white-offset-y: 0px;
+$mt-mortgage-white-width: 21px;
+$mt-mortgage-white-height: 20px;
+$mt-mortgage-white-total-width: 123px;
+$mt-mortgage-white-total-height: 121px;
+$mt-mortgage-white-image: '../images/contact/member_types_white_spritesheet.png';
+$mt-mortgage-white: (21px, 0px, -21px, 0px, 21px, 20px, 123px, 121px, '../images/contact/member_types_white_spritesheet.png', 'mt-mortgage-white', );
+$mt-moving-white-name: 'mt-moving-white';
+$mt-moving-white-x: 16px;
+$mt-moving-white-y: 81px;
+$mt-moving-white-offset-x: -16px;
+$mt-moving-white-offset-y: -81px;
+$mt-moving-white-width: 21px;
+$mt-moving-white-height: 15px;
+$mt-moving-white-total-width: 123px;
+$mt-moving-white-total-height: 121px;
+$mt-moving-white-image: '../images/contact/member_types_white_spritesheet.png';
+$mt-moving-white: (16px, 81px, -16px, -81px, 21px, 15px, 123px, 121px, '../images/contact/member_types_white_spritesheet.png', 'mt-moving-white', );
+$mt-painting-white-name: 'mt-painting-white';
+$mt-painting-white-x: 90px;
+$mt-painting-white-y: 0px;
+$mt-painting-white-offset-x: -90px;
+$mt-painting-white-offset-y: 0px;
+$mt-painting-white-width: 18px;
+$mt-painting-white-height: 19px;
+$mt-painting-white-total-width: 123px;
+$mt-painting-white-total-height: 121px;
+$mt-painting-white-image: '../images/contact/member_types_white_spritesheet.png';
+$mt-painting-white: (90px, 0px, -90px, 0px, 18px, 19px, 123px, 121px, '../images/contact/member_types_white_spritesheet.png', 'mt-painting-white', );
+$mt-pest-white-name: 'mt-pest-white';
+$mt-pest-white-x: 0px;
+$mt-pest-white-y: 0px;
+$mt-pest-white-offset-x: 0px;
+$mt-pest-white-offset-y: 0px;
+$mt-pest-white-width: 21px;
+$mt-pest-white-height: 21px;
+$mt-pest-white-total-width: 123px;
+$mt-pest-white-total-height: 121px;
+$mt-pest-white-image: '../images/contact/member_types_white_spritesheet.png';
+$mt-pest-white: (0px, 0px, 0px, 0px, 21px, 21px, 123px, 121px, '../images/contact/member_types_white_spritesheet.png', 'mt-pest-white', );
+$mt-plumbing-white-name: 'mt-plumbing-white';
+$mt-plumbing-white-x: 61px;
+$mt-plumbing-white-y: 61px;
+$mt-plumbing-white-offset-x: -61px;
+$mt-plumbing-white-offset-y: -61px;
+$mt-plumbing-white-width: 20px;
+$mt-plumbing-white-height: 16px;
+$mt-plumbing-white-total-width: 123px;
+$mt-plumbing-white-total-height: 121px;
+$mt-plumbing-white-image: '../images/contact/member_types_white_spritesheet.png';
+$mt-plumbing-white: (61px, 61px, -61px, -61px, 20px, 16px, 123px, 121px, '../images/contact/member_types_white_spritesheet.png', 'mt-plumbing-white', );
+$mt-pool-white-name: 'mt-pool-white';
+$mt-pool-white-x: 20px;
+$mt-pool-white-y: 41px;
+$mt-pool-white-offset-x: -20px;
+$mt-pool-white-offset-y: -41px;
+$mt-pool-white-width: 20px;
+$mt-pool-white-height: 20px;
+$mt-pool-white-total-width: 123px;
+$mt-pool-white-total-height: 121px;
+$mt-pool-white-image: '../images/contact/member_types_white_spritesheet.png';
+$mt-pool-white: (20px, 41px, -20px, -41px, 20px, 20px, 123px, 121px, '../images/contact/member_types_white_spritesheet.png', 'mt-pool-white', );
+$mt-property-white-name: 'mt-property-white';
+$mt-property-white-x: 0px;
+$mt-property-white-y: 21px;
+$mt-property-white-offset-x: 0px;
+$mt-property-white-offset-y: -21px;
+$mt-property-white-width: 21px;
+$mt-property-white-height: 20px;
+$mt-property-white-total-width: 123px;
+$mt-property-white-total-height: 121px;
+$mt-property-white-image: '../images/contact/member_types_white_spritesheet.png';
+$mt-property-white: (0px, 21px, 0px, -21px, 21px, 20px, 123px, 121px, '../images/contact/member_types_white_spritesheet.png', 'mt-property-white', );
+$mt-realtor-white-name: 'mt-realtor-white';
+$mt-realtor-white-x: 0px;
+$mt-realtor-white-y: 41px;
+$mt-realtor-white-offset-x: 0px;
+$mt-realtor-white-offset-y: -41px;
+$mt-realtor-white-width: 20px;
+$mt-realtor-white-height: 20px;
+$mt-realtor-white-total-width: 123px;
+$mt-realtor-white-total-height: 121px;
+$mt-realtor-white-image: '../images/contact/member_types_white_spritesheet.png';
+$mt-realtor-white: (0px, 41px, 0px, -41px, 20px, 20px, 123px, 121px, '../images/contact/member_types_white_spritesheet.png', 'mt-realtor-white', );
+$mt-roofing-white-name: 'mt-roofing-white';
+$mt-roofing-white-x: 87px;
+$mt-roofing-white-y: 81px;
+$mt-roofing-white-offset-x: -87px;
+$mt-roofing-white-offset-y: -81px;
+$mt-roofing-white-width: 20px;
+$mt-roofing-white-height: 8px;
+$mt-roofing-white-total-width: 123px;
+$mt-roofing-white-total-height: 121px;
+$mt-roofing-white-image: '../images/contact/member_types_white_spritesheet.png';
+$mt-roofing-white: (87px, 81px, -87px, -81px, 20px, 8px, 123px, 121px, '../images/contact/member_types_white_spritesheet.png', 'mt-roofing-white', );
+$mt-staging-white-name: 'mt-staging-white';
+$mt-staging-white-x: 42px;
+$mt-staging-white-y: 16px;
+$mt-staging-white-offset-x: -42px;
+$mt-staging-white-offset-y: -16px;
+$mt-staging-white-width: 20px;
+$mt-staging-white-height: 20px;
+$mt-staging-white-total-width: 123px;
+$mt-staging-white-total-height: 121px;
+$mt-staging-white-image: '../images/contact/member_types_white_spritesheet.png';
+$mt-staging-white: (42px, 16px, -42px, -16px, 20px, 20px, 123px, 121px, '../images/contact/member_types_white_spritesheet.png', 'mt-staging-white', );
+$mt-window-white-name: 'mt-window-white';
+$mt-window-white-x: 108px;
+$mt-window-white-y: 0px;
+$mt-window-white-offset-x: -108px;
+$mt-window-white-offset-y: 0px;
+$mt-window-white-width: 15px;
+$mt-window-white-height: 18px;
+$mt-window-white-total-width: 123px;
+$mt-window-white-total-height: 121px;
+$mt-window-white-image: '../images/contact/member_types_white_spritesheet.png';
+$mt-window-white: (108px, 0px, -108px, 0px, 15px, 18px, 123px, 121px, '../images/contact/member_types_white_spritesheet.png', 'mt-window-white', );
+$spritesheet-width: 123px;
+$spritesheet-height: 121px;
+$spritesheet-image: '../images/contact/member_types_white_spritesheet.png';
+$spritesheet-sprites: ($mt-appraisers-white, $mt-builder-white, $mt-carpentry-white, $mt-cleaning-white, $mt-concrete-white, $mt-contractor-white, $mt-decks-white, $mt-doors-white, $mt-electrical-white, $mt-fencing-white, $mt-fireplaces-white, $mt-flooring-white, $mt-funituring-white, $mt-handymen-white, $mt-heating-white, $mt-inspector-white, $mt-interior-white, $mt-janitorial-white, $mt-landscaping-white, $mt-lawn-white, $mt-locksmith-white, $mt-mortgage-white, $mt-moving-white, $mt-painting-white, $mt-pest-white, $mt-plumbing-white, $mt-pool-white, $mt-property-white, $mt-realtor-white, $mt-roofing-white, $mt-staging-white, $mt-window-white, );
+$spritesheet: (123px, 121px, '../images/contact/member_types_white_spritesheet.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

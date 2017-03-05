@@ -1,0 +1,217 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$file-doc-small-name: 'file-doc-small';
+$file-doc-small-x: 75px;
+$file-doc-small-y: 0px;
+$file-doc-small-offset-x: -75px;
+$file-doc-small-offset-y: 0px;
+$file-doc-small-width: 15px;
+$file-doc-small-height: 21px;
+$file-doc-small-total-width: 90px;
+$file-doc-small-total-height: 87px;
+$file-doc-small-image: '../images/document/document_spritesheet.png';
+$file-doc-small: (75px, 0px, -75px, 0px, 15px, 21px, 90px, 87px, '../images/document/document_spritesheet.png', 'file-doc-small', );
+$file-doc-name: 'file-doc';
+$file-doc-x: 0px;
+$file-doc-y: 33px;
+$file-doc-offset-x: 0px;
+$file-doc-offset-y: -33px;
+$file-doc-width: 25px;
+$file-doc-height: 33px;
+$file-doc-total-width: 90px;
+$file-doc-total-height: 87px;
+$file-doc-image: '../images/document/document_spritesheet.png';
+$file-doc: (0px, 33px, 0px, -33px, 25px, 33px, 90px, 87px, '../images/document/document_spritesheet.png', 'file-doc', );
+$file-jpg-small-name: 'file-jpg-small';
+$file-jpg-small-x: 0px;
+$file-jpg-small-y: 66px;
+$file-jpg-small-offset-x: 0px;
+$file-jpg-small-offset-y: -66px;
+$file-jpg-small-width: 15px;
+$file-jpg-small-height: 21px;
+$file-jpg-small-total-width: 90px;
+$file-jpg-small-total-height: 87px;
+$file-jpg-small-image: '../images/document/document_spritesheet.png';
+$file-jpg-small: (0px, 66px, 0px, -66px, 15px, 21px, 90px, 87px, '../images/document/document_spritesheet.png', 'file-jpg-small', );
+$file-jpg-name: 'file-jpg';
+$file-jpg-x: 25px;
+$file-jpg-y: 0px;
+$file-jpg-offset-x: -25px;
+$file-jpg-offset-y: 0px;
+$file-jpg-width: 25px;
+$file-jpg-height: 33px;
+$file-jpg-total-width: 90px;
+$file-jpg-total-height: 87px;
+$file-jpg-image: '../images/document/document_spritesheet.png';
+$file-jpg: (25px, 0px, -25px, 0px, 25px, 33px, 90px, 87px, '../images/document/document_spritesheet.png', 'file-jpg', );
+$file-pdf-small-name: 'file-pdf-small';
+$file-pdf-small-x: 75px;
+$file-pdf-small-y: 21px;
+$file-pdf-small-offset-x: -75px;
+$file-pdf-small-offset-y: -21px;
+$file-pdf-small-width: 15px;
+$file-pdf-small-height: 21px;
+$file-pdf-small-total-width: 90px;
+$file-pdf-small-total-height: 87px;
+$file-pdf-small-image: '../images/document/document_spritesheet.png';
+$file-pdf-small: (75px, 21px, -75px, -21px, 15px, 21px, 90px, 87px, '../images/document/document_spritesheet.png', 'file-pdf-small', );
+$file-pdf-name: 'file-pdf';
+$file-pdf-x: 50px;
+$file-pdf-y: 0px;
+$file-pdf-offset-x: -50px;
+$file-pdf-offset-y: 0px;
+$file-pdf-width: 25px;
+$file-pdf-height: 33px;
+$file-pdf-total-width: 90px;
+$file-pdf-total-height: 87px;
+$file-pdf-image: '../images/document/document_spritesheet.png';
+$file-pdf: (50px, 0px, -50px, 0px, 25px, 33px, 90px, 87px, '../images/document/document_spritesheet.png', 'file-pdf', );
+$file-txt-small-name: 'file-txt-small';
+$file-txt-small-x: 30px;
+$file-txt-small-y: 66px;
+$file-txt-small-offset-x: -30px;
+$file-txt-small-offset-y: -66px;
+$file-txt-small-width: 15px;
+$file-txt-small-height: 21px;
+$file-txt-small-total-width: 90px;
+$file-txt-small-total-height: 87px;
+$file-txt-small-image: '../images/document/document_spritesheet.png';
+$file-txt-small: (30px, 66px, -30px, -66px, 15px, 21px, 90px, 87px, '../images/document/document_spritesheet.png', 'file-txt-small', );
+$file-txt-name: 'file-txt';
+$file-txt-x: 25px;
+$file-txt-y: 33px;
+$file-txt-offset-x: -25px;
+$file-txt-offset-y: -33px;
+$file-txt-width: 25px;
+$file-txt-height: 33px;
+$file-txt-total-width: 90px;
+$file-txt-total-height: 87px;
+$file-txt-image: '../images/document/document_spritesheet.png';
+$file-txt: (25px, 33px, -25px, -33px, 25px, 33px, 90px, 87px, '../images/document/document_spritesheet.png', 'file-txt', );
+$file-xls-small-name: 'file-xls-small';
+$file-xls-small-x: 75px;
+$file-xls-small-y: 42px;
+$file-xls-small-offset-x: -75px;
+$file-xls-small-offset-y: -42px;
+$file-xls-small-width: 15px;
+$file-xls-small-height: 21px;
+$file-xls-small-total-width: 90px;
+$file-xls-small-total-height: 87px;
+$file-xls-small-image: '../images/document/document_spritesheet.png';
+$file-xls-small: (75px, 42px, -75px, -42px, 15px, 21px, 90px, 87px, '../images/document/document_spritesheet.png', 'file-xls-small', );
+$file-xls-name: 'file-xls';
+$file-xls-x: 50px;
+$file-xls-y: 33px;
+$file-xls-offset-x: -50px;
+$file-xls-offset-y: -33px;
+$file-xls-width: 25px;
+$file-xls-height: 33px;
+$file-xls-total-width: 90px;
+$file-xls-total-height: 87px;
+$file-xls-image: '../images/document/document_spritesheet.png';
+$file-xls: (50px, 33px, -50px, -33px, 25px, 33px, 90px, 87px, '../images/document/document_spritesheet.png', 'file-xls', );
+$file-zip-small-name: 'file-zip-small';
+$file-zip-small-x: 15px;
+$file-zip-small-y: 66px;
+$file-zip-small-offset-x: -15px;
+$file-zip-small-offset-y: -66px;
+$file-zip-small-width: 15px;
+$file-zip-small-height: 21px;
+$file-zip-small-total-width: 90px;
+$file-zip-small-total-height: 87px;
+$file-zip-small-image: '../images/document/document_spritesheet.png';
+$file-zip-small: (15px, 66px, -15px, -66px, 15px, 21px, 90px, 87px, '../images/document/document_spritesheet.png', 'file-zip-small', );
+$file-zip-name: 'file-zip';
+$file-zip-x: 0px;
+$file-zip-y: 0px;
+$file-zip-offset-x: 0px;
+$file-zip-offset-y: 0px;
+$file-zip-width: 25px;
+$file-zip-height: 33px;
+$file-zip-total-width: 90px;
+$file-zip-total-height: 87px;
+$file-zip-image: '../images/document/document_spritesheet.png';
+$file-zip: (0px, 0px, 0px, 0px, 25px, 33px, 90px, 87px, '../images/document/document_spritesheet.png', 'file-zip', );
+$document-sprite-width: 90px;
+$document-sprite-height: 87px;
+$document-sprite-image: '../images/document/document_spritesheet.png';
+$document-sprite-sprites: ($file-doc-small, $file-doc, $file-jpg-small, $file-jpg, $file-pdf-small, $file-pdf, $file-txt-small, $file-txt, $file-xls-small, $file-xls, $file-zip-small, $file-zip, );
+$document-sprite: (90px, 87px, '../images/document/document_spritesheet.png', $document-sprite-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

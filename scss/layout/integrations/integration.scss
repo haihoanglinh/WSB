@@ -1,0 +1,370 @@
+.app--integration{
+  .col-lg-4.sidebar-right {
+    @include media('>=xs-phone') {
+      display: none;
+    }
+    @include media('>=widescreen') {
+      display: block;
+    }
+    @include media('>widescreen') {
+      display: block;
+    }
+
+  }
+  .wrap-content-integrations {
+    padding: 20px 30px;
+    @include media('<1024px') {
+      padding: 20px 0;
+    }
+    .integrations-grid-inner {
+      overflow: hidden;
+      position: relative;
+      margin: 0 -10px;
+      @include media('<1024px') {
+        margin: 0 5px;
+      }
+      .integrations-item {
+        width: 33.3333%;
+        float: left;
+        padding: 0 10px;
+        margin: 0 0 20px 0;
+        cursor: pointer;
+        position: relative;
+        input[type="checkbox"]{
+          &+.fake-input{
+            display: none;
+          }
+          &:checked{
+            &+.fake-input{
+              display: block;
+            }
+          }
+        }
+        &:hover{
+          input[type="checkbox"]{
+            &+.fake-input{
+              display: block;
+            }
+          }
+        }
+        .wsb-checkbox{
+          position: absolute;
+          top: 15px;
+          right: 25px;
+        }
+        @include media('<1024px') {
+          width: 50%;
+        }
+        @include media('<tablet') {
+          width: 100%;
+        }
+        .integrations-item-inner {
+          padding: 10px 10px 30px;
+          border: 1px solid $color-border;
+          @include border-radius(5px);
+          overflow: hidden;
+          position: relative;
+          text-align: center;
+          .dot-integrations {
+            display: block;
+            overflow: hidden;
+            text-align: center;
+            padding: 10px 0 0 0;
+          }
+          .box-switch-on-off{
+            text-align: center;
+            .button-wrap{
+              margin: auto;
+              margin-top: 10px;
+            }
+          }
+          .integration-name{
+            font-size: 18px;
+            color: $mako;
+            margin-bottom: 5px;
+            margin-top: 10px;
+          }
+          .integrations-des {
+            position: relative;
+            overflow: hidden;
+            margin: 0;
+            height: 44px;
+            overflow: hidden;
+            > * {
+              color: #8d939a;
+              margin: 0;
+              padding: 0;
+            }
+          }
+          .active-integrations {
+            margin: 18px 0 0 0;
+          }
+        }
+      }
+    }
+  }
+
+  .clear-padding-left {
+      padding-left: 0 !important;
+  }
+
+  .box-view-screen-small{
+    display: none;
+    @include media('<1024px'){
+      display: block;
+    }
+  }
+  .integrations-list.table{
+    @include media('<1024px'){
+      display: none;
+    }
+  }
+
+  .table.integrations-list{
+    &>tbody{
+      &>tr{
+        &>td{
+          padding-top: 15px;
+          padding-bottom: 15px;
+        }
+        &:hover{
+          .wsb-checkbox {
+            display: block;
+          }
+        }
+        input[type="checkbox"]{
+          &+.fake-input{
+            display: none;
+          }
+          &:checked{
+            &+.fake-input{
+              display: block;
+            }
+          }
+        }
+        &:hover{
+          input[type="checkbox"]{
+            &+.fake-input{
+              display: block;
+            }
+          }
+        }
+      }
+    }
+    .integration-name{
+      font-size: 18px;
+      color: $mako;
+      vertical-align: middle;
+      margin-bottom: 0;
+    }
+    .integration-des{
+      margin-bottom: 0;
+      max-width: 300px;
+    }
+  }
+
+  .integration-partners{
+    text-align: center;
+    .plus-icon{
+      margin: 0 20px;
+    }
+  }
+
+  .integration-details{
+    font-size: 16px;
+    color: #333;
+    margin-top: 35px!important;
+    margin-bottom: 30px!important;
+  }
+
+  .btn-integration{
+    text-align: center;
+    font-weight: 600;
+    font-size: 22px;
+    margin: auto;
+    display: block;
+    max-width: 300px;
+    line-height: 26px;
+    padding: 10px;
+    span {
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 500;
+      display: block;
+    }
+  }
+
+  .plus-icon{
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url(../images/integrations/icon-plus.png) no-repeat center/cover;
+  }
+
+  .detail-block {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d3d6d7;
+    .detail-block-heading {
+      font-size: 14px;
+      font-weight: bold;
+      color: $orange;
+      margin: 20px 0 10px 0;
+    }
+    &:last-child{
+      border-bottom: 0;
+    }
+  }
+
+  .icon-box{
+    margin: 5px 0;
+    .iconbox-header{
+      display: table-cell;
+      vertical-align: top;
+      .iconbox-icon{
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        margin-right: 10px;
+        background-color: $orange;
+        .icon{
+          width: 20px;
+          height: 20px;
+          vertical-align: middle;
+        }
+      }
+    }
+    .iconbox-block{
+      display: table-cell;
+      vertical-align: top;
+      h4.iconbox-heading{
+        margin-bottom: 0;
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .config-list{
+    .config-item{
+      position: relative;
+      border-left: 1px solid $orange;
+      padding: 5px 0 5px 25px;
+      .header-config{
+        position: absolute;
+        right: 0;
+        top: 3px;
+      }
+      &:last-child{
+        border-left: 0;
+      }
+      .item-number{
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        background-color: $orange;
+        @include border-radius(50%);
+        line-height: 25px;
+        text-align: center;
+        color: #fff;
+        font-size: 14px;
+        top: 0px;
+        left: -12px;
+      }
+      .item-title{
+        color: #fff;
+        font-size: 15px;
+        margin-bottom: 10px;
+        line-height: 20px;
+      }
+      &.item-background{
+        .btn{
+          margin-left: 0;
+          margin-bottom: 7px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  .setup-block{
+    padding-top: 10px;
+    .btn-submit {
+      width: 100%;
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 15px;
+      height: auto;
+    }
+  }
+
+  .config-options{
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+    list-style: none;
+    .option-text{
+      letter-spacing: -0.1px;
+    }
+    .wsb-checkbox{
+      float: right;
+    }
+    .row{
+      margin-left: -5px;
+      margin-right: -5px;
+      [class^="col"]{
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    }
+  }
+
+  .list-btn-op.on-app-grid {
+    @include media('>=tablet') {
+      display: block;
+    }
+    @include media('<tablet') {
+      display: none;
+    }
+  }
+
+  @include media('<768px'){
+    .integration-partners{
+      img{
+        max-width: 100%;
+      }
+      .plus-icon{
+        display: block;
+        margin: 20px auto;
+      }
+    }
+    .integration-details{
+      text-align: center;
+    }
+  }
+
+  .search-inner{
+    .box-search{
+      display: block;
+    }
+    @include calc(width, '100% - 28px');
+    float: left;
+    .box-search{
+      margin-top: 0;
+      padding-right: 0;
+    }
+    .categories-section{
+      .panel-heading{
+        padding-right: 0;
+        padding-left: 30px;
+        &:after{
+          right: 0;
+          left: 30px;
+        }
+      }
+      .panel-body-sidebar{
+        padding-right: 0;
+      }
+    }
+  }
+}

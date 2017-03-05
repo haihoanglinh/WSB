@@ -1,0 +1,131 @@
+/* custom checkbox and radio styles */
+.custom-form {
+  [type="checkbox"],
+  [type="radio"] {
+    position:fixed;
+    left:0;
+    top:0;
+    opacity:0;
+    z-index: -1;
+  }
+
+  .fake-input {
+    display: inline-block;
+    background: $brand-white;
+    vertical-align: middle;
+    position: relative;
+    z-index: 2;
+    margin-right: 5px;
+  }
+}
+
+.custom-form [type="radio"]:checked + .fake-input,
+.custom-form [type="checkbox"]:checked + .fake-input {
+  border-color: $brand-warning;
+
+  &:before {
+    opacity: 1;
+  }
+}
+
+.custom-form input:disabled + .fake-input,
+.custom-form input:disabled ~ .fake-label {
+  opacity: .5;
+}
+
+/* custom checkbox styles */
+.custom-form {
+  [type="checkbox"] + .fake-input {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #a4abb2;
+    border-radius: $border-radius-small;
+  }
+}
+
+.custom-form [type="checkbox"] + .fake-input:before {
+  @include absolute;
+  content:'';
+  opacity: 0;
+  background: $brand-warning;
+}
+
+/* custom radio styles */
+.custom-form {
+  [type="radio"] + .fake-input {
+    width: 19px;
+    height: 19px;
+    border: 2px solid #cdd0d1;
+  }
+}
+
+.custom-form [type=radio] + .fake-input {
+  border-radius: 50%;
+}
+
+.custom-form [type="radio"] + .fake-input:before{
+  content: '';
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  bottom: 4px;
+  left: 4px;
+  background: $brand-warning;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+
+/* custom select styles */
+.fake-select {
+  position: relative;
+  display: inline-block;
+
+  select::-ms-expand {
+    display: none;
+  }
+
+  select {
+    display: inline-block;
+    margin: 0;
+    font: inherit;
+    outline: none;
+    appearance: none;
+    position: relative;
+  }
+
+  &:after,
+  &:before {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+  }
+
+  &:before {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 28px;
+    border: solid $input-border;
+    border-width: 1px 1px 1px 0;
+    background: $brand-white;
+    border-radius: 0 $border-radius-base $border-radius-base 0;
+    z-index: 1;
+  }
+
+  &:after {
+    right: 12px;
+    width: 6px;
+    height: 12px;
+    top: 50%;
+    transform: translate(0, -50%);
+    background: url(../images/sprite.svg) no-repeat;
+    line-height: 0;
+    z-index: 1;
+  }
+}
+
+
+.fake-select-holder {
+
+}

@@ -1,0 +1,1872 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- set the encoding of your site -->
+    <meta charset="utf-8">
+    <!-- set the viewport width and initial-scale on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Integrations</title>
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+    <!-- Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <!-- Boostrap select -->
+    <link rel="stylesheet" href="../bower_components/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <!-- include the datepicker -->
+    <link rel="stylesheet" href="../bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+    <!-- include bootstrap WYSIWYG -->
+    <link rel="stylesheet" href="../bower_components/summernote/dist/summernote.css">
+    <!-- include the site stylesheet -->
+    <link rel="stylesheet" href="../css/main.css">
+    <script type="text/javascript" src="../js/svg-sprites.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('svg-icon-placeholder').innerHTML += SVG_SPRITES['sprite'];
+        }, false);
+    </script>
+</head>
+<body class="app--domain app--integration domains-page">
+
+<div id="svg-icon-placeholder" style="display: none;"></div>
+<!-- main container of all the page elements -->
+<div class="wrapper">
+
+<!-- header of the page -->
+<header id="header" class="well well-dark header-fixed-mobile">
+<nav class="navbar navbar-default main-nav-container">
+<div class="container-fluid">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+
+    <!-- page logo -->
+    <div class="navbar-brand logo">
+        <a href="app-control-panel.html"><img src="../images/logo.svg" alt="WebsiteBox" width="89" height="37"></a>
+    </div>
+</div>
+<!--Box search for app-->
+<div class="box-search">
+    <div class="search-row">
+        <input type="text" class="form-control input-search input-control" placeholder="Search">
+        <a href="#" class="icon-search"><i class="fa fa-search"></i></a>
+
+        <div class="box-search-details">
+            <div class="result-document">
+                <div class="result-title">
+                    <p class="title">
+                        <span>
+                            <img src="../images/blog-app.png">
+                        </span>
+                        Integrations</p>
+                </div>
+                <div class="result-content">
+                    <div class="row-info">
+                        <p class="pull-left">Test the new Websitebox</p>
+
+                        <p class="pull-right">Domains</p>
+                    </div>
+                    <div class="row-info active">
+                        <p class="pull-left">Test the new Websitebox</p>
+
+                        <p class="pull-right">Domains</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- main navigation of the page -->
+<ul class="nav nav-pills navbar-right main-nav">
+<li class="dropdown icon-notify">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+        <span class="sr-only">Notification</span>
+                <span class="icon-holder">
+                  <svg xmlnsxxxx="http://www.w3333333.org/2000/svg" class="icon icon-notification">
+                      <use xlink:href="#icon-notification"></use>
+                  </svg>
+                  <span class="quantity">2</span>
+                </span>
+    </a>
+
+    <div class="dropdown-menu notification-menu users-block">
+        <span class="arrow"></span>
+        <ul class="list-unstyled block-rounded">
+            <li>
+                <div class="panel-body">
+                    <div class="row row-inline panel-row">
+                        <div class="col-xs-10">
+                            <div class="row">
+                                <div class="col-xs-3 column img-holder">
+                                    <img src="../images/avatar02.jpg" class="img-circle img-thumbnail"
+                                         alt="image description">
+                                </div>
+                                <div class="col-xs-7 column text-block">
+                                    <span class="name">Andres Iniesta </span>
+                                    <span class="meta"><time datetime="19:45">Replied at 7:45 PM</time></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-2 column btn-holder">
+                            <a href="#" class="btn btn-success btn-circle btn-checked"><i class="fa fa-check"></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh eu ismod
+                                tincidunt ut laoreet dolore magna ali quam erat volutpat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="alert alert-success">
+                    <div class="row">
+                        <div class="col-xs-12">Send 25 more listings to Andres</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="panel-body">
+                    <div class="row row-inline panel-row">
+                        <div class="col-xs-10">
+                            <div class="row">
+                                <div class="col-xs-3 column img-holder">
+                                    <img src="../images/avatar03.jpg" class="img-circle img-thumbnail img-responsive"
+                                         alt="image description">
+                                </div>
+                                <div class="col-xs-6 column text-block">
+                                    <span class="name">Vanessa Bond</span>
+                                    <span class="meta"><time datetime="19:45">Replied at 7:45 PM</time></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-2 column btn-holder">
+                            <a href="#" class="btn btn-danger btn-circle btn-checked"><i class="fa fa-times"></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh eu ismod
+                                tincidunt ut laoreet dolore magna ali quam erat volutpat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="alert alert-danger">
+                    <div class="row">
+                        <div class="col-xs-12">Send 25 more listings to Vanessa</div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</li>
+
+<!-- To make the POPUP-HELP STEP 3 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+<li class="popup-container dropdown app-menu-holder popup-help-container step03">
+<div class="popup-overlay"></div>
+<a href="#" class="opener-popup dropdown-toggle under-overlay">
+  <span class="icon-view-store">
+      <span class="st1 st-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+      </span>
+      <span class="st2 st-icon">
+            <span></span>
+          <span></span>
+          <span></span>
+      </span>
+      <span class="st3 st-icon">
+            <span></span>
+          <span></span>
+          <span></span>
+      </span>
+  </span>
+</a>
+
+<div class="popup dropdown-menu under-overlay">
+<span class="arrow"></span>
+
+<div class="app-menu menu-list open-close">
+<div class="panel">
+<div class="panel-body">
+    <div class="first-view">
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/app_store.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>App Store</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/websites.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Websites</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/domains.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Domains</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/listings.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Listings</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/contacts.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Contacts</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/emails.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Emails</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/tasks.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Tasks</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/documents.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Documents</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/calendar.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Calendar</span>
+            </a>
+        </div>
+    </div>
+    <div class="slide">
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/campaigns.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Campaigns</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/listing_syndication.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Listing Syndication</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/rss.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>RSS</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/community.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Community</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/google_analytics.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Google Analytics</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/profile.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Profile</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/blog.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Blog</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/prints.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Prints</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/lead_capture.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Lead Capture</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/seo.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>SEO</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/mobile_notifications.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Mobile Notifications</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/craigslist.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Craigslist</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/qr_code.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>QR Code</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/har.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>HAR</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/move.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Move</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/realtor.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Realtor.com</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/apple.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>Apple</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#">
+                <div class="item-img"><img src="../images/cnn.png" class="img-responsive"
+                                           alt="image description"></div>
+                <span>CNN</span>
+            </a>
+        </div>
+    </div>
+    <div class="btn-holder">
+        <a class="btn btn-default btn-block opener" href="#">
+            <span class="hidden-active">More</span>
+            <span class="visible-active">Less</span>
+        </a>
+    </div>
+</div>
+</div>
+</div>
+<!-- To make the POPUP-HELP STEP 3 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+<div class="popup-help step03">
+    <div class="panel panel-default">
+        <span class="arrow arrow-right"></span>
+
+        <div class="panel-heading">
+            <strong class="title">Step 3 of 7</strong>
+            <a class="close" href="#" aria-label="Close"><span aria-hidden="true">&times;</span>
+            </a>
+        </div>
+        <div class="panel-body">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                laoreet dolore magna volutpat.</p>
+
+            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation</p>
+
+            <div class="btn-container text-right"><a href="#" class="btn btn-warning"><i
+                    class="fa fa-chevron-left"></i></a><a href="#" class="btn btn-warning"><i
+                    class="fa fa-chevron-right"></i></a></div>
+        </div>
+    </div>
+</div>
+</div>
+</li>
+<!--Show icon in mobile -->
+<li class="popup-container dropdown app-menu-holder popup-help-container wrap-icon-mobile">
+    <button type="button" class="nav-opener navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</li>
+<!-- To make the POPUP-HELP STEP 4 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+<li class="hidden-xs popup-help-container step04">
+    <div class="popup-overlay"></div>
+
+    <a href="#" data-toggle="modal" data-target="#myModal" class="btn-link under-overlay">
+        <span class="sr-only">Info</span>
+        <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+    </a>
+    <!-- To make the POPUP-HELP STEP 4 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+    <div class="popup-help step04">
+        <div class="panel panel-default">
+            <span class="arrow"></span>
+
+            <div class="panel-heading">
+                <strong class="title">Step 4 of 7</strong>
+                <a class="close" href="#" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </a>
+            </div>
+            <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna volutpat. </p>
+
+                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation</p>
+
+                <div class="btn-container text-right"><a href="#" class="btn btn-warning"><i
+                        class="fa fa-chevron-left"></i></a><a href="#" class="btn btn-warning"><i
+                        class="fa fa-chevron-right"></i></a></div>
+            </div>
+        </div>
+    </div>
+</li>
+<!-- To make the POPUP-HELP STEP 5 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+<li class="popup-container dropdown popup-help-container step05">
+    <div class="popup-overlay"></div>
+    <a class="opener-popup dropdown-toggle under-overlay" href="#">
+     <span class="icon-step05">
+
+     </span>
+    </a>
+
+    <div class="popup dropdown-menu settings-block under-overlay">
+        <span class="arrow"></span>
+
+        <div class="panel">
+            <div class="panel-body">
+                <div class="row dropdown-row">
+                    <div class="col-xs-4 theme-list-holder">
+                        <div class="scrollable">
+                            <span class="title text-uppercase">Theme</span>
+                            <ul class="theme-list list-unstyled">
+                                <li>
+                                    <a href="#"><span class="color color-default"></span><span class="description">Default</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="color color-remax"></span><span
+                                            class="description">Remax</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="active"><span class="color color-century91"></span><span
+                                            class="description">Century 91</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="color color-minimal"></span><span class="description">Minimal</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="color color-summer"></span><span
+                                            class="description">Summer</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="color color-default"></span><span class="description">Default</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="color color-remax"></span><span
+                                            class="description">Remax</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="color color-century91"></span><span class="description">Century 91</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="color color-minimal"></span><span class="description">Minimal</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="color color-summer"></span><span
+                                            class="description">Summer</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-8">
+                        <span class="title text-uppercase">Settings</span>
+
+                        <div class="form-in-drop">
+                            <div class="form-group">
+                                <span class="label-holder"><label for="select-1">Time Zone</label></span>
+                            <span class="select-holder">
+                              <span class="fake-select">
+                                <select id="select-1" class="form-control">
+                                    <option selected="selected">(UTC -8:00)</option>
+                                    <option>(UTC -8:00)</option>
+                                    <option>(UTC -8:00)</option>
+                                    <option>(UTC -8:00)</option>
+                                </select>
+                              </span>
+                            </span>
+                            </div>
+                            <div class="form-group">
+                                <span class="label-holder"><label for="select-2">Email Digest</label></span>
+                            <span class="select-holder">
+                              <span class="fake-select">
+                                <select id="select-2" class="form-control">
+                                    <option selected="selected">option 1</option>
+                                    <option>option 2</option>
+                                    <option>option 3</option>
+                                </select>
+                              </span>
+                            </span>
+                            </div>
+                            <div class="form-group">
+                                <span class="label-holder"><label for="language">Language</label></span>
+                                <span class="input-holder"><input type="text" class="form-control" id="language"
+                                                                  placeholder="English"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- To make the POPUP-HELP STEP 5 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+        <div class="popup-help step05">
+            <div class="panel panel-default">
+                <span class="arrow arrow-right"></span>
+
+                <div class="panel-heading">
+                    <strong class="title">Step 5 of 7</strong>
+                    <a class="close" href="#" aria-label="Close"><span aria-hidden="true">&times;</span>
+                    </a>
+                </div>
+                <div class="panel-body">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                        ut laoreet dolore magna volutpat. </p>
+
+                    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation</p>
+
+                    <div class="btn-container text-right"><a href="#" class="btn btn-warning"><i
+                            class="fa fa-chevron-left"></i></a><a href="#" class="btn btn-warning"><i
+                            class="fa fa-chevron-right"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+<!-- To make the POPUP-HELP STEP 6 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+<li class="dropdown hidden-xs user-dropdown popup-help-container step06">
+    <div class="popup-overlay"></div>
+    <a href="#" id="dropdownMenu2" class="user-block dropdown-toggle under-overlay" data-toggle="dropdown" role="button"
+       aria-haspopup="true" aria-expanded="false">
+        <div class="row">
+            <div class="col-xs-3 img-holder"><img src="../images/avatar01.jpg" class="img-responsive img-circle"
+                                                  alt="image description"></div>
+            <div class="col-xs-9 text-block">
+                <div class="name"><strong>Richard Mattius</strong><span class="caret"></span></div>
+                <strong class="status text-uppercase text-warning">PREMIUM USER</strong>
+            </div>
+        </div>
+    </a>
+
+    <div class="dropdown-menu under-overlay">
+        <span class="arrow"></span>
+
+        <div class="panel-body">
+            <ul class="list-unstyled" aria-labelledby="dropdownMenu2">
+                <li class="switch-account">
+                    <a href="#switch-account-menu" class="switch-account-toggle collapsed" data-toggle="collapse">
+                        <span class="renew-icon"><i class="material-icons">autorenew</i></span>
+                        <span class="account-name">Century 21 Inc.</span>
+                        <span class="text">Switch Account</span>
+                        <span class="menu-arrow-icon"><i class="material-icons">arrow_drop_down</i></span>
+                    </a>
+
+                    <div id="switch-account-menu" class="collapse">
+                        <ul>
+                            <li><a href="#">Realty Corp.</a></li>
+                            <li><a href="#">Bradly and Drown</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li role="separator" class="divider"></li>
+
+                <li>
+                    <a href="app-account-info.html">
+                        <i class="material-icons">person</i>
+                        <span class="text">My Account</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="my-user.html">
+                        <i class="material-icons">group</i>
+                        <span class="text">My Users</span>
+                    </a>
+                </li>
+                <li>
+                    <div class=""></div>
+                    <a href="my-product.html">
+                        <i class="material-icons">apps</i>
+                        <span class="text">My Products & Services</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="app-store.html">
+                        <i class="material-icons">shopping_basket</i>
+                        <span class="text">WebsiteBox Store</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#myModal">
+                        <i class="material-icons">help</i>
+                        <span class="text">Help & Support</span>
+                    </a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li>
+                    <a href="#">
+                        <i class="material-icons">exit_to_app</i>
+                        <span class="text">Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- To make the POPUP-HELP STEP 6 active, class .POPUP-HELP-ACTIVE should be added to the POPUP-HELP-CONTAINER element. -->
+        <div class="popup-help step06">
+            <div class="panel panel-default">
+                <span class="arrow arrow-right"></span>
+
+                <div class="panel-heading">
+                    <strong class="title">Step 6 of 7</strong>
+                    <a class="close" href="#" aria-label="Close"><span aria-hidden="true">&times;</span>
+                    </a>
+                </div>
+                <div class="panel-body">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                        ut laoreet dolore magna volutpat. </p>
+
+                    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation</p>
+
+                    <div class="btn-container text-right"><a href="#" class="btn btn-warning"><i
+                            class="fa fa-chevron-left"></i></a><a href="#" class="btn btn-warning"><i
+                            class="fa fa-chevron-right"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+</ul>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="drop visible-xs visible-sm menu-mobile-767">
+    <div class="navbar-collapse">
+        <div class="row-top">
+            <p class="text-menu">Menu</p>
+            <button type="button" class="nav-opener nav-toggle-767">
+                <span class="x1"></span>
+                <span class="x2"></span>
+            </button>
+        </div>
+        <div class="box-search">
+            <div class="search-row">
+                <input type="text" class="form-control input-search input-control" placeholder="Search"
+                       style="position: relative; z-index: 3; background: transparent;">
+                <a href="#" class="icon-search"><i class="fa fa-search"></i></a>
+            </div>
+        </div>
+        <div class="user-dropdown">
+                          <div class="dropdown-menu">
+                            <ul class="list-unstyled user-account-menu">
+                                <li class="switch-account">
+                                    <a href="#switch-account-menu-mobile" class="switch-account-toggle collapsed" data-toggle="collapse">
+                                        <span class="renew-icon"><i class="material-icons">autorenew</i></span>
+                                        <span class="account-name">Century 21 Inc.</span>
+                                        <span class="text">Switch Account</span>
+                                        <span class="menu-arrow-icon"><i class="material-icons">arrow_drop_down</i></span>
+                                    </a>
+
+                                    <div id="switch-account-menu-mobile" class="collapse">
+                                        <ul>
+                                            <li><a href="#">Realty Corp.</a></li>
+                                            <li><a href="#">Bradly and Drown</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li role="separator" class="divider"></li>
+
+                                <li>
+                                    <a href="app-account-info.html">
+                                        <i class="material-icons">person</i>
+                                        <span class="text">My Account</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="my-user.html">
+                                        <i class="material-icons">group</i>
+                                        <span class="text">My Users</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class=""></div>
+                                    <a href="my-product.html">
+                                        <i class="material-icons">apps</i>
+                                        <span class="text">My Products &amp; Services</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="app-store.html">
+                                        <i class="material-icons">shopping_basket</i>
+                                        <span class="text">WebsiteBox Store</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" data-toggle="modal" data-target="#myModal">
+                                        <i class="material-icons">help</i>
+                                        <span class="text">Help &amp; Support</span>
+                                    </a>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li>
+                                    <a href="#">
+                                        <i class="material-icons">exit_to_app</i>
+                                        <span class="text">Logout</span>
+                                    </a>
+                                </li>
+                            </ul>
+                          </div>
+                        </div>
+        <div class="row user-block">
+            <div class="col-xs-3 img-holder"><img src="../images/avatar01.jpg" class="img-responsive img-circle"
+                                                  alt="image description"></div>
+            <div class="col-xs-9 text-block">
+                <div class="name"><strong>Richard Mattius</strong></div>
+                <strong class="status text-uppercase text-warning">PREMIUM USER</strong>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</nav>
+</header>
+<!-- contain main informative part of the site -->
+<main id="main" role="main">
+    <div class="container-fluid">
+        <div class="same-height-holder">
+            <div id="content-page">
+                <div class="col-lg-8">
+                    <div class="panel panel-default no-panel-mobile same-height-column col-agl-app">
+                        <ul class="switchers-list list-unstyled ">
+                            <li class="switcher active" data-view-type="grid-view">
+                                <a href="javascrip:void(0)" class="btn btn-default">
+                                    <svg xmlnsxxxx="http://www.w3333333.org/2000/svg" class="icon icon-grid">
+                                        <use xlink:href="#icon-grid"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="switcher" data-view-type="list-view">
+                                <a href="javascrip:void(0)" class="btn btn-default">
+                                    <svg xmlnsxxxx="http://www.w3333333.org/2000/svg" class="icon icon-list">
+                                        <use xlink:href="#icon-list"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-8 col-sm-8 col-lg-8 left-col">
+                                    <div class="row">
+                                        <div class="col-sm-2 img-block">
+                                            <div class="img-holder"><img src="../images/integration-app.png" class="img-responsive"
+                                                                         alt="image description"></div>
+                                        </div>
+                                        <div class="col-sm-10 heading-block">
+                                            <h1>Integrations</h1>
+
+                                            <p>Manage your Integrations</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 col-sm-4 col-lg-4 text-right buttons-holder right-col">
+                                    <!-- Dropdown view in mobile -->
+                                    <div class="dropdown dropdown-more">
+                                        <a class="btn btn-sm btn-dots" id="dLabel" data-toggle="dropdown" aria-haspopup="true"
+                                           aria-expanded="false">
+                                            <span class="dot-1"></span>
+                                            <span class="dot-2"></span>
+                                            <span class="dot-3"></span>
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                            <li><a href="#"> Add </a></li>
+                                            <li><a href="#"> Display </a></li>
+                                            <li><a href="#"> More </a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- mobile view search modal -->
+                                    <a href="#" class="popup-opener btn-popup-search" data-toggle="modal" data-target="#searchModal">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                    <!-- Modal -->
+                                    <div class="modal fade modal-left-to-right modal-special-mobile" id="searchModal" tabindex="-1"
+                                         role="dialog">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <div class="row">
+                                                        <div class="col-xs-10">
+                                                            <h1>Search Integrations</h1>
+
+                                                            <p>3 results found</p>
+                                                        </div>
+                                                        <div class="col-xs-2 button-block">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                                                    aria-hidden="true">&times;</span></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-body clearfix">
+                                                    <div class="alphabet-list">
+                                                        <a href="#" class="alphabet-filter">A</a>
+                                                        <a href="#" class="alphabet-filter">B</a>
+                                                        <a href="#" class="alphabet-filter">C</a>
+                                                        <a href="#" class="alphabet-filter">D</a>
+                                                        <a href="#" class="alphabet-filter">E</a>
+                                                        <a href="#" class="alphabet-filter">F</a>
+                                                        <a href="#" class="alphabet-filter">G</a>
+                                                        <a href="#" class="alphabet-filter">H</a>
+                                                        <a href="#" class="alphabet-filter">I</a>
+                                                        <a href="#" class="alphabet-filter">J</a>
+                                                        <a href="#" class="alphabet-filter">K</a>
+                                                        <a href="#" class="alphabet-filter">L</a>
+                                                        <a href="#" class="alphabet-filter">M</a>
+                                                        <a href="#" class="alphabet-filter">N</a>
+                                                        <a href="#" class="alphabet-filter">O</a>
+                                                        <a href="#" class="alphabet-filter">P</a>
+                                                        <a href="#" class="alphabet-filter">Q</a>
+                                                        <a href="#" class="alphabet-filter">R</a>
+                                                        <a href="#" class="alphabet-filter">S</a>
+                                                        <a href="#" class="alphabet-filter">T</a>
+                                                        <a href="#" class="alphabet-filter">U</a>
+                                                        <a href="#" class="alphabet-filter">V</a>
+                                                        <a href="#" class="alphabet-filter">W</a>
+                                                        <a href="#" class="alphabet-filter">X</a>
+                                                        <a href="#" class="alphabet-filter">Y</a>
+                                                        <a href="#" class="alphabet-filter">Z</a>
+                                                    </div>
+
+                                                    <div class="search-inner">
+                                                        <div class="box-search sidebar">
+                                                            <div class="search-row">
+                                                                <input type="text" class="form-control" placeholder="Search"
+                                                                       style="position: relative; z-index: 3; background: transparent;">
+                                                                <a href="#" class="icon-search"><i class="fa fa-search"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="categories-section">
+                                                            <div class="panel-heading">
+                                                                <div class="row row-inline">
+                                                                    <div class="col-xs-12 column">
+                                                                        <h1>Categories</h1>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="panel-body-sidebar">
+                                                                <ul class="list-group results-list">
+                                                                    <li class="list-group-item">
+                                                                        <span class="badge badge-transparent">22</span>
+                                                                        <a href="#"><i class="fa fa-filter"></i>All</a>
+                                                                    </li>
+                                                                    <li class="list-group-item">
+                                                                        <span class="badge badge-transparent">12</span>
+                                                                        <a href="#"><i class="fa fa-filter"></i>Analytics</a>
+                                                                    </li>
+                                                                    <li class="list-group-item">
+                                                                        <span class="badge badge-transparent">5</span>
+                                                                        <a href="#"><i class="fa fa-filter"></i>Calendar</a>
+                                                                    </li>
+                                                                    <li class="list-group-item">
+                                                                        <span class="badge badge-transparent">7</span>
+                                                                        <a href="#"><i class="fa fa-filter"></i>CRM</a>
+                                                                    </li>
+                                                                    <li class="list-group-item">
+                                                                        <span class="badge badge-transparent">17</span>
+                                                                        <a href="#"><i class="fa fa-filter"></i>Documents</a>
+                                                                    </li>
+                                                                    <li class="list-group-item">
+                                                                        <span class="badge badge-transparent">7</span>
+                                                                        <a href="#"><i class="fa fa-filter"></i>Email</a>
+                                                                    </li>
+                                                                    <li class="list-group-item">
+                                                                        <span class="badge badge-transparent">17</span>
+                                                                        <a href="#"><i class="fa fa-filter"></i>Life Chat</a>
+                                                                    </li>
+                                                                    <li class="list-group-item">
+                                                                        <span class="badge badge-transparent">7</span>
+                                                                        <a href="#"><i class="fa fa-filter"></i>Social</a>
+                                                                    </li>
+                                                                    <li class="list-group-item">
+                                                                        <span class="badge badge-transparent">17</span>
+                                                                        <a href="#"><i class="fa fa-filter"></i>Syndication</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="btn-bottom">
+                                                    <button type="submit" class="btn btn-lg btn-warning btn-block text-uppercase btn-view-320">
+                                                        Search
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="buttons-row list-btn-op on-app-grid has-dropdown">
+                                        <button type="button" class="btn btn-default visible-desktop popup-opener" data-toggle="modal" data-target="#searchModal">Search</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wrap-content-integrations">
+                        <!-- integrations app grid -->
+                            <div class="view-type grid-view">
+
+                                <div class="integrations-grid-inner">
+                                    <div class="integrations-item">
+                                        <div class="wsb-checkbox">
+                                            <label>
+                                                <input type="checkbox">
+                                                <span class="fake-input">
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="integrations-item-inner">
+                                            <div class="dot-integrations" data-toggle="modal" data-target="#intergrationModal">
+                                                <img src="../images/integrations/zillow.png" alt="Integration"/>
+                                            </div>
+                                            <p class="integration-name">Zillow</p>
+                                            <div class="integrations-des" data-toggle="modal" data-target="#intergrationModal">
+                                                <p>
+                                                    Zillow Group, or simply Zillow, is an online real estate database.
+                                                </p>
+                                            </div>
+                                            <div class="box-switch-on-off">
+                                                <div class="button-wrap on-off">
+                                                    <div class="button-bg">
+                                                        <div class="button-on">on</div>
+                                                        <div class="button-off">off</div>
+                                                        <div class="button-switch"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="integrations-item">
+                                        <div class="wsb-checkbox">
+                                            <label>
+                                                <input type="checkbox">
+                                                <span class="fake-input">
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="integrations-item-inner">
+                                            <div class="dot-integrations" data-toggle="modal" data-target="#intergrationModal">
+                                                <img src="../images/integrations/trulia.png" alt="Integration"/>
+                                            </div>
+                                            <p class="integration-name">Trulia</p>
+                                            <div class="integrations-des" data-toggle="modal" data-target="#intergrationModal">
+                                                <p>
+                                                  Trulia is an online residential real estate site for home buyers, sellers.
+                                                </p>
+                                            </div>
+                                            <div class="box-switch-on-off">
+                                                <div class="button-wrap on-off">
+                                                    <div class="button-bg">
+                                                        <div class="button-on">on</div>
+                                                        <div class="button-off">off</div>
+                                                        <div class="button-switch"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="integrations-item">
+                                        <div class="wsb-checkbox">
+                                            <label>
+                                                <input type="checkbox">
+                                                <span class="fake-input">
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="integrations-item-inner">
+                                            <div class="dot-integrations" data-toggle="modal" data-target="#intergrationModal">
+                                                <img src="../images/integrations/analytic.png" alt="Integration"/>
+                                            </div>
+                                            <p class="integration-name">Google Analytics</p>
+                                            <div class="integrations-des" data-toggle="modal" data-target="#intergrationModal">
+                                                <p>
+                                                  Get the data you need to make intelligent marketing.
+                                                </p>
+                                            </div>
+                                            <div class="box-switch-on-off">
+                                                <div class="button-wrap on-off">
+                                                    <div class="button-bg">
+                                                        <div class="button-on">on</div>
+                                                        <div class="button-off">off</div>
+                                                        <div class="button-switch"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="integrations-item">
+                                        <div class="wsb-checkbox">
+                                            <label>
+                                                <input type="checkbox">
+                                                <span class="fake-input">
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="integrations-item-inner">
+                                            <div class="dot-integrations" data-toggle="modal" data-target="#intergrationModal">
+                                                <img src="../images/integrations/mls.png" alt="Integration"/>
+                                            </div>
+                                            <p class="integration-name">MLS</p>
+                                            <div class="integrations-des" data-toggle="modal" data-target="#intergrationModal">
+                                                <p>
+                                                  MLS.com is a free MLS search to find real estate MLS listings 
+                                                </p>
+                                            </div>
+                                            <div class="box-switch-on-off">
+                                                <div class="button-wrap on-off">
+                                                    <div class="button-bg">
+                                                        <div class="button-on">on</div>
+                                                        <div class="button-off">off</div>
+                                                        <div class="button-switch"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="integrations-item">
+                                        <div class="wsb-checkbox">
+                                            <label>
+                                                <input type="checkbox">
+                                                <span class="fake-input">
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="integrations-item-inner">
+                                            <div class="dot-integrations" data-toggle="modal" data-target="#intergrationModal">
+                                                <img src="../images/integrations/capterra.png" alt="Integration"/>
+                                            </div>
+                                            <p class="integration-name">Capterra</p>
+                                            <div class="integrations-des" data-toggle="modal" data-target="#intergrationModal">
+                                                <p>
+                                                  PG Real Estate CMS includes convenient administration panel
+                                                </p>
+                                            </div>
+                                            <div class="box-switch-on-off">
+                                                <div class="button-wrap on-off">
+                                                    <div class="button-bg">
+                                                        <div class="button-on">on</div>
+                                                        <div class="button-off">off</div>
+                                                        <div class="button-switch"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="integrations-item">
+                                        <div class="wsb-checkbox">
+                                            <label>
+                                                <input type="checkbox">
+                                                <span class="fake-input">
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="integrations-item-inner">
+                                            <div class="dot-integrations" data-toggle="modal" data-target="#intergrationModal">
+                                                <img src="../images/integrations/crm.png" alt="Integration"/>
+                                            </div>
+                                            <p class="integration-name">CRM</p>
+                                            <div class="integrations-des" data-toggle="modal" data-target="#intergrationModal">
+                                                <p>
+                                                  PG Real Estate CMS includes convenient administration panel
+                                                </p>
+                                            </div>
+                                            <div class="box-switch-on-off">
+                                                <div class="button-wrap on-off">
+                                                    <div class="button-bg">
+                                                        <div class="button-on">on</div>
+                                                        <div class="button-off">off</div>
+                                                        <div class="button-switch"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- integrations app List -->
+                            <div class="view-type list-view" style="display: none">
+                                <table class="integrations-list table">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-left">&nbsp;</th>
+                                            <th class="text-left clear-padding-left col2">Name</th>
+                                            <th class="text-left clear-padding-left col3">Description</th>
+                                            <th class="text-left clear-padding-left col4">Status</th>
+                                            <th>&nbsp;</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="clear-padding-left" data-toggle="modal" data-target="#intergrationModal">
+                                                <img src="../images/integrations/zillow.png" alt="Integration">
+                                            </td>
+                                            <td class="clear-padding-left" data-toggle="modal" data-target="#intergrationModal">
+                                                <p class="integration-name">Zillow</p>
+                                            </td>
+                                            <td class="clear-padding-left" data-toggle="modal" data-target="#intergrationModal">
+                                                <p class="integration-des">Zillow Group, or simply Zillow, is an online real estate database.</p>
+                                            </td>
+                                            <td class="clear-padding-left">
+                                                <div class="box-switch-on-off">
+                                                    <div class="button-wrap on-off">
+                                                        <div class="button-bg">
+                                                            <div class="button-on">on</div>
+                                                            <div class="button-off">off</div>
+                                                            <div class="button-switch"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="wsb-checkbox">
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <span class="fake-input"></span>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clear-padding-left" data-toggle="modal" data-target="#intergrationModal">
+                                                <img src="../images/integrations/trulia.png" alt="Integration">
+                                            </td>
+                                            <td class="clear-padding-left" data-toggle="modal" data-target="#intergrationModal">
+                                                <p class="integration-name">Trulia</p>
+                                            </td>
+                                            <td class="clear-padding-left" data-toggle="modal" data-target="#intergrationModal">
+                                                <p class="integration-des">Trulia is an online residential real estate site for home buyers, sellers.</p>
+                                            </td>
+                                            <td class="clear-padding-left">
+                                                <div class="box-switch-on-off">
+                                                    <div class="button-wrap on-off">
+                                                        <div class="button-bg">
+                                                            <div class="button-on">on</div>
+                                                            <div class="button-off">off</div>
+                                                            <div class="button-switch"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="wsb-checkbox">
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <span class="fake-input"></span>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clear-padding-left" data-toggle="modal" data-target="#intergrationModal">
+                                                <img src="../images/integrations/analytic.png" alt="Integration">
+                                            </td>
+                                            <td class="clear-padding-left" data-toggle="modal" data-target="#intergrationModal">
+                                                <p class="integration-name">Google Analytics</p>
+                                            </td>
+                                            <td class="clear-padding-left" data-toggle="modal" data-target="#intergrationModal">
+                                                <p class="integration-des">Zillow Group, or simply Zillow, is an online real estate database.</p>
+                                            </td>
+                                            <td class="clear-padding-left">
+                                                <div class="box-switch-on-off">
+                                                    <div class="button-wrap on-off">
+                                                        <div class="button-bg">
+                                                            <div class="button-on">on</div>
+                                                            <div class="button-off">off</div>
+                                                            <div class="button-switch"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="wsb-checkbox">
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <span class="fake-input"></span>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clear-padding-left" data-toggle="modal" data-target="#intergrationModal">
+                                                <img src="../images/integrations/mls.png" alt="Integration">
+                                            </td>
+                                            <td class="clear-padding-left" data-toggle="modal" data-target="#intergrationModal">
+                                                <p class="integration-name">MLS</p>
+                                            </td>
+                                            <td class="clear-padding-left" data-toggle="modal" data-target="#intergrationModal">
+                                                <p class="integration-des">Zillow Group, or simply Zillow, is an online real estate database.</p>
+                                            </td>
+                                            <td class="clear-padding-left">
+                                                <div class="box-switch-on-off">
+                                                    <div class="button-wrap on-off">
+                                                        <div class="button-bg">
+                                                            <div class="button-on">on</div>
+                                                            <div class="button-off">off</div>
+                                                            <div class="button-switch"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="wsb-checkbox">
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <span class="fake-input"></span>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clear-padding-left" data-toggle="modal" data-target="#intergrationModal">
+                                                <img src="../images/integrations/capterra.png" alt="Integration">
+                                            </td>
+                                            <td class="clear-padding-left" data-toggle="modal" data-target="#intergrationModal">
+                                                <p class="integration-name">Capterra</p>
+                                            </td>
+                                            <td class="clear-padding-left" data-toggle="modal" data-target="#intergrationModal">
+                                                <p class="integration-des">Zillow Group, or simply Zillow, is an online real estate database.</p>
+                                            </td>
+                                            <td class="clear-padding-left">
+                                                <div class="box-switch-on-off">
+                                                    <div class="button-wrap on-off">
+                                                        <div class="button-bg">
+                                                            <div class="button-on">on</div>
+                                                            <div class="button-off">off</div>
+                                                            <div class="button-switch"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="wsb-checkbox">
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <span class="fake-input"></span>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="clear-padding-left" data-toggle="modal" data-target="#intergrationModal">
+                                                <img src="../images/integrations/crm.png" alt="Integration">
+                                            </td>
+                                            <td class="clear-padding-left" data-toggle="modal" data-target="#intergrationModal">
+                                                <p class="integration-name">CRM</p>
+                                            </td>
+                                            <td class="clear-padding-left" data-toggle="modal" data-target="#intergrationModal">
+                                                <p class="integration-des">Zillow Group, or simply Zillow, is an online real estate database.</p>
+                                            </td>
+                                            <td class="clear-padding-left">
+                                                <div class="box-switch-on-off">
+                                                    <div class="button-wrap on-off">
+                                                        <div class="button-bg">
+                                                            <div class="button-on">on</div>
+                                                            <div class="button-off">off</div>
+                                                            <div class="button-switch"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="wsb-checkbox">
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <span class="fake-input"></span>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 sidebar-right">
+                    <div class="panel panel-default same-height same-height-column panel-search no-bottom-indent col-agl-app">
+                        <div class="panel-heading">
+                            <h1>Search Integrations</h1>
+
+                            <p>5 results found</p>
+                        </div>
+
+                        <div class="panel-body clearfix">
+                            <div class="alphabet-list">
+                                <a href="#" class="alphabet-filter">A</a>
+                                <a href="#" class="alphabet-filter">B</a>
+                                <a href="#" class="alphabet-filter">C</a>
+                                <a href="#" class="alphabet-filter">D</a>
+                                <a href="#" class="alphabet-filter">E</a>
+                                <a href="#" class="alphabet-filter">F</a>
+                                <a href="#" class="alphabet-filter">G</a>
+                                <a href="#" class="alphabet-filter">H</a>
+                                <a href="#" class="alphabet-filter">I</a>
+                                <a href="#" class="alphabet-filter">J</a>
+                                <a href="#" class="alphabet-filter">K</a>
+                                <a href="#" class="alphabet-filter">L</a>
+                                <a href="#" class="alphabet-filter">M</a>
+                                <a href="#" class="alphabet-filter">N</a>
+                                <a href="#" class="alphabet-filter">O</a>
+                                <a href="#" class="alphabet-filter">P</a>
+                                <a href="#" class="alphabet-filter">Q</a>
+                                <a href="#" class="alphabet-filter">R</a>
+                                <a href="#" class="alphabet-filter">S</a>
+                                <a href="#" class="alphabet-filter">T</a>
+                                <a href="#" class="alphabet-filter">U</a>
+                                <a href="#" class="alphabet-filter">V</a>
+                                <a href="#" class="alphabet-filter">W</a>
+                                <a href="#" class="alphabet-filter">X</a>
+                                <a href="#" class="alphabet-filter">Y</a>
+                                <a href="#" class="alphabet-filter">Z</a>
+                            </div>
+
+                            <div class="search-inner">
+                                <div class="box-search sidebar">
+                                    <div class="search-row">
+                                        <input type="text" class="form-control" placeholder="Search"
+                                               style="position: relative; z-index: 3; background: transparent;">
+                                        <a href="#" class="icon-search"><i class="fa fa-search"></i></a>
+                                    </div>
+                                </div>
+                                <div class="categories-section">
+                                    <div class="panel-heading">
+                                        <div class="row row-inline">
+                                            <div class="col-xs-12 column">
+                                                <h1>Categories</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body-sidebar">
+                                        <ul class="list-group results-list">
+                                            <li class="list-group-item">
+                                                <span class="badge badge-transparent">22</span>
+                                                <a href="#"><i class="fa fa-filter"></i>All</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="badge badge-transparent">12</span>
+                                                <a href="#"><i class="fa fa-filter"></i>Analytics</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="badge badge-transparent">5</span>
+                                                <a href="#"><i class="fa fa-filter"></i>Calendar</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="badge badge-transparent">7</span>
+                                                <a href="#"><i class="fa fa-filter"></i>CRM</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="badge badge-transparent">17</span>
+                                                <a href="#"><i class="fa fa-filter"></i>Documents</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="badge badge-transparent">7</span>
+                                                <a href="#"><i class="fa fa-filter"></i>Email</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="badge badge-transparent">17</span>
+                                                <a href="#"><i class="fa fa-filter"></i>Life Chat</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="badge badge-transparent">7</span>
+                                                <a href="#"><i class="fa fa-filter"></i>Social</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="badge badge-transparent">17</span>
+                                                <a href="#"><i class="fa fa-filter"></i>Syndication</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</main>
+<!-- modal -->
+<div class="modal fade support-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h1 class="modal-title" id="myModalLabel">Help & Support</h1>
+
+                <p>Help with management Area Activities</p>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetuer adi pis cing elit, sed diam nonummy nibh.</p>
+                <!-- 16:9 aspect ratio -->
+                <div class="media-holder">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZyhrYis509A"
+                                frameborder="0" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+                <ol class="custom-numeric-list">
+                    <li><a href="#"><span class="number">Q</span>Lorem ipsum dolor sit amet, consectetuer adi pis cing
+                        elit, sed diam nonummy nibh?</a></li>
+                    <li><a href="#"><span class="number">Q</span>Lorem ipsum dolor sit amet, consectetuer adi pis cing
+                        elit?</a></li>
+                    <li><a href="#"><span class="number">Q</span>Lorem ipsum dolor sit amet, consectetuer adi pis cing
+                        elit, sed diam nonummy nibh?</a></li>
+                    <li><a href="#"><span class="number">Q</span>Lorem ipsum dolor sit amet, consectetuer adi pis cing
+                        elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore mangaja endosre?</a></li>
+                    <li><a href="#"><span class="number">Q</span>Lorem ipsum dolor sit amet, consectetuer adi pis cing
+                        elit, sed diam nonummy nibh?</a></li>
+                    <li><a href="#"><span class="number">Q</span>Lorem ipsum dolor sit amet, consectetuer adi pis cing
+                        elit?</a></li>
+                    <li><a href="#"><span class="number">Q</span>Lorem ipsum dolor sit amet, consectetuer adi pis cing
+                        elit, sed diam nonummy nibh?</a></li>
+                    <li><a href="#"><span class="number">Q</span>Lorem ipsum dolor sit amet, consectetuer adi pis cing
+                        elit, sed diam nonummy nibh euismod?</a></li>
+                </ol>
+                <a href="#" class="btn btn-warning btn-block">Contact Support</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Confirm deletion modal -->
+<div class="modal fade delete-modal" id="deleteModal" role="dialog" data-backdrop="false">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h1 class="modal-title">Delete Confirmation</h1>
+            </div>
+            <div class="modal-body clearfix">
+                <button class="btn btn-default pull-left">Cancel</button>
+                <button class="btn btn-red pull-right" data-dismiss="modal">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Domains Modal -->
+<div class="modal fade sliding-right-modal intergrationModal multi-section-modal" id="intergrationModal" role="dialog">
+    <div class="modal-dialog">
+
+        <div class="secondary-section">
+            <div class="secondary-section-inner">
+                <div class="panel panel-default panel-transparent app-extended">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-9">
+                                <div class="row">
+                                    <div class="col-sm-12 heading-block">
+                                        <h1>Integrate with Zillow</h1>
+                                        <p>Settings</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 text-right">
+                                <button type="button" class="btn btn-transparent btn-close close-sub-level">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="setup-block">
+                            <form>
+                                <div class="config-list">
+                                    <div class="config-item">
+                                        <span class="item-number">1</span>
+                                        <div class="header-config">
+                                            <div class="box-switch-on-off">
+                                                <div class="button-wrap on-off">
+                                                    <div class="button-bg">
+                                                        <div class="button-on">on</div>
+                                                        <div class="button-off">off</div>
+                                                        <div class="button-switch"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3 class="item-title">Enable or Disable</h3>
+                                        <div class="item-content">
+                                            <ul class="config-options">
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-xs-12">
+                                                           <span class="option-text">This integration will automatically submit your listings to the largest real estate</span> 
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="config-item">
+                                        <span class="item-number">2</span>
+                                        <h3 class="item-title">Select the listing types you would like to submit to this syndication partner</h3>
+                                        <div class="item-content">
+                                            <ul class="config-options">
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-xs-9">
+                                                           <span class="option-text">Residential</span> 
+                                                        </div>
+                                                        <div class="col-xs-3 text-right">
+                                                            <div class="wsb-checkbox">
+                                                                <label>
+                                                                    <input type="checkbox">
+                                                                    <span class="fake-input">
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-xs-9">
+                                                           <span class="option-text">Commercial</span> 
+                                                        </div>
+                                                        <div class="col-xs-3 text-right">
+                                                            <div class="wsb-checkbox">
+                                                                <label>
+                                                                    <input type="checkbox">
+                                                                    <span class="fake-input">
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-xs-9">
+                                                           <span class="option-text">Land</span> 
+                                                        </div>
+                                                        <div class="col-xs-3 text-right">
+                                                            <div class="wsb-checkbox">
+                                                                <label>
+                                                                    <input type="checkbox">
+                                                                    <span class="fake-input">
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="submit" value="SUBMIT" class="btn btn-orange btn-submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-section modal-content domains-modal-first">
+            <div class="modal-header">
+                <div class="row">
+                    <div class="col-xs-8 col-sm-7">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h1 class="modal-title">Zillow Integrations</h1>
+
+                                <p>Integration Details</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-sm-5 text-right">
+                        <div class="buttons-holder">
+                            <button type="button" class="btn btn-default btn-close menu-followed btn-shadow"
+                                    data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">×</span></button>
+
+                            <div class="dropdown dropdown-more">
+                                <a class="btn btn-sm btn-dots" id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="dot-1"></span>
+                                    <span class="dot-2"></span>
+                                    <span class="dot-3"></span>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                    <li><a href="#"> Edit </a></li>
+                                    <li><a href="#"> Delete </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hr-header"></div>
+            </div>
+            <div class="modal-body">
+                <div class="detail-block">
+                    <div class="integration-partners">
+                        <img src="../images/integrations/zillow1.jpg">
+                        <span class="plus-icon"></span>
+                        <img src="../images/integrations/wsb.png">
+                    </div>
+                    <p class="integration-details">
+                        Zillow Group, or simply Zillow, is an online real estate database company that was founded in 2006 and created by Rich Barton and Lloyd Frink, former Microsoft executives and founders of Microsoft spin-off Expedia.
+                    </p>
+
+                    <a class="btn btn-orange btn-integration sub-modal-opener">
+                        Integrate Now
+                        <span>$99 One-Time Fee</span>
+                    </a>
+                </div>
+                <div class="detail-block">
+                    <h3 class="detail-block-heading">FEATURES</h3>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="icon-box">
+                                <div class="iconbox-header">
+                                    <div class="iconbox-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-cart">
+                                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-qrcode"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="iconbox-block">
+                                    <div class="iconbox-title">
+                                        <h4 class="iconbox-heading">Manage your QR Codes easily</h4>
+                                    </div>
+                                    <div class="iconbox-text">
+                                        <p>Create QR codes in seconds and keep track of how many times each QR code has been scanned.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="icon-box">
+                                <div class="iconbox-header">
+                                    <div class="iconbox-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-cart">
+                                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-outdoor"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="iconbox-block">
+                                    <div class="iconbox-title">
+                                        <h4 class="iconbox-heading">Include on your outdoor signs</h4>
+                                    </div>
+                                    <div class="iconbox-text">
+                                        <p>Get the attention of tech-savvy house hunters by linking the codes back to a property page!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="icon-box">
+                                <div class="iconbox-header">
+                                    <div class="iconbox-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-cart">
+                                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-business-card"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="iconbox-block">
+                                    <div class="iconbox-title">
+                                        <h4 class="iconbox-heading">Put it on your business card.</h4>
+                                    </div>
+                                    <div class="iconbox-text">
+                                        <p>Link it directly to your website and open up a new way for your clients and future clients to engage with you</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="icon-box">
+                                <div class="iconbox-header">
+                                    <div class="iconbox-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-cart">
+                                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-traffic"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="iconbox-block">
+                                    <div class="iconbox-title">
+                                        <h4 class="iconbox-heading">Drive traffic to your website</h4>
+                                    </div>
+                                    <div class="iconbox-text">
+                                        <p>Combine web and print marketing to sell homes faster by driving targeted, local traffic.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="icon-box">
+                                <div class="iconbox-header">
+                                    <div class="iconbox-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-cart">
+                                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-qrcode"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="iconbox-block">
+                                    <div class="iconbox-title">
+                                        <h4 class="iconbox-heading">Manage your QR Codes easily</h4>
+                                    </div>
+                                    <div class="iconbox-text">
+                                        <p>Create QR codes in seconds and keep track of how many times each QR code has been scanned.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="icon-box">
+                                <div class="iconbox-header">
+                                    <div class="iconbox-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-cart">
+                                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-outdoor"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="iconbox-block">
+                                    <div class="iconbox-title">
+                                        <h4 class="iconbox-heading">Include on your outdoor signs</h4>
+                                    </div>
+                                    <div class="iconbox-text">
+                                        <p>Get the attention of tech-savvy house hunters by linking the codes back to a property page!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="icon-box">
+                                <div class="iconbox-header">
+                                    <div class="iconbox-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-cart">
+                                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-business-card"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="iconbox-block">
+                                    <div class="iconbox-title">
+                                        <h4 class="iconbox-heading">Put it on your business card.</h4>
+                                    </div>
+                                    <div class="iconbox-text">
+                                        <p>Link it directly to your website and open up a new way for your clients and future clients to engage with you</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="icon-box">
+                                <div class="iconbox-header">
+                                    <div class="iconbox-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-cart">
+                                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-traffic"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="iconbox-block">
+                                    <div class="iconbox-title">
+                                        <h4 class="iconbox-heading">Drive traffic to your website</h4>
+                                    </div>
+                                    <div class="iconbox-text">
+                                        <p>Combine web and print marketing to sell homes faster by driving targeted, local traffic.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/jquery-ui/jquery-ui.js"></script>
+<!-- scroll bar  -->
+<script src="../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- custom select -->
+<script type="text/javascript" src="../bower_components/bootstrap-select/js/bootstrap-select.js"></script>
+<!-- include bootstrap JavaScript -->
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- include Bootstrap date picker JavaScript -->
+<script type="text/javascript" src="../js/bootstrap-datepicker.min.js"></script>
+
+<!-- include Masonry for blog girid -->
+<script src="../js/isotope.pkgd.min.js"></script>
+<!-- include custom JavaScript -->
+<script src="../js/jquery.main.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+
+    });
+</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,231 @@
+/*
+btn close
+*/
+/*
+input
+*/
+/*
+Mixin add tag
+*/
+.btn-orange {
+  color: #fff;
+  background-color: #f16a1e;
+  border-color: #e75c0e; }
+  .btn-orange:focus, .btn-orange.focus {
+    color: #fff;
+    background-color: #cf530d;
+    border-color: #6f2c07; }
+  .btn-orange:hover {
+    color: #fff;
+    background-color: #cf530d;
+    border-color: #ae450b; }
+  .btn-orange:active, .btn-orange.active,
+  .open > .btn-orange.dropdown-toggle {
+    color: #fff;
+    background-color: #cf530d;
+    border-color: #ae450b; }
+    .btn-orange:active:hover, .btn-orange:active:focus, .btn-orange:active.focus, .btn-orange.active:hover, .btn-orange.active:focus, .btn-orange.active.focus,
+    .open > .btn-orange.dropdown-toggle:hover,
+    .open > .btn-orange.dropdown-toggle:focus,
+    .open > .btn-orange.dropdown-toggle.focus {
+      color: #fff;
+      background-color: #ae450b;
+      border-color: #6f2c07; }
+  .btn-orange:active, .btn-orange.active,
+  .open > .btn-orange.dropdown-toggle {
+    background-image: none; }
+  .btn-orange.disabled, .btn-orange.disabled:hover, .btn-orange.disabled:focus, .btn-orange.disabled.focus, .btn-orange.disabled:active, .btn-orange.disabled.active, .btn-orange[disabled], .btn-orange[disabled]:hover, .btn-orange[disabled]:focus, .btn-orange[disabled].focus, .btn-orange[disabled]:active, .btn-orange[disabled].active,
+  fieldset[disabled] .btn-orange,
+  fieldset[disabled] .btn-orange:hover,
+  fieldset[disabled] .btn-orange:focus,
+  fieldset[disabled] .btn-orange.focus,
+  fieldset[disabled] .btn-orange:active,
+  fieldset[disabled] .btn-orange.active {
+    background-color: #f16a1e;
+    border-color: #e75c0e; }
+  .btn-orange .badge {
+    color: #f16a1e;
+    background-color: #fff; }
+
+.btn-red {
+  color: #fff;
+  background-color: #ec5858;
+  border-color: #f2f2f2; }
+  .btn-red:focus, .btn-red.focus {
+    color: #fff;
+    background-color: #e72a2a;
+    border-color: #b3b3b3; }
+  .btn-red:hover {
+    color: #fff;
+    background-color: #e72a2a;
+    border-color: #d4d4d4; }
+  .btn-red:active, .btn-red.active,
+  .open > .btn-red.dropdown-toggle {
+    color: #fff;
+    background-color: #e72a2a;
+    border-color: #d4d4d4; }
+    .btn-red:active:hover, .btn-red:active:focus, .btn-red:active.focus, .btn-red.active:hover, .btn-red.active:focus, .btn-red.active.focus,
+    .open > .btn-red.dropdown-toggle:hover,
+    .open > .btn-red.dropdown-toggle:focus,
+    .open > .btn-red.dropdown-toggle.focus {
+      color: #fff;
+      background-color: #d51818;
+      border-color: #b3b3b3; }
+  .btn-red:active, .btn-red.active,
+  .open > .btn-red.dropdown-toggle {
+    background-image: none; }
+  .btn-red.disabled, .btn-red.disabled:hover, .btn-red.disabled:focus, .btn-red.disabled.focus, .btn-red.disabled:active, .btn-red.disabled.active, .btn-red[disabled], .btn-red[disabled]:hover, .btn-red[disabled]:focus, .btn-red[disabled].focus, .btn-red[disabled]:active, .btn-red[disabled].active,
+  fieldset[disabled] .btn-red,
+  fieldset[disabled] .btn-red:hover,
+  fieldset[disabled] .btn-red:focus,
+  fieldset[disabled] .btn-red.focus,
+  fieldset[disabled] .btn-red:active,
+  fieldset[disabled] .btn-red.active {
+    background-color: #ec5858;
+    border-color: #f2f2f2; }
+  .btn-red .badge {
+    color: #ec5858;
+    background-color: #fff; }
+
+.semibold {
+  font-weight: 700; }
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.margin-clear {
+  margin: 0 !important; }
+
+.padding-right-clear {
+  padding-right: 0 !important; }
+
+.padding-left-clear {
+  padding-left: 0 !important; }
+
+.ellipsis {
+  white-space: nowrap;
+  /* 1 */
+  text-overflow: ellipsis;
+  /* 2 */
+  overflow: hidden; }
+
+.btn + .btn {
+  margin-left: 6px; }
+
+.block-rounded {
+  border-radius: 4px;
+  overflow: hidden; }
+
+.text-dark {
+  color: #414851; }
+
+/*
+Css Your App
+*/
+.shortcut-table .add-row .wsb-select {
+  width: 160px !important; }
+
+.shortcut-table .form-group {
+  margin-bottom: 0; }
+  .shortcut-table .form-group .form-control {
+    padding: 3px 8px;
+    margin-bottom: 0; }
+
+.shortcut-table .fake-select {
+  min-width: 160px;
+  top: 4px;
+  position: relative; }
+  @media (max-width: 768px) {
+    .shortcut-table .fake-select {
+      min-width: 110px; } }
+
+.shortcut-table .col4 {
+  min-width: 95px; }
+
+.shortcut-table .col5 {
+  width: 160px; }
+
+.shortcut-table tr > th {
+  padding-bottom: 15px !important; }
+  .shortcut-table tr > th:first-child {
+    padding-left: 0 !important; }
+  .shortcut-table tr > th:last-child {
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
+
+.shortcut-table tr > td {
+  padding: 15px 10px 15px !important; }
+  .shortcut-table tr > td:first-child {
+    padding-left: 0 !important; }
+  .shortcut-table tr > td:last-child {
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
+  .shortcut-table tr > td.shortcut-name > img {
+    margin-right: 5px; }
+
+.shortcut-table tr input[type="checkbox"] + .fake-input {
+  display: none; }
+
+.shortcut-table tr input[type="checkbox"]:checked + .fake-input {
+  display: block; }
+
+.shortcut-table tr:hover input[type="checkbox"] + .fake-input {
+  display: block; }
+
+.shortcut-table .buttons-col {
+  padding-right: 0 !important; }
+  .shortcut-table .buttons-col .btn {
+    min-width: 74px; }
+  .shortcut-table .buttons-col .btn + .btn {
+    margin-left: 8px; }
+
+.shortcut-table .shortcut-check .wsb-checkbox {
+  float: right; }
+
+@media (max-width: 767px) {
+  .grid-view .shortcut-table {
+    display: none; } }
+
+.shortcuts-grid {
+  overflow: hidden;
+  margin-right: -12px;
+  margin-left: -12px; }
+  .shortcuts-grid .shortcut-item {
+    text-align: center;
+    float: left;
+    margin: 5px 12px; }
+    .shortcuts-grid .shortcut-item .shortcut-box {
+      width: 74px;
+      height: 74px;
+      margin-bottom: 5px;
+      border-radius: 10px;
+      border: 1px solid #d3d6d7;
+      text-align: center;
+      position: relative;
+      line-height: 70px; }
+      .shortcuts-grid .shortcut-item .shortcut-box .wsb-checkbox {
+        position: absolute;
+        right: 4px;
+        top: 4px; }
+    .shortcuts-grid .shortcut-item input[type="checkbox"] + .fake-input {
+      display: none; }
+    .shortcuts-grid .shortcut-item input[type="checkbox"]:checked + .fake-input {
+      display: block; }
+    .shortcuts-grid .shortcut-item:hover input[type="checkbox"] + .fake-input {
+      display: block; }
+  @media (max-width: 320px) {
+    .shortcuts-grid {
+      margin-right: -18px;
+      margin-left: -18px; }
+      .shortcuts-grid .shortcut-item {
+        margin: 5px 18px; } }
+
+@media (min-width: 769px) {
+  .list-view-shortcut .box-view-screen-small {
+    display: none; } }
+
+@media (max-width: 768px) {
+  .list-view-shortcut .shortcut-form {
+    display: none; } }
